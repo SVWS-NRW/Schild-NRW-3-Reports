@@ -1,0 +1,604 @@
+object RepOrt: TppReport
+  PrinterSetup.BinName = 'Default'
+  PrinterSetup.DocumentName = 'Statistik - Kreuztabelle Religionen.rtm'
+  PrinterSetup.Duplex = dpNone
+  PrinterSetup.Orientation = poLandscape
+  PrinterSetup.PaperName = 'A4 210 x 297 mm'
+  PrinterSetup.PrinterName = 'Default'
+  PrinterSetup.SaveDeviceSettings = False
+  PrinterSetup.mmMarginBottom = 20000
+  PrinterSetup.mmMarginLeft = 15000
+  PrinterSetup.mmMarginRight = 15000
+  PrinterSetup.mmMarginTop = 20000
+  PrinterSetup.mmPaperHeight = 210000
+  PrinterSetup.mmPaperWidth = 297000
+  PrinterSetup.PaperSize = 9
+  SaveAsTemplate = True
+  Template.FileName = 
+    'C:\Users\jraff\OneDrive - neg-velbert.de\Programme\SVWS-Arbeitsv' +
+    'erzeichnis\SchILD-Reports\Reportsammlung 3.0\Basisreports\Statis' +
+    'tik - Kreuztabelle Religionen.rtm'
+  Template.Format = ftASCII
+  Units = utMillimeters
+  AllowPrintToArchive = True
+  AllowPrintToFile = True
+  ArchiveFileName = '($MyDocuments)\ReportArchive.raf'
+  DeviceType = 'Screen'
+  DefaultFileDeviceType = 'PDF'
+  EmailSettings.ReportFormat = 'PDF'
+  EmailSettings.ConnectionSettings.MailService = 'SMTP'
+  EmailSettings.ConnectionSettings.WebMail.GmailSettings.OAuth2.AuthStorage = [oasAccessToken, oasRefreshToken]
+  EmailSettings.ConnectionSettings.WebMail.GmailSettings.OAuth2.RedirectURI = 'http://localhost'
+  EmailSettings.ConnectionSettings.WebMail.GmailSettings.OAuth2.RedirectPort = 0
+  EmailSettings.ConnectionSettings.WebMail.Outlook365Settings.OAuth2.AuthStorage = [oasAccessToken, oasRefreshToken]
+  EmailSettings.ConnectionSettings.WebMail.Outlook365Settings.OAuth2.RedirectURI = 'http://localhost'
+  EmailSettings.ConnectionSettings.WebMail.Outlook365Settings.OAuth2.RedirectPort = 0
+  EmailSettings.ConnectionSettings.EnableMultiPlugin = False
+  EmailSettings.DeleteFile = False
+  EmailSettings.Enabled = True
+  EmailSettings.PreviewInEmailClient = False
+  EmailSettings.ShowEmailDialog = True
+  Icon.Data = {
+    0000010001002020100000000000E80200001600000028000000200000004000
+    0000010004000000000080020000000000000000000000000000000000000000
+    000000008000008000000080800080000000800080008080000080808000C0C0
+    C0000000FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    00000000C00000CC00000000000000000000000C0C000C00C000000000000000
+    0000000C00CCC00000000000000000000000000C000000000000000000000000
+    00007777C7770000000000000000000000007BBBCBB7000F0000000000000000
+    00007BCCBBB700FFF00000000000000000007BBBBBB700FFF000000000000000
+    00007BBBBBB700FF770000000000000000007333BBB7000F7B00000000000000
+    000070003BB70007B7700000000000000000999903B700007B70000000000000
+    0001999990770000B7B700000000000000019999900000000B77000000000000
+    0001999990000000000010000000000000011999900000000071700000000000
+    0000111100000000001710000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    000000000000000000000000000000000000000000000000000000000000FFFF
+    FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF7
+    CFFFFFEBB7FFFFEC3FFFFFEF9FFFFF008FFFFF0087FFFF0083FFFF0083FFFF00
+    81FFFF00C1FFFF00C0FFFE00E0FFFC00E07FFC03F07FFC03F03FFC03F83FFE07
+    F83FFF0FFC7FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
+  LanguageID = 'Default'
+  OpenFile = False
+  OutlineSettings.CreateNode = True
+  OutlineSettings.CreatePageNodes = True
+  OutlineSettings.Enabled = True
+  OutlineSettings.Visible = True
+  ThumbnailSettings.Enabled = False
+  ThumbnailSettings.Visible = False
+  ThumbnailSettings.DeadSpace = 30
+  ThumbnailSettings.PageHighlight.Width = 3
+  ThumbnailSettings.ThumbnailSize = tsSmall
+  PDFSettings.Author = 'Schild-NRW'
+  PDFSettings.EmbedFontOptions = [efUseSubset]
+  PDFSettings.EncryptSettings.AllowCopy = True
+  PDFSettings.EncryptSettings.AllowInteract = True
+  PDFSettings.EncryptSettings.AllowModify = True
+  PDFSettings.EncryptSettings.AllowPrint = True
+  PDFSettings.EncryptSettings.AllowExtract = True
+  PDFSettings.EncryptSettings.AllowAssemble = True
+  PDFSettings.EncryptSettings.AllowQualityPrint = True
+  PDFSettings.EncryptSettings.Enabled = False
+  PDFSettings.EncryptSettings.KeyLength = kl40Bit
+  PDFSettings.EncryptSettings.EncryptionType = etRC4
+  PDFSettings.DigitalSignatureSettings.SignPDF = False
+  PDFSettings.FontEncoding = feUnicode
+  PDFSettings.ImageCompressionLevel = 1
+  PDFSettings.PDFAFormat = pafNone
+  PreviewFormSettings.PageBorder.mmPadding = 0
+  PreviewFormSettings.SinglePageOnly = True
+  PreviewFormSettings.ZoomSetting = zs100Percent
+  RTFSettings.AppName = 'ReportBuilder'
+  RTFSettings.Author = 'ReportBuilder'
+  RTFSettings.DefaultFont.Charset = DEFAULT_CHARSET
+  RTFSettings.DefaultFont.Color = clWindowText
+  RTFSettings.DefaultFont.Height = -15
+  RTFSettings.DefaultFont.Name = 'Calibri'
+  RTFSettings.DefaultFont.Style = []
+  RTFSettings.Title = 'Report'
+  TextFileName = '($MyDocuments)\Report.pdf'
+  TextSearchSettings.DefaultString = '<Suchtext>'
+  TextSearchSettings.Enabled = True
+  XLSSettings.AppName = 'ReportBuilder'
+  XLSSettings.Author = 'Schild-NRW'
+  XLSSettings.Subject = 'Report'
+  XLSSettings.Title = 'Report'
+  XLSSettings.WorksheetName = 'Report'
+  CloudDriveSettings.DropBoxSettings.OAuth2.AuthStorage = [oasAccessToken, oasRefreshToken]
+  CloudDriveSettings.DropBoxSettings.OAuth2.RedirectURI = 'http://localhost'
+  CloudDriveSettings.DropBoxSettings.OAuth2.RedirectPort = 0
+  CloudDriveSettings.DropBoxSettings.DirectorySupport = True
+  CloudDriveSettings.GoogleDriveSettings.OAuth2.AuthStorage = [oasAccessToken, oasRefreshToken]
+  CloudDriveSettings.GoogleDriveSettings.OAuth2.RedirectURI = 'http://localhost'
+  CloudDriveSettings.GoogleDriveSettings.OAuth2.RedirectPort = 0
+  CloudDriveSettings.GoogleDriveSettings.DirectorySupport = False
+  CloudDriveSettings.OneDriveSettings.OAuth2.AuthStorage = [oasAccessToken, oasRefreshToken]
+  CloudDriveSettings.OneDriveSettings.OAuth2.RedirectURI = 'http://localhost'
+  CloudDriveSettings.OneDriveSettings.OAuth2.RedirectPort = 0
+  CloudDriveSettings.OneDriveSettings.DirectorySupport = True
+  Left = 128
+  Top = 8
+  Version = '22.06'
+  mmColumnWidth = 165000
+  object ppHeaderBand1: TppHeaderBand
+    Border.Color = 4993567
+    Border.Weight = 0.750000000000000000
+    Border.mmPadding = 0
+    mmBottomOffset = 0
+    mmHeight = 16933
+    mmPrintPosition = 0
+    object ppLabel4: TppLabel
+      DesignLayer = ppDesignLayer1
+      UserName = 'Listenbezeichnung'
+      AutoSize = False
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 1.000000000000000000
+      Border.mmPadding = 0
+      Caption = 'Religionsstatistik'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 16
+      Font.Style = [fsBold]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      Transparent = True
+      VerticalAlignment = avCenter
+      mmHeight = 7197
+      mmLeft = 0
+      mmTop = 0
+      mmWidth = 267000
+      BandType = 0
+      LayerName = Foreground
+    end
+    object ppDBText2: TppDBText
+      DesignLayer = ppDesignLayer1
+      UserName = 'dbSchuljahrAbschnitt'
+      AutoSize = True
+      Border.mmPadding = 0
+      DataField = 'SchuljahrUndAbschnittText'
+      DataPipeline = dmPipelines.EigeneSchule
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 9
+      Font.Style = []
+      ParentDataPipeline = False
+      TextAlignment = taRightJustified
+      Transparent = True
+      DataPipelineName = 'EigeneSchule'
+      mmHeight = 3704
+      mmLeft = 227000
+      mmTop = 7500
+      mmWidth = 40000
+      BandType = 0
+      LayerName = Foreground
+    end
+    object ppDBText8: TppDBText
+      DesignLayer = ppDesignLayer1
+      UserName = 'dbSchuleBezeichnung'
+      AutoSize = True
+      Border.mmPadding = 0
+      DataField = 'Bezeichnung1'
+      DataPipeline = dmPipelines.EigeneSchule
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 9
+      Font.Style = []
+      ParentDataPipeline = False
+      Transparent = True
+      DataPipelineName = 'EigeneSchule'
+      mmHeight = 3704
+      mmLeft = 0
+      mmTop = 7500
+      mmWidth = 19844
+      BandType = 0
+      LayerName = Foreground
+    end
+  end
+  object ppDetailBand1: TppDetailBand
+    Border.Color = 10516052
+    Border.Weight = 0.750000000000000000
+    Border.mmPadding = 0
+    PrintHeight = phDynamic
+    mmBottomOffset = 0
+    mmHeight = 5200
+    mmPrintPosition = 0
+    object ppCrossTab1: TppCrossTab
+      DesignLayer = ppDesignLayer1
+      UserName = 'Kreuztabelle'
+      DataPipeline = dmPipelines.Schueler
+      ParentDataPipeline = False
+      Stretch = True
+      Style = 'Standard'
+      DataPipelineName = 'Schueler'
+      mmHeight = 5200
+      mmLeft = 0
+      mmTop = 0
+      mmWidth = 267000
+      BandType = 4
+      LayerName = Foreground
+      mmBottomOffset = 0
+      mmOverFlowOffset = 0
+      mmStopPosition = 0
+      mmMinHeight = 0
+      object TppGrandTotal
+        ChildType = 6
+        object TppTotalCaptionDef
+          ChildType = 4
+          Alignment = taRightJustify
+          Color = 13158600
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Name = 'Calibri'
+          Font.Size = 8
+          Font.Style = [fsBold]
+          RTLReading = False
+        end
+        object TppTotalDef
+          ChildType = 3
+          Color = 13158600
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Name = 'Calibri'
+          Font.Size = 8
+          Font.Style = [fsBold]
+          RTLReading = False
+        end
+      end
+      object TppGrandTotal
+        ChildType = 7
+        object TppTotalCaptionDef
+          ChildType = 4
+          Color = 15790320
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Name = 'Calibri'
+          Font.Size = 8
+          Font.Style = [fsBold]
+          RTLReading = False
+        end
+        object TppTotalDef
+          ChildType = 3
+          Color = 15790320
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clBlack
+          Font.Name = 'Calibri'
+          Font.Size = 8
+          Font.Style = [fsBold]
+          RTLReading = False
+        end
+      end
+      object TppColumnDef
+        FieldAlias = 'ASDJahrgang'
+        FieldName = 'ASDJahrgang'
+        Orientation = orLeftToRight
+        Color = clWhite
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Name = 'Calibri'
+        Font.Size = 8
+        Font.Style = []
+        RTLReading = False
+        object TppSubTotal
+          ChildType = 5
+          object TppTotalCaptionDef
+            ChildType = 4
+            Color = 15790320
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Name = 'Calibri'
+            Font.Size = 8
+            Font.Style = []
+            RTLReading = False
+          end
+          object TppTotalDef
+            ChildType = 3
+            Color = clWindow
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Name = 'Calibri'
+            Font.Size = 8
+            Font.Style = []
+            RTLReading = False
+          end
+        end
+      end
+      object TppColumnDef
+        FieldAlias = 'Klasse'
+        FieldName = 'Klasse'
+        Orientation = orLeftToRight
+        Color = clWhite
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Name = 'Calibri'
+        Font.Size = 8
+        Font.Style = []
+        RTLReading = False
+        object TppSubTotal
+          ChildType = 5
+          object TppTotalCaptionDef
+            ChildType = 4
+            Color = clWhite
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Name = 'Calibri'
+            Font.Size = 8
+            Font.Style = []
+            RTLReading = False
+            Visible = False
+          end
+          object TppTotalDef
+            ChildType = 3
+            Color = clWhite
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Name = 'Calibri'
+            Font.Size = 8
+            Font.Style = []
+            RTLReading = False
+            Visible = False
+          end
+        end
+      end
+      object TppColumnDef
+        FieldAlias = 'GeschlechtMW'
+        FieldName = 'GeschlechtMW'
+        Orientation = orLeftToRight
+        Color = clWhite
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Name = 'Calibri'
+        Font.Size = 8
+        Font.Style = []
+        RTLReading = False
+        object TppSubTotal
+          ChildType = 5
+          object TppTotalCaptionDef
+            ChildType = 4
+            Color = clWhite
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Name = 'Arial'
+            Font.Size = 8
+            Font.Style = []
+            RTLReading = False
+          end
+          object TppTotalDef
+            ChildType = 3
+            Color = clWhite
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Name = 'Arial'
+            Font.Size = 8
+            Font.Style = []
+            RTLReading = False
+          end
+        end
+      end
+      object TppRowDef
+        ChildType = 1
+        FieldAlias = 'ReligionZeugnisbez'
+        FieldName = 'ReligionZeugnisbez'
+        Orientation = orLeftToRight
+        Color = clWhite
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Name = 'Calibri'
+        Font.Size = 8
+        Font.Style = []
+        RTLReading = False
+        SkipNulls = False
+        object TppSubTotal
+          ChildType = 5
+          object TppTotalCaptionDef
+            ChildType = 4
+            Color = clWhite
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Name = 'Calibri'
+            Font.Size = 8
+            Font.Style = []
+            RTLReading = False
+            Visible = False
+          end
+          object TppTotalDef
+            ChildType = 3
+            Color = clWhite
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clWindowText
+            Font.Name = 'Calibri'
+            Font.Size = 8
+            Font.Style = []
+            RTLReading = False
+            Visible = False
+          end
+        end
+      end
+      object TppValueDef
+        ChildType = 2
+        FieldAlias = 'ID'
+        FieldName = 'ID'
+        Color = clWhite
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Name = 'Calibri'
+        Font.Size = 8
+        Font.Style = []
+        RTLReading = False
+        object TppValueCaptionDef
+          ChildType = 8
+          CalcType = dcCount
+          Color = clWhite
+          Font.Charset = ANSI_CHARSET
+          Font.Color = clWindowText
+          Font.Name = 'Calibri'
+          Font.Size = 8
+          Font.Style = []
+          RTLReading = False
+        end
+      end
+    end
+  end
+  object ppFooterBand1: TppFooterBand
+    Border.mmPadding = 0
+    mmBottomOffset = 0
+    mmHeight = 4763
+    mmPrintPosition = 0
+    object ppLine1: TppLine
+      DesignLayer = ppDesignLayer1
+      UserName = 'AbgrenzungslinieFuss'
+      Border.mmPadding = 0
+      Pen.Color = 4993567
+      ParentWidth = True
+      Weight = 0.750000000000000000
+      mmHeight = 2000
+      mmLeft = 0
+      mmTop = 500
+      mmWidth = 267000
+      BandType = 8
+      LayerName = Foreground
+    end
+    object ppSystemVariable1: TppSystemVariable
+      DesignLayer = ppDesignLayer1
+      UserName = 'Datum'
+      Border.mmPadding = 0
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 9
+      Font.Style = []
+      Transparent = True
+      mmHeight = 3598
+      mmLeft = 0
+      mmTop = 1000
+      mmWidth = 14288
+      BandType = 8
+      LayerName = Foreground
+    end
+    object ppSystemVariable2: TppSystemVariable
+      DesignLayer = ppDesignLayer1
+      UserName = 'Dokumentenname'
+      Border.mmPadding = 0
+      VarType = vtDocumentName
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 9
+      Font.Style = []
+      TextAlignment = taCentered
+      Transparent = True
+      mmHeight = 3598
+      mmLeft = 87961
+      mmTop = 1000
+      mmWidth = 91282
+      BandType = 8
+      LayerName = Foreground
+    end
+    object ppSystemVariable3: TppSystemVariable
+      DesignLayer = ppDesignLayer1
+      UserName = 'Seitenzahl'
+      Border.mmPadding = 0
+      VarType = vtPageSetDesc
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 9
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 3598
+      mmLeft = 247000
+      mmTop = 1000
+      mmWidth = 20000
+      BandType = 8
+      LayerName = Foreground
+    end
+  end
+  object raCodeModule1: TraCodeModule
+    ProgramStream = {
+      01060F5472614576656E7448616E646C65720B50726F6772616D4E616D65061C
+      4B7265757A746162656C6C654F6E47657443617074696F6E546578740B50726F
+      6772616D54797065070B747450726F63656475726506536F75726365142B0200
+      0070726F636564757265204B7265757A746162656C6C654F6E47657443617074
+      696F6E546578742861456C656D656E743A20547070456C656D656E743B206143
+      6F6C756D6E3A20496E74656765723B2061526F773A20496E74656765723B2063
+      6F6E73742061446973706C6179466F726D61743A20537472696E673B20615661
+      6C75653A2056617269616E743B207661722061546578743A20537472696E6729
+      3B0D0A626567696E0D0A0D0A20204966206154657874203D20274C617566656E
+      646572205AC3A4686C657220766F6E20494427205468656E206154657874203A
+      3D2027273B0D0A20204966206154657874203D202747657363686C656368744D
+      5727205468656E206154657874203A3D202747657363686C65636874273B0D0A
+      20204966206154657874203D20274153444A61687267616E6727205468656E20
+      6154657874203A3D20274A672E273B0D0A20204966206154657874203D20276D
+      C3A46E6E6C69636827205468656E206154657874203A3D20276D273B0D0A2020
+      4966206154657874203D2027776569626C69636827205468656E206154657874
+      203A3D202777273B0D0A656E643B202020202020202020202020202020202020
+      2020202020202020202020202020202020202020202020202020202020202020
+      2020202020202020202020202020202020202020202020202020202020202020
+      2020202020202020202020202020202020202020202020202020202020202020
+      202020202020202020200D0A0D436F6D706F6E656E744E616D65060C4B726575
+      7A746162656C6C65094576656E744E616D6506104F6E47657443617074696F6E
+      54657874074576656E7449440238084361726574506F73010236020500000106
+      0F5472614576656E7448616E646C65720B50726F6772616D4E616D6506214B72
+      65757A746162656C6C654F6E476574546F74616C43617074696F6E546578740B
+      50726F6772616D54797065070B747450726F63656475726506536F7572636514
+      9D00000070726F636564757265204B7265757A746162656C6C654F6E47657454
+      6F74616C43617074696F6E546578742861456C656D656E743A20547070456C65
+      6D656E743B2061436F6C756D6E3A20496E74656765723B2061526F773A20496E
+      74656765723B207661722061546578743A20537472696E67293B0D0A62656769
+      6E0D0A0D0A20206154657874203A3D202027E28891273B0D0A0D0A656E643B0D
+      0A0D436F6D706F6E656E744E616D65060C4B7265757A746162656C6C65094576
+      656E744E616D6506154F6E476574546F74616C43617074696F6E546578740745
+      76656E744944023C084361726574506F7301020F0204000000}
+  end
+  object ppDesignLayers1: TppDesignLayers
+    object ppDesignLayer1: TppDesignLayer
+      UserName = 'Foreground'
+      LayerType = ltBanded
+      Index = 0
+    end
+  end
+  object ppParameterList2: TppParameterList
+    object ppArchivierung: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      DataType = dtString
+      LookupList.Strings = (
+        'immer'
+        'nie'
+        'Schildvorgabe')
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = ''
+      UserName = 'Archivierung'
+    end
+    object ppParameter1: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = '"J. Raffenberg"'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'J. Raffenberg'
+      UserName = 'Autoren'
+    end
+    object ppParameter2: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = '17.04.2025'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = '17.04.2025'
+      UserName = 'Versionsdatum'
+    end
+  end
+end
