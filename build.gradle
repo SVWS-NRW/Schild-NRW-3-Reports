@@ -4,14 +4,14 @@ plugins {
 }
 
 group = 'de.nrw.schule.svws'
-version = '1.1.1'
+version = '1.0.0'
 
 
 publishing {
     repositories {
         maven {
             name = "GitHubPackages"
-            url = "https://maven.pkg.github.com/SVWS-NRW/Schild-NRW-Reports"
+            url = "https://maven.pkg.github.com/SVWS-NRW/Schild-NRW-3-Reports"
             credentials {
             	username = System.getenv("GITHUB_ACTOR")
                 password = System.getenv("GITHUB_TOKEN")
@@ -20,8 +20,8 @@ publishing {
     }
     publications {
         mavenZip(MavenPublication) {
-            artifact  'build/Schild-NRW-Reports.zip'
-            artifactId = 'svws-schild-nrw-reports'
+            artifact  'build/Schild-NRW-3-Reports.zip'
+            artifactId = 'svws-schild-nrw-3-reports'
             pom {
                 name = 'SVWS Schild-NRW-Reports'
                 description = 'Diese Bibliothek stellt das ZIP-Archiv für den Schild3.0-Installer für die Dateien der Schild-NRW-Reports zur Verfügung.'
@@ -33,9 +33,9 @@ publishing {
                     }
                 }
                 scm {
-                    connection = 'scm:git@github.com/SVWS-NRW/Schild-NRW-Reports'
-                    developerConnection = 'scm:git@github.com/SVWS-NRW/Schild-NRW-Reports.git'
-                    url = 'https://github.com/SVWS-NRW/Schild-NRW-Reports.git'
+                    connection = 'scm:git@github.com/SVWS-NRW/Schild-NRW-3-Reports'
+                    developerConnection = 'scm:git@github.com/SVWS-NRW/Schild-NRW-3-Reports.git'
+                    url = 'https://github.com/SVWS-NRW/Schild-NRW-3-Reports.git'
                 }
             }
         }
