@@ -137,7 +137,7 @@ object RepOrt: TppReport
       UserName = 'Schuelerstammblatt'
       Border.BorderPositions = [bpTop, bpBottom]
       Border.Color = 10516052
-      Border.Weight = 2.000000000000000000
+      Border.Weight = 1.000000000000000000
       Border.mmPadding = 0
       Caption = 'EIGENE SCHULE INFORMATIONEN'
       Color = 16051687
@@ -2804,18 +2804,18 @@ object RepOrt: TppReport
   object ppFooterBand1: TppFooterBand
     Border.mmPadding = 0
     mmBottomOffset = 0
-    mmHeight = 4763
+    mmHeight = 5000
     mmPrintPosition = 0
     object ppLine1: TppLine
       DesignLayer = ppDesignLayer6
       UserName = 'AbgrenzungslinieFuss'
       Border.mmPadding = 0
-      Pen.Color = 4993567
+      Pen.Color = 4605510
       ParentWidth = True
       Weight = 0.750000000000000000
-      mmHeight = 2000
+      mmHeight = 1000
       mmLeft = 0
-      mmTop = 0
+      mmTop = 500
       mmWidth = 185000
       BandType = 8
       LayerName = Foreground1
@@ -3023,11 +3023,11 @@ object RepOrt: TppReport
     object ppParameter2: TppParameter
       AutoSearchSettings.LogicalPrefix = []
       AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = '17.04.2025'
+      AutoSearchSettings.SearchExpression = '01.06.2025'
       DataType = dtString
       LookupSettings.DisplayType = dtNameOnly
       LookupSettings.SortOrder = soName
-      Value = '17.04.2025'
+      Value = '01.06.2025'
       UserName = 'Versionsdatum'
     end
   end

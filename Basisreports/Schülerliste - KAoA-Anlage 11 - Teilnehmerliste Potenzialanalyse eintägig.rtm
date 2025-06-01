@@ -1655,7 +1655,7 @@ object RepOrt: TppReport
           DesignLayer = ppDesignLayer1
           UserName = 'TableCell9'
           Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
-          Border.Weight = 2.000000000000000000
+          Border.Weight = 1.000000000000000000
           Border.mmPadding = 1058
           Brush.Style = bsClear
           Padding = 1.057999968528748000
@@ -1900,7 +1900,7 @@ object RepOrt: TppReport
           DesignLayer = ppDesignLayer1
           UserName = 'TableCell23'
           Border.BorderPositions = [bpLeft, bpRight, bpBottom]
-          Border.Weight = 2.000000000000000000
+          Border.Weight = 1.000000000000000000
           Border.mmPadding = 1058
           Brush.Style = bsClear
           Padding = 1.057999968528748000
@@ -2826,11 +2826,11 @@ object RepOrt: TppReport
     object ppParameter2: TppParameter
       AutoSearchSettings.LogicalPrefix = []
       AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = '17.04.2025'
+      AutoSearchSettings.SearchExpression = '01.06.2025'
       DataType = dtString
       LookupSettings.DisplayType = dtNameOnly
       LookupSettings.SortOrder = soName
-      Value = '17.04.2025'
+      Value = '01.06.2025'
       UserName = 'Versionsdatum'
     end
     object ppParameter3: TppParameter

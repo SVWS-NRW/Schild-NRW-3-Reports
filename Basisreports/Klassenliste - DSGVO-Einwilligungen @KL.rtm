@@ -133,7 +133,7 @@ object RepOrt: TppReport
     Border.BorderPositions = [bpLeft, bpRight, bpBottom]
     Border.Color = 4605510
     Border.Visible = True
-    Border.Weight = 0.500000000000000000
+    Border.Weight = 0.750000000000000000
     Border.mmPadding = 0
     PrintHeight = phDynamic
     mmBottomOffset = 0
@@ -169,7 +169,7 @@ object RepOrt: TppReport
         ParentHeight = True
         Position = lpLeft
         StretchWithParent = True
-        Weight = 0.500000000000000000
+        Weight = 0.750000000000000000
         mmHeight = 5080
         mmLeft = 10000
         mmTop = 0
@@ -185,7 +185,7 @@ object RepOrt: TppReport
         ParentHeight = True
         Position = lpLeft
         StretchWithParent = True
-        Weight = 0.500000000000000000
+        Weight = 0.750000000000000000
         mmHeight = 5080
         mmLeft = 80000
         mmTop = 0
@@ -200,7 +200,7 @@ object RepOrt: TppReport
         ParentHeight = True
         Position = lpLeft
         StretchWithParent = True
-        Weight = 0.500000000000000000
+        Weight = 0.750000000000000000
         mmHeight = 5080
         mmLeft = 145000
         mmTop = 0
@@ -215,7 +215,7 @@ object RepOrt: TppReport
         ParentHeight = True
         Position = lpLeft
         StretchWithParent = True
-        Weight = 0.500000000000000000
+        Weight = 0.750000000000000000
         mmHeight = 5080
         mmLeft = 156000
         mmTop = 0
@@ -426,8 +426,8 @@ object RepOrt: TppReport
       UserName = 'AbgrenzungslinieFuss'
       Border.mmPadding = 0
       ParentWidth = True
-      Weight = 0.500000000000000000
-      mmHeight = 2000
+      Weight = 0.750000000000000000
+      mmHeight = 1000
       mmLeft = 0
       mmTop = 500
       mmWidth = 170000
@@ -630,7 +630,7 @@ object RepOrt: TppReport
       Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
       Border.Color = 4605510
       Border.Visible = True
-      Border.Weight = 0.500000000000000000
+      Border.Weight = 0.750000000000000000
       Border.mmPadding = 0
       mmBottomOffset = 0
       mmHeight = 18000
@@ -643,7 +643,7 @@ object RepOrt: TppReport
         ParentHeight = True
         Position = lpLeft
         StretchWithParent = True
-        Weight = 0.500000000000000000
+        Weight = 0.750000000000000000
         mmHeight = 18000
         mmLeft = 10000
         mmTop = 0
@@ -658,7 +658,7 @@ object RepOrt: TppReport
         Border.mmPadding = 0
         ParentHeight = True
         Position = lpLeft
-        Weight = 0.500000000000000000
+        Weight = 0.750000000000000000
         mmHeight = 18000
         mmLeft = 80000
         mmTop = 0
@@ -673,7 +673,7 @@ object RepOrt: TppReport
         Border.mmPadding = 0
         ParentHeight = True
         Position = lpLeft
-        Weight = 0.500000000000000000
+        Weight = 0.750000000000000000
         mmHeight = 18000
         mmLeft = 145000
         mmTop = 0
@@ -829,7 +829,7 @@ object RepOrt: TppReport
         Border.mmPadding = 0
         ParentHeight = True
         Position = lpLeft
-        Weight = 0.500000000000000000
+        Weight = 0.750000000000000000
         mmHeight = 18000
         mmLeft = 156000
         mmTop = 0
@@ -946,11 +946,11 @@ object RepOrt: TppReport
     object ppParameter2: TppParameter
       AutoSearchSettings.LogicalPrefix = []
       AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = '17.04.2025'
+      AutoSearchSettings.SearchExpression = '01.06.2025'
       DataType = dtString
       LookupSettings.DisplayType = dtNameOnly
       LookupSettings.SortOrder = soName
-      Value = '17.04.2025'
+      Value = '01.06.2025'
       UserName = 'Versionsdatum'
     end
     object ppParameter3: TppParameter
