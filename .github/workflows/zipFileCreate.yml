@@ -28,7 +28,7 @@ jobs:
       - run: mkdir .zip
 
       # Schritt 3: ZIP-Archiv erstellen, bestimmte Dateien/Ordner ausschließen
-      - run: zip -r ."/.zip/Reports-v0.8.${{ github.run_number }}-Beta-$(date +'%d.%m.%Y').zip" . -x ".git/*" ".github/*" "gradle/*" ".zip/" ".gitignore" "LICENSE" "README.md" "build.gradle" "gradlew" "gradlew.bat" "*.docx" "Oberstufenpaket/*" ".project"
+      - run: zip -r ."/.zip/Basisreports-SchILD-NRW-3-v0.8.${{ github.run_number }}-Beta-$(date +'%d.%m.%Y').zip" . -x ".git/*" ".github/*" "gradle/*" ".zip/" ".gitignore" "LICENSE" "README.md" "build.gradle" "gradlew" "gradlew.bat" "*.docx" "Oberstufenpaket/*" ".project"
 
       # Schritt 4: Release auf GitHub erstellen oder aktualisieren, ZIP anhängen
       - uses: ncipollo/release-action@v1
