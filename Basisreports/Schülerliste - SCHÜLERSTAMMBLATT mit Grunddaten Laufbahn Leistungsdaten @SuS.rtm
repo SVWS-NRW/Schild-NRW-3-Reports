@@ -18,7 +18,7 @@ object RepOrt: TppReport
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
   Template.FileName =
-    'C:\Users\ra\OneDrive - neg-velbert.de\Programme\SVWS-Arbeitsverzeichnis\SchILD-Reports\Reportsammlung 3.0\Basisreports\Sch''#252''lerliste - SCH''#220''LERSTAMMBLATT mit Grunddaten Laufbahn Leistungsdaten @SuS.rtm'
+    'C:\Users\jraff\OneDrive - neg-velbert.de\Programme\SVWS-Arbeitsverzeichnis\SchILD-Reports\Reportsammlung 3.0\Basisreports\Sch''#252''lerliste - SCH''#220''LERSTAMMBLATT mit Grunddaten Laufbahn Leistungsdaten @SuS.rtm'
   Template.Format = ftASCII
   Units = utPrinterPixels
   AllowPrintToArchive = True
@@ -4432,7 +4432,7 @@ object RepOrt: TppReport
                   DesignLayer = ppDesignLayer5
                   UserName = 'DBBemerkung'
                   Border.Style = psDash
-                  Border.Weight = 0.500000000000000000
+                  Border.Weight = 0.750000000000000000
                   Border.mmPadding = 0
                   CharWrap = False
                   DataField = 'Bemerkung'
@@ -7044,7 +7044,7 @@ object RepOrt: TppReport
       Border.mmPadding = 0
       ParentWidth = True
       Weight = 0.750000000000000000
-      mmHeight = 2000
+      mmHeight = 1000
       mmLeft = 0
       mmTop = 500
       mmWidth = 170000
@@ -7157,7 +7157,7 @@ object RepOrt: TppReport
         UserName = 'Schuelerstammblatt'
         Border.BorderPositions = [bpTop, bpBottom]
         Border.Color = 10516052
-        Border.Weight = 2.000000000000000000
+        Border.Weight = 1.000000000000000000
         Border.mmPadding = 0
         Caption = 'S c h '#252' l e r s t a m m b l a t t'
         Color = 16051687
@@ -10287,11 +10287,11 @@ object RepOrt: TppReport
     object ppParameter2: TppParameter
       AutoSearchSettings.LogicalPrefix = []
       AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = '17.04.2025'
+      AutoSearchSettings.SearchExpression = '01.06.2025'
       DataType = dtString
       LookupSettings.DisplayType = dtNameOnly
       LookupSettings.SortOrder = soName
-      Value = '17.04.2025'
+      Value = '01.06.2025'
       UserName = 'Versionsdatum'
     end
   end

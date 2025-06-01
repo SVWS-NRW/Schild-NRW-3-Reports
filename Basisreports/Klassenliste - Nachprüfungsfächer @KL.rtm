@@ -169,7 +169,7 @@ object RepOrt: TppReport
         ParentHeight = True
         Position = lpLeft
         StretchWithParent = True
-        Weight = 0.500000000000000000
+        Weight = 0.750000000000000000
         mmHeight = 5080
         mmLeft = 80000
         mmTop = 0
@@ -185,7 +185,7 @@ object RepOrt: TppReport
         ParentHeight = True
         Position = lpLeft
         StretchWithParent = True
-        Weight = 0.500000000000000000
+        Weight = 0.750000000000000000
         mmHeight = 5080
         mmLeft = 10000
         mmTop = 0
@@ -285,8 +285,8 @@ object RepOrt: TppReport
       Border.mmPadding = 0
       Pen.Color = 4605510
       ParentWidth = True
-      Weight = 0.500000000000000000
-      mmHeight = 2000
+      Weight = 0.750000000000000000
+      mmHeight = 1000
       mmLeft = 0
       mmTop = 500
       mmWidth = 170000
@@ -504,7 +504,7 @@ object RepOrt: TppReport
         ParentHeight = True
         Position = lpLeft
         StretchWithParent = True
-        Weight = 0.500000000000000000
+        Weight = 0.750000000000000000
         mmHeight = 6000
         mmLeft = 10000
         mmTop = 0
@@ -521,7 +521,7 @@ object RepOrt: TppReport
         ParentHeight = True
         Position = lpLeft
         StretchWithParent = True
-        Weight = 0.500000000000000000
+        Weight = 0.750000000000000000
         mmHeight = 6000
         mmLeft = 80000
         mmTop = 0
@@ -708,11 +708,11 @@ object RepOrt: TppReport
     object ppParameter2: TppParameter
       AutoSearchSettings.LogicalPrefix = []
       AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = '15.03.2025'
+      AutoSearchSettings.SearchExpression = '01.06.2025'
       DataType = dtString
       LookupSettings.DisplayType = dtNameOnly
       LookupSettings.SortOrder = soName
-      Value = '15.03.2025'
+      Value = '01.06.2025'
       UserName = 'Versionsdatum'
     end
     object ppParameter3: TppParameter

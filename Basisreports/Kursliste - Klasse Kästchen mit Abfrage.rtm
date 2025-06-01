@@ -190,7 +190,7 @@ object RepOrt: TppReport
             DesignLayer = ppDesignLayer2
             UserName = 'TrennlinieK1'
             Border.mmPadding = 0
-            Pen.Color = 4993567
+            Pen.Color = 4605510
             ParentHeight = True
             Position = lpLeft
             StretchWithParent = True
@@ -206,7 +206,7 @@ object RepOrt: TppReport
             DesignLayer = ppDesignLayer2
             UserName = 'TrennlinieK2'
             Border.mmPadding = 0
-            Pen.Color = 4993567
+            Pen.Color = 4605510
             ParentHeight = True
             Position = lpLeft
             StretchWithParent = True
@@ -222,7 +222,7 @@ object RepOrt: TppReport
             DesignLayer = ppDesignLayer2
             UserName = 'TrennlinieK3'
             Border.mmPadding = 0
-            Pen.Color = 4993567
+            Pen.Color = 4605510
             ParentHeight = True
             Position = lpLeft
             StretchWithParent = True
@@ -238,7 +238,7 @@ object RepOrt: TppReport
             DesignLayer = ppDesignLayer2
             UserName = 'TrennlinieK4'
             Border.mmPadding = 0
-            Pen.Color = 4993567
+            Pen.Color = 4605510
             ParentHeight = True
             Position = lpLeft
             StretchWithParent = True
@@ -254,7 +254,7 @@ object RepOrt: TppReport
             DesignLayer = ppDesignLayer2
             UserName = 'TrennlinieK5'
             Border.mmPadding = 0
-            Pen.Color = 4993567
+            Pen.Color = 4605510
             ParentHeight = True
             Position = lpLeft
             StretchWithParent = True
@@ -270,7 +270,7 @@ object RepOrt: TppReport
             DesignLayer = ppDesignLayer2
             UserName = 'TrennlinieK6'
             Border.mmPadding = 0
-            Pen.Color = 4993567
+            Pen.Color = 4605510
             ParentHeight = True
             Position = lpLeft
             StretchWithParent = True
@@ -286,7 +286,7 @@ object RepOrt: TppReport
             DesignLayer = ppDesignLayer2
             UserName = 'TrennlinieK7'
             Border.mmPadding = 0
-            Pen.Color = 4993567
+            Pen.Color = 4605510
             ParentHeight = True
             Position = lpLeft
             StretchWithParent = True
@@ -302,7 +302,7 @@ object RepOrt: TppReport
             DesignLayer = ppDesignLayer2
             UserName = 'TrennlinieK8'
             Border.mmPadding = 0
-            Pen.Color = 4993567
+            Pen.Color = 4605510
             ParentHeight = True
             Position = lpLeft
             StretchWithParent = True
@@ -318,7 +318,7 @@ object RepOrt: TppReport
             DesignLayer = ppDesignLayer2
             UserName = 'TrennlinieK9'
             Border.mmPadding = 0
-            Pen.Color = 4993567
+            Pen.Color = 4605510
             ParentHeight = True
             Position = lpLeft
             StretchWithParent = True
@@ -334,7 +334,7 @@ object RepOrt: TppReport
             DesignLayer = ppDesignLayer2
             UserName = 'TrennlinieK10'
             Border.mmPadding = 0
-            Pen.Color = 4993567
+            Pen.Color = 4605510
             ParentHeight = True
             Position = lpLeft
             StretchWithParent = True
@@ -350,7 +350,7 @@ object RepOrt: TppReport
             DesignLayer = ppDesignLayer2
             UserName = 'TrennlinieK11'
             Border.mmPadding = 0
-            Pen.Color = 4993567
+            Pen.Color = 4605510
             ParentHeight = True
             Position = lpLeft
             StretchWithParent = True
@@ -726,7 +726,7 @@ object RepOrt: TppReport
             DesignLayer = ppDesignLayer2
             UserName = 'TrennlinieD1'
             Border.mmPadding = 0
-            Pen.Color = 4993567
+            Pen.Color = 4605510
             ParentHeight = True
             Position = lpLeft
             StretchWithParent = True
@@ -742,7 +742,7 @@ object RepOrt: TppReport
             DesignLayer = ppDesignLayer2
             UserName = 'TrennlinieD2'
             Border.mmPadding = 0
-            Pen.Color = 4993567
+            Pen.Color = 4605510
             ParentHeight = True
             Position = lpLeft
             StretchWithParent = True
@@ -758,7 +758,7 @@ object RepOrt: TppReport
             DesignLayer = ppDesignLayer2
             UserName = 'TrennlinieD11'
             Border.mmPadding = 0
-            Pen.Color = 4993567
+            Pen.Color = 4605510
             ParentHeight = True
             Position = lpLeft
             StretchWithParent = True
@@ -774,7 +774,7 @@ object RepOrt: TppReport
             DesignLayer = ppDesignLayer2
             UserName = 'TrennlinieD10'
             Border.mmPadding = 0
-            Pen.Color = 4993567
+            Pen.Color = 4605510
             ParentHeight = True
             Position = lpLeft
             StretchWithParent = True
@@ -790,7 +790,7 @@ object RepOrt: TppReport
             DesignLayer = ppDesignLayer2
             UserName = 'TrennlinieD9'
             Border.mmPadding = 0
-            Pen.Color = 4993567
+            Pen.Color = 4605510
             ParentHeight = True
             Position = lpLeft
             StretchWithParent = True
@@ -806,7 +806,7 @@ object RepOrt: TppReport
             DesignLayer = ppDesignLayer2
             UserName = 'TrennlinieD8'
             Border.mmPadding = 0
-            Pen.Color = 4993567
+            Pen.Color = 4605510
             ParentHeight = True
             Position = lpLeft
             StretchWithParent = True
@@ -822,7 +822,7 @@ object RepOrt: TppReport
             DesignLayer = ppDesignLayer2
             UserName = 'TrennlinieD7'
             Border.mmPadding = 0
-            Pen.Color = 4993567
+            Pen.Color = 4605510
             ParentHeight = True
             Position = lpLeft
             StretchWithParent = True
@@ -838,7 +838,7 @@ object RepOrt: TppReport
             DesignLayer = ppDesignLayer2
             UserName = 'TrennlinieD6'
             Border.mmPadding = 0
-            Pen.Color = 4993567
+            Pen.Color = 4605510
             ParentHeight = True
             Position = lpLeft
             StretchWithParent = True
@@ -854,7 +854,7 @@ object RepOrt: TppReport
             DesignLayer = ppDesignLayer2
             UserName = 'TrennlinieD5'
             Border.mmPadding = 0
-            Pen.Color = 4993567
+            Pen.Color = 4605510
             ParentHeight = True
             Position = lpLeft
             StretchWithParent = True
@@ -870,7 +870,7 @@ object RepOrt: TppReport
             DesignLayer = ppDesignLayer2
             UserName = 'TrennlinieD4'
             Border.mmPadding = 0
-            Pen.Color = 4993567
+            Pen.Color = 4605510
             ParentHeight = True
             Position = lpLeft
             StretchWithParent = True
@@ -886,7 +886,7 @@ object RepOrt: TppReport
             DesignLayer = ppDesignLayer2
             UserName = 'TrennlinieD3'
             Border.mmPadding = 0
-            Pen.Color = 4993567
+            Pen.Color = 4605510
             ParentHeight = True
             Position = lpLeft
             StretchWithParent = True
@@ -938,7 +938,7 @@ object RepOrt: TppReport
       Border.mmPadding = 0
       ParentWidth = True
       Weight = 0.750000000000000000
-      mmHeight = 2000
+      mmHeight = 1000
       mmLeft = 0
       mmTop = 500
       mmWidth = 170000
@@ -1228,11 +1228,11 @@ object RepOrt: TppReport
     object ppParameter2: TppParameter
       AutoSearchSettings.LogicalPrefix = []
       AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = '18.02.2024'
+      AutoSearchSettings.SearchExpression = '01.06.2025'
       DataType = dtString
       LookupSettings.DisplayType = dtNameOnly
       LookupSettings.SortOrder = soName
-      Value = '18.02.2024'
+      Value = '01.06.2025'
       UserName = 'Versionsdatum'
     end
   end

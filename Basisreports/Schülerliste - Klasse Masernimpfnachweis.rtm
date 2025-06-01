@@ -215,7 +215,7 @@ object RepOrt: TppReport
       DesignLayer = ppDesignLayer1
       UserName = 'TrennlinieK1'
       Border.mmPadding = 0
-      Pen.Color = 4993567
+      Pen.Color = 4605510
       ParentHeight = True
       Position = lpLeft
       StretchWithParent = True
@@ -231,7 +231,7 @@ object RepOrt: TppReport
       DesignLayer = ppDesignLayer1
       UserName = 'TrennlinieK2'
       Border.mmPadding = 0
-      Pen.Color = 4993567
+      Pen.Color = 4605510
       ParentHeight = True
       Position = lpLeft
       StretchWithParent = True
@@ -247,7 +247,7 @@ object RepOrt: TppReport
       DesignLayer = ppDesignLayer1
       UserName = 'TrennlinieK3'
       Border.mmPadding = 0
-      Pen.Color = 4993567
+      Pen.Color = 4605510
       ParentHeight = True
       Position = lpLeft
       StretchWithParent = True
@@ -370,7 +370,7 @@ object RepOrt: TppReport
       DesignLayer = ppDesignLayer1
       UserName = 'TrennlinieD1'
       Border.mmPadding = 0
-      Pen.Color = 4993567
+      Pen.Color = 4605510
       ParentHeight = True
       Position = lpLeft
       StretchWithParent = True
@@ -386,7 +386,7 @@ object RepOrt: TppReport
       DesignLayer = ppDesignLayer1
       UserName = 'TrennlinieD2'
       Border.mmPadding = 0
-      Pen.Color = 4993567
+      Pen.Color = 4605510
       ParentHeight = True
       Position = lpLeft
       StretchWithParent = True
@@ -402,7 +402,7 @@ object RepOrt: TppReport
       DesignLayer = ppDesignLayer1
       UserName = 'TrennlinieD3'
       Border.mmPadding = 0
-      Pen.Color = 4993567
+      Pen.Color = 4605510
       ParentHeight = True
       Position = lpLeft
       StretchWithParent = True
@@ -513,7 +513,7 @@ object RepOrt: TppReport
       Border.mmPadding = 0
       ParentWidth = True
       Weight = 0.750000000000000000
-      mmHeight = 2000
+      mmHeight = 1000
       mmLeft = 0
       mmTop = 500
       mmWidth = 170000
@@ -633,11 +633,11 @@ object RepOrt: TppReport
     object ppParameter2: TppParameter
       AutoSearchSettings.LogicalPrefix = []
       AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = '18.04.2025'
+      AutoSearchSettings.SearchExpression = '01.06.2025'
       DataType = dtString
       LookupSettings.DisplayType = dtNameOnly
       LookupSettings.SortOrder = soName
-      Value = '18.04.2025'
+      Value = '01.06.2025'
       UserName = 'Versionsdatum'
     end
     object ppParameter3: TppParameter
