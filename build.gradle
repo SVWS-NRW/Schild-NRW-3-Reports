@@ -4,7 +4,7 @@ plugins {
 }
 
 group = 'de.nrw.schule.svws'
-version = '1.0.0'
+version = '0.0.1'
 
 
 publishing {
@@ -20,16 +20,16 @@ publishing {
     }
     publications {
         mavenZip(MavenPublication) {
-            artifact  'build/Schild-NRW-Reports.zip'
-            artifactId = 'svws-schild-nrw-reports'
+            artifact  'build/Schild-NRW-3-Reports.zip'
+            artifactId = 'svws-schild-nrw-3-reports'
             pom {
-                name = 'SVWS Schild-NRW-Reports'
+                name = 'SVWS Schild-NRW-3-Reports'
                 description = 'Diese Bibliothek stellt das ZIP-Archiv für den Schild3.0-Installer für die Dateien der Schild-NRW-Reports zur Verfügung.'
                 url = 'http://www.svws.nrw.de'
                 licenses {
                     license {
-                        name = 'BSD 3 License'
-                        url = 'https://opensource.org/license/bsd-3-clause'
+                        name = 'MIT License'
+                        url = 'http://www.opensource.org/licenses/mit-license.php'
                     }
                 }
                 scm {
@@ -54,7 +54,7 @@ task copySerienbriefe(type: Copy) {
 
 task doZip(type: Zip) {
 	metadataCharset 'utf-8'
-	archiveFileName = "Schild-NRW-Reports.zip"
+	archiveFileName = "Schild-NRW-3-Reports.zip"
     destinationDirectory = file("$buildDir")
     from "$buildDir/output"
 }

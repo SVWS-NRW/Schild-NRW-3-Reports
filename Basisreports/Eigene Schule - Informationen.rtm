@@ -1,0 +1,3034 @@
+object RepOrt: TppReport
+  AutoStop = False
+  DataPipeline = dmPipelines.EigeneSchule
+  PrinterSetup.BinName = 'Default'
+  PrinterSetup.DocumentName = 'Eigene Schule - Informationen.rtm'
+  PrinterSetup.Duplex = dpNone
+  PrinterSetup.PaperName = 'A4 210 x 297 mm'
+  PrinterSetup.PrinterName = 'Default'
+  PrinterSetup.SaveDeviceSettings = False
+  PrinterSetup.mmMarginBottom = 20000
+  PrinterSetup.mmMarginLeft = 15000
+  PrinterSetup.mmMarginRight = 10000
+  PrinterSetup.mmMarginTop = 20000
+  PrinterSetup.mmPaperHeight = 297000
+  PrinterSetup.mmPaperWidth = 210000
+  PrinterSetup.PaperSize = 9
+  SaveAsTemplate = True
+  Template.FileName = 
+    'C:\Users\jraff\OneDrive - neg-velbert.de\Programme\SVWS-Arbeitsv' +
+    'erzeichnis\SchILD-Reports\Reportsammlung 3.0\Basisreports\Eigene' +
+    ' Schule - Informationen.rtm'
+  Template.Format = ftASCII
+  Units = utMillimeters
+  AllowPrintToArchive = True
+  AllowPrintToFile = True
+  ArchiveFileName = '($MyDocuments)\ReportArchive.raf'
+  DeviceType = 'Screen'
+  DefaultFileDeviceType = 'PDF'
+  EmailSettings.ReportFormat = 'PDF'
+  EmailSettings.ConnectionSettings.MailService = 'SMTP'
+  EmailSettings.ConnectionSettings.WebMail.GmailSettings.OAuth2.AuthStorage = [oasAccessToken, oasRefreshToken]
+  EmailSettings.ConnectionSettings.WebMail.GmailSettings.OAuth2.RedirectURI = 'http://localhost'
+  EmailSettings.ConnectionSettings.WebMail.GmailSettings.OAuth2.RedirectPort = 0
+  EmailSettings.ConnectionSettings.WebMail.Outlook365Settings.OAuth2.AuthStorage = [oasAccessToken, oasRefreshToken]
+  EmailSettings.ConnectionSettings.WebMail.Outlook365Settings.OAuth2.RedirectURI = 'http://localhost'
+  EmailSettings.ConnectionSettings.WebMail.Outlook365Settings.OAuth2.RedirectPort = 0
+  EmailSettings.ConnectionSettings.EnableMultiPlugin = False
+  EmailSettings.DeleteFile = False
+  EmailSettings.Enabled = True
+  EmailSettings.PreviewInEmailClient = False
+  EmailSettings.ShowEmailDialog = True
+  Icon.Data = {
+    0000010001002020100000000000E80200001600000028000000200000004000
+    0000010004000000000080020000000000000000000000000000000000000000
+    000000008000008000000080800080000000800080008080000080808000C0C0
+    C0000000FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    00000000C00000CC00000000000000000000000C0C000C00C000000000000000
+    0000000C00CCC00000000000000000000000000C000000000000000000000000
+    00007777C7770000000000000000000000007BBBCBB7000F0000000000000000
+    00007BCCBBB700FFF00000000000000000007BBBBBB700FFF000000000000000
+    00007BBBBBB700FF770000000000000000007333BBB7000F7B00000000000000
+    000070003BB70007B7700000000000000000999903B700007B70000000000000
+    0001999990770000B7B700000000000000019999900000000B77000000000000
+    0001999990000000000010000000000000011999900000000071700000000000
+    0000111100000000001710000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    000000000000000000000000000000000000000000000000000000000000FFFF
+    FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF7
+    CFFFFFEBB7FFFFEC3FFFFFEF9FFFFF008FFFFF0087FFFF0083FFFF0083FFFF00
+    81FFFF00C1FFFF00C0FFFE00E0FFFC00E07FFC03F07FFC03F03FFC03F83FFE07
+    F83FFF0FFC7FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
+  LanguageID = 'Default'
+  OpenFile = False
+  OutlineSettings.CreateNode = True
+  OutlineSettings.CreatePageNodes = True
+  OutlineSettings.Enabled = False
+  OutlineSettings.Visible = False
+  ThumbnailSettings.Enabled = False
+  ThumbnailSettings.Visible = False
+  ThumbnailSettings.DeadSpace = 30
+  ThumbnailSettings.PageHighlight.Width = 3
+  ThumbnailSettings.ThumbnailSize = tsSmall
+  PDFSettings.Author = 'Schild-NRW'
+  PDFSettings.EmbedFontOptions = [efUseSubset]
+  PDFSettings.EncryptSettings.AllowCopy = True
+  PDFSettings.EncryptSettings.AllowInteract = True
+  PDFSettings.EncryptSettings.AllowModify = True
+  PDFSettings.EncryptSettings.AllowPrint = True
+  PDFSettings.EncryptSettings.AllowExtract = True
+  PDFSettings.EncryptSettings.AllowAssemble = True
+  PDFSettings.EncryptSettings.AllowQualityPrint = True
+  PDFSettings.EncryptSettings.Enabled = False
+  PDFSettings.EncryptSettings.KeyLength = kl40Bit
+  PDFSettings.EncryptSettings.EncryptionType = etRC4
+  PDFSettings.DigitalSignatureSettings.SignPDF = False
+  PDFSettings.FontEncoding = feUnicode
+  PDFSettings.ImageCompressionLevel = 1
+  PDFSettings.PDFAFormat = pafNone
+  PreviewFormSettings.PageBorder.mmPadding = 0
+  PreviewFormSettings.SinglePageOnly = True
+  PreviewFormSettings.ZoomSetting = zs100Percent
+  RTFSettings.AppName = 'ReportBuilder'
+  RTFSettings.Author = 'ReportBuilder'
+  RTFSettings.DefaultFont.Charset = DEFAULT_CHARSET
+  RTFSettings.DefaultFont.Color = clWindowText
+  RTFSettings.DefaultFont.Height = -15
+  RTFSettings.DefaultFont.Name = 'Calibri'
+  RTFSettings.DefaultFont.Style = []
+  RTFSettings.Title = 'Report'
+  TextFileName = '($MyDocuments)\Report.pdf'
+  TextSearchSettings.DefaultString = '<Suchtext>'
+  TextSearchSettings.Enabled = True
+  XLSSettings.AppName = 'ReportBuilder'
+  XLSSettings.Author = 'Schild-NRW'
+  XLSSettings.Subject = 'Report'
+  XLSSettings.Title = 'Report'
+  XLSSettings.WorksheetName = 'Report'
+  CloudDriveSettings.DropBoxSettings.OAuth2.AuthStorage = [oasAccessToken, oasRefreshToken]
+  CloudDriveSettings.DropBoxSettings.OAuth2.RedirectURI = 'http://localhost'
+  CloudDriveSettings.DropBoxSettings.OAuth2.RedirectPort = 0
+  CloudDriveSettings.DropBoxSettings.DirectorySupport = True
+  CloudDriveSettings.GoogleDriveSettings.OAuth2.AuthStorage = [oasAccessToken, oasRefreshToken]
+  CloudDriveSettings.GoogleDriveSettings.OAuth2.RedirectURI = 'http://localhost'
+  CloudDriveSettings.GoogleDriveSettings.OAuth2.RedirectPort = 0
+  CloudDriveSettings.GoogleDriveSettings.DirectorySupport = False
+  CloudDriveSettings.OneDriveSettings.OAuth2.AuthStorage = [oasAccessToken, oasRefreshToken]
+  CloudDriveSettings.OneDriveSettings.OAuth2.RedirectURI = 'http://localhost'
+  CloudDriveSettings.OneDriveSettings.OAuth2.RedirectPort = 0
+  CloudDriveSettings.OneDriveSettings.DirectorySupport = True
+  Left = 128
+  Top = 8
+  Version = '22.06'
+  mmColumnWidth = 165000
+  DataPipelineName = 'EigeneSchule'
+  object ppHeaderBand2: TppHeaderBand
+    Border.mmPadding = 0
+    mmBottomOffset = 0
+    mmHeight = 30000
+    mmPrintPosition = 0
+    object ppLabel1: TppLabel
+      DesignLayer = ppDesignLayer6
+      UserName = 'Schuelerstammblatt'
+      Border.BorderPositions = [bpTop, bpBottom]
+      Border.Color = 10516052
+      Border.Weight = 2.000000000000000000
+      Border.mmPadding = 0
+      Caption = 'EIGENE SCHULE INFORMATIONEN'
+      Color = 16051687
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 16
+      Font.Style = [fsBold]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      Transparent = True
+      mmHeight = 6879
+      mmLeft = 0
+      mmTop = 0
+      mmWidth = 78052
+      BandType = 0
+      LayerName = Foreground1
+    end
+    object ppDBImage2: TppDBImage
+      DesignLayer = ppDesignLayer6
+      UserName = 'DBSchulLogo'
+      AlignHorizontal = ahCenter
+      AlignVertical = avCenter
+      MaintainAspectRatio = True
+      Stretch = True
+      Border.mmPadding = 0
+      DataField = 'SchulLogo'
+      DataPipeline = dmPipelines.EigeneSchule
+      GraphicType = 'AutoDetect'
+      OnGetPicture = ReportImageOnGetPicture
+      ParentDataPipeline = False
+      DataPipelineName = 'EigeneSchule'
+      mmHeight = 23019
+      mmLeft = 153459
+      mmTop = 0
+      mmWidth = 31750
+      BandType = 0
+      LayerName = Foreground1
+    end
+  end
+  object ppDetailBand1: TppDetailBand
+    Border.Style = psClear
+    Border.mmPadding = 0
+    PrintHeight = phDynamic
+    mmBottomOffset = 0
+    mmHeight = 168275
+    mmPrintPosition = 0
+    object ppLabel22: TppLabel
+      DesignLayer = ppDesignLayer6
+      UserName = 'KontaktdatenUeberschrift'
+      AutoSize = False
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      Caption = 'Kontaktdaten'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 14
+      Font.Style = [fsBold, fsItalic]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      mmHeight = 6615
+      mmLeft = 0
+      mmTop = 0
+      mmWidth = 90000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel65: TppLabel
+      DesignLayer = ppDesignLayer6
+      UserName = 'SchulleitungUeberschrift'
+      AutoSize = False
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      Caption = 'Schulleitung'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 14
+      Font.Style = [fsBold, fsItalic]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      mmHeight = 6615
+      mmLeft = 95000
+      mmTop = 0
+      mmWidth = 90000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel76: TppLabel
+      DesignLayer = ppDesignLayer6
+      UserName = 'Bezeichung1'
+      AutoSize = False
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      Caption = 'Bezeichnung 1'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = [fsBold, fsItalic]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      VerticalAlignment = avCenter
+      mmHeight = 5027
+      mmLeft = 0
+      mmTop = 7000
+      mmWidth = 35000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppDBText63: TppDBText
+      DesignLayer = ppDesignLayer6
+      UserName = 'DBBezeichung1'
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      DataField = 'Bezeichnung1'
+      DataPipeline = dmPipelines.EigeneSchule
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = []
+      ParentDataPipeline = False
+      VerticalAlignment = avCenter
+      DataPipelineName = 'EigeneSchule'
+      mmHeight = 5027
+      mmLeft = 35000
+      mmTop = 7000
+      mmWidth = 55000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel21: TppLabel
+      DesignLayer = ppDesignLayer6
+      UserName = 'Bezeichung2'
+      AutoSize = False
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      Caption = 'Bezeichnung 2'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = [fsBold, fsItalic]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      VerticalAlignment = avCenter
+      mmHeight = 5027
+      mmLeft = 0
+      mmTop = 12100
+      mmWidth = 35000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppDBText43: TppDBText
+      DesignLayer = ppDesignLayer6
+      UserName = 'DBBezeichnung2'
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      DataField = 'Bezeichnung2'
+      DataPipeline = dmPipelines.EigeneSchule
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = []
+      VerticalAlignment = avCenter
+      DataPipelineName = 'EigeneSchule'
+      mmHeight = 5027
+      mmLeft = 35000
+      mmTop = 12100
+      mmWidth = 55000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel23: TppLabel
+      DesignLayer = ppDesignLayer6
+      UserName = 'Bezeichnung3'
+      AutoSize = False
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      Caption = 'Bezeichnung 3'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = [fsBold, fsItalic]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      VerticalAlignment = avCenter
+      mmHeight = 5027
+      mmLeft = 0
+      mmTop = 17200
+      mmWidth = 35000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppDBText41: TppDBText
+      DesignLayer = ppDesignLayer6
+      UserName = 'DBBezeichnung3'
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      DataField = 'Bezeichnung3'
+      DataPipeline = dmPipelines.EigeneSchule
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = []
+      VerticalAlignment = avCenter
+      DataPipelineName = 'EigeneSchule'
+      mmHeight = 5027
+      mmLeft = 35000
+      mmTop = 17200
+      mmWidth = 55000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel6: TppLabel
+      DesignLayer = ppDesignLayer6
+      UserName = 'BezAbschnitte'
+      AutoSize = False
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      Caption = 'Bez. Abschnitte'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = [fsBold, fsItalic]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      VerticalAlignment = avCenter
+      mmHeight = 5027
+      mmLeft = 0
+      mmTop = 111100
+      mmWidth = 35000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppDBText8: TppDBText
+      DesignLayer = ppDesignLayer6
+      UserName = 'DBBezAbschnitte'
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      DataField = 'AbschnittBez'
+      DataPipeline = dmPipelines.EigeneSchule
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = []
+      VerticalAlignment = avCenter
+      DataPipelineName = 'EigeneSchule'
+      mmHeight = 5027
+      mmLeft = 35000
+      mmTop = 111100
+      mmWidth = 55000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel2: TppLabel
+      DesignLayer = ppDesignLayer6
+      UserName = 'AnzAbschnitte'
+      AutoSize = False
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      Caption = 'Anz. Abschnitte'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = [fsBold, fsItalic]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      VerticalAlignment = avCenter
+      mmHeight = 5027
+      mmLeft = 0
+      mmTop = 116200
+      mmWidth = 35000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppDBText4: TppDBText
+      DesignLayer = ppDesignLayer6
+      UserName = 'DBAnzAbschnitte'
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      DataField = 'AnzahlAbschnitte'
+      DataPipeline = dmPipelines.EigeneSchule
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = []
+      VerticalAlignment = avCenter
+      DataPipelineName = 'EigeneSchule'
+      mmHeight = 5027
+      mmLeft = 35000
+      mmTop = 116200
+      mmWidth = 55000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel59: TppLabel
+      DesignLayer = ppDesignLayer6
+      UserName = 'AnzJgStufen'
+      AutoSize = False
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      Caption = 'Anz. Jg.-Stufen'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = [fsBold, fsItalic]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      VerticalAlignment = avCenter
+      mmHeight = 5027
+      mmLeft = 0
+      mmTop = 121300
+      mmWidth = 35000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppDBText5: TppDBText
+      DesignLayer = ppDesignLayer6
+      UserName = 'DBAnzJgStufen'
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      DataField = 'AnzJGS_Jahr'
+      DataPipeline = dmPipelines.EigeneSchule
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = []
+      VerticalAlignment = avCenter
+      DataPipelineName = 'EigeneSchule'
+      mmHeight = 5027
+      mmLeft = 35000
+      mmTop = 121300
+      mmWidth = 55000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel4: TppLabel
+      DesignLayer = ppDesignLayer6
+      UserName = 'BezAbschnitt1'
+      AutoSize = False
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      Caption = 'Bez.Abschnitt 1'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = [fsBold, fsItalic]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      VerticalAlignment = avCenter
+      mmHeight = 5027
+      mmLeft = 0
+      mmTop = 126400
+      mmWidth = 35000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppDBText6: TppDBText
+      DesignLayer = ppDesignLayer6
+      UserName = 'DBBezAbschnitt1'
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      DataField = 'BezAbschnitt1'
+      DataPipeline = dmPipelines.EigeneSchule
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = []
+      VerticalAlignment = avCenter
+      DataPipelineName = 'EigeneSchule'
+      mmHeight = 5027
+      mmLeft = 35000
+      mmTop = 126400
+      mmWidth = 55000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel5: TppLabel
+      DesignLayer = ppDesignLayer6
+      UserName = 'BezAbschnitt2'
+      AutoSize = False
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      Caption = 'Bez. Abschnitt 2'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = [fsBold, fsItalic]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      VerticalAlignment = avCenter
+      mmHeight = 5027
+      mmLeft = 0
+      mmTop = 131500
+      mmWidth = 35000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppDBText7: TppDBText
+      DesignLayer = ppDesignLayer6
+      UserName = 'DBBezAbschnitt2'
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      DataField = 'BezAbschnitt2'
+      DataPipeline = dmPipelines.EigeneSchule
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = []
+      VerticalAlignment = avCenter
+      DataPipelineName = 'EigeneSchule'
+      mmHeight = 5027
+      mmLeft = 35000
+      mmTop = 131500
+      mmWidth = 55000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel61: TppLabel
+      DesignLayer = ppDesignLayer6
+      UserName = 'BezAbschnitt3'
+      AutoSize = False
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      Caption = 'Bez. Abschnitt 3'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = [fsBold, fsItalic]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      VerticalAlignment = avCenter
+      mmHeight = 5027
+      mmLeft = 0
+      mmTop = 136600
+      mmWidth = 35000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppDBText46: TppDBText
+      DesignLayer = ppDesignLayer6
+      UserName = 'DBBezAbschnitt3'
+      HyperlinkEnabled = False
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      DataField = 'BezAbschnitt3'
+      DataPipeline = dmPipelines.EigeneSchule
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = []
+      VerticalAlignment = avCenter
+      DataPipelineName = 'EigeneSchule'
+      mmHeight = 5027
+      mmLeft = 35000
+      mmTop = 136600
+      mmWidth = 55000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel62: TppLabel
+      DesignLayer = ppDesignLayer6
+      UserName = 'BezAbschnitt4'
+      AutoSize = False
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      Caption = 'Bez. Abschnitt 4'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = [fsBold, fsItalic]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      VerticalAlignment = avCenter
+      mmHeight = 5027
+      mmLeft = 0
+      mmTop = 141700
+      mmWidth = 35000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppDBText45: TppDBText
+      DesignLayer = ppDesignLayer6
+      UserName = 'DBBezAbschnitt4'
+      HyperlinkEnabled = False
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      DataField = 'BezAbschnitt4'
+      DataPipeline = dmPipelines.EigeneSchule
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = []
+      VerticalAlignment = avCenter
+      DataPipelineName = 'EigeneSchule'
+      mmHeight = 5027
+      mmLeft = 35000
+      mmTop = 141700
+      mmWidth = 55000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel60: TppLabel
+      DesignLayer = ppDesignLayer6
+      UserName = 'DauerUnterricht'
+      AutoSize = False
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      Caption = 'Dauer Unterrichtseinh.'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = [fsBold, fsItalic]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      VerticalAlignment = avCenter
+      mmHeight = 5027
+      mmLeft = 0
+      mmTop = 146800
+      mmWidth = 35000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppDBText3: TppDBText
+      DesignLayer = ppDesignLayer6
+      UserName = 'DBDauerUnterricht'
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      DataField = 'DauerUnterrichtseinheit'
+      DataPipeline = dmPipelines.EigeneSchule
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = []
+      VerticalAlignment = avCenter
+      DataPipelineName = 'EigeneSchule'
+      mmHeight = 5027
+      mmLeft = 35000
+      mmTop = 146800
+      mmWidth = 55000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel8: TppLabel
+      DesignLayer = ppDesignLayer6
+      UserName = 'EMail'
+      AutoSize = False
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      Caption = 'E-Mail der Schule'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = [fsBold, fsItalic]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      VerticalAlignment = avCenter
+      mmHeight = 5027
+      mmLeft = 0
+      mmTop = 52900
+      mmWidth = 35000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppDBText10: TppDBText
+      DesignLayer = ppDesignLayer6
+      UserName = 'DBEMail'
+      HyperlinkEnabled = False
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      DataField = 'Email'
+      DataPipeline = dmPipelines.EigeneSchule
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = []
+      VerticalAlignment = avCenter
+      DataPipelineName = 'EigeneSchule'
+      mmHeight = 5027
+      mmLeft = 35000
+      mmTop = 52900
+      mmWidth = 55000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel13: TppLabel
+      DesignLayer = ppDesignLayer6
+      UserName = 'Fax'
+      AutoSize = False
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      Caption = 'Fax'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = [fsBold, fsItalic]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      VerticalAlignment = avCenter
+      mmHeight = 5027
+      mmLeft = 0
+      mmTop = 47800
+      mmWidth = 35000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppDBText15: TppDBText
+      DesignLayer = ppDesignLayer6
+      UserName = 'DBFax'
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      DataField = 'Fax'
+      DataPipeline = dmPipelines.EigeneSchule
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = []
+      VerticalAlignment = avCenter
+      DataPipelineName = 'EigeneSchule'
+      mmHeight = 5027
+      mmLeft = 35000
+      mmTop = 47800
+      mmWidth = 55000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel14: TppLabel
+      DesignLayer = ppDesignLayer6
+      UserName = 'Fremdsprachen'
+      AutoSize = False
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      Caption = 'Fremdsprachen'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = [fsBold, fsItalic]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      VerticalAlignment = avCenter
+      mmHeight = 5027
+      mmLeft = 95000
+      mmTop = 126400
+      mmWidth = 35000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppDBText16: TppDBText
+      DesignLayer = ppDesignLayer6
+      UserName = 'DBFremdsprachen'
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      DataField = 'Fremdsprachen'
+      DataPipeline = dmPipelines.EigeneSchule
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = []
+      VerticalAlignment = avCenter
+      DataPipelineName = 'EigeneSchule'
+      mmHeight = 5027
+      mmLeft = 130000
+      mmTop = 126400
+      mmWidth = 55000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel11: TppLabel
+      DesignLayer = ppDesignLayer6
+      UserName = 'Ganztag'
+      AutoSize = False
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      Caption = 'Ganztag'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = [fsBold, fsItalic]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      VerticalAlignment = avCenter
+      mmHeight = 5027
+      mmLeft = 95000
+      mmTop = 131500
+      mmWidth = 35000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppDBText13: TppDBText
+      DesignLayer = ppDesignLayer6
+      UserName = 'DBGanztag'
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      DataField = 'Ganztags'
+      DataPipeline = dmPipelines.EigeneSchule
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = []
+      VerticalAlignment = avCenter
+      DataPipelineName = 'EigeneSchule'
+      mmHeight = 5027
+      mmLeft = 130000
+      mmTop = 131500
+      mmWidth = 55000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel3: TppLabel
+      DesignLayer = ppDesignLayer6
+      UserName = 'DreizehnPlus'
+      AutoSize = False
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      Caption = '13 Plus'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = [fsBold, fsItalic]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      VerticalAlignment = avCenter
+      mmHeight = 5027
+      mmLeft = 95000
+      mmTop = 136600
+      mmWidth = 35000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppDBText37: TppDBText
+      DesignLayer = ppDesignLayer6
+      UserName = 'DBDreizehnPlus'
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      DataField = 'Gruppen13Plus'
+      DataPipeline = dmPipelines.EigeneSchule
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = []
+      VerticalAlignment = avCenter
+      DataPipelineName = 'EigeneSchule'
+      mmHeight = 5027
+      mmLeft = 130000
+      mmTop = 136600
+      mmWidth = 55000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel63: TppLabel
+      DesignLayer = ppDesignLayer6
+      UserName = 'AchtBisEins'
+      AutoSize = False
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      Caption = '8 bis 1'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = [fsBold, fsItalic]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      VerticalAlignment = avCenter
+      mmHeight = 5027
+      mmLeft = 95000
+      mmTop = 141700
+      mmWidth = 35000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppDBText48: TppDBText
+      DesignLayer = ppDesignLayer6
+      UserName = 'DBAchtBisEins'
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      DataField = 'Gruppen8Bis1'
+      DataPipeline = dmPipelines.EigeneSchule
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = []
+      VerticalAlignment = avCenter
+      DataPipelineName = 'EigeneSchule'
+      mmHeight = 5027
+      mmLeft = 130000
+      mmTop = 141700
+      mmWidth = 55000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel48: TppLabel
+      DesignLayer = ppDesignLayer6
+      UserName = 'InternatsplaetzeM'
+      AutoSize = False
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      Caption = 'Internatspl'#228'tze m'#228'nnl.'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = [fsBold, fsItalic]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      VerticalAlignment = avCenter
+      mmHeight = 5027
+      mmLeft = 95000
+      mmTop = 157000
+      mmWidth = 35000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppDBText70: TppDBText
+      DesignLayer = ppDesignLayer6
+      UserName = 'DBInternatsplaetzeM'
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      DataField = 'InternatsplaetzeM'
+      DataPipeline = dmPipelines.EigeneSchule
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = []
+      VerticalAlignment = avCenter
+      DataPipelineName = 'EigeneSchule'
+      mmHeight = 5027
+      mmLeft = 130000
+      mmTop = 157000
+      mmWidth = 55000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel9: TppLabel
+      DesignLayer = ppDesignLayer6
+      UserName = 'Hauptsitz'
+      AutoSize = False
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      Caption = 'Ist Hauptsitz'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = [fsBold, fsItalic]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      VerticalAlignment = avCenter
+      mmHeight = 5027
+      mmLeft = 0
+      mmTop = 88600
+      mmWidth = 35000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppDBText11: TppDBText
+      DesignLayer = ppDesignLayer6
+      UserName = 'DBHauptsitz'
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      DataField = 'IstHauptsitz'
+      DataPipeline = dmPipelines.EigeneSchule
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = []
+      ParentDataPipeline = False
+      VerticalAlignment = avCenter
+      DataPipelineName = 'EigeneSchule'
+      mmHeight = 5027
+      mmLeft = 35000
+      mmTop = 88600
+      mmWidth = 55000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel10: TppLabel
+      DesignLayer = ppDesignLayer6
+      UserName = 'JVAZeigen'
+      AutoSize = False
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      Caption = 'JVA zeigen'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = [fsBold, fsItalic]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      VerticalAlignment = avCenter
+      mmHeight = 5027
+      mmLeft = 95000
+      mmTop = 162100
+      mmWidth = 35000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppDBText12: TppDBText
+      DesignLayer = ppDesignLayer6
+      UserName = 'DBJVAZeigen'
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      DataField = 'JVAZeigen'
+      DataPipeline = dmPipelines.EigeneSchule
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = []
+      VerticalAlignment = avCenter
+      DataPipelineName = 'EigeneSchule'
+      mmHeight = 5027
+      mmLeft = 130000
+      mmTop = 162100
+      mmWidth = 55000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel12: TppLabel
+      DesignLayer = ppDesignLayer6
+      UserName = 'Klassenzahl'
+      AutoSize = False
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      Caption = 'Klassenzahl'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = [fsBold, fsItalic]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      VerticalAlignment = avCenter
+      mmHeight = 5027
+      mmLeft = 0
+      mmTop = 157000
+      mmWidth = 35000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppDBText14: TppDBText
+      DesignLayer = ppDesignLayer6
+      UserName = 'DBKlassenzahl'
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      DataField = 'Klassenzahl'
+      DataPipeline = dmPipelines.EigeneSchule
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = []
+      VerticalAlignment = avCenter
+      DataPipelineName = 'EigeneSchule'
+      mmHeight = 5027
+      mmLeft = 35000
+      mmTop = 157000
+      mmWidth = 55000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel15: TppLabel
+      DesignLayer = ppDesignLayer6
+      UserName = 'Land'
+      AutoSize = False
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      Caption = 'Land'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = [fsBold, fsItalic]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      VerticalAlignment = avCenter
+      mmHeight = 5027
+      mmLeft = 0
+      mmTop = 37600
+      mmWidth = 35000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppDBText17: TppDBText
+      DesignLayer = ppDesignLayer6
+      UserName = 'DBLand'
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      DataField = 'Land'
+      DataPipeline = dmPipelines.EigeneSchule
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = []
+      VerticalAlignment = avCenter
+      DataPipelineName = 'EigeneSchule'
+      mmHeight = 5027
+      mmLeft = 35000
+      mmTop = 37600
+      mmWidth = 55000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel16: TppLabel
+      DesignLayer = ppDesignLayer6
+      UserName = 'Lehrerzahl'
+      AutoSize = False
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      Caption = 'Lehrerzahl'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = [fsBold, fsItalic]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      VerticalAlignment = avCenter
+      mmHeight = 5027
+      mmLeft = 0
+      mmTop = 151900
+      mmWidth = 35000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppDBText18: TppDBText
+      DesignLayer = ppDesignLayer6
+      UserName = 'DBLehrerzahl'
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      DataField = 'Lehrerzahl'
+      DataPipeline = dmPipelines.EigeneSchule
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = []
+      VerticalAlignment = avCenter
+      DataPipelineName = 'EigeneSchule'
+      mmHeight = 5027
+      mmLeft = 35000
+      mmTop = 151900
+      mmWidth = 55000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel17: TppLabel
+      DesignLayer = ppDesignLayer6
+      UserName = 'NotenGesperrt'
+      AutoSize = False
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      Caption = 'Noten gesperrt?'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = [fsBold, fsItalic]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      VerticalAlignment = avCenter
+      mmHeight = 5027
+      mmLeft = 95000
+      mmTop = 111100
+      mmWidth = 35000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppDBText19: TppDBText
+      DesignLayer = ppDesignLayer6
+      UserName = 'DBNotenGesperrt'
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      DataField = 'NotenGesperrt'
+      DataPipeline = dmPipelines.EigeneSchule
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = []
+      VerticalAlignment = avCenter
+      DataPipelineName = 'EigeneSchule'
+      mmHeight = 5027
+      mmLeft = 130000
+      mmTop = 111100
+      mmWidth = 55000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel19: TppLabel
+      DesignLayer = ppDesignLayer6
+      UserName = 'PLZOrt'
+      AutoSize = False
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      Caption = 'PLZ Ort'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = [fsBold, fsItalic]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      VerticalAlignment = avCenter
+      mmHeight = 5027
+      mmLeft = 0
+      mmTop = 32500
+      mmWidth = 35000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppDBText21: TppDBText
+      DesignLayer = ppDesignLayer6
+      UserName = 'DBPLZOrt'
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      DataField = 'PlzOrt'
+      DataPipeline = dmPipelines.EigeneSchule
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = []
+      VerticalAlignment = avCenter
+      DataPipelineName = 'EigeneSchule'
+      mmHeight = 5027
+      mmLeft = 35000
+      mmTop = 32500
+      mmWidth = 55000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel20: TppLabel
+      DesignLayer = ppDesignLayer6
+      UserName = 'Reformpaedagogik'
+      AutoSize = False
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      Caption = 'Reformp'#228'dagogik'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = [fsBold, fsItalic]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      VerticalAlignment = avCenter
+      mmHeight = 5027
+      mmLeft = 95000
+      mmTop = 121300
+      mmWidth = 35000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppDBText22: TppDBText
+      DesignLayer = ppDesignLayer6
+      UserName = 'DBReformpaedagogik'
+      HyperlinkEnabled = False
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      DataField = 'RefPaedagogikZeigen'
+      DataPipeline = dmPipelines.EigeneSchule
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = []
+      VerticalAlignment = avCenter
+      DataPipelineName = 'EigeneSchule'
+      mmHeight = 5027
+      mmLeft = 130000
+      mmTop = 121300
+      mmWidth = 55000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel24: TppLabel
+      DesignLayer = ppDesignLayer6
+      UserName = 'Schuelerzahl'
+      AutoSize = False
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      Caption = 'Sch'#252'lerzahl'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = [fsBold, fsItalic]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      VerticalAlignment = avCenter
+      mmHeight = 5027
+      mmLeft = 0
+      mmTop = 162100
+      mmWidth = 35000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppDBText23: TppDBText
+      DesignLayer = ppDesignLayer6
+      UserName = 'DBSchuelerzahl'
+      HyperlinkEnabled = False
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      DataField = 'Schuelerzahl'
+      DataPipeline = dmPipelines.EigeneSchule
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = []
+      VerticalAlignment = avCenter
+      DataPipelineName = 'EigeneSchule'
+      mmHeight = 5027
+      mmLeft = 35000
+      mmTop = 162100
+      mmWidth = 55000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel25: TppLabel
+      DesignLayer = ppDesignLayer6
+      UserName = 'InternatsplaetzeW'
+      AutoSize = False
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      Caption = 'Internatspl'#228'tze weibl.'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = [fsBold, fsItalic]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      VerticalAlignment = avCenter
+      mmHeight = 5027
+      mmLeft = 95000
+      mmTop = 151900
+      mmWidth = 35000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppDBText24: TppDBText
+      DesignLayer = ppDesignLayer6
+      UserName = 'DBInternatsplaetzeW'
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      DataField = 'InternatsplaetzeW'
+      DataPipeline = dmPipelines.EigeneSchule
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = []
+      VerticalAlignment = avCenter
+      DataPipelineName = 'EigeneSchule'
+      mmHeight = 5027
+      mmLeft = 130000
+      mmTop = 151900
+      mmWidth = 55000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel26: TppLabel
+      DesignLayer = ppDesignLayer6
+      UserName = 'Internatsplaetze'
+      AutoSize = False
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      Caption = 'Internatspl'#228'tze'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = [fsBold, fsItalic]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      VerticalAlignment = avCenter
+      mmHeight = 5027
+      mmLeft = 95000
+      mmTop = 146800
+      mmWidth = 35000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppDBText25: TppDBText
+      DesignLayer = ppDesignLayer6
+      UserName = 'DBInternatsplaetze'
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      DataField = 'InternatsplaetzeNeutral'
+      DataPipeline = dmPipelines.EigeneSchule
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = []
+      VerticalAlignment = avCenter
+      DataPipelineName = 'EigeneSchule'
+      mmHeight = 5027
+      mmLeft = 130000
+      mmTop = 146800
+      mmWidth = 55000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel27: TppLabel
+      DesignLayer = ppDesignLayer6
+      UserName = 'Schulformbez'
+      AutoSize = False
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      Caption = 'Schulformbezeichnung'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = [fsBold, fsItalic]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      VerticalAlignment = avCenter
+      mmHeight = 5027
+      mmLeft = 0
+      mmTop = 63100
+      mmWidth = 35000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppDBText26: TppDBText
+      DesignLayer = ppDesignLayer6
+      UserName = 'DBSchulformbez'
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      DataField = 'SchulformBez'
+      DataPipeline = dmPipelines.EigeneSchule
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = []
+      VerticalAlignment = avCenter
+      DataPipelineName = 'EigeneSchule'
+      mmHeight = 5027
+      mmLeft = 35000
+      mmTop = 63100
+      mmWidth = 55000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel28: TppLabel
+      DesignLayer = ppDesignLayer6
+      UserName = 'SchulformKuerzel'
+      AutoSize = False
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      Caption = 'Schulformk'#252'rzel'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = [fsBold, fsItalic]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      VerticalAlignment = avCenter
+      mmHeight = 5027
+      mmLeft = 0
+      mmTop = 68200
+      mmWidth = 35000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppDBText27: TppDBText
+      DesignLayer = ppDesignLayer6
+      UserName = 'DBSchulformKuerzel'
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      DataField = 'SchulformKrz'
+      DataPipeline = dmPipelines.EigeneSchule
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = []
+      VerticalAlignment = avCenter
+      DataPipelineName = 'EigeneSchule'
+      mmHeight = 5027
+      mmLeft = 35000
+      mmTop = 68200
+      mmWidth = 55000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel29: TppLabel
+      DesignLayer = ppDesignLayer6
+      UserName = 'Schulgliederung'
+      AutoSize = False
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      Caption = 'Schulgliederung'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = [fsBold, fsItalic]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      VerticalAlignment = avCenter
+      mmHeight = 5027
+      mmLeft = 0
+      mmTop = 73300
+      mmWidth = 35000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppDBText28: TppDBText
+      DesignLayer = ppDesignLayer6
+      UserName = 'DBSchulgliederung'
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      DataField = 'Schulgliederung'
+      DataPipeline = dmPipelines.EigeneSchule
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = []
+      VerticalAlignment = avCenter
+      DataPipelineName = 'EigeneSchule'
+      mmHeight = 5027
+      mmLeft = 35000
+      mmTop = 73300
+      mmWidth = 55000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel32: TppLabel
+      DesignLayer = ppDesignLayer6
+      UserName = 'SchuljahrAbschnitt'
+      AutoSize = False
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      Caption = 'Schuljahr & Abschnitt'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = [fsBold, fsItalic]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      VerticalAlignment = avCenter
+      mmHeight = 5027
+      mmLeft = 0
+      mmTop = 106000
+      mmWidth = 35000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppDBText32: TppDBText
+      DesignLayer = ppDesignLayer6
+      UserName = 'DBSchuljahrAbschnitt'
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      DataField = 'SchuljahrUndAbschnittText'
+      DataPipeline = dmPipelines.EigeneSchule
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = []
+      VerticalAlignment = avCenter
+      DataPipelineName = 'EigeneSchule'
+      mmHeight = 5027
+      mmLeft = 35000
+      mmTop = 106000
+      mmWidth = 55000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel34: TppLabel
+      DesignLayer = ppDesignLayer6
+      UserName = 'SLAmtsbez'
+      AutoSize = False
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      Caption = 'SL Amtsbez.'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = [fsBold, fsItalic]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      VerticalAlignment = avCenter
+      mmHeight = 5027
+      mmLeft = 95000
+      mmTop = 27400
+      mmWidth = 35000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppDBText34: TppDBText
+      DesignLayer = ppDesignLayer6
+      UserName = 'DBSLAmtsbez'
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      DataField = 'SchulleiterAmtsbez'
+      DataPipeline = dmPipelines.EigeneSchule
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = []
+      VerticalAlignment = avCenter
+      DataPipelineName = 'EigeneSchule'
+      mmHeight = 5027
+      mmLeft = 130000
+      mmTop = 27400
+      mmWidth = 55000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel35: TppLabel
+      DesignLayer = ppDesignLayer6
+      UserName = 'SSLAmtsbez'
+      AutoSize = False
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      Caption = 'Stv. SL Amtsbez.'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = [fsBold, fsItalic]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      VerticalAlignment = avCenter
+      mmHeight = 5027
+      mmLeft = 95000
+      mmTop = 68200
+      mmWidth = 35000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppDBText35: TppDBText
+      DesignLayer = ppDesignLayer6
+      UserName = 'DBSSLAmtsbez'
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      DataField = 'StvSchulleiterAmtsbez'
+      DataPipeline = dmPipelines.EigeneSchule
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = []
+      ParentDataPipeline = False
+      VerticalAlignment = avCenter
+      DataPipelineName = 'EigeneSchule'
+      mmHeight = 5027
+      mmLeft = 130000
+      mmTop = 68200
+      mmWidth = 55000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel36: TppLabel
+      DesignLayer = ppDesignLayer6
+      UserName = 'SSLGeschlecht'
+      AutoSize = False
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      Caption = 'Stv. SL Geschlecht'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = [fsBold, fsItalic]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      VerticalAlignment = avCenter
+      mmHeight = 5027
+      mmLeft = 95000
+      mmTop = 73300
+      mmWidth = 35000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppDBText36: TppDBText
+      DesignLayer = ppDesignLayer6
+      UserName = 'DBSSLGeschlecht'
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      DataField = 'StvSchulleiterGeschlecht'
+      DataPipeline = dmPipelines.EigeneSchule
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = []
+      VerticalAlignment = avCenter
+      DataPipelineName = 'EigeneSchule'
+      mmHeight = 5027
+      mmLeft = 130000
+      mmTop = 73300
+      mmWidth = 55000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel37: TppLabel
+      DesignLayer = ppDesignLayer6
+      UserName = 'SSLBezeichung'
+      AutoSize = False
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      Caption = 'Stv. SL Bezeichnung'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = [fsBold, fsItalic]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      VerticalAlignment = avCenter
+      mmHeight = 5027
+      mmLeft = 95000
+      mmTop = 47800
+      mmWidth = 35000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppDBText38: TppDBText
+      DesignLayer = ppDesignLayer6
+      UserName = 'DBSSLBezeichung'
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      DataField = 'stvSchulleiterMW'
+      DataPipeline = dmPipelines.EigeneSchule
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = []
+      VerticalAlignment = avCenter
+      DataPipelineName = 'EigeneSchule'
+      mmHeight = 5027
+      mmLeft = 130000
+      mmTop = 47800
+      mmWidth = 55000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel38: TppLabel
+      DesignLayer = ppDesignLayer6
+      UserName = 'SSLName'
+      AutoSize = False
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      Caption = 'Stv. SL Name'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = [fsBold, fsItalic]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      VerticalAlignment = avCenter
+      mmHeight = 5027
+      mmLeft = 95000
+      mmTop = 63100
+      mmWidth = 35000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppDBText40: TppDBText
+      DesignLayer = ppDesignLayer6
+      UserName = 'DBSSLName'
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      DataField = 'StvSchulleiterName'
+      DataPipeline = dmPipelines.EigeneSchule
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = []
+      VerticalAlignment = avCenter
+      DataPipelineName = 'EigeneSchule'
+      mmHeight = 5027
+      mmLeft = 130000
+      mmTop = 63100
+      mmWidth = 55000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel39: TppLabel
+      DesignLayer = ppDesignLayer6
+      UserName = 'SSLTitel'
+      AutoSize = False
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      Caption = 'Stv. SL Titel'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = [fsBold, fsItalic]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      VerticalAlignment = avCenter
+      mmHeight = 5027
+      mmLeft = 95000
+      mmTop = 52900
+      mmWidth = 35000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppDBText42: TppDBText
+      DesignLayer = ppDesignLayer6
+      UserName = 'DBSSLTitel'
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      DataField = 'StvSchulleiterTitel'
+      DataPipeline = dmPipelines.EigeneSchule
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = []
+      VerticalAlignment = avCenter
+      DataPipelineName = 'EigeneSchule'
+      mmHeight = 5027
+      mmLeft = 130000
+      mmTop = 52900
+      mmWidth = 55000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel40: TppLabel
+      DesignLayer = ppDesignLayer6
+      UserName = 'SSLVorname'
+      AutoSize = False
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      Caption = 'Stv. SL Vorname'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = [fsBold, fsItalic]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      VerticalAlignment = avCenter
+      mmHeight = 5027
+      mmLeft = 95000
+      mmTop = 58000
+      mmWidth = 35000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppDBText44: TppDBText
+      DesignLayer = ppDesignLayer6
+      UserName = 'DBSSLVorname'
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      DataField = 'StvSchulleiterVorname'
+      DataPipeline = dmPipelines.EigeneSchule
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = []
+      VerticalAlignment = avCenter
+      DataPipelineName = 'EigeneSchule'
+      mmHeight = 5027
+      mmLeft = 130000
+      mmTop = 58000
+      mmWidth = 55000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel41: TppLabel
+      DesignLayer = ppDesignLayer6
+      UserName = 'Teamteaching'
+      AutoSize = False
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      Caption = 'Teamteaching erlaubt?'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = [fsBold, fsItalic]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      VerticalAlignment = avCenter
+      mmHeight = 5027
+      mmLeft = 95000
+      mmTop = 106000
+      mmWidth = 35000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppDBText47: TppDBText
+      DesignLayer = ppDesignLayer6
+      UserName = 'DBTeamteaching'
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      DataField = 'TeamTeaching'
+      DataPipeline = dmPipelines.EigeneSchule
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = []
+      VerticalAlignment = avCenter
+      DataPipelineName = 'EigeneSchule'
+      mmHeight = 5027
+      mmLeft = 130000
+      mmTop = 106000
+      mmWidth = 55000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel42: TppLabel
+      DesignLayer = ppDesignLayer6
+      UserName = 'Telefon'
+      AutoSize = False
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      Caption = 'Telefon'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = [fsBold, fsItalic]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      VerticalAlignment = avCenter
+      mmHeight = 5027
+      mmLeft = 0
+      mmTop = 42700
+      mmWidth = 35000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppDBText50: TppDBText
+      DesignLayer = ppDesignLayer6
+      UserName = 'DBTelefon'
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      DataField = 'Telefon'
+      DataPipeline = dmPipelines.EigeneSchule
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = []
+      VerticalAlignment = avCenter
+      DataPipelineName = 'EigeneSchule'
+      mmHeight = 5027
+      mmLeft = 35000
+      mmTop = 42700
+      mmWidth = 55000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel43: TppLabel
+      DesignLayer = ppDesignLayer6
+      UserName = 'Sprachenfolge'
+      AutoSize = False
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      Caption = 'UpdateSprachenfolge'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = [fsBold, fsItalic]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      VerticalAlignment = avCenter
+      mmHeight = 5027
+      mmLeft = 95000
+      mmTop = 116200
+      mmWidth = 35000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppDBText51: TppDBText
+      DesignLayer = ppDesignLayer6
+      UserName = 'DBSprachenfolge'
+      HyperlinkEnabled = False
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      DataField = 'UpdateSprachenfolge'
+      DataPipeline = dmPipelines.EigeneSchule
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = []
+      VerticalAlignment = avCenter
+      DataPipelineName = 'EigeneSchule'
+      mmHeight = 5027
+      mmLeft = 130000
+      mmTop = 116200
+      mmWidth = 55000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel44: TppLabel
+      DesignLayer = ppDesignLayer6
+      UserName = 'Homepage'
+      AutoSize = False
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      Caption = 'Homepage'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = [fsBold, fsItalic]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      VerticalAlignment = avCenter
+      mmHeight = 5027
+      mmLeft = 0
+      mmTop = 58000
+      mmWidth = 35000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppDBText52: TppDBText
+      DesignLayer = ppDesignLayer6
+      UserName = 'DBHomepage'
+      HyperlinkEnabled = False
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      DataField = 'WebAdresse'
+      DataPipeline = dmPipelines.EigeneSchule
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = []
+      VerticalAlignment = avCenter
+      DataPipelineName = 'EigeneSchule'
+      mmHeight = 5027
+      mmLeft = 35000
+      mmTop = 58000
+      mmWidth = 55000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel45: TppLabel
+      DesignLayer = ppDesignLayer6
+      UserName = 'SLGeschlecht'
+      AutoSize = False
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      Caption = 'SL Geschlecht'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = [fsBold, fsItalic]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      VerticalAlignment = avCenter
+      mmHeight = 5027
+      mmLeft = 95000
+      mmTop = 32500
+      mmWidth = 35000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppDBText53: TppDBText
+      DesignLayer = ppDesignLayer6
+      UserName = 'DBSLGeschlecht'
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      DataField = 'SchulleiterGeschlecht'
+      DataPipeline = dmPipelines.EigeneSchule
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = []
+      VerticalAlignment = avCenter
+      DataPipelineName = 'EigeneSchule'
+      mmHeight = 5027
+      mmLeft = 130000
+      mmTop = 32500
+      mmWidth = 55000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel46: TppLabel
+      DesignLayer = ppDesignLayer6
+      UserName = 'SLBezeichung'
+      AutoSize = False
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      Caption = 'SL Bezeichnung'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = [fsBold, fsItalic]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      VerticalAlignment = avCenter
+      mmHeight = 5027
+      mmLeft = 95000
+      mmTop = 7000
+      mmWidth = 35000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppDBText54: TppDBText
+      DesignLayer = ppDesignLayer6
+      UserName = 'DBSLBezeichnung'
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      DataField = 'SchulleiterMW'
+      DataPipeline = dmPipelines.EigeneSchule
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = []
+      VerticalAlignment = avCenter
+      DataPipelineName = 'EigeneSchule'
+      mmHeight = 5027
+      mmLeft = 130000
+      mmTop = 7000
+      mmWidth = 55000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel47: TppLabel
+      DesignLayer = ppDesignLayer6
+      UserName = 'SLName'
+      AutoSize = False
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      Caption = 'SL Name'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = [fsBold, fsItalic]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      VerticalAlignment = avCenter
+      mmHeight = 5027
+      mmLeft = 95000
+      mmTop = 22300
+      mmWidth = 35000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppDBText55: TppDBText
+      DesignLayer = ppDesignLayer6
+      UserName = 'DBSLName'
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      DataField = 'SchulleiterName'
+      DataPipeline = dmPipelines.EigeneSchule
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = []
+      VerticalAlignment = avCenter
+      DataPipelineName = 'EigeneSchule'
+      mmHeight = 5027
+      mmLeft = 130000
+      mmTop = 22300
+      mmWidth = 55000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel49: TppLabel
+      DesignLayer = ppDesignLayer6
+      UserName = 'SLTitel'
+      AutoSize = False
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      Caption = 'SL Titel'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = [fsBold, fsItalic]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      VerticalAlignment = avCenter
+      mmHeight = 5027
+      mmLeft = 95000
+      mmTop = 12100
+      mmWidth = 35000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppDBText56: TppDBText
+      DesignLayer = ppDesignLayer6
+      UserName = 'DBSLTitel'
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      DataField = 'SchulleiterTitel'
+      DataPipeline = dmPipelines.EigeneSchule
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = []
+      VerticalAlignment = avCenter
+      DataPipelineName = 'EigeneSchule'
+      mmHeight = 5027
+      mmLeft = 130000
+      mmTop = 12100
+      mmWidth = 55000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel50: TppLabel
+      DesignLayer = ppDesignLayer6
+      UserName = 'SLVorname'
+      AutoSize = False
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      Caption = 'SL Vorname'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = [fsBold, fsItalic]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      VerticalAlignment = avCenter
+      mmHeight = 5027
+      mmLeft = 95000
+      mmTop = 17200
+      mmWidth = 35000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppDBText57: TppDBText
+      DesignLayer = ppDesignLayer6
+      UserName = 'DBSLVorname'
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      DataField = 'SchulleiterVorname'
+      DataPipeline = dmPipelines.EigeneSchule
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = []
+      VerticalAlignment = avCenter
+      DataPipelineName = 'EigeneSchule'
+      mmHeight = 5027
+      mmLeft = 130000
+      mmTop = 17200
+      mmWidth = 55000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel51: TppLabel
+      DesignLayer = ppDesignLayer6
+      UserName = 'Schulnummer'
+      AutoSize = False
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      Caption = 'Schulnummer'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = [fsBold, fsItalic]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      VerticalAlignment = avCenter
+      mmHeight = 5027
+      mmLeft = 0
+      mmTop = 22300
+      mmWidth = 35000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppDBText58: TppDBText
+      DesignLayer = ppDesignLayer6
+      UserName = 'DBSchulnummer'
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      DataField = 'SchulNr'
+      DataPipeline = dmPipelines.EigeneSchule
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = []
+      VerticalAlignment = avCenter
+      DataPipelineName = 'EigeneSchule'
+      mmHeight = 5027
+      mmLeft = 35000
+      mmTop = 22300
+      mmWidth = 55000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel53: TppLabel
+      DesignLayer = ppDesignLayer6
+      UserName = 'Traegerart'
+      AutoSize = False
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      Caption = 'Tr'#228'gerart'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = [fsBold, fsItalic]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      VerticalAlignment = avCenter
+      mmHeight = 5027
+      mmLeft = 0
+      mmTop = 78400
+      mmWidth = 35000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppDBText60: TppDBText
+      DesignLayer = ppDesignLayer6
+      UserName = 'DBTraegerart'
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      DataField = 'Schultraegerart'
+      DataPipeline = dmPipelines.EigeneSchule
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = []
+      VerticalAlignment = avCenter
+      DataPipelineName = 'EigeneSchule'
+      mmHeight = 5027
+      mmLeft = 35000
+      mmTop = 78400
+      mmWidth = 55000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel54: TppLabel
+      DesignLayer = ppDesignLayer6
+      UserName = 'SchultraegerNr'
+      AutoSize = False
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      Caption = 'Schultr'#228'ger Nr.'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = [fsBold, fsItalic]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      VerticalAlignment = avCenter
+      mmHeight = 5027
+      mmLeft = 0
+      mmTop = 83500
+      mmWidth = 35000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppDBText61: TppDBText
+      DesignLayer = ppDesignLayer6
+      UserName = 'DBSchultraegerNr'
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      DataField = 'SchultraegerNr'
+      DataPipeline = dmPipelines.EigeneSchule
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = []
+      VerticalAlignment = avCenter
+      DataPipelineName = 'EigeneSchule'
+      mmHeight = 5027
+      mmLeft = 35000
+      mmTop = 83500
+      mmWidth = 55000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel55: TppLabel
+      DesignLayer = ppDesignLayer6
+      UserName = 'Strasse'
+      AutoSize = False
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      Caption = 'Stra'#223'e'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = [fsBold, fsItalic]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      VerticalAlignment = avCenter
+      mmHeight = 5027
+      mmLeft = 0
+      mmTop = 27400
+      mmWidth = 35000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppDBText62: TppDBText
+      DesignLayer = ppDesignLayer6
+      UserName = 'DBStrasse'
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      DataField = 'Strasse'
+      DataPipeline = dmPipelines.EigeneSchule
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = []
+      VerticalAlignment = avCenter
+      DataPipelineName = 'EigeneSchule'
+      mmHeight = 5027
+      mmLeft = 35000
+      mmTop = 27400
+      mmWidth = 55000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel7: TppLabel
+      DesignLayer = ppDesignLayer6
+      UserName = 'InformationenUeberschrift'
+      AutoSize = False
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      Caption = 'Informationen'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 14
+      Font.Style = [fsBold, fsItalic]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      mmHeight = 6615
+      mmLeft = 0
+      mmTop = 99000
+      mmWidth = 90000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel18: TppLabel
+      DesignLayer = ppDesignLayer6
+      UserName = 'InformationenUeberschrift2'
+      AutoSize = False
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 14
+      Font.Style = [fsBold, fsItalic]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      mmHeight = 6615
+      mmLeft = 95000
+      mmTop = 99000
+      mmWidth = 90000
+      BandType = 4
+      LayerName = Foreground1
+    end
+    object ppLabel30: TppLabel
+      DesignLayer = ppDesignLayer6
+      UserName = 'StvSchulleitungUeberschrift'
+      AutoSize = False
+      Border.BorderPositions = [bpBottom]
+      Border.Visible = True
+      Border.Weight = 0.750000000000000000
+      Border.mmPadding = 0
+      Caption = 'Stellvertretende Schulleitung'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 14
+      Font.Style = [fsBold, fsItalic]
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      mmHeight = 6615
+      mmLeft = 95000
+      mmTop = 40700
+      mmWidth = 89959
+      BandType = 4
+      LayerName = Foreground1
+    end
+  end
+  object ppFooterBand1: TppFooterBand
+    Border.mmPadding = 0
+    mmBottomOffset = 0
+    mmHeight = 4763
+    mmPrintPosition = 0
+    object ppLine1: TppLine
+      DesignLayer = ppDesignLayer6
+      UserName = 'AbgrenzungslinieFuss'
+      Border.mmPadding = 0
+      Pen.Color = 4993567
+      ParentWidth = True
+      Weight = 0.750000000000000000
+      mmHeight = 2000
+      mmLeft = 0
+      mmTop = 0
+      mmWidth = 185000
+      BandType = 8
+      LayerName = Foreground1
+    end
+    object ppSystemVariable1: TppSystemVariable
+      DesignLayer = ppDesignLayer6
+      UserName = 'Datum'
+      Border.mmPadding = 0
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 9
+      Font.Style = []
+      Transparent = True
+      mmHeight = 3704
+      mmLeft = 0
+      mmTop = 1000
+      mmWidth = 14288
+      BandType = 8
+      LayerName = Foreground1
+    end
+    object ppSystemVariable2: TppSystemVariable
+      DesignLayer = ppDesignLayer6
+      UserName = 'Dokumentenname'
+      Border.mmPadding = 0
+      VarType = vtDocumentName
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 9
+      Font.Style = []
+      TextAlignment = taCentered
+      Transparent = True
+      mmHeight = 3704
+      mmLeft = 70380
+      mmTop = 1000
+      mmWidth = 44185
+      BandType = 8
+      LayerName = Foreground1
+    end
+    object ppSystemVariable3: TppSystemVariable
+      DesignLayer = ppDesignLayer6
+      UserName = 'Seitenzahl'
+      Border.mmPadding = 0
+      VarType = vtPageSetDesc
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 9
+      Font.Style = []
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 3704
+      mmLeft = 164836
+      mmTop = 1058
+      mmWidth = 20108
+      BandType = 8
+      LayerName = Foreground1
+    end
+  end
+  object raCodeModule1: TraCodeModule
+    ProgramStream = {
+      01060F5472614576656E7448616E646C65720B50726F6772616D4E616D650618
+      44424672656D64737072616368656E4F6E476574546578740B50726F6772616D
+      54797065070B747450726F63656475726506536F75726365068070726F636564
+      7572652044424672656D64737072616368656E4F6E4765745465787428766172
+      20546578743A20537472696E67293B0D0A626567696E0D0A0D0A202049662054
+      657874203D20272B27205468656E2054657874203A3D20274A612720456C7365
+      2054657874203A3D20274E65696E273B0D0A0D0A656E643B0D0A0D436F6D706F
+      6E656E744E616D65060F44424672656D64737072616368656E094576656E744E
+      616D6506094F6E47657454657874074576656E7449440235084361726574506F
+      730102030204000001060F5472614576656E7448616E646C65720B50726F6772
+      616D4E616D650612444247616E7A7461674F6E476574546578740B50726F6772
+      616D54797065070B747450726F63656475726506536F75726365067A70726F63
+      656475726520444247616E7A7461674F6E476574546578742876617220546578
+      743A20537472696E67293B0D0A626567696E0D0A0D0A20204966205465787420
+      3D20272B27205468656E2054657874203A3D20274A612720456C736520546578
+      74203A3D20274E65696E273B0D0A0D0A656E643B0D0A0D436F6D706F6E656E74
+      4E616D650609444247616E7A746167094576656E744E616D6506094F6E476574
+      54657874074576656E7449440235084361726574506F73010237020400000106
+      0F5472614576656E7448616E646C65720B50726F6772616D4E616D6506144442
+      48617570747369747A4F6E476574546578740B50726F6772616D54797065070B
+      747450726F63656475726506536F75726365067C70726F636564757265204442
+      48617570747369747A4F6E476574546578742876617220546578743A20537472
+      696E67293B0D0A626567696E0D0A0D0A202049662054657874203D20272B2720
+      5468656E2054657874203A3D20274A612720456C73652054657874203A3D2027
+      4E65696E273B0D0A0D0A656E643B0D0A0D436F6D706F6E656E744E616D65060B
+      444248617570747369747A094576656E744E616D6506094F6E47657454657874
+      074576656E7449440235084361726574506F730102370204000001060F547261
+      4576656E7448616E646C65720B50726F6772616D4E616D65061444424A56415A
+      656967656E4F6E476574546578740B50726F6772616D54797065070B74745072
+      6F63656475726506536F75726365067C70726F6365647572652044424A56415A
+      656967656E4F6E476574546578742876617220546578743A20537472696E6729
+      3B0D0A626567696E0D0A0D0A202049662054657874203D20272B27205468656E
+      2054657874203A3D20274A612720456C73652054657874203A3D20274E65696E
+      273B0D0A0D0A656E643B0D0A0D436F6D706F6E656E744E616D65060B44424A56
+      415A656967656E094576656E744E616D6506094F6E4765745465787407457665
+      6E7449440235084361726574506F730102370204000001060F5472614576656E
+      7448616E646C65720B50726F6772616D4E616D65061B44425265666F726D7061
+      656461676F67696B4F6E476574546578740B50726F6772616D54797065070B74
+      7450726F63656475726506536F75726365068370726F63656475726520444252
+      65666F726D7061656461676F67696B4F6E476574546578742876617220546578
+      743A20537472696E67293B0D0A626567696E0D0A0D0A20204966205465787420
+      3D20272B27205468656E2054657874203A3D20274A612720456C736520546578
+      74203A3D20274E65696E273B0D0A0D0A656E643B0D0A0D436F6D706F6E656E74
+      4E616D65061244425265666F726D7061656461676F67696B094576656E744E61
+      6D6506094F6E47657454657874074576656E7449440235084361726574506F73
+      0102370204000001060F5472614576656E7448616E646C65720B50726F677261
+      6D4E616D65061744425465616D7465616368696E674F6E476574546578740B50
+      726F6772616D54797065070B747450726F63656475726506536F75726365067F
+      70726F6365647572652044425465616D7465616368696E674F6E476574546578
+      742876617220546578743A20537472696E67293B0D0A626567696E0D0A0D0A20
+      2049662054657874203D20272B27205468656E2054657874203A3D20274A6127
+      20456C73652054657874203A3D20274E65696E273B0D0A0D0A656E643B0D0A0D
+      436F6D706F6E656E744E616D65060E44425465616D7465616368696E67094576
+      656E744E616D6506094F6E47657454657874074576656E744944023508436172
+      6574506F730102370204000001060F5472614576656E7448616E646C65720B50
+      726F6772616D4E616D65061844424E6F74656E47657370657272744F6E476574
+      546578740B50726F6772616D54797065070B747450726F63656475726506536F
+      75726365068070726F6365647572652044424E6F74656E47657370657272744F
+      6E476574546578742876617220546578743A20537472696E67293B0D0A626567
+      696E0D0A0D0A202049662054657874203D20272B27205468656E205465787420
+      3A3D20274A612720456C73652054657874203A3D20274E65696E273B0D0A0D0A
+      656E643B0D0A0D436F6D706F6E656E744E616D65060F44424E6F74656E476573
+      7065727274094576656E744E616D6506094F6E47657454657874074576656E74
+      49440235084361726574506F730102370204000001060F5472614576656E7448
+      616E646C65720B50726F6772616D4E616D6506184442537072616368656E666F
+      6C67654F6E476574546578740B50726F6772616D54797065070B747450726F63
+      656475726506536F75726365068070726F636564757265204442537072616368
+      656E666F6C67654F6E476574546578742876617220546578743A20537472696E
+      67293B0D0A626567696E0D0A0D0A202049662054657874203D20272B27205468
+      656E2054657874203A3D20274A612720456C73652054657874203A3D20274E65
+      696E273B0D0A0D0A656E643B0D0A0D436F6D706F6E656E744E616D65060F4442
+      537072616368656E666F6C6765094576656E744E616D6506094F6E4765745465
+      7874074576656E7449440235084361726574506F730102260206000001060F54
+      72614576656E7448616E646C65720B50726F6772616D4E616D6506174442534C
+      47657363686C656368744F6E476574546578740B50726F6772616D5479706507
+      0B747450726F63656475726506536F75726365140001000070726F6365647572
+      65204442534C47657363686C656368744F6E4765745465787428766172205465
+      78743A20537472696E67293B0D0A626567696E0D0A0D0A202049662054657874
+      203D20273327205468656E200D0A2020202054657874203A3D20276DC3A46E6E
+      6C69636827200D0A2020456C73652049662054657874203D2027342720546865
+      6E0D0A2020202054657874203A3D2027776569626C696368270D0A2020456C73
+      652049662054657874203D20273527205468656E0D0A2020202054657874203A
+      3D2027646976657273270D0A2020456C73650D0A2020202054657874203A3D20
+      276F686E6520416E67616265273B0D0A0D0A656E643B0D0A0D436F6D706F6E65
+      6E744E616D65060E4442534C47657363686C65636874094576656E744E616D65
+      06094F6E47657454657874074576656E7449440235084361726574506F730102
+      030204000001060F5472614576656E7448616E646C65720B50726F6772616D4E
+      616D650618444253534C47657363686C656368744F6E476574546578740B5072
+      6F6772616D54797065070B747450726F63656475726506536F75726365140101
+      000070726F63656475726520444253534C47657363686C656368744F6E476574
+      546578742876617220546578743A20537472696E67293B0D0A626567696E0D0A
+      0D0A202049662054657874203D20273327205468656E200D0A20202020546578
+      74203A3D20276DC3A46E6E6C69636827200D0A2020456C736520496620546578
+      74203D20273427205468656E0D0A2020202054657874203A3D2027776569626C
+      696368270D0A2020456C73652049662054657874203D20273527205468656E0D
+      0A2020202054657874203A3D2027646976657273270D0A2020456C73650D0A20
+      20202054657874203A3D20276F686E6520416E67616265273B0D0A0D0A656E64
+      3B0D0A0D436F6D706F6E656E744E616D65060F444253534C47657363686C6563
+      6874094576656E744E616D6506094F6E47657454657874074576656E74494402
+      35084361726574506F730102010204000001060F5472614576656E7448616E64
+      6C65720B50726F6772616D4E616D65061A44424461756572556E746572726963
+      68744F6E476574546578740B50726F6772616D54797065070B747450726F6365
+      6475726506536F75726365069970726F6365647572652044424461756572556E
+      74657272696368744F6E476574546578742876617220546578743A2053747269
+      6E67293B0D0A626567696E0D0A0D0A202049662054657874203D202731272054
+      68656E2054657874203A3D2054657874202B2027204D696E7574652720456C73
+      652054657874203A3D2054657874202B2027204D696E7574656E273B0D0A0D0A
+      656E643B0D0A0D436F6D706F6E656E744E616D65061144424461756572556E74
+      65727269636874094576656E744E616D6506094F6E4765745465787407457665
+      6E7449440235084361726574506F7301024C0204000000}
+  end
+  object ppDesignLayers6: TppDesignLayers
+    object ppDesignLayer6: TppDesignLayer
+      UserName = 'Foreground1'
+      LayerType = ltBanded
+      Index = 0
+    end
+  end
+  object ppParameterList1: TppParameterList
+    object ppArchivierung: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      DataType = dtString
+      LookupList.Strings = (
+        'immer'
+        'nie'
+        'Schildvorgabe')
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = ''
+      UserName = 'Archivierung'
+    end
+    object ppParameter1: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = '"J. Raffenberg"'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = 'J. Raffenberg'
+      UserName = 'Autoren'
+    end
+    object ppParameter2: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = '17.04.2025'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = '17.04.2025'
+      UserName = 'Versionsdatum'
+    end
+  end
+end

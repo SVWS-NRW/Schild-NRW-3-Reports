@@ -1,0 +1,39 @@
+# Name des Workflows, wie er in GitHub angezeigt wird
+name: Create Release
+
+# Wann der Workflow ausgeführt wird: Bei jedem Push auf den master-Branch
+on:
+  push:
+    branches:
+      - master
+
+# Gibt an, dass der Workflow Schreibrechte auf das Repository benötigt (z.B. für Releases)
+permissions:
+  contents: write
+
+jobs:
+  # Name des Jobs
+  create-zip:
+    # Der Job läuft auf der neuesten Ubuntu-Version
+    runs-on: ubuntu-latest
+
+    # Bedingung: Nur ausführen, wenn die Commit-Message das Wort 'release' enthält
+    if: contains(github.event.head_commit.message, 'release')
+
+    steps:
+      # Schritt 1: Repository-Code auschecken
+      - uses: actions/checkout@v4
+
+      # Schritt 2: Verzeichnis für ZIP-Dateien anlegen
+      - run: mkdir .zip
+
+      # Schritt 3: ZIP-Archiv erstellen, bestimmte Dateien/Ordner ausschließen
+      - run: zip -r ."/.zip/Reports-v0.8.${{ github.run_number }}-Beta-$(date +'%d.%m.%Y').zip" . -x ".git/*" ".github/*" "gradle/*" ".zip/" ".gitignore" "LICENSE" "README.md" "build.gradle" "gradlew" "gradlew.bat" "*.docx" "Oberstufenpaket/*"
+
+      # Schritt 4: Release auf GitHub erstellen oder aktualisieren, ZIP anhängen
+      - uses: ncipollo/release-action@v1
+        with:
+          artifacts: "./.zip/*"                # Alle ZIP-Dateien im .zip-Ordner anhängen
+          allowUpdates: true                   # Existierende Releases dürfen aktualisiert werden
+          tag: v0.8.${{ github.run_number }}   # Tag für das Release
+          token: ${{ secrets.GITHUB_TOKEN }}   # Authentifizierungstoken
