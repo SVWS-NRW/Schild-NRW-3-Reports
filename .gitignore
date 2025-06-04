@@ -1,4 +1,5 @@
 # Ordner ausschließen
+build
 .gradle/
 .settings/
 Oberstufenpaket/
