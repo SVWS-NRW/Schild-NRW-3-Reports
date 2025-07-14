@@ -1,3 +1,14 @@
-/.gradle/
-/build/
-Oberstufenpaket
+# Ordner ausschließen
+build
+.gradle/
+.settings/
+Oberstufenpaket/
+Report-Archiv/
+
+# Dateien ausschließen
+.project
+LICENSE
+README.md
+build.gradle
+gradlew
+gradlew.bat
