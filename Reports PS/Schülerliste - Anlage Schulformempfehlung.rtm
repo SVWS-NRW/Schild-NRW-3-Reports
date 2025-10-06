@@ -2,7 +2,7 @@ object RepOrt: TppReport
   AutoStop = False
   DataPipeline = dmPipelines.Schueler
   PrinterSetup.BinName = 'Default'
-  PrinterSetup.DocumentName = 'Anlage_Schulformempfehlung.rtm'
+  PrinterSetup.DocumentName = 'Sch'#252'lerliste - Anlage Schulformempfehlung.rtm'
   PrinterSetup.Duplex = dpNone
   PrinterSetup.PaperName = 'A4 210 x 297 mm'
   PrinterSetup.PrinterName = 'Default'
@@ -17,8 +17,8 @@ object RepOrt: TppReport
   SaveAsTemplate = True
   Template.FileName = 
     'C:\Users\jraff\OneDrive - neg-velbert.de\Programme\SVWS-Arbeitsv' +
-    'erzeichnis\SchILD-Reports\Reportsammlung 3.0\Reports PS\Anlage_S' +
-    'chulformempfehlung.rtm'
+    'erzeichnis\SchILD-Reports\Reportsammlung 3.0\Reports PS\Sch'#252'lerl' +
+    'iste - Anlage Schulformempfehlung.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -223,6 +223,7 @@ object RepOrt: TppReport
     OutlineSettings.CreateNode = True
     NewPage = True
     ResetPageNo = True
+    ReprintOnSubsequentPage = False
     StartOnOddPage = False
     UserName = 'Group1'
     mmNewColumnThreshold = 0
@@ -888,11 +889,11 @@ object RepOrt: TppReport
     object ppParameter2: TppParameter
       AutoSearchSettings.LogicalPrefix = []
       AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = '01.06.2025'
+      AutoSearchSettings.SearchExpression = '06.10.2025'
       DataType = dtString
       LookupSettings.DisplayType = dtNameOnly
       LookupSettings.SortOrder = soName
-      Value = '01.06.2025'
+      Value = '06.10.2025'
       UserName = 'Versionsdatum'
     end
   end
