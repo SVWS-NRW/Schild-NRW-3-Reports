@@ -15,10 +15,8 @@ object RepOrt: TppReport
   PrinterSetup.mmPaperWidth = 210000
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
-  Template.FileName = 
-    'C:\Users\jraff\OneDrive - neg-velbert.de\Programme\SVWS-Arbeitsv' +
-    'erzeichnis\SchILD-Reports\Reportsammlung 3.0\Reports PS\Sch'#252'lerl' +
-    'iste Klasse Jg OGS Uebermittag.rtm'
+  Template.FileName =
+    'C:\Users\jraff\OneDrive - neg-velbert.de\Programme\SVWS-Arbeitsverzeichnis\SchILD-Reports\Reportsammlung 3.0\Reports PS\Sch''#252''lerliste - Klasse Jg OGS Uebermittag.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True

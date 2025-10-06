@@ -2,7 +2,9 @@ object RepOrt: TppReport
   AutoStop = False
   DataPipeline = dmPipelines.Schueler
   PrinterSetup.BinName = 'Default'
-  PrinterSetup.DocumentName = 'Abitur - Bili-Bescheinigung - Anlage 1a - EN - 3 Sachf'#228'cher.rtm'
+  PrinterSetup.DocumentName = 
+    'Sch'#252'lerliste - Bili-Bescheinigung SI Anlage EN 4 Sachf'#228'cher @SuS' +
+    '.rtm'
   PrinterSetup.Duplex = dpNone
   PrinterSetup.PaperName = 'A4 210 x 297 mm'
   PrinterSetup.PrinterName = 'Default'
@@ -17,8 +19,8 @@ object RepOrt: TppReport
   SaveAsTemplate = True
   Template.FileName = 
     'C:\Users\jraff\OneDrive - neg-velbert.de\Programme\SVWS-Arbeitsv' +
-    'erzeichnis\SchILD-Reports\Reportsammlung 3.0\Reports SII\Abitur ' +
-    '- Bili-Bescheinigung - Anlage 1a - EN - 3 Sachf'#228'cher.rtm'
+    'erzeichnis\SchILD-Reports\Reportsammlung 3.0\Reports SI\Sch'#252'lerl' +
+    'iste - Bili-Bescheinigung SI Anlage EN 4 Sachf'#228'cher @SuS.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -171,7 +173,6 @@ object RepOrt: TppReport
         mmColumnWidth = 0
         object ppDetailBand2: TppDetailBand
           Border.mmPadding = 0
-          PrintHeight = phDynamic
           mmBottomOffset = 0
           mmHeight = 297000
           mmPrintPosition = 0
@@ -2323,7 +2324,7 @@ object RepOrt: TppReport
             mmHeight = 20108
             mmLeft = 99748
             mmTop = 10054
-            mmWidth = 100277
+            mmWidth = 90000
             BandType = 4
             LayerName = Foreground1
           end
@@ -2340,18 +2341,18 @@ object RepOrt: TppReport
             ExportRTFAsBitmap = False
             RichText = 
               '{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1031{\fonttbl{\f' +
-              '0\fnil Calibri;}{\f1\fnil\fcharset0 Calibri;}}'#13#10'{\colortbl ;\red' +
+              '0\fnil\fcharset0 Calibri;}{\f1\fnil Calibri;}}'#13#10'{\colortbl ;\red' +
               '0\green0\blue0;}'#13#10'{\*\generator Riched20 10.0.26100}\viewkind4\u' +
-              'c1 '#13#10'\pard\qc\cf1\b\scaps\f0\fs28 BESCHEINIGUNG ZUM ABITURZEUGNI' +
-              'S \par'#13#10'\f1\'#39'dcBER DEN BESUCH DES BILINGUALEN BILDUNGSGANGS\f0\p' +
-              'ar'#13#10'\fs16\par'#13#10'\fs28 CERTIFICATE OF PARTICIPATION IN A BILINGUAL' +
-              ' STREAM\par'#13#10'IN ADDITION TO THE ABITUR DIPLOMA\par'#13#10'}'#13#10#0
+              'c1 '#13#10'\pard\qc\cf1\b\scaps\f0\fs28 BESCHEINIGUNG \par'#13#10'\'#39'dcBER DE' +
+              'N BESUCH DES BILINGUALEN BILDUNGSGANGS \par'#13#10'IN DER SEKUNDARSTUF' +
+              'E I\f1\par'#13#10'\fs16\par'#13#10'\fs28 CERTIFICATE OF PARTICIPATION IN A B' +
+              'ILINGUAL STREAM\par'#13#10'IN \f0 LOWER SECONDARY\f1\par'#13#10'}'#13#10#0
             RemoveEmptyLines = False
             Transparent = True
-            mmHeight = 28575
+            mmHeight = 36513
             mmLeft = 20000
-            mmTop = 34795
-            mmWidth = 180000
+            mmTop = 43540
+            mmWidth = 170000
             BandType = 4
             LayerName = Foreground1
             mmBottomOffset = 0
@@ -2363,7 +2364,7 @@ object RepOrt: TppReport
             DesignLayer = ppDesignLayer2
             UserName = 'Schule'
             Border.mmPadding = 0
-            Caption = 'Schule'
+            Caption = 'Schule/school:'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clBlack
             Font.Name = 'Calibri'
@@ -2373,69 +2374,9 @@ object RepOrt: TppReport
             FormFieldSettings.FormFieldType = fftNone
             Transparent = True
             mmHeight = 5027
-            mmLeft = 20000
-            mmTop = 71149
-            mmWidth = 11113
-            BandType = 4
-            LayerName = Foreground1
-          end
-          object ppLabel15: TppLabel
-            DesignLayer = ppDesignLayer2
-            UserName = 'SchuleFussnote'
-            Border.mmPadding = 0
-            Caption = '1'
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clBlack
-            Font.Name = 'Calibri'
-            Font.Size = 8
-            Font.Style = []
-            FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-            FormFieldSettings.FormFieldType = fftNone
-            Transparent = True
-            mmHeight = 3439
-            mmLeft = 31475
-            mmTop = 69826
-            mmWidth = 1588
-            BandType = 4
-            LayerName = Foreground1
-          end
-          object ppLabel16: TppLabel
-            DesignLayer = ppDesignLayer2
-            UserName = 'School'
-            Border.mmPadding = 0
-            Caption = '/school:'
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clBlack
-            Font.Name = 'Calibri'
-            Font.Size = 12
-            Font.Style = []
-            FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-            FormFieldSettings.FormFieldType = fftNone
-            Transparent = True
-            mmHeight = 5027
-            mmLeft = 33063
-            mmTop = 71149
-            mmWidth = 13758
-            BandType = 4
-            LayerName = Foreground1
-          end
-          object ppLabel17: TppLabel
-            DesignLayer = ppDesignLayer2
-            UserName = 'SchoolFussnote'
-            Border.mmPadding = 0
-            Caption = '1'
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clBlack
-            Font.Name = 'Calibri'
-            Font.Size = 8
-            Font.Style = []
-            FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-            FormFieldSettings.FormFieldType = fftNone
-            Transparent = True
-            mmHeight = 3439
-            mmLeft = 47085
-            mmTop = 69826
-            mmWidth = 1588
+            mmLeft = 20108
+            mmTop = 91017
+            mmWidth = 24871
             BandType = 4
             LayerName = Foreground1
           end
@@ -2456,9 +2397,9 @@ object RepOrt: TppReport
             Transparent = True
             DataPipelineName = 'EigeneSchule'
             mmHeight = 5027
-            mmLeft = 98185
-            mmTop = 71173
-            mmWidth = 23812
+            mmLeft = 93110
+            mmTop = 91017
+            mmWidth = 23813
             BandType = 4
             LayerName = Foreground1
           end
@@ -2475,10 +2416,10 @@ object RepOrt: TppReport
             FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
             FormFieldSettings.FormFieldType = fftNone
             Transparent = True
-            mmHeight = 5027
-            mmLeft = 20000
-            mmTop = 77763
-            mmWidth = 25665
+            mmHeight = 5028
+            mmLeft = 20011
+            mmTop = 97631
+            mmWidth = 25664
             BandType = 4
             LayerName = Foreground1
           end
@@ -2498,10 +2439,10 @@ object RepOrt: TppReport
             TextAlignment = taCentered
             Transparent = True
             DataPipelineName = 'EigeneSchule'
-            mmHeight = 5027
-            mmLeft = 107313
-            mmTop = 77788
-            mmWidth = 5556
+            mmHeight = 5028
+            mmLeft = 102238
+            mmTop = 97631
+            mmWidth = 5557
             BandType = 4
             LayerName = Foreground1
           end
@@ -2519,9 +2460,9 @@ object RepOrt: TppReport
             FormFieldSettings.FormFieldType = fftNone
             Transparent = True
             mmHeight = 5027
-            mmLeft = 20000
-            mmTop = 84113
-            mmWidth = 22226
+            mmLeft = 20005
+            mmTop = 106627
+            mmWidth = 22225
             BandType = 4
             LayerName = Foreground1
           end
@@ -2541,10 +2482,10 @@ object RepOrt: TppReport
             TextAlignment = taCentered
             Transparent = True
             DataPipelineName = 'Schueler'
-            mmHeight = 5080
-            mmLeft = 96944
-            mmTop = 84244
-            mmWidth = 26246
+            mmHeight = 5027
+            mmLeft = 92340
+            mmTop = 106627
+            mmWidth = 25400
             BandType = 4
             LayerName = Foreground1
           end
@@ -2562,9 +2503,9 @@ object RepOrt: TppReport
             FormFieldSettings.FormFieldType = fftNone
             Transparent = True
             mmHeight = 5027
-            mmLeft = 20000
-            mmTop = 90199
-            mmWidth = 42863
+            mmLeft = 20038
+            mmTop = 115359
+            mmWidth = 42862
             BandType = 4
             LayerName = Foreground1
           end
@@ -2584,8 +2525,8 @@ object RepOrt: TppReport
             Transparent = True
             DataPipelineName = 'Schueler'
             mmHeight = 5027
-            mmLeft = 97920
-            mmTop = 90223
+            mmLeft = 92845
+            mmTop = 115359
             mmWidth = 24342
             BandType = 4
             LayerName = Foreground1
@@ -2604,9 +2545,9 @@ object RepOrt: TppReport
             FormFieldSettings.FormFieldType = fftNone
             Transparent = True
             mmHeight = 5027
-            mmLeft = 20000
-            mmTop = 96284
-            mmWidth = 43657
+            mmLeft = 20039
+            mmTop = 121444
+            mmWidth = 43656
             BandType = 4
             LayerName = Foreground1
           end
@@ -2626,9 +2567,9 @@ object RepOrt: TppReport
             Transparent = True
             DataPipelineName = 'Schueler'
             mmHeight = 5027
-            mmLeft = 100963
-            mmTop = 96309
-            mmWidth = 18256
+            mmLeft = 95888
+            mmTop = 121444
+            mmWidth = 18257
             BandType = 4
             LayerName = Foreground1
           end
@@ -2648,44 +2589,26 @@ object RepOrt: TppReport
               '0\fnil Calibri;}{\f1\fnil\fcharset0 Calibri;}}'#13#10'{\colortbl ;\red' +
               '0\green0\blue0;}'#13#10'{\*\generator Riched20 10.0.26100}\viewkind4\u' +
               'c1 '#13#10'\pard\sl-320\slmult0\qj\cf1\f0\fs24 hat den bilingualen $BB' +
-              'G1$ Bildungsgang erfolgreich abgeschlossen.\par'#13#10'\par'#13#10'\f1\lang1' +
-              '033 has successfully completed the bilingual $BBG2$ stream\lang1' +
-              '031 .\par'#13#10'\par'#13#10#13#10'\pard\qj $Vorname$ hat im Rahmen des bilingua' +
-              'len Bildungsgangs in den Klassen 5 und 6 am $BF1$unterricht mit ' +
-              'erh\'#39'f6hter Wochenstundenzahl und in der Sekundarstufe I und II ' +
-              'an bilingualem $BBU1$ Unterricht in mehreren Sachf\'#39'e4chern erfo' +
-              'lgreich teilgenommen und damit vertiefte Kenntnisse der $SP1$ un' +
-              'd erweiterte F\'#39'e4higkeiten in ihrer Anwendung erworben. \f0\par' +
-              #13#10'\f1 $Vorname$ hat umfassende und vertiefte Sprachkompetenz dur' +
-              'ch Abiturpr\'#39'fcfungen im Leistungskurs Englisch und im Grundkurs' +
-              ' des bilingualen deutsch-englischen Sachfachs $SFS11$ nachgewies' +
-              'en und hat in beiden F\'#39'e4chern sowohl im Notendurchschnitt der ' +
-              'Qualifikationsphase als auch in der Abiturpr\'#39'fcfung mindestens ' +
-              'ausreichende Leistungen (5 oder mehr Punkte) erzielt. \f0\par'#13#10'\' +
-              'f1 $Vorname$ hat in der Fremdsprache $BF1$ das Referenzniveau C1' +
-              ' des Gemeinsamen europ\'#39'e4ischen Referenzrahmens f\'#39'fcr Sprachen' +
-              ' erreicht.\f0\par'#13#10'\par'#13#10'\f1 $Vorname$\f0  has successfully atte' +
-              'nded additional $BF2$ lessons in years 5 and 6 and $BF2$ CLIL-le' +
-              'ssons in several subjects during the course of lower and upper s' +
-              'econdary education within the context of the bilingual stream\f1' +
-              '  and\f0  has thus acquired indepth knowledge of $BBU2$ and exte' +
-              'nded competences in its use. \par'#13#10'\f1 $Vorname$\f0  has proven ' +
-              'extensive and extended linguistic proficiency in school leaving ' +
-              'exams in an advanced course in English as well as in an intermed' +
-              'iate course in the $BBU2$ CLIL subject $SFS12$.\f1  \f0 In both ' +
-              'subjects \f1 $Vorname$\f0  has achieved at least sufficient resu' +
-              'lts (Germany: 5 or more points equivalent to D or better) both i' +
-              'n the average of the results of the qualification phase, as well' +
-              ' as in the school leaving exams.\par'#13#10'In $BF2$ as a foreign lang' +
-              'uage \f1 $Vorname$\f0  has achieved the C1 in the Common Europea' +
-              'n Framework of Reference Level for Languages.\par'#13#10'}'#13#10#0
+              'G1$ Bildungsgang in der Sekundarstufe I erfolgreich absolviert.\' +
+              'par'#13#10'\par'#13#10'has successfully completed the bilingual $BBG2$ strea' +
+              'm in Lower Secondary.\par'#13#10'\par'#13#10'\f1 $Vorname$ hat im Rahmen des' +
+              ' bilingualen Bildungsgangs in den Klassen 5 und 6 am $BF1$unterr' +
+              'icht mit erh\'#39'f6hter Wochenstundenzahl und in der Sekundarstufe ' +
+              'I an bilingualem $BBU1$ Unterricht in mehreren Sachf\'#39'e4chern er' +
+              'folgreich teilgenommen und damit vertiefte Kenntnisse der $SP1$ ' +
+              'und erweiterte F\'#39'e4higkeiten in ihrer Anwendung erworben. \par'#13 +
+              #10'\par'#13#10'$Vorname$ has successfully attended additional $BF2$ less' +
+              'ons in classes 5 and 6 and $BBU2$ CLIL-lessons in several subjec' +
+              'ts during the course of lower secondary education within the con' +
+              'text of the bilingual stream and has thus acquired in-depth know' +
+              'ledge of $BF2$ and extended competences in its use.\par'#13#10'}'#13#10#0
             RemoveEmptyLines = False
             Stretch = True
             Transparent = True
-            mmHeight = 145786
+            mmHeight = 77523
             mmLeft = 20000
-            mmTop = 108192
-            mmWidth = 180000
+            mmTop = 138137
+            mmWidth = 170000
             BandType = 4
             LayerName = Foreground1
             mmBottomOffset = 0
@@ -2700,8 +2623,8 @@ object RepOrt: TppReport
             Weight = 0.750000000000000000
             mmHeight = 1000
             mmLeft = 20000
-            mmTop = 265150
-            mmWidth = 180000
+            mmTop = 250575
+            mmWidth = 170000
             BandType = 4
             LayerName = Foreground1
           end
@@ -2715,53 +2638,16 @@ object RepOrt: TppReport
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clBlack
             Font.Name = 'Calibri'
-            Font.Size = 12
+            Font.Size = 10
             Font.Style = []
             FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
             FormFieldSettings.FormFieldType = fftNone
             TextAlignment = taCentered
             Transparent = True
-            mmHeight = 5027
-            mmLeft = 32015
-            mmTop = 266701
-            mmWidth = 156104
-            BandType = 4
-            LayerName = Foreground1
-          end
-          object ppLine2: TppLine
-            DesignLayer = ppDesignLayer2
-            UserName = 'Fusslinie'
-            Border.mmPadding = 0
-            Weight = 0.750000000000000000
-            mmHeight = 1000
-            mmLeft = 20000
-            mmTop = 278550
-            mmWidth = 55033
-            BandType = 4
-            LayerName = Foreground1
-          end
-          object ppLabel3: TppLabel
-            DesignLayer = ppDesignLayer2
-            UserName = 'Fussnote'
-            AutoSize = False
-            Border.mmPadding = 0
-            Caption = 
-              '1) Von der Bezirksregierung als Schule mit bilingualem deutsch-e' +
-              'nglischen Bildungsgang zugelassen/accredited as a school with bi' +
-              'lingual Anglo-German stream by the District Government.'
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clBlack
-            Font.Name = 'Calibri'
-            Font.Size = 8
-            Font.Style = []
-            FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-            FormFieldSettings.FormFieldType = fftNone
-            Transparent = True
-            WordWrap = True
-            mmHeight = 7938
-            mmLeft = 20108
-            mmTop = 279000
-            mmWidth = 179917
+            mmHeight = 3969
+            mmLeft = 38629
+            mmTop = 252148
+            mmWidth = 132557
             BandType = 4
             LayerName = Foreground1
           end
@@ -2770,60 +2656,57 @@ object RepOrt: TppReport
           ProgramStream = {
             01060F5472614576656E7448616E646C65720B50726F6772616D4E616D650611
             44657461696C4265666F72655072696E740B50726F6772616D54797065070B74
-            7450726F63656475726506536F757263650C5701000070726F63656475726520
+            7450726F63656475726506536F757263650C6B01000070726F63656475726520
             44657461696C4265666F72655072696E743B0D0A626567696E0D0A20200D0A20
             202F2F45696E7365747A656E20646573204F726967696E616C2D546578746573
-            206D697420506C61747A68616C7465726E0D0A2020727466546578742E526963
-            68546578743A3D53617665546578743B0D0A2020696620676C6F62616C527566
-            6E616D65207468656E0D0A20202020727466546578742E52696368546578743A
-            3D5265706C61636554657874457828727466546578742E52696368546578742C
-            2724566F726E616D6524272C53636875656C65725B275275666E616D65275D29
-            0D0A2020656C73650D0A20202020727466546578742E52696368546578743A3D
-            5265706C61636554657874457828727466546578742E52696368546578742C27
-            24566F726E616D6524272C53636875656C65725B27416C6C65566F726E616D65
-            6E275D293B0D0A656E643B0D0A0D436F6D706F6E656E744E616D650606446574
-            61696C094576656E744E616D65060B4265666F72655072696E74074576656E74
-            49440218084361726574506F730102030206000001060F5472614576656E7448
-            616E646C65720B50726F6772616D4E616D6506115265706F72744F6E53746172
-            74506167650B50726F6772616D54797065070B747450726F6365647572650653
-            6F757263650C3003000070726F636564757265205265706F72744F6E53746172
-            74506167653B0D0A626567696E0D0A20206966205361766554657874203D2027
-            27207468656E20626567696E0D0A202020202F2F45696E6D616C696765722041
-            757374617573636820646572207374617469736368656E20506C61747A68616C
-            7465722061756620536569746520310D0A20202020727466546578742E526963
-            68546578743A3D5265706C61636554657874457828727466546578742E526963
-            68546578742C27244242473124272C42424731293B0D0A202020207274665465
-            78742E52696368546578743A3D5265706C616365546578744578287274665465
-            78742E52696368546578742C27244242473224272C42424732293B0D0A202020
-            20727466546578742E52696368546578743A3D5265706C616365546578744578
-            28727466546578742E52696368546578742C27244242553124272C4242553129
-            3B0D0A20202020727466546578742E52696368546578743A3D5265706C616365
-            54657874457828727466546578742E52696368546578742C2724424255322427
-            2C42425532293B0D0A20202020727466546578742E52696368546578743A3D52
-            65706C61636554657874457828727466546578742E52696368546578742C2724
-            42463124272C424631293B0D0A20202020727466546578742E52696368546578
-            743A3D5265706C61636554657874457828727466546578742E52696368546578
-            742C272442463224272C424632293B0D0A20202020727466546578742E526963
-            68546578743A3D5265706C61636554657874457828727466546578742E526963
-            68546578742C272453503124272C535031293B0D0A2020202072746654657874
-            2E52696368546578743A3D5265706C6163655465787445782872746654657874
-            2E52696368546578742C2724534653313124272C5346533131293B0D0A202020
-            20727466546578742E52696368546578743A3D5265706C616365546578744578
-            28727466546578742E52696368546578742C2724534653313224272C53465331
-            32293B0D0A202020200D0A2020202053617665546578743A3D72746654657874
-            2E52696368546578743B0D0A2020656E643B0D0A656E643B0D0A0D436F6D706F
-            6E656E744E616D6506065265706F7274094576656E744E616D65060B4F6E5374
-            61727450616765074576656E7449440215084361726574506F73010203020400
-            0001060F5472614576656E7448616E646C65720B50726F6772616D4E616D6506
-            1664624E616D65566F726E616D654F6E476574546578740B50726F6772616D54
-            797065070B747450726F63656475726506536F75726365068970726F63656475
-            72652064624E616D65566F726E616D654F6E4765745465787428766172205465
-            78743A20537472696E67293B0D0A626567696E0D0A0D0A20206966206E6F7420
-            676C6F62616C5275666E616D65207468656E2054657874203A3D205363687565
-            6C65725B274E616D65416C6C65566F726E616D656E275D3B0D0A0D0A656E643B
-            0D0A0D436F6D706F6E656E744E616D65060D64624E616D65566F726E616D6509
-            4576656E744E616D6506094F6E47657454657874074576656E74494402350843
-            61726574506F730102420204000000}
+            206D697420506C61747A68616C7465726E2061757320566F726C6167650D0A20
+            20727466546578742E52696368546578743A3D53617665546578743B20200D0A
+            2020696620676C6F62616C5275666E616D65207468656E20200D0A2020202072
+            7466546578742E52696368546578743A3D5265706C6163655465787445782872
+            7466546578742E52696368546578742C2724566F726E616D6524272C53636875
+            656C65725B275275666E616D65275D290D0A2020656C73650D0A202020207274
+            66546578742E52696368546578743A3D5265706C616365546578744578287274
+            66546578742E52696368546578742C2724566F726E616D6524272C5363687565
+            6C65725B27416C6C65566F726E616D656E275D293B0D0A20200D0A656E643B0D
+            0A0D436F6D706F6E656E744E616D65060644657461696C094576656E744E616D
+            65060B4265666F72655072696E74074576656E7449440218084361726574506F
+            7301025C0209000001060F5472614576656E7448616E646C65720B50726F6772
+            616D4E616D6506115265706F72744F6E5374617274506167650B50726F677261
+            6D54797065070B747450726F63656475726506536F7572636514C50200007072
+            6F636564757265205265706F72744F6E5374617274506167653B0D0A62656769
+            6E0D0A20206966205361766554657874203D202727207468656E20626567696E
+            0D0A202020202F2F45696E6D616C696765722041757374617573636820646572
+            207374617469736368656E20506C61747A68616C746572206D697420616E7363
+            686C6965C39F656E64657220C39C6265726761626520616E20506172616D6574
+            657220616C7320566F726C6167650D0A20202020727466546578742E52696368
+            546578743A3D5265706C61636554657874457828727466546578742E52696368
+            546578742C27244242473124272C42424731293B0D0A20202020727466546578
+            742E52696368546578743A3D5265706C61636554657874457828727466546578
+            742E52696368546578742C27244242473224272C42424732293B0D0A20202020
+            727466546578742E52696368546578743A3D5265706C61636554657874457828
+            727466546578742E52696368546578742C27244242553124272C42425531293B
+            0D0A20202020727466546578742E52696368546578743A3D5265706C61636554
+            657874457828727466546578742E52696368546578742C27244242553224272C
+            42425532293B0D0A20202020727466546578742E52696368546578743A3D5265
+            706C61636554657874457828727466546578742E52696368546578742C272442
+            463124272C424631293B0D0A20202020727466546578742E5269636854657874
+            3A3D5265706C61636554657874457828727466546578742E5269636854657874
+            2C272442463224272C424632293B0D0A20202020727466546578742E52696368
+            546578743A3D5265706C61636554657874457828727466546578742E52696368
+            546578742C272453503124272C535031293B0D0A202020205361766554657874
+            3A3D727466546578742E52696368546578743B0D0A2020656E643B0D0A656E64
+            3B0D0A0D436F6D706F6E656E744E616D6506065265706F7274094576656E744E
+            616D65060B4F6E537461727450616765074576656E7449440215084361726574
+            506F73010243020B000001060F5472614576656E7448616E646C65720B50726F
+            6772616D4E616D65061664624E616D65566F726E616D654F6E47657454657874
+            0B50726F6772616D54797065070B747450726F63656475726506536F75726365
+            068970726F6365647572652064624E616D65566F726E616D654F6E4765745465
+            78742876617220546578743A20537472696E67293B0D0A626567696E0D0A0D0A
+            20206966206E6F7420676C6F62616C5275666E616D65207468656E2054657874
+            203A3D2053636875656C65725B274E616D65416C6C65566F726E616D656E275D
+            3B0D0A0D0A656E643B0D0A0D436F6D706F6E656E744E616D65060D64624E616D
+            65566F726E616D65094576656E744E616D6506094F6E47657454657874074576
+            656E7449440235084361726574506F730102420204000000}
         end
         object ppDesignLayers2: TppDesignLayers
           object ppDesignLayer2: TppDesignLayer
@@ -2854,7 +2737,9 @@ object RepOrt: TppReport
       mmMinHeight = 0
       object ppChildReport2: TppChildReport
         PrinterSetup.BinName = 'Default'
-        PrinterSetup.DocumentName = 'Abitur - Bili-Bescheinigung - Anlage 1a - EN - 3 Sachf'#228'cher.rtm'
+        PrinterSetup.DocumentName = 
+          'Sch'#252'lerliste - Bili-Bescheinigung SI Anlage EN 4 Sachf'#228'cher @SuS' +
+          '.rtm'
         PrinterSetup.Duplex = dpNone
         PrinterSetup.PaperName = 'A4 210 x 297 mm'
         PrinterSetup.PrinterName = 'Default'
@@ -2872,7 +2757,6 @@ object RepOrt: TppReport
         mmColumnWidth = 0
         object ppDetailBand3: TppDetailBand
           Border.mmPadding = 0
-          PrintHeight = phDynamic
           mmBottomOffset = 0
           mmHeight = 297000
           mmPrintPosition = 0
@@ -2880,18 +2764,18 @@ object RepOrt: TppReport
             DesignLayer = ppDesignLayer3
             UserName = 'TableGrid1'
             DefaultColWidth = 16.799999237060550000
-            DefaultRowHeight = 16.799999237060550000
-            mmHeight = 198711
+            DefaultRowHeight = 34.000000000000000000
+            mmHeight = 139591
             mmLeft = 20108
-            mmTop = 78789
-            mmWidth = 180000
+            mmTop = 107144
+            mmWidth = 170000
             BandType = 4
             LayerName = Foreground2
             mmBottomOffset = 0
             mmOverFlowOffset = 0
             mmStopPosition = 0
             mmMinHeight = 0
-            mmDefaultRowHeight = 16800
+            mmDefaultRowHeight = 34000
             mmDefaultColWidth = 16800
             object ppTableRow1: TppTableRow
               DesignLayer = ppDesignLayer3
@@ -2906,27 +2790,6 @@ object RepOrt: TppReport
               mmOverFlowOffset = 0
               mmStopPosition = 0
               mmMinHeight = 0
-              object ppTableCell1: TppTableCell
-                DesignLayer = ppDesignLayer3
-                UserName = 'TableCell1'
-                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
-                Border.Weight = 1.000000000000000000
-                Border.mmPadding = 1058
-                Brush.Style = bsClear
-                Padding = 1.057999968528748000
-                Transparent = True
-                mmHeight = 23548
-                mmLeft = 0
-                mmTop = 0
-                mmWidth = 48948
-                BandType = 4
-                LayerName = Foreground2
-                mmBottomOffset = 0
-                mmOverFlowOffset = 0
-                mmStopPosition = 0
-                mmMinHeight = 0
-                mmPadding = 1058
-              end
               object ppTableCell3: TppTableCell
                 DesignLayer = ppDesignLayer3
                 UserName = 'TableCell3'
@@ -2955,9 +2818,9 @@ object RepOrt: TppReport
                   Position = lpDiagLeft
                   Weight = 0.750000000000000000
                   mmHeight = 32278
-                  mmLeft = 37832
-                  mmTop = 79847
-                  mmWidth = 30550
+                  mmLeft = 21166
+                  mmTop = 108202
+                  mmWidth = 27884
                   BandType = 4
                   LayerName = Foreground2
                 end
@@ -2978,9 +2841,9 @@ object RepOrt: TppReport
                   TextAlignment = taRightJustified
                   Transparent = True
                   mmHeight = 4498
-                  mmLeft = 37832
-                  mmTop = 79847
-                  mmWidth = 30550
+                  mmLeft = 21166
+                  mmTop = 108202
+                  mmWidth = 27884
                   BandType = 4
                   LayerName = Foreground2
                 end
@@ -3001,9 +2864,9 @@ object RepOrt: TppReport
                   TextAlignment = taRightJustified
                   Transparent = True
                   mmHeight = 4498
-                  mmLeft = 37832
-                  mmTop = 84345
-                  mmWidth = 30550
+                  mmLeft = 21166
+                  mmTop = 112700
+                  mmWidth = 27884
                   BandType = 4
                   LayerName = Foreground2
                 end
@@ -3023,9 +2886,9 @@ object RepOrt: TppReport
                   FormFieldSettings.FormFieldType = fftNone
                   Transparent = True
                   mmHeight = 4498
-                  mmLeft = 37832
-                  mmTop = 102601
-                  mmWidth = 30550
+                  mmLeft = 21166
+                  mmTop = 130956
+                  mmWidth = 27884
                   BandType = 4
                   LayerName = Foreground2
                 end
@@ -3045,9 +2908,9 @@ object RepOrt: TppReport
                   FormFieldSettings.FormFieldType = fftNone
                   Transparent = True
                   mmHeight = 4500
-                  mmLeft = 37832
-                  mmTop = 107627
-                  mmWidth = 30550
+                  mmLeft = 21166
+                  mmTop = 135982
+                  mmWidth = 27884
                   BandType = 4
                   LayerName = Foreground2
                 end
@@ -3089,9 +2952,9 @@ object RepOrt: TppReport
                   TextAlignment = taCentered
                   Transparent = True
                   mmHeight = 4500
-                  mmLeft = 70498
-                  mmTop = 79926
-                  mmWidth = 30550
+                  mmLeft = 51166
+                  mmTop = 108281
+                  mmWidth = 25884
                   BandType = 4
                   LayerName = Foreground2
                 end
@@ -3112,9 +2975,9 @@ object RepOrt: TppReport
                   TextAlignment = taCentered
                   Transparent = True
                   mmHeight = 4498
-                  mmLeft = 70498
-                  mmTop = 95987
-                  mmWidth = 30550
+                  mmLeft = 51166
+                  mmTop = 124342
+                  mmWidth = 25884
                   BandType = 4
                   LayerName = Foreground2
                 end
@@ -3157,9 +3020,9 @@ object RepOrt: TppReport
                   Transparent = True
                   WordWrap = True
                   mmHeight = 9000
-                  mmLeft = 103164
-                  mmTop = 79935
-                  mmWidth = 30550
+                  mmLeft = 79166
+                  mmTop = 108290
+                  mmWidth = 25884
                   BandType = 4
                   LayerName = Foreground2
                 end
@@ -3180,9 +3043,9 @@ object RepOrt: TppReport
                   TextAlignment = taCentered
                   Transparent = True
                   mmHeight = 4500
-                  mmLeft = 103164
-                  mmTop = 88663
-                  mmWidth = 30550
+                  mmLeft = 79166
+                  mmTop = 117018
+                  mmWidth = 25884
                   BandType = 4
                   LayerName = Foreground2
                 end
@@ -3204,9 +3067,9 @@ object RepOrt: TppReport
                   Transparent = True
                   WordWrap = True
                   mmHeight = 4498
-                  mmLeft = 103164
-                  mmTop = 95987
-                  mmWidth = 30550
+                  mmLeft = 79166
+                  mmTop = 124342
+                  mmWidth = 25884
                   BandType = 4
                   LayerName = Foreground2
                 end
@@ -3227,9 +3090,9 @@ object RepOrt: TppReport
                   TextAlignment = taCentered
                   Transparent = True
                   mmHeight = 4498
-                  mmLeft = 103164
-                  mmTop = 100220
-                  mmWidth = 30550
+                  mmLeft = 79166
+                  mmTop = 128575
+                  mmWidth = 25884
                   BandType = 4
                   LayerName = Foreground2
                 end
@@ -3272,9 +3135,9 @@ object RepOrt: TppReport
                   Transparent = True
                   WordWrap = True
                   mmHeight = 9000
-                  mmLeft = 135830
-                  mmTop = 79934
-                  mmWidth = 30550
+                  mmLeft = 107166
+                  mmTop = 108289
+                  mmWidth = 25884
                   BandType = 4
                   LayerName = Foreground2
                 end
@@ -3295,9 +3158,9 @@ object RepOrt: TppReport
                   TextAlignment = taCentered
                   Transparent = True
                   mmHeight = 4500
-                  mmLeft = 135830
-                  mmTop = 88663
-                  mmWidth = 30550
+                  mmLeft = 107166
+                  mmTop = 117018
+                  mmWidth = 25884
                   BandType = 4
                   LayerName = Foreground2
                 end
@@ -3319,9 +3182,9 @@ object RepOrt: TppReport
                   Transparent = True
                   WordWrap = True
                   mmHeight = 4498
-                  mmLeft = 135830
-                  mmTop = 95987
-                  mmWidth = 30550
+                  mmLeft = 107166
+                  mmTop = 124342
+                  mmWidth = 25884
                   BandType = 4
                   LayerName = Foreground2
                 end
@@ -3342,9 +3205,9 @@ object RepOrt: TppReport
                   TextAlignment = taCentered
                   Transparent = True
                   mmHeight = 4498
-                  mmLeft = 135830
-                  mmTop = 100220
-                  mmWidth = 30550
+                  mmLeft = 107166
+                  mmTop = 128575
+                  mmWidth = 25884
                   BandType = 4
                   LayerName = Foreground2
                 end
@@ -3387,9 +3250,9 @@ object RepOrt: TppReport
                   Transparent = True
                   WordWrap = True
                   mmHeight = 9000
-                  mmLeft = 168496
-                  mmTop = 79934
-                  mmWidth = 30550
+                  mmLeft = 135166
+                  mmTop = 108289
+                  mmWidth = 25884
                   BandType = 4
                   LayerName = Foreground2
                 end
@@ -3410,9 +3273,9 @@ object RepOrt: TppReport
                   TextAlignment = taCentered
                   Transparent = True
                   mmHeight = 4500
-                  mmLeft = 168496
-                  mmTop = 88663
-                  mmWidth = 30550
+                  mmLeft = 135166
+                  mmTop = 117018
+                  mmWidth = 25884
                   BandType = 4
                   LayerName = Foreground2
                 end
@@ -3434,9 +3297,9 @@ object RepOrt: TppReport
                   Transparent = True
                   WordWrap = True
                   mmHeight = 8996
-                  mmLeft = 168496
-                  mmTop = 95987
-                  mmWidth = 30550
+                  mmLeft = 135166
+                  mmTop = 124342
+                  mmWidth = 25884
                   BandType = 4
                   LayerName = Foreground2
                 end
@@ -3457,9 +3320,124 @@ object RepOrt: TppReport
                   TextAlignment = taCentered
                   Transparent = True
                   mmHeight = 4498
-                  mmLeft = 168496
-                  mmTop = 104718
-                  mmWidth = 30550
+                  mmLeft = 135166
+                  mmTop = 133073
+                  mmWidth = 25884
+                  BandType = 4
+                  LayerName = Foreground2
+                end
+              end
+              object ppTableCell1: TppTableCell
+                DesignLayer = ppDesignLayer3
+                UserName = 'TableCell1'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Weight = 1.000000000000000000
+                Border.mmPadding = 1058
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                Transparent = True
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground2
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+                object ppLabel38: TppLabel
+                  DesignLayer = ppDesignLayer3
+                  UserName = 'Sachfach4'
+                  Anchors = [atLeft, atRight]
+                  AutoSize = False
+                  Border.mmPadding = 0
+                  Caption = 'ggf. 4. bilinguales   Sachfach'
+                  Font.Charset = DEFAULT_CHARSET
+                  Font.Color = clBlack
+                  Font.Name = 'Calibri'
+                  Font.Size = 10
+                  Font.Style = [fsBold]
+                  FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+                  FormFieldSettings.FormFieldType = fftNone
+                  TextAlignment = taCentered
+                  Transparent = True
+                  WordWrap = True
+                  mmHeight = 8996
+                  mmLeft = 163166
+                  mmTop = 108215
+                  mmWidth = 25884
+                  BandType = 4
+                  LayerName = Foreground2
+                end
+                object ppLabel39: TppLabel
+                  DesignLayer = ppDesignLayer3
+                  UserName = 'dbSachfach4'
+                  Anchors = [atLeft, atRight]
+                  AutoSize = False
+                  Border.mmPadding = 0
+                  Caption = 'Sachfach4'
+                  Font.Charset = DEFAULT_CHARSET
+                  Font.Color = clBlack
+                  Font.Name = 'Calibri'
+                  Font.Size = 10
+                  Font.Style = [fsBold]
+                  FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+                  FormFieldSettings.FormFieldType = fftNone
+                  TextAlignment = taCentered
+                  Transparent = True
+                  mmHeight = 4498
+                  mmLeft = 163166
+                  mmTop = 116946
+                  mmWidth = 25884
+                  BandType = 4
+                  LayerName = Foreground2
+                end
+                object ppLabel40: TppLabel
+                  DesignLayer = ppDesignLayer3
+                  UserName = 'Sachfach4Ov'
+                  Anchors = [atLeft, atRight]
+                  AutoSize = False
+                  Border.mmPadding = 0
+                  Caption = '4rd CLIL subject (if offered)'
+                  Font.Charset = DEFAULT_CHARSET
+                  Font.Color = clBlack
+                  Font.Name = 'Calibri'
+                  Font.Size = 10
+                  Font.Style = [fsBold]
+                  FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+                  FormFieldSettings.FormFieldType = fftNone
+                  TextAlignment = taCentered
+                  Transparent = True
+                  WordWrap = True
+                  mmHeight = 8996
+                  mmLeft = 163166
+                  mmTop = 124354
+                  mmWidth = 25884
+                  BandType = 4
+                  LayerName = Foreground2
+                end
+                object ppLabel41: TppLabel
+                  DesignLayer = ppDesignLayer3
+                  UserName = 'dbSachfach4Ov'
+                  Anchors = [atLeft, atRight]
+                  AutoSize = False
+                  Border.mmPadding = 0
+                  Caption = 'Sachfach4 OV'
+                  Font.Charset = DEFAULT_CHARSET
+                  Font.Color = clBlack
+                  Font.Name = 'Calibri'
+                  Font.Size = 10
+                  Font.Style = [fsBold]
+                  FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+                  FormFieldSettings.FormFieldType = fftNone
+                  TextAlignment = taCentered
+                  Transparent = True
+                  mmHeight = 4498
+                  mmLeft = 163166
+                  mmTop = 133086
+                  mmWidth = 25884
                   BandType = 4
                   LayerName = Foreground2
                 end
@@ -3478,55 +3456,6 @@ object RepOrt: TppReport
               mmOverFlowOffset = 0
               mmStopPosition = 0
               mmMinHeight = 0
-              object ppTableCell7: TppTableCell
-                DesignLayer = ppDesignLayer3
-                UserName = 'TableCell7'
-                AlignChildren = False
-                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
-                Border.Weight = 1.000000000000000000
-                Border.mmPadding = 1058
-                Brush.Style = bsClear
-                Padding = 1.057999968528748000
-                RowSpan = 6
-                Transparent = True
-                mmHeight = 23548
-                mmLeft = 0
-                mmTop = 0
-                mmWidth = 48948
-                BandType = 4
-                LayerName = Foreground2
-                mmBottomOffset = 0
-                mmOverFlowOffset = 0
-                mmStopPosition = 0
-                mmMinHeight = 0
-                mmPadding = 1058
-                object ppLabel30: TppLabel
-                  DesignLayer = ppDesignLayer3
-                  UserName = 'SekI'
-                  Angle = 90
-                  Anchors = [atLeft, atRight]
-                  AutoSize = False
-                  Border.mmPadding = 0
-                  Caption = 'Sekundarstufe I / Lower Secondary'
-                  Font.Charset = DEFAULT_CHARSET
-                  Font.Color = clBlack
-                  Font.Name = 'Calibri'
-                  Font.Size = 10
-                  Font.Style = [fsBold]
-                  FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-                  FormFieldSettings.FormFieldType = fftNone
-                  TextAlignment = taCentered
-                  Transparent = True
-                  mmHeight = 104247
-                  mmLeft = 25406
-                  mmTop = 113506
-                  mmWidth = 6070
-                  BandType = 4
-                  LayerName = Foreground2
-                  RotatedOriginLeft = 0
-                  RotatedOriginTop = 77391
-                end
-              end
               object ppTableCell8: TppTableCell
                 DesignLayer = ppDesignLayer3
                 UserName = 'TableCell8'
@@ -3564,9 +3493,9 @@ object RepOrt: TppReport
                   TextAlignment = taCentered
                   Transparent = True
                   mmHeight = 4498
-                  mmLeft = 37832
-                  mmTop = 119361
-                  mmWidth = 30550
+                  mmLeft = 21166
+                  mmTop = 147716
+                  mmWidth = 27884
                   BandType = 4
                   LayerName = Foreground2
                 end
@@ -3610,9 +3539,9 @@ object RepOrt: TppReport
                   WordWrap = True
                   VerticalAlignment = avCenter
                   mmHeight = 14555
-                  mmLeft = 70498
-                  mmTop = 114242
-                  mmWidth = 30550
+                  mmLeft = 51166
+                  mmTop = 142597
+                  mmWidth = 25884
                   BandType = 4
                   LayerName = Foreground2
                 end
@@ -3637,7 +3566,7 @@ object RepOrt: TppReport
                 mmStopPosition = 0
                 mmMinHeight = 0
                 mmPadding = 1058
-                object ppLabel41: TppLabel
+                object ppLabel35: TppLabel
                   DesignLayer = ppDesignLayer3
                   UserName = 'C52'
                   Anchors = [atLeft, atRight]
@@ -3656,9 +3585,9 @@ object RepOrt: TppReport
                   WordWrap = True
                   VerticalAlignment = avCenter
                   mmHeight = 14552
-                  mmLeft = 103164
-                  mmTop = 114300
-                  mmWidth = 30550
+                  mmLeft = 79166
+                  mmTop = 142611
+                  mmWidth = 25884
                   BandType = 4
                   LayerName = Foreground2
                 end
@@ -3683,7 +3612,7 @@ object RepOrt: TppReport
                 mmStopPosition = 0
                 mmMinHeight = 0
                 mmPadding = 1058
-                object ppLabel40: TppLabel
+                object ppLabel36: TppLabel
                   DesignLayer = ppDesignLayer3
                   UserName = 'C53'
                   Anchors = [atLeft, atRight]
@@ -3702,9 +3631,9 @@ object RepOrt: TppReport
                   WordWrap = True
                   VerticalAlignment = avCenter
                   mmHeight = 14552
-                  mmLeft = 135830
-                  mmTop = 114300
-                  mmWidth = 30550
+                  mmLeft = 107166
+                  mmTop = 142611
+                  mmWidth = 25884
                   BandType = 4
                   LayerName = Foreground2
                 end
@@ -3748,9 +3677,55 @@ object RepOrt: TppReport
                   WordWrap = True
                   VerticalAlignment = avCenter
                   mmHeight = 14552
-                  mmLeft = 168496
-                  mmTop = 114300
-                  mmWidth = 30550
+                  mmLeft = 135166
+                  mmTop = 142611
+                  mmWidth = 25884
+                  BandType = 4
+                  LayerName = Foreground2
+                end
+              end
+              object ppTableCell2: TppTableCell
+                DesignLayer = ppDesignLayer3
+                UserName = 'TableCell2'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Weight = 1.000000000000000000
+                Border.mmPadding = 1058
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                Transparent = True
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground2
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+                object ppLabel42: TppLabel
+                  DesignLayer = ppDesignLayer3
+                  UserName = 'C55'
+                  Anchors = [atLeft, atRight]
+                  AutoSize = False
+                  Border.mmPadding = 0
+                  Caption = '--'
+                  Font.Charset = DEFAULT_CHARSET
+                  Font.Color = clBlack
+                  Font.Name = 'Calibri'
+                  Font.Size = 10
+                  Font.Style = []
+                  FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+                  FormFieldSettings.FormFieldType = fftNone
+                  TextAlignment = taCentered
+                  Transparent = True
+                  WordWrap = True
+                  VerticalAlignment = avCenter
+                  mmHeight = 14552
+                  mmLeft = 163166
+                  mmTop = 142611
+                  mmWidth = 25884
                   BandType = 4
                   LayerName = Foreground2
                 end
@@ -3769,28 +3744,6 @@ object RepOrt: TppReport
               mmOverFlowOffset = 0
               mmStopPosition = 0
               mmMinHeight = 0
-              object ppTableCell10: TppTableCell
-                DesignLayer = ppDesignLayer3
-                UserName = 'TableCell10'
-                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
-                Border.Weight = 1.000000000000000000
-                Border.mmPadding = 1058
-                Brush.Style = bsClear
-                Padding = 1.057999968528748000
-                RowSpan = 0
-                Transparent = True
-                mmHeight = 23548
-                mmLeft = 0
-                mmTop = 0
-                mmWidth = 48948
-                BandType = 4
-                LayerName = Foreground2
-                mmBottomOffset = 0
-                mmOverFlowOffset = 0
-                mmStopPosition = 0
-                mmMinHeight = 0
-                mmPadding = 1058
-              end
               object ppTableCell11: TppTableCell
                 DesignLayer = ppDesignLayer3
                 UserName = 'TableCell11'
@@ -3828,9 +3781,9 @@ object RepOrt: TppReport
                   TextAlignment = taCentered
                   Transparent = True
                   mmHeight = 4498
-                  mmLeft = 37832
-                  mmTop = 136561
-                  mmWidth = 30550
+                  mmLeft = 21166
+                  mmTop = 164916
+                  mmWidth = 27884
                   BandType = 4
                   LayerName = Foreground2
                 end
@@ -3874,9 +3827,9 @@ object RepOrt: TppReport
                   WordWrap = True
                   VerticalAlignment = avCenter
                   mmHeight = 14555
-                  mmLeft = 70498
-                  mmTop = 131969
-                  mmWidth = 30550
+                  mmLeft = 51166
+                  mmTop = 160324
+                  mmWidth = 25884
                   BandType = 4
                   LayerName = Foreground2
                 end
@@ -3901,7 +3854,7 @@ object RepOrt: TppReport
                 mmStopPosition = 0
                 mmMinHeight = 0
                 mmPadding = 1058
-                object ppLabel42: TppLabel
+                object ppLabel31: TppLabel
                   DesignLayer = ppDesignLayer3
                   UserName = 'C62'
                   Anchors = [atLeft, atRight]
@@ -3920,9 +3873,9 @@ object RepOrt: TppReport
                   WordWrap = True
                   VerticalAlignment = avCenter
                   mmHeight = 14552
-                  mmLeft = 103164
-                  mmTop = 132027
-                  mmWidth = 30550
+                  mmLeft = 79166
+                  mmTop = 160325
+                  mmWidth = 25884
                   BandType = 4
                   LayerName = Foreground2
                 end
@@ -3947,7 +3900,7 @@ object RepOrt: TppReport
                 mmStopPosition = 0
                 mmMinHeight = 0
                 mmPadding = 1058
-                object ppLabel39: TppLabel
+                object ppLabel30: TppLabel
                   DesignLayer = ppDesignLayer3
                   UserName = 'C63'
                   Anchors = [atLeft, atRight]
@@ -3966,9 +3919,9 @@ object RepOrt: TppReport
                   WordWrap = True
                   VerticalAlignment = avCenter
                   mmHeight = 14552
-                  mmLeft = 135830
-                  mmTop = 132027
-                  mmWidth = 30550
+                  mmLeft = 107166
+                  mmTop = 160325
+                  mmWidth = 25884
                   BandType = 4
                   LayerName = Foreground2
                 end
@@ -3993,7 +3946,7 @@ object RepOrt: TppReport
                 mmStopPosition = 0
                 mmMinHeight = 0
                 mmPadding = 1058
-                object ppLabel36: TppLabel
+                object ppLabel29: TppLabel
                   DesignLayer = ppDesignLayer3
                   UserName = 'C64'
                   Anchors = [atLeft, atRight]
@@ -4012,9 +3965,55 @@ object RepOrt: TppReport
                   WordWrap = True
                   VerticalAlignment = avCenter
                   mmHeight = 14552
-                  mmLeft = 168496
-                  mmTop = 132027
-                  mmWidth = 30550
+                  mmLeft = 135166
+                  mmTop = 160325
+                  mmWidth = 25884
+                  BandType = 4
+                  LayerName = Foreground2
+                end
+              end
+              object ppTableCell4: TppTableCell
+                DesignLayer = ppDesignLayer3
+                UserName = 'TableCell4'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Weight = 1.000000000000000000
+                Border.mmPadding = 1058
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                Transparent = True
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground2
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+                object ppLabel43: TppLabel
+                  DesignLayer = ppDesignLayer3
+                  UserName = 'C65'
+                  Anchors = [atLeft, atRight]
+                  AutoSize = False
+                  Border.mmPadding = 0
+                  Caption = '--'
+                  Font.Charset = DEFAULT_CHARSET
+                  Font.Color = clBlack
+                  Font.Name = 'Calibri'
+                  Font.Size = 10
+                  Font.Style = []
+                  FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+                  FormFieldSettings.FormFieldType = fftNone
+                  TextAlignment = taCentered
+                  Transparent = True
+                  WordWrap = True
+                  VerticalAlignment = avCenter
+                  mmHeight = 14552
+                  mmLeft = 163166
+                  mmTop = 160338
+                  mmWidth = 25884
                   BandType = 4
                   LayerName = Foreground2
                 end
@@ -4033,28 +4032,6 @@ object RepOrt: TppReport
               mmOverFlowOffset = 0
               mmStopPosition = 0
               mmMinHeight = 0
-              object ppTableCell17: TppTableCell
-                DesignLayer = ppDesignLayer3
-                UserName = 'TableCell17'
-                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
-                Border.Weight = 1.000000000000000000
-                Border.mmPadding = 1058
-                Brush.Style = bsClear
-                Padding = 1.057999968528748000
-                RowSpan = 0
-                Transparent = True
-                mmHeight = 23548
-                mmLeft = 0
-                mmTop = 0
-                mmWidth = 48948
-                BandType = 4
-                LayerName = Foreground2
-                mmBottomOffset = 0
-                mmOverFlowOffset = 0
-                mmStopPosition = 0
-                mmMinHeight = 0
-                mmPadding = 1058
-              end
               object ppTableCell18: TppTableCell
                 DesignLayer = ppDesignLayer3
                 UserName = 'TableCell18'
@@ -4092,9 +4069,9 @@ object RepOrt: TppReport
                   TextAlignment = taCentered
                   Transparent = True
                   mmHeight = 4498
-                  mmLeft = 37832
-                  mmTop = 154290
-                  mmWidth = 30550
+                  mmLeft = 21166
+                  mmTop = 182645
+                  mmWidth = 27884
                   BandType = 4
                   LayerName = Foreground2
                 end
@@ -4138,9 +4115,9 @@ object RepOrt: TppReport
                   WordWrap = True
                   VerticalAlignment = avCenter
                   mmHeight = 14555
-                  mmLeft = 70498
-                  mmTop = 149432
-                  mmWidth = 30550
+                  mmLeft = 51166
+                  mmTop = 177787
+                  mmWidth = 25884
                   BandType = 4
                   LayerName = Foreground2
                 end
@@ -4184,9 +4161,9 @@ object RepOrt: TppReport
                   WordWrap = True
                   VerticalAlignment = avCenter
                   mmHeight = 14555
-                  mmLeft = 103164
-                  mmTop = 149432
-                  mmWidth = 30550
+                  mmLeft = 79166
+                  mmTop = 177787
+                  mmWidth = 25884
                   BandType = 4
                   LayerName = Foreground2
                 end
@@ -4211,7 +4188,7 @@ object RepOrt: TppReport
                 mmStopPosition = 0
                 mmMinHeight = 0
                 mmPadding = 1058
-                object ppLabel38: TppLabel
+                object ppLabel28: TppLabel
                   DesignLayer = ppDesignLayer3
                   UserName = 'C73'
                   Anchors = [atLeft, atRight]
@@ -4230,9 +4207,9 @@ object RepOrt: TppReport
                   WordWrap = True
                   VerticalAlignment = avCenter
                   mmHeight = 14552
-                  mmLeft = 135830
-                  mmTop = 149490
-                  mmWidth = 30550
+                  mmLeft = 107166
+                  mmTop = 177788
+                  mmWidth = 25884
                   BandType = 4
                   LayerName = Foreground2
                 end
@@ -4257,7 +4234,7 @@ object RepOrt: TppReport
                 mmStopPosition = 0
                 mmMinHeight = 0
                 mmPadding = 1058
-                object ppLabel35: TppLabel
+                object ppLabel23: TppLabel
                   DesignLayer = ppDesignLayer3
                   UserName = 'C74'
                   Anchors = [atLeft, atRight]
@@ -4276,9 +4253,55 @@ object RepOrt: TppReport
                   WordWrap = True
                   VerticalAlignment = avCenter
                   mmHeight = 14552
-                  mmLeft = 168496
-                  mmTop = 149490
-                  mmWidth = 30550
+                  mmLeft = 135166
+                  mmTop = 177788
+                  mmWidth = 25884
+                  BandType = 4
+                  LayerName = Foreground2
+                end
+              end
+              object ppTableCell6: TppTableCell
+                DesignLayer = ppDesignLayer3
+                UserName = 'TableCell6'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Weight = 1.000000000000000000
+                Border.mmPadding = 1058
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                Transparent = True
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground2
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+                object ppLabel52: TppLabel
+                  DesignLayer = ppDesignLayer3
+                  UserName = 'C75'
+                  Anchors = [atLeft, atRight]
+                  AutoSize = False
+                  Border.mmPadding = 0
+                  Caption = '--'
+                  Font.Charset = DEFAULT_CHARSET
+                  Font.Color = clBlack
+                  Font.Name = 'Calibri'
+                  Font.Size = 10
+                  Font.Style = []
+                  FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+                  FormFieldSettings.FormFieldType = fftNone
+                  TextAlignment = taCentered
+                  Transparent = True
+                  WordWrap = True
+                  VerticalAlignment = avCenter
+                  mmHeight = 14552
+                  mmLeft = 163166
+                  mmTop = 177800
+                  mmWidth = 25884
                   BandType = 4
                   LayerName = Foreground2
                 end
@@ -4297,28 +4320,6 @@ object RepOrt: TppReport
               mmOverFlowOffset = 0
               mmStopPosition = 0
               mmMinHeight = 0
-              object ppTableCell21: TppTableCell
-                DesignLayer = ppDesignLayer3
-                UserName = 'TableCell21'
-                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
-                Border.Weight = 1.000000000000000000
-                Border.mmPadding = 1058
-                Brush.Style = bsClear
-                Padding = 1.057999968528748000
-                RowSpan = 0
-                Transparent = True
-                mmHeight = 23548
-                mmLeft = 0
-                mmTop = 0
-                mmWidth = 48948
-                BandType = 4
-                LayerName = Foreground2
-                mmBottomOffset = 0
-                mmOverFlowOffset = 0
-                mmStopPosition = 0
-                mmMinHeight = 0
-                mmPadding = 1058
-              end
               object ppTableCell22: TppTableCell
                 DesignLayer = ppDesignLayer3
                 UserName = 'TableCell22'
@@ -4356,9 +4357,9 @@ object RepOrt: TppReport
                   TextAlignment = taCentered
                   Transparent = True
                   mmHeight = 4498
-                  mmLeft = 37832
-                  mmTop = 172019
-                  mmWidth = 30550
+                  mmLeft = 21166
+                  mmTop = 200374
+                  mmWidth = 27884
                   BandType = 4
                   LayerName = Foreground2
                 end
@@ -4402,9 +4403,9 @@ object RepOrt: TppReport
                   WordWrap = True
                   VerticalAlignment = avCenter
                   mmHeight = 14555
-                  mmLeft = 70498
-                  mmTop = 166894
-                  mmWidth = 30550
+                  mmLeft = 51166
+                  mmTop = 195249
+                  mmWidth = 25884
                   BandType = 4
                   LayerName = Foreground2
                 end
@@ -4448,9 +4449,9 @@ object RepOrt: TppReport
                   WordWrap = True
                   VerticalAlignment = avCenter
                   mmHeight = 14555
-                  mmLeft = 103164
-                  mmTop = 166894
-                  mmWidth = 30550
+                  mmLeft = 79166
+                  mmTop = 195249
+                  mmWidth = 25884
                   BandType = 4
                   LayerName = Foreground2
                 end
@@ -4494,9 +4495,9 @@ object RepOrt: TppReport
                   WordWrap = True
                   VerticalAlignment = avCenter
                   mmHeight = 14555
-                  mmLeft = 135830
-                  mmTop = 166894
-                  mmWidth = 30550
+                  mmLeft = 107166
+                  mmTop = 195249
+                  mmWidth = 25884
                   BandType = 4
                   LayerName = Foreground2
                 end
@@ -4540,9 +4541,55 @@ object RepOrt: TppReport
                   WordWrap = True
                   VerticalAlignment = avCenter
                   mmHeight = 14555
-                  mmLeft = 168496
-                  mmTop = 166894
-                  mmWidth = 30550
+                  mmLeft = 135166
+                  mmTop = 195249
+                  mmWidth = 25884
+                  BandType = 4
+                  LayerName = Foreground2
+                end
+              end
+              object ppTableCell7: TppTableCell
+                DesignLayer = ppDesignLayer3
+                UserName = 'TableCell7'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Weight = 1.000000000000000000
+                Border.mmPadding = 1058
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                Transparent = True
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground2
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+                object ppLabel53: TppLabel
+                  DesignLayer = ppDesignLayer3
+                  UserName = 'C85'
+                  Anchors = [atLeft, atRight]
+                  AutoSize = False
+                  Border.mmPadding = 0
+                  Caption = '--'
+                  Font.Charset = DEFAULT_CHARSET
+                  Font.Color = clBlack
+                  Font.Name = 'Calibri'
+                  Font.Size = 10
+                  Font.Style = []
+                  FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+                  FormFieldSettings.FormFieldType = fftNone
+                  TextAlignment = taCentered
+                  Transparent = True
+                  WordWrap = True
+                  VerticalAlignment = avCenter
+                  mmHeight = 14552
+                  mmLeft = 163166
+                  mmTop = 195263
+                  mmWidth = 25884
                   BandType = 4
                   LayerName = Foreground2
                 end
@@ -4561,28 +4608,6 @@ object RepOrt: TppReport
               mmOverFlowOffset = 0
               mmStopPosition = 0
               mmMinHeight = 0
-              object ppTableCell25: TppTableCell
-                DesignLayer = ppDesignLayer3
-                UserName = 'TableCell25'
-                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
-                Border.Weight = 1.000000000000000000
-                Border.mmPadding = 1058
-                Brush.Style = bsClear
-                Padding = 1.057999968528748000
-                RowSpan = 0
-                Transparent = True
-                mmHeight = 23548
-                mmLeft = 0
-                mmTop = 0
-                mmWidth = 48948
-                BandType = 4
-                LayerName = Foreground2
-                mmBottomOffset = 0
-                mmOverFlowOffset = 0
-                mmStopPosition = 0
-                mmMinHeight = 0
-                mmPadding = 1058
-              end
               object ppTableCell26: TppTableCell
                 DesignLayer = ppDesignLayer3
                 UserName = 'TableCell26'
@@ -4620,9 +4645,9 @@ object RepOrt: TppReport
                   TextAlignment = taCentered
                   Transparent = True
                   mmHeight = 4498
-                  mmLeft = 37832
-                  mmTop = 189748
-                  mmWidth = 30550
+                  mmLeft = 21166
+                  mmTop = 218103
+                  mmWidth = 27884
                   BandType = 4
                   LayerName = Foreground2
                 end
@@ -4666,9 +4691,9 @@ object RepOrt: TppReport
                   WordWrap = True
                   VerticalAlignment = avCenter
                   mmHeight = 14555
-                  mmLeft = 70498
-                  mmTop = 184621
-                  mmWidth = 30550
+                  mmLeft = 51166
+                  mmTop = 212976
+                  mmWidth = 25884
                   BandType = 4
                   LayerName = Foreground2
                 end
@@ -4712,9 +4737,9 @@ object RepOrt: TppReport
                   WordWrap = True
                   VerticalAlignment = avCenter
                   mmHeight = 14555
-                  mmLeft = 103164
-                  mmTop = 184621
-                  mmWidth = 30550
+                  mmLeft = 79166
+                  mmTop = 212976
+                  mmWidth = 25884
                   BandType = 4
                   LayerName = Foreground2
                 end
@@ -4758,9 +4783,9 @@ object RepOrt: TppReport
                   WordWrap = True
                   VerticalAlignment = avCenter
                   mmHeight = 14555
-                  mmLeft = 135830
-                  mmTop = 184621
-                  mmWidth = 30550
+                  mmLeft = 107166
+                  mmTop = 212976
+                  mmWidth = 25884
                   BandType = 4
                   LayerName = Foreground2
                 end
@@ -4804,9 +4829,55 @@ object RepOrt: TppReport
                   WordWrap = True
                   VerticalAlignment = avCenter
                   mmHeight = 14555
-                  mmLeft = 168496
-                  mmTop = 184621
-                  mmWidth = 30550
+                  mmLeft = 135166
+                  mmTop = 212976
+                  mmWidth = 25884
+                  BandType = 4
+                  LayerName = Foreground2
+                end
+              end
+              object ppTableCell10: TppTableCell
+                DesignLayer = ppDesignLayer3
+                UserName = 'TableCell10'
+                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
+                Border.Weight = 1.000000000000000000
+                Border.mmPadding = 1058
+                Brush.Style = bsClear
+                Padding = 1.057999968528748000
+                Transparent = True
+                mmHeight = 23548
+                mmLeft = 0
+                mmTop = 0
+                mmWidth = 48948
+                BandType = 4
+                LayerName = Foreground2
+                mmBottomOffset = 0
+                mmOverFlowOffset = 0
+                mmStopPosition = 0
+                mmMinHeight = 0
+                mmPadding = 1058
+                object ppLabel58: TppLabel
+                  DesignLayer = ppDesignLayer3
+                  UserName = 'C95'
+                  Anchors = [atLeft, atRight]
+                  AutoSize = False
+                  Border.mmPadding = 0
+                  Caption = '--'#13#10'Stunden'#13#10'lessons'
+                  Font.Charset = DEFAULT_CHARSET
+                  Font.Color = clBlack
+                  Font.Name = 'Calibri'
+                  Font.Size = 10
+                  Font.Style = []
+                  FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+                  FormFieldSettings.FormFieldType = fftNone
+                  TextAlignment = taCentered
+                  Transparent = True
+                  WordWrap = True
+                  VerticalAlignment = avCenter
+                  mmHeight = 14552
+                  mmLeft = 163166
+                  mmTop = 212990
+                  mmWidth = 25884
                   BandType = 4
                   LayerName = Foreground2
                 end
@@ -4825,28 +4896,6 @@ object RepOrt: TppReport
               mmOverFlowOffset = 0
               mmStopPosition = 0
               mmMinHeight = 0
-              object ppTableCell50: TppTableCell
-                DesignLayer = ppDesignLayer3
-                UserName = 'TableCell50'
-                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
-                Border.Weight = 1.000000000000000000
-                Border.mmPadding = 1058
-                Brush.Style = bsClear
-                Padding = 1.057999968528748000
-                RowSpan = 0
-                Transparent = True
-                mmHeight = 23548
-                mmLeft = 0
-                mmTop = 0
-                mmWidth = 48948
-                BandType = 4
-                LayerName = Foreground2
-                mmBottomOffset = 0
-                mmOverFlowOffset = 0
-                mmStopPosition = 0
-                mmMinHeight = 0
-                mmPadding = 1058
-              end
               object ppTableCell51: TppTableCell
                 DesignLayer = ppDesignLayer3
                 UserName = 'TableCell51'
@@ -4884,43 +4933,11 @@ object RepOrt: TppReport
                   TextAlignment = taCentered
                   Transparent = True
                   mmHeight = 4498
-                  mmLeft = 37832
-                  mmTop = 202178
-                  mmWidth = 30550
+                  mmLeft = 21166
+                  mmTop = 235568
+                  mmWidth = 27884
                   BandType = 4
                   LayerName = Foreground2
-                end
-                object ppRichText5: TppRichText
-                  DesignLayer = ppDesignLayer3
-                  UserName = 'RichText5'
-                  Font.Charset = DEFAULT_CHARSET
-                  Font.Color = clBlack
-                  Font.Name = 'Archivo Narrow'
-                  Font.Size = 8
-                  Font.Style = []
-                  Anchors = [atLeft, atRight]
-                  Border.mmPadding = 0
-                  Caption = 'RichText5'
-                  ExportRTFAsBitmap = False
-                  RichText = 
-                    '{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1031{\fonttbl{\f' +
-                    '0\fnil Archivo Narrow;}{\f1\fnil\fcharset0 Archivo Narrow;}}'#13#10'{\' +
-                    'colortbl ;\red0\green0\blue0;}'#13#10'{\*\generator Riched20 10.0.2610' +
-                    '0}\viewkind4\uc1 '#13#10'\pard\cf1\f0\fs16 Schulformen der Sekun-\par'#13 +
-                    #10'\f1 darstufe I \'#39'82 Gesamtschu-\f0\par'#13#10'len und Gymnasien G9\pa' +
-                    'r'#13#10'}'#13#10#0
-                  RemoveEmptyLines = False
-                  Transparent = True
-                  mmHeight = 10054
-                  mmLeft = 37832
-                  mmTop = 206640
-                  mmWidth = 30550
-                  BandType = 4
-                  LayerName = Foreground2
-                  mmBottomOffset = 0
-                  mmOverFlowOffset = 0
-                  mmStopPosition = 0
-                  mmMinHeight = 0
                 end
               end
               object ppTableCell52: TppTableCell
@@ -4962,9 +4979,9 @@ object RepOrt: TppReport
                   WordWrap = True
                   VerticalAlignment = avCenter
                   mmHeight = 14555
-                  mmLeft = 70498
-                  mmTop = 202084
-                  mmWidth = 30550
+                  mmLeft = 51166
+                  mmTop = 230439
+                  mmWidth = 25884
                   BandType = 4
                   LayerName = Foreground2
                 end
@@ -5008,9 +5025,9 @@ object RepOrt: TppReport
                   WordWrap = True
                   VerticalAlignment = avCenter
                   mmHeight = 14555
-                  mmLeft = 103164
-                  mmTop = 202084
-                  mmWidth = 30550
+                  mmLeft = 79166
+                  mmTop = 230439
+                  mmWidth = 25884
                   BandType = 4
                   LayerName = Foreground2
                 end
@@ -5054,9 +5071,9 @@ object RepOrt: TppReport
                   WordWrap = True
                   VerticalAlignment = avCenter
                   mmHeight = 14555
-                  mmLeft = 135830
-                  mmTop = 202084
-                  mmWidth = 30550
+                  mmLeft = 107166
+                  mmTop = 230439
+                  mmWidth = 25884
                   BandType = 4
                   LayerName = Foreground2
                 end
@@ -5100,287 +5117,16 @@ object RepOrt: TppReport
                   WordWrap = True
                   VerticalAlignment = avCenter
                   mmHeight = 14555
-                  mmLeft = 168496
-                  mmTop = 202084
-                  mmWidth = 30550
+                  mmLeft = 135166
+                  mmTop = 230439
+                  mmWidth = 25884
                   BandType = 4
                   LayerName = Foreground2
                 end
               end
-            end
-            object ppTableRow9: TppTableRow
-              DesignLayer = ppDesignLayer3
-              UserName = 'TableRow9'
-              mmHeight = 17662
-              mmLeft = 0
-              mmTop = 0
-              mmWidth = 48948
-              BandType = 4
-              LayerName = Foreground2
-              mmBottomOffset = 0
-              mmOverFlowOffset = 0
-              mmStopPosition = 0
-              mmMinHeight = 0
-              object ppTableCell57: TppTableCell
+              object ppTableCell14: TppTableCell
                 DesignLayer = ppDesignLayer3
-                UserName = 'TableCell57'
-                AlignChildren = False
-                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
-                Border.Weight = 1.000000000000000000
-                Border.mmPadding = 1058
-                Brush.Style = bsClear
-                Padding = 1.057999968528748000
-                RowSpan = 3
-                Transparent = True
-                mmHeight = 23548
-                mmLeft = 0
-                mmTop = 0
-                mmWidth = 48948
-                BandType = 4
-                LayerName = Foreground2
-                mmBottomOffset = 0
-                mmOverFlowOffset = 0
-                mmStopPosition = 0
-                mmMinHeight = 0
-                mmPadding = 1058
-                object ppLabel31: TppLabel
-                  DesignLayer = ppDesignLayer3
-                  UserName = 'GyOb'
-                  Angle = 90
-                  Anchors = [atLeft, atRight]
-                  AutoSize = False
-                  Border.mmPadding = 0
-                  Caption = 'Gymnasiale Oberstufe'
-                  Font.Charset = DEFAULT_CHARSET
-                  Font.Color = clBlack
-                  Font.Name = 'Calibri'
-                  Font.Size = 10
-                  Font.Style = [fsBold]
-                  FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-                  FormFieldSettings.FormFieldType = fftNone
-                  TextAlignment = taCentered
-                  Transparent = True
-                  mmHeight = 51879
-                  mmLeft = 23286
-                  mmTop = 219116
-                  mmWidth = 5000
-                  BandType = 4
-                  LayerName = Foreground2
-                  RotatedOriginLeft = 0
-                  RotatedOriginTop = 41947
-                end
-                object ppLabel148: TppLabel
-                  DesignLayer = ppDesignLayer3
-                  UserName = 'LoSec'
-                  Angle = 90
-                  Anchors = [atLeft, atRight]
-                  AutoSize = False
-                  Border.mmPadding = 0
-                  Caption = 'Upper Secondary'
-                  Font.Charset = DEFAULT_CHARSET
-                  Font.Color = clBlack
-                  Font.Name = 'Calibri'
-                  Font.Size = 10
-                  Font.Style = [fsBold]
-                  FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-                  FormFieldSettings.FormFieldType = fftNone
-                  TextAlignment = taCentered
-                  Transparent = True
-                  mmHeight = 51858
-                  mmLeft = 28551
-                  mmTop = 219017
-                  mmWidth = 5000
-                  BandType = 4
-                  LayerName = Foreground2
-                  RotatedOriginLeft = 0
-                  RotatedOriginTop = 38365
-                end
-              end
-              object ppTableCell58: TppTableCell
-                DesignLayer = ppDesignLayer3
-                UserName = 'TableCell58'
-                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
-                Border.Weight = 1.000000000000000000
-                Border.mmPadding = 1058
-                Brush.Style = bsClear
-                Padding = 1.057999968528748000
-                Transparent = True
-                mmHeight = 23548
-                mmLeft = 0
-                mmTop = 0
-                mmWidth = 48948
-                BandType = 4
-                LayerName = Foreground2
-                mmBottomOffset = 0
-                mmOverFlowOffset = 0
-                mmStopPosition = 0
-                mmMinHeight = 0
-                mmPadding = 1058
-                object ppLabel23: TppLabel
-                  DesignLayer = ppDesignLayer3
-                  UserName = 'Jg11'
-                  Anchors = [atLeft, atRight]
-                  AutoSize = False
-                  Border.mmPadding = 0
-                  Caption = 'Einf'#252'hrungsphase'
-                  Font.Charset = DEFAULT_CHARSET
-                  Font.Color = clBlack
-                  Font.Name = 'Calibri'
-                  Font.Size = 10
-                  Font.Style = [fsBold]
-                  FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-                  FormFieldSettings.FormFieldType = fftNone
-                  TextAlignment = taCentered
-                  Transparent = True
-                  mmHeight = 4498
-                  mmLeft = 37832
-                  mmTop = 225206
-                  mmWidth = 30550
-                  BandType = 4
-                  LayerName = Foreground2
-                end
-              end
-              object ppTableCell59: TppTableCell
-                DesignLayer = ppDesignLayer3
-                UserName = 'TableCell59'
-                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
-                Border.Weight = 1.000000000000000000
-                Border.mmPadding = 1058
-                Brush.Style = bsClear
-                Padding = 1.057999968528748000
-                Transparent = True
-                mmHeight = 23548
-                mmLeft = 0
-                mmTop = 0
-                mmWidth = 48948
-                BandType = 4
-                LayerName = Foreground2
-                mmBottomOffset = 0
-                mmOverFlowOffset = 0
-                mmStopPosition = 0
-                mmMinHeight = 0
-                mmPadding = 1058
-                object ppLabel72: TppLabel
-                  DesignLayer = ppDesignLayer3
-                  UserName = 'C111'
-                  Anchors = [atLeft, atRight]
-                  AutoSize = False
-                  Border.mmPadding = 0
-                  Caption = '--'#13#10'Stunden'#13#10'lessons'
-                  Font.Charset = DEFAULT_CHARSET
-                  Font.Color = clBlack
-                  Font.Name = 'Calibri'
-                  Font.Size = 10
-                  Font.Style = []
-                  FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-                  FormFieldSettings.FormFieldType = fftNone
-                  TextAlignment = taCentered
-                  Transparent = True
-                  WordWrap = True
-                  VerticalAlignment = avCenter
-                  mmHeight = 14555
-                  mmLeft = 70498
-                  mmTop = 220076
-                  mmWidth = 30550
-                  BandType = 4
-                  LayerName = Foreground2
-                end
-              end
-              object ppTableCell60: TppTableCell
-                DesignLayer = ppDesignLayer3
-                UserName = 'TableCell60'
-                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
-                Border.Weight = 1.000000000000000000
-                Border.mmPadding = 1058
-                Brush.Style = bsClear
-                Padding = 1.057999968528748000
-                Transparent = True
-                mmHeight = 23548
-                mmLeft = 0
-                mmTop = 0
-                mmWidth = 48948
-                BandType = 4
-                LayerName = Foreground2
-                mmBottomOffset = 0
-                mmOverFlowOffset = 0
-                mmStopPosition = 0
-                mmMinHeight = 0
-                mmPadding = 1058
-                object ppLabel70: TppLabel
-                  DesignLayer = ppDesignLayer3
-                  UserName = 'C112'
-                  Anchors = [atLeft, atRight]
-                  AutoSize = False
-                  Border.mmPadding = 0
-                  Caption = '--'#13#10'Stunden'#13#10'lessons'
-                  Font.Charset = DEFAULT_CHARSET
-                  Font.Color = clBlack
-                  Font.Name = 'Calibri'
-                  Font.Size = 10
-                  Font.Style = []
-                  FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-                  FormFieldSettings.FormFieldType = fftNone
-                  TextAlignment = taCentered
-                  Transparent = True
-                  WordWrap = True
-                  VerticalAlignment = avCenter
-                  mmHeight = 14555
-                  mmLeft = 103164
-                  mmTop = 220076
-                  mmWidth = 30550
-                  BandType = 4
-                  LayerName = Foreground2
-                end
-              end
-              object ppTableCell61: TppTableCell
-                DesignLayer = ppDesignLayer3
-                UserName = 'TableCell61'
-                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
-                Border.Weight = 1.000000000000000000
-                Border.mmPadding = 1058
-                Brush.Style = bsClear
-                Padding = 1.057999968528748000
-                Transparent = True
-                mmHeight = 23548
-                mmLeft = 0
-                mmTop = 0
-                mmWidth = 48948
-                BandType = 4
-                LayerName = Foreground2
-                mmBottomOffset = 0
-                mmOverFlowOffset = 0
-                mmStopPosition = 0
-                mmMinHeight = 0
-                mmPadding = 1058
-                object ppLabel60: TppLabel
-                  DesignLayer = ppDesignLayer3
-                  UserName = 'C113'
-                  Anchors = [atLeft, atRight]
-                  AutoSize = False
-                  Border.mmPadding = 0
-                  Caption = '--'#13#10'Stunden'#13#10'lessons'
-                  Font.Charset = DEFAULT_CHARSET
-                  Font.Color = clBlack
-                  Font.Name = 'Calibri'
-                  Font.Size = 10
-                  Font.Style = []
-                  FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-                  FormFieldSettings.FormFieldType = fftNone
-                  TextAlignment = taCentered
-                  Transparent = True
-                  WordWrap = True
-                  VerticalAlignment = avCenter
-                  mmHeight = 14555
-                  mmLeft = 135830
-                  mmTop = 220076
-                  mmWidth = 30550
-                  BandType = 4
-                  LayerName = Foreground2
-                end
-              end
-              object ppTableCell62: TppTableCell
-                DesignLayer = ppDesignLayer3
-                UserName = 'TableCell62'
+                UserName = 'TableCell14'
                 Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
                 Border.Weight = 1.000000000000000000
                 Border.mmPadding = 1058
@@ -5400,7 +5146,7 @@ object RepOrt: TppReport
                 mmPadding = 1058
                 object ppLabel59: TppLabel
                   DesignLayer = ppDesignLayer3
-                  UserName = 'C114'
+                  UserName = 'C105'
                   Anchors = [atLeft, atRight]
                   AutoSize = False
                   Border.mmPadding = 0
@@ -5416,736 +5162,38 @@ object RepOrt: TppReport
                   Transparent = True
                   WordWrap = True
                   VerticalAlignment = avCenter
-                  mmHeight = 14555
-                  mmLeft = 168496
-                  mmTop = 220076
-                  mmWidth = 30550
+                  mmHeight = 14552
+                  mmLeft = 163166
+                  mmTop = 230453
+                  mmWidth = 25884
                   BandType = 4
                   LayerName = Foreground2
                 end
               end
             end
-            object ppTableRow10: TppTableRow
-              DesignLayer = ppDesignLayer3
-              UserName = 'TableRow10'
-              mmHeight = 17662
-              mmLeft = 0
-              mmTop = 0
-              mmWidth = 48948
-              BandType = 4
-              LayerName = Foreground2
-              mmBottomOffset = 0
-              mmOverFlowOffset = 0
-              mmStopPosition = 0
-              mmMinHeight = 0
-              object ppTableCell64: TppTableCell
-                DesignLayer = ppDesignLayer3
-                UserName = 'TableCell64'
-                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
-                Border.Weight = 1.000000000000000000
-                Border.mmPadding = 1058
-                Brush.Style = bsClear
-                Padding = 1.057999968528748000
-                RowSpan = 0
-                Transparent = True
-                mmHeight = 23548
-                mmLeft = 0
-                mmTop = 0
-                mmWidth = 48948
-                BandType = 4
-                LayerName = Foreground2
-                mmBottomOffset = 0
-                mmOverFlowOffset = 0
-                mmStopPosition = 0
-                mmMinHeight = 0
-                mmPadding = 1058
-              end
-              object ppTableCell65: TppTableCell
-                DesignLayer = ppDesignLayer3
-                UserName = 'TableCell65'
-                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
-                Border.Weight = 1.000000000000000000
-                Border.mmPadding = 1058
-                Brush.Style = bsClear
-                Padding = 1.057999968528748000
-                Transparent = True
-                mmHeight = 23548
-                mmLeft = 0
-                mmTop = 0
-                mmWidth = 48948
-                BandType = 4
-                LayerName = Foreground2
-                mmBottomOffset = 0
-                mmOverFlowOffset = 0
-                mmStopPosition = 0
-                mmMinHeight = 0
-                mmPadding = 1058
-                object ppLabel28: TppLabel
-                  DesignLayer = ppDesignLayer3
-                  UserName = 'Jg12'
-                  Anchors = [atLeft, atRight]
-                  AutoSize = False
-                  Border.mmPadding = 0
-                  Caption = 'Qualifikations- phase 1'
-                  Font.Charset = DEFAULT_CHARSET
-                  Font.Color = clBlack
-                  Font.Name = 'Calibri'
-                  Font.Size = 10
-                  Font.Style = [fsBold]
-                  FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-                  FormFieldSettings.FormFieldType = fftNone
-                  TextAlignment = taCentered
-                  Transparent = True
-                  WordWrap = True
-                  mmHeight = 9000
-                  mmLeft = 37832
-                  mmTop = 240295
-                  mmWidth = 30550
-                  BandType = 4
-                  LayerName = Foreground2
-                end
-              end
-              object ppTableCell66: TppTableCell
-                DesignLayer = ppDesignLayer3
-                UserName = 'TableCell66'
-                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
-                Border.Weight = 1.000000000000000000
-                Border.mmPadding = 1058
-                Brush.Style = bsClear
-                Padding = 1.057999968528748000
-                Transparent = True
-                mmHeight = 23548
-                mmLeft = 0
-                mmTop = 0
-                mmWidth = 48948
-                BandType = 4
-                LayerName = Foreground2
-                mmBottomOffset = 0
-                mmOverFlowOffset = 0
-                mmStopPosition = 0
-                mmMinHeight = 0
-                mmPadding = 1058
-                object ppLabel73: TppLabel
-                  DesignLayer = ppDesignLayer3
-                  UserName = 'C121'
-                  Anchors = [atLeft, atRight]
-                  AutoSize = False
-                  Border.mmPadding = 0
-                  Caption = '--'#13#10'Stunden'#13#10'lessons'
-                  Font.Charset = DEFAULT_CHARSET
-                  Font.Color = clBlack
-                  Font.Name = 'Calibri'
-                  Font.Size = 10
-                  Font.Style = []
-                  FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-                  FormFieldSettings.FormFieldType = fftNone
-                  TextAlignment = taCentered
-                  Transparent = True
-                  WordWrap = True
-                  VerticalAlignment = avCenter
-                  mmHeight = 14555
-                  mmLeft = 70498
-                  mmTop = 237804
-                  mmWidth = 30550
-                  BandType = 4
-                  LayerName = Foreground2
-                end
-              end
-              object ppTableCell67: TppTableCell
-                DesignLayer = ppDesignLayer3
-                UserName = 'TableCell67'
-                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
-                Border.Weight = 1.000000000000000000
-                Border.mmPadding = 1058
-                Brush.Style = bsClear
-                Padding = 1.057999968528748000
-                Transparent = True
-                mmHeight = 23548
-                mmLeft = 0
-                mmTop = 0
-                mmWidth = 48948
-                BandType = 4
-                LayerName = Foreground2
-                mmBottomOffset = 0
-                mmOverFlowOffset = 0
-                mmStopPosition = 0
-                mmMinHeight = 0
-                mmPadding = 1058
-                object ppLabel74: TppLabel
-                  DesignLayer = ppDesignLayer3
-                  UserName = 'C122'
-                  Anchors = [atLeft, atRight]
-                  AutoSize = False
-                  Border.mmPadding = 0
-                  Caption = '--'#13#10'Stunden'#13#10'lessons'
-                  Font.Charset = DEFAULT_CHARSET
-                  Font.Color = clBlack
-                  Font.Name = 'Calibri'
-                  Font.Size = 10
-                  Font.Style = []
-                  FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-                  FormFieldSettings.FormFieldType = fftNone
-                  TextAlignment = taCentered
-                  Transparent = True
-                  WordWrap = True
-                  VerticalAlignment = avCenter
-                  mmHeight = 14555
-                  mmLeft = 103164
-                  mmTop = 237804
-                  mmWidth = 30550
-                  BandType = 4
-                  LayerName = Foreground2
-                end
-              end
-              object ppTableCell68: TppTableCell
-                DesignLayer = ppDesignLayer3
-                UserName = 'TableCell68'
-                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
-                Border.Weight = 1.000000000000000000
-                Border.mmPadding = 1058
-                Brush.Style = bsClear
-                Padding = 1.057999968528748000
-                Transparent = True
-                mmHeight = 23548
-                mmLeft = 0
-                mmTop = 0
-                mmWidth = 48948
-                BandType = 4
-                LayerName = Foreground2
-                mmBottomOffset = 0
-                mmOverFlowOffset = 0
-                mmStopPosition = 0
-                mmMinHeight = 0
-                mmPadding = 1058
-                object ppLabel75: TppLabel
-                  DesignLayer = ppDesignLayer3
-                  UserName = 'C123'
-                  Anchors = [atLeft, atRight]
-                  AutoSize = False
-                  Border.mmPadding = 0
-                  Caption = '--'#13#10'Stunden'#13#10'lessons'
-                  Font.Charset = DEFAULT_CHARSET
-                  Font.Color = clBlack
-                  Font.Name = 'Calibri'
-                  Font.Size = 10
-                  Font.Style = []
-                  FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-                  FormFieldSettings.FormFieldType = fftNone
-                  TextAlignment = taCentered
-                  Transparent = True
-                  WordWrap = True
-                  VerticalAlignment = avCenter
-                  mmHeight = 14555
-                  mmLeft = 135830
-                  mmTop = 237804
-                  mmWidth = 30550
-                  BandType = 4
-                  LayerName = Foreground2
-                end
-              end
-              object ppTableCell69: TppTableCell
-                DesignLayer = ppDesignLayer3
-                UserName = 'TableCell69'
-                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
-                Border.Weight = 1.000000000000000000
-                Border.mmPadding = 1058
-                Brush.Style = bsClear
-                Padding = 1.057999968528748000
-                Transparent = True
-                mmHeight = 23548
-                mmLeft = 0
-                mmTop = 0
-                mmWidth = 48948
-                BandType = 4
-                LayerName = Foreground2
-                mmBottomOffset = 0
-                mmOverFlowOffset = 0
-                mmStopPosition = 0
-                mmMinHeight = 0
-                mmPadding = 1058
-                object ppLabel76: TppLabel
-                  DesignLayer = ppDesignLayer3
-                  UserName = 'C124'
-                  Anchors = [atLeft, atRight]
-                  AutoSize = False
-                  Border.mmPadding = 0
-                  Caption = '--'#13#10'Stunden'#13#10'lessons'
-                  Font.Charset = DEFAULT_CHARSET
-                  Font.Color = clBlack
-                  Font.Name = 'Calibri'
-                  Font.Size = 10
-                  Font.Style = []
-                  FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-                  FormFieldSettings.FormFieldType = fftNone
-                  TextAlignment = taCentered
-                  Transparent = True
-                  WordWrap = True
-                  VerticalAlignment = avCenter
-                  mmHeight = 14555
-                  mmLeft = 168496
-                  mmTop = 237804
-                  mmWidth = 30550
-                  BandType = 4
-                  LayerName = Foreground2
-                end
-              end
+            object ppTableColumn2: TppTableColumn
+              UserName = 'TableColumn2'
+              mmWidth = 30000
             end
-            object ppTableRow11: TppTableRow
-              DesignLayer = ppDesignLayer3
-              UserName = 'TableRow11'
-              mmHeight = 17664
-              mmLeft = 0
-              mmTop = 238948
-              mmWidth = 48948
-              BandType = 4
-              LayerName = Foreground2
-              mmBottomOffset = 0
-              mmOverFlowOffset = 0
-              mmStopPosition = 0
-              mmMinHeight = 0
-              object ppTableCell71: TppTableCell
-                DesignLayer = ppDesignLayer3
-                UserName = 'TableCell71'
-                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
-                Border.Weight = 1.000000000000000000
-                Border.mmPadding = 1058
-                Brush.Style = bsClear
-                Padding = 1.057999968528748000
-                RowSpan = 0
-                Transparent = True
-                mmHeight = 23548
-                mmLeft = 0
-                mmTop = 0
-                mmWidth = 48948
-                BandType = 4
-                LayerName = Foreground2
-                mmBottomOffset = 0
-                mmOverFlowOffset = 0
-                mmStopPosition = 0
-                mmMinHeight = 0
-                mmPadding = 1058
-              end
-              object ppTableCell72: TppTableCell
-                DesignLayer = ppDesignLayer3
-                UserName = 'TableCell72'
-                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
-                Border.Weight = 1.000000000000000000
-                Border.mmPadding = 1058
-                Brush.Style = bsClear
-                Padding = 1.057999968528748000
-                Transparent = True
-                mmHeight = 23548
-                mmLeft = 0
-                mmTop = 0
-                mmWidth = 48948
-                BandType = 4
-                LayerName = Foreground2
-                mmBottomOffset = 0
-                mmOverFlowOffset = 0
-                mmStopPosition = 0
-                mmMinHeight = 0
-                mmPadding = 1058
-                object ppLabel29: TppLabel
-                  DesignLayer = ppDesignLayer3
-                  UserName = 'Jg13'
-                  Anchors = [atLeft, atRight]
-                  AutoSize = False
-                  Border.mmPadding = 0
-                  Caption = 'Qualifikations- phase 2'
-                  Font.Charset = DEFAULT_CHARSET
-                  Font.Color = clBlack
-                  Font.Name = 'Calibri'
-                  Font.Size = 10
-                  Font.Style = [fsBold]
-                  FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-                  FormFieldSettings.FormFieldType = fftNone
-                  TextAlignment = taCentered
-                  Transparent = True
-                  WordWrap = True
-                  mmHeight = 9000
-                  mmLeft = 37832
-                  mmTop = 258023
-                  mmWidth = 30550
-                  BandType = 4
-                  LayerName = Foreground2
-                end
-              end
-              object ppTableCell73: TppTableCell
-                DesignLayer = ppDesignLayer3
-                UserName = 'TableCell73'
-                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
-                Border.Weight = 1.000000000000000000
-                Border.mmPadding = 1058
-                Brush.Style = bsClear
-                Padding = 1.057999968528748000
-                Transparent = True
-                mmHeight = 23548
-                mmLeft = 0
-                mmTop = 0
-                mmWidth = 48948
-                BandType = 4
-                LayerName = Foreground2
-                mmBottomOffset = 0
-                mmOverFlowOffset = 0
-                mmStopPosition = 0
-                mmMinHeight = 0
-                mmPadding = 1058
-                object ppLabel82: TppLabel
-                  DesignLayer = ppDesignLayer3
-                  UserName = 'C131'
-                  Anchors = [atLeft, atRight]
-                  AutoSize = False
-                  Border.mmPadding = 0
-                  Caption = '--'#13#10'Stunden'#13#10'lessons'
-                  Font.Charset = DEFAULT_CHARSET
-                  Font.Color = clBlack
-                  Font.Name = 'Calibri'
-                  Font.Size = 10
-                  Font.Style = []
-                  FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-                  FormFieldSettings.FormFieldType = fftNone
-                  TextAlignment = taCentered
-                  Transparent = True
-                  WordWrap = True
-                  VerticalAlignment = avCenter
-                  mmHeight = 14555
-                  mmLeft = 70498
-                  mmTop = 255266
-                  mmWidth = 30550
-                  BandType = 4
-                  LayerName = Foreground2
-                end
-              end
-              object ppTableCell74: TppTableCell
-                DesignLayer = ppDesignLayer3
-                UserName = 'TableCell74'
-                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
-                Border.Weight = 1.000000000000000000
-                Border.mmPadding = 1058
-                Brush.Style = bsClear
-                Padding = 1.057999968528748000
-                Transparent = True
-                mmHeight = 23548
-                mmLeft = 0
-                mmTop = 0
-                mmWidth = 48948
-                BandType = 4
-                LayerName = Foreground2
-                mmBottomOffset = 0
-                mmOverFlowOffset = 0
-                mmStopPosition = 0
-                mmMinHeight = 0
-                mmPadding = 1058
-                object ppLabel81: TppLabel
-                  DesignLayer = ppDesignLayer3
-                  UserName = 'C132'
-                  Anchors = [atLeft, atRight]
-                  AutoSize = False
-                  Border.mmPadding = 0
-                  Caption = '--'#13#10'Stunden'#13#10'lessons'
-                  Font.Charset = DEFAULT_CHARSET
-                  Font.Color = clBlack
-                  Font.Name = 'Calibri'
-                  Font.Size = 10
-                  Font.Style = []
-                  FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-                  FormFieldSettings.FormFieldType = fftNone
-                  TextAlignment = taCentered
-                  Transparent = True
-                  WordWrap = True
-                  VerticalAlignment = avCenter
-                  mmHeight = 14555
-                  mmLeft = 103164
-                  mmTop = 255266
-                  mmWidth = 30550
-                  BandType = 4
-                  LayerName = Foreground2
-                end
-              end
-              object ppTableCell75: TppTableCell
-                DesignLayer = ppDesignLayer3
-                UserName = 'TableCell75'
-                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
-                Border.Weight = 1.000000000000000000
-                Border.mmPadding = 1058
-                Brush.Style = bsClear
-                Padding = 1.057999968528748000
-                Transparent = True
-                mmHeight = 23548
-                mmLeft = 0
-                mmTop = 0
-                mmWidth = 48948
-                BandType = 4
-                LayerName = Foreground2
-                mmBottomOffset = 0
-                mmOverFlowOffset = 0
-                mmStopPosition = 0
-                mmMinHeight = 0
-                mmPadding = 1058
-                object ppLabel80: TppLabel
-                  DesignLayer = ppDesignLayer3
-                  UserName = 'C133'
-                  Anchors = [atLeft, atRight]
-                  AutoSize = False
-                  Border.mmPadding = 0
-                  Caption = '--'#13#10'Stunden'#13#10'lessons'
-                  Font.Charset = DEFAULT_CHARSET
-                  Font.Color = clBlack
-                  Font.Name = 'Calibri'
-                  Font.Size = 10
-                  Font.Style = []
-                  FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-                  FormFieldSettings.FormFieldType = fftNone
-                  TextAlignment = taCentered
-                  Transparent = True
-                  WordWrap = True
-                  VerticalAlignment = avCenter
-                  mmHeight = 14555
-                  mmLeft = 135830
-                  mmTop = 255266
-                  mmWidth = 30550
-                  BandType = 4
-                  LayerName = Foreground2
-                end
-              end
-              object ppTableCell76: TppTableCell
-                DesignLayer = ppDesignLayer3
-                UserName = 'TableCell76'
-                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
-                Border.Weight = 1.000000000000000000
-                Border.mmPadding = 1058
-                Brush.Style = bsClear
-                Padding = 1.057999968528748000
-                Transparent = True
-                mmHeight = 23548
-                mmLeft = 0
-                mmTop = 0
-                mmWidth = 48948
-                BandType = 4
-                LayerName = Foreground2
-                mmBottomOffset = 0
-                mmOverFlowOffset = 0
-                mmStopPosition = 0
-                mmMinHeight = 0
-                mmPadding = 1058
-                object ppLabel79: TppLabel
-                  DesignLayer = ppDesignLayer3
-                  UserName = 'C134'
-                  Anchors = [atLeft, atRight]
-                  AutoSize = False
-                  Border.mmPadding = 0
-                  Caption = '--'#13#10'Stunden'#13#10'lessons'
-                  Font.Charset = DEFAULT_CHARSET
-                  Font.Color = clBlack
-                  Font.Name = 'Calibri'
-                  Font.Size = 10
-                  Font.Style = []
-                  FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-                  FormFieldSettings.FormFieldType = fftNone
-                  TextAlignment = taCentered
-                  Transparent = True
-                  WordWrap = True
-                  VerticalAlignment = avCenter
-                  mmHeight = 14555
-                  mmLeft = 168496
-                  mmTop = 255266
-                  mmWidth = 30550
-                  BandType = 4
-                  LayerName = Foreground2
-                end
-              end
+            object ppTableColumn3: TppTableColumn
+              UserName = 'TableColumn3'
+              mmWidth = 28000
             end
-            object ppTableRow12: TppTableRow
-              DesignLayer = ppDesignLayer3
-              UserName = 'TableRow12'
-              mmHeight = 6132
-              mmLeft = 0
-              mmTop = 256478
-              mmWidth = 48948
-              BandType = 4
-              LayerName = Foreground2
-              mmBottomOffset = 0
-              mmOverFlowOffset = 0
-              mmStopPosition = 0
-              mmMinHeight = 0
-              object ppTableCell78: TppTableCell
-                DesignLayer = ppDesignLayer3
-                UserName = 'TableCell78'
-                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
-                Border.Weight = 1.000000000000000000
-                Border.mmPadding = 1058
-                Brush.Style = bsClear
-                Padding = 1.057999968528748000
-                Transparent = True
-                mmHeight = 23548
-                mmLeft = 0
-                mmTop = 0
-                mmWidth = 48948
-                BandType = 4
-                LayerName = Foreground2
-                mmBottomOffset = 0
-                mmOverFlowOffset = 0
-                mmStopPosition = 0
-                mmMinHeight = 0
-                mmPadding = 1058
-              end
-              object ppTableCell79: TppTableCell
-                DesignLayer = ppDesignLayer3
-                UserName = 'TableCell79'
-                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
-                Border.Weight = 1.000000000000000000
-                Border.mmPadding = 1058
-                Brush.Style = bsClear
-                ColSpan = 5
-                Padding = 1.057999968528748000
-                Transparent = True
-                mmHeight = 23548
-                mmLeft = 0
-                mmTop = 0
-                mmWidth = 48948
-                BandType = 4
-                LayerName = Foreground2
-                mmBottomOffset = 0
-                mmOverFlowOffset = 0
-                mmStopPosition = 0
-                mmMinHeight = 0
-                mmPadding = 1058
-                object ppLabel147: TppLabel
-                  DesignLayer = ppDesignLayer3
-                  UserName = 'Abitur'
-                  Anchors = [atLeft, atRight]
-                  AutoSize = False
-                  Border.mmPadding = 0
-                  Caption = 'Abitur / Abitur Diploma'
-                  Font.Charset = DEFAULT_CHARSET
-                  Font.Color = clBlack
-                  Font.Name = 'Calibri'
-                  Font.Size = 10
-                  Font.Style = [fsBold]
-                  FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-                  FormFieldSettings.FormFieldType = fftNone
-                  TextAlignment = taCentered
-                  Transparent = True
-                  mmHeight = 3969
-                  mmLeft = 37832
-                  mmTop = 272521
-                  mmWidth = 161214
-                  BandType = 4
-                  LayerName = Foreground2
-                end
-              end
-              object ppTableCell80: TppTableCell
-                DesignLayer = ppDesignLayer3
-                UserName = 'TableCell80'
-                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
-                Border.Weight = 1.000000000000000000
-                Border.mmPadding = 1058
-                Brush.Style = bsClear
-                ColSpan = 0
-                Padding = 1.057999968528748000
-                Transparent = True
-                mmHeight = 23548
-                mmLeft = 0
-                mmTop = 0
-                mmWidth = 48948
-                BandType = 4
-                LayerName = Foreground2
-                mmBottomOffset = 0
-                mmOverFlowOffset = 0
-                mmStopPosition = 0
-                mmMinHeight = 0
-                mmPadding = 1058
-              end
-              object ppTableCell81: TppTableCell
-                DesignLayer = ppDesignLayer3
-                UserName = 'TableCell81'
-                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
-                Border.Weight = 1.000000000000000000
-                Border.mmPadding = 1058
-                Brush.Style = bsClear
-                ColSpan = 0
-                Padding = 1.057999968528748000
-                Transparent = True
-                mmHeight = 23548
-                mmLeft = 0
-                mmTop = 0
-                mmWidth = 48948
-                BandType = 4
-                LayerName = Foreground2
-                mmBottomOffset = 0
-                mmOverFlowOffset = 0
-                mmStopPosition = 0
-                mmMinHeight = 0
-                mmPadding = 1058
-              end
-              object ppTableCell82: TppTableCell
-                DesignLayer = ppDesignLayer3
-                UserName = 'TableCell82'
-                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
-                Border.Weight = 1.000000000000000000
-                Border.mmPadding = 1058
-                Brush.Style = bsClear
-                ColSpan = 0
-                Padding = 1.057999968528748000
-                Transparent = True
-                mmHeight = 23548
-                mmLeft = 0
-                mmTop = 0
-                mmWidth = 48948
-                BandType = 4
-                LayerName = Foreground2
-                mmBottomOffset = 0
-                mmOverFlowOffset = 0
-                mmStopPosition = 0
-                mmMinHeight = 0
-                mmPadding = 1058
-              end
-              object ppTableCell83: TppTableCell
-                DesignLayer = ppDesignLayer3
-                UserName = 'TableCell83'
-                Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
-                Border.Weight = 1.000000000000000000
-                Border.mmPadding = 1058
-                Brush.Style = bsClear
-                ColSpan = 0
-                Padding = 1.057999968528748000
-                Transparent = True
-                mmHeight = 23548
-                mmLeft = 0
-                mmTop = 0
-                mmWidth = 48948
-                BandType = 4
-                LayerName = Foreground2
-                mmBottomOffset = 0
-                mmOverFlowOffset = 0
-                mmStopPosition = 0
-                mmMinHeight = 0
-                mmPadding = 1058
-              end
+            object ppTableColumn4: TppTableColumn
+              UserName = 'TableColumn4'
+              mmWidth = 28000
             end
-            object ppTableColumn1: TppTableColumn
-              UserName = 'TableColumn1'
-              mmWidth = 16666
+            object ppTableColumn6: TppTableColumn
+              UserName = 'TableColumn6'
+              mmWidth = 28000
             end
-            object ppTableColumn5: TppTableColumn
-              UserName = 'TableColumn5'
-              mmWidth = 32666
+            object ppTableColumn10: TppTableColumn
+              UserName = 'TableColumn10'
+              mmWidth = 28000
             end
-            object ppTableColumn7: TppTableColumn
-              UserName = 'TableColumn7'
-              mmWidth = 32666
-            end
-            object ppTableColumn8: TppTableColumn
-              UserName = 'TableColumn8'
-              mmWidth = 32666
-            end
-            object ppTableColumn9: TppTableColumn
-              UserName = 'TableColumn9'
-              mmWidth = 32666
-            end
-            object ppTableColumn12: TppTableColumn
-              UserName = 'TableColumn12'
-              mmWidth = 32666
+            object ppTableColumn11: TppTableColumn
+              UserName = 'TableColumn11'
+              mmWidth = 28000
             end
           end
           object ppDBImage2: TppDBImage
@@ -8296,7 +7344,7 @@ object RepOrt: TppReport
             mmHeight = 20000
             mmLeft = 99748
             mmTop = 10000
-            mmWidth = 100277
+            mmWidth = 90000
             BandType = 4
             LayerName = Foreground2
           end
@@ -8315,7 +7363,7 @@ object RepOrt: TppReport
             Transparent = True
             mmHeight = 5027
             mmLeft = 20000
-            mmTop = 40000
+            mmTop = 51130
             mmWidth = 22225
             BandType = 4
             LayerName = Foreground2
@@ -8335,10 +7383,10 @@ object RepOrt: TppReport
             Font.Style = []
             Transparent = True
             DataPipelineName = 'Schueler'
-            mmHeight = 5080
-            mmLeft = 45720
-            mmTop = 40005
-            mmWidth = 26247
+            mmHeight = 5027
+            mmLeft = 44979
+            mmTop = 51065
+            mmWidth = 25400
             BandType = 4
             LayerName = Foreground2
           end
@@ -8357,17 +7405,18 @@ object RepOrt: TppReport
               '{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1031{\fonttbl{\f' +
               '0\fnil\fcharset0 Calibri;}{\f1\fnil Calibri;}}'#13#10'{\colortbl ;\red' +
               '0\green0\blue0;}'#13#10'{\*\generator Riched20 10.0.26100}\viewkind4\u' +
-              'c1 '#13#10'\pard\cf1\f0\fs24 Klassen und Wochenstundenzahl des $BF1$un' +
-              'terrichts und der bilingualen $BBU1$ Sachf\'#39'e4cher\f1\par'#13#10'\par'#13 +
-              #10#13#10'\pard\sl-320\slmult0\f0\lang1033 Classes and number of lesson' +
-              's per week in $BF2$ and $BBU2$ CLIL subjects\lang1031\par'#13#10'}'#13#10#0
+              'c1 '#13#10'\pard\qj\cf1\f0\fs24 Klassen und Wochenstundenzahl des $BF1' +
+              '$unterrichts und der bilingualen $BBU1$ Sachf\'#39'e4cher\f1\par'#13#10'\p' +
+              'ar'#13#10#13#10'\pard\sl-320\slmult0\qj\f0\lang1033 Classes and number of ' +
+              'lessons per week in $BF2$ and $BBU2$ CLIL subjects\lang1031\par'#13 +
+              #10'}'#13#10#0
             RemoveEmptyLines = False
             Stretch = True
             Transparent = True
-            mmHeight = 18000
+            mmHeight = 31485
             mmLeft = 20000
-            mmTop = 50000
-            mmWidth = 180000
+            mmTop = 74115
+            mmWidth = 170000
             BandType = 4
             LayerName = Foreground2
             mmBottomOffset = 0
@@ -8380,84 +7429,81 @@ object RepOrt: TppReport
           ProgramStream = {
             01060F5472614576656E7448616E646C65720B50726F6772616D4E616D650611
             5265706F72744F6E5374617274506167650B50726F6772616D54797065070B74
-            7450726F63656475726506536F75726365142C08000070726F63656475726520
-            5265706F72744F6E5374617274506167653B0D0A626567696E0D0A20202F2F73
-            746174697363686520506C61747A68616C74657220696D2072746645726C6165
-            75746572756E67656E2065696E6D616C696720617573746175736368656E0D0A
-            20206966206E6F7420506C61747A68616C74657245727365747A74207468656E
-            20626567696E0D0A2020202072746645726C616575746572756E672E52696368
-            546578743A3D5265706C6163655465787445782872746645726C616575746572
-            756E672E52696368546578742C272442463124272C424631293B0D0A20202020
+            7450726F63656475726506536F7572636514C107000070726F63656475726520
+            5265706F72744F6E5374617274506167653B0D0A626567696E0D0A20202F2F50
+            6C61747A68616C7465722061756620536569746520322065696E6D616C696720
+            65727365747A656E0D0A20206966206E6F7420506C61747A68616C7465724572
+            7365747A74207468656E20626567696E0D0A2020202072746645726C61657574
+            6572756E672E52696368546578743A3D5265706C616365546578744578287274
+            6645726C616575746572756E672E52696368546578742C272442463124272C42
+            4631293B0D0A2020202072746645726C616575746572756E672E526963685465
+            78743A3D5265706C6163655465787445782872746645726C616575746572756E
+            672E52696368546578742C27244242553124272C42425531293B0D0A20202020
             72746645726C616575746572756E672E52696368546578743A3D5265706C6163
             655465787445782872746645726C616575746572756E672E5269636854657874
-            2C27244242553124272C42425531293B0D0A2020202072746645726C61657574
-            6572756E672E52696368546578743A3D5265706C616365546578744578287274
-            6645726C616575746572756E672E52696368546578742C272442463224272C42
-            4632293B0D0A2020202072746645726C616575746572756E672E526963685465
-            78743A3D5265706C6163655465787445782872746645726C616575746572756E
-            672E52696368546578742C27244242553224272C42425532293B0D0A20202020
-            0D0A202020202F2F45696E7472616720646572204661636862657A656963686E
-            756E67656E0D0A202020206462537072616368656E666163682E54657874203A
-            3D204246313B0D0A202020206462537072616368656E666163684F762E546578
-            74203A3D204246323B0D0A202020200D0A202020204966204E6F74204D616E75
-            656C6C207468656E20626567696E0D0A20202020202064625361636866616368
-            312E54657874203A3D2053465331313B0D0A2020202020206462536163686661
-            6368314F762E54657874203A3D2053465331323B0D0A20202020202064625361
-            636866616368322E54657874203A3D2053465332313B0D0A2020202020206462
-            5361636866616368324F762E54657874203A3D2053465332323B0D0A20202020
-            202064625361636866616368332E54657874203A3D2053465333313B0D0A2020
-            2020202064625361636866616368334F762E54657874203A3D2053465333323B
-            0D0A202020200D0A2020202020202F2F5374756E64656E65696E747261672066
-            C3BC7220646965204A61687267C3A46E67652035202D20313320646572204672
-            656D64737072616368650D0A2020202020204335312E54657874203A3D204E43
-            315B305D3B0D0A2020202020204336312E54657874203A3D204E43315B315D3B
-            0D0A2020202020204337312E54657874203A3D204E43315B325D3B0D0A202020
-            2020204338312E54657874203A3D204E43315B335D3B0D0A2020202020204339
-            312E54657874203A3D204E43315B345D3B0D0A202020202020433130312E5465
-            7874203A3D204E43315B355D3B0D0A202020202020433131312E54657874203A
-            3D204E43315B365D3B0D0A202020202020433132312E54657874203A3D204E43
-            315B375D3B0D0A202020202020433133312E54657874203A3D204E43315B385D
-            3B0D0A2020202020200D0A2020202020202F2F5374756E64656E65696E747261
-            672066C3BC7220646965204A61687267C3A46E67652037202D20313320646573
-            20312E205361636866616368730D0A2020202020204337322E54657874203A3D
-            204E43325B305D3B0D0A2020202020204338322E54657874203A3D204E43325B
-            315D3B0D0A2020202020204339322E54657874203A3D204E43325B325D3B0D0A
-            202020202020433130322E54657874203A3D204E43325B335D3B0D0A20202020
-            2020433131322E54657874203A3D204E43325B345D3B0D0A2020202020204331
-            32322E54657874203A3D204E43325B355D3B0D0A202020202020433133322E54
-            657874203A3D204E43325B365D3B0D0A2020202020200D0A2020202020202F2F
+            2C272442463224272C424632293B0D0A2020202072746645726C616575746572
+            756E672E52696368546578743A3D5265706C6163655465787445782872746645
+            726C616575746572756E672E52696368546578742C27244242553224272C4242
+            5532293B0D0A202020200D0A202020204966204E6F74204D616E75656C6C2074
+            68656E20626567696E0D0A2020202020202F2F45696E74726167206465722046
+            61636862657A656963686E756E67656E0D0A2020202020206462537072616368
+            656E666163682E54657874203A3D204246313B0D0A2020202020206462537072
+            616368656E666163684F762E54657874203A3D204246323B0D0A202020202020
+            64625361636866616368312E54657874203A3D2053465331313B0D0A20202020
+            202064625361636866616368314F762E54657874203A3D2053465331323B0D0A
+            20202020202064625361636866616368322E54657874203A3D2053465332313B
+            0D0A20202020202064625361636866616368324F762E54657874203A3D205346
+            5332323B0D0A20202020202064625361636866616368332E54657874203A3D20
+            53465333313B0D0A20202020202064625361636866616368334F762E54657874
+            203A3D2053465333323B0D0A20202020202064625361636866616368342E5465
+            7874203A3D2053465334313B0D0A20202020202064625361636866616368344F
+            762E54657874203A3D2053465334323B0D0A202020200D0A2020202020202F2F
             5374756E64656E65696E747261672066C3BC7220646965204A61687267C3A46E
-            67652038202D2031332064657320322E205361636866616368732C2066616C6C
-            7320766F7268616E64656E0D0A20202020202069662053465332313C3E272D2D
-            27207468656E20626567696E0D0A2020202020204338332E54657874203A3D20
-            4E43335B305D3B0D0A2020202020204339332E54657874203A3D204E43335B31
-            5D3B0D0A202020202020433130332E54657874203A3D204E43335B325D3B0D0A
-            202020202020433131332E54657874203A3D204E43335B335D3B0D0A20202020
-            2020433132332E54657874203A3D204E43335B345D3B0D0A2020202020204331
-            33332E54657874203A3D204E43335B355D3B0D0A202020202020656E643B0D0A
-            2020202020200D0A2020202020202F2F5374756E64656E65696E747261672066
-            C3BC7220646965204A61687267C3A46E67652039202D2031332064657320332E
-            205361636866616368732C2066616C6C7320766F7268616E64656E0D0A202020
-            20202069662053465333313C3E272D2D27207468656E20626567696E0D0A2020
-            202020204339342E54657874203A3D204E43345B305D3B0D0A20202020202043
-            3130342E54657874203A3D204E43345B315D3B0D0A202020202020433131342E
-            54657874203A3D204E43345B325D3B0D0A202020202020433132342E54657874
-            203A3D204E43345B335D3B0D0A202020202020433133342E54657874203A3D20
-            4E43345B345D3B0D0A202020202020656E643B0D0A202020200D0A2020202065
-            6E643B0D0A20200D0A20202020506C61747A68616C74657245727365747A7420
-            3A3D20747275653B0D0A202020200D0A2020656E643B0D0A20200D0A656E643B
-            0D0A0D436F6D706F6E656E744E616D6506065265706F7274094576656E744E61
-            6D65060B4F6E537461727450616765074576656E744944021508436172657450
-            6F73010224023A000001060F5472614576656E7448616E646C65720B50726F67
-            72616D4E616D65061664624E616D65566F726E616D654F6E476574546578740B
-            50726F6772616D54797065070B747450726F63656475726506536F7572636506
-            8970726F6365647572652064624E616D65566F726E616D654F6E476574546578
-            742876617220546578743A20537472696E67293B0D0A626567696E0D0A0D0A20
-            206966206E6F7420676C6F62616C5275666E616D65207468656E205465787420
-            3A3D2053636875656C65725B274E616D65416C6C65566F726E616D656E275D3B
-            0D0A0D0A656E643B0D0A0D436F6D706F6E656E744E616D65060D64624E616D65
-            566F726E616D65094576656E744E616D6506094F6E4765745465787407457665
-            6E7449440235084361726574506F730102420204000000}
+            67652035202D20313020646572204672656D64737072616368650D0A20202020
+            20204335312E54657874203A3D204E43315B305D3B0D0A202020202020433631
+            2E54657874203A3D204E43315B315D3B0D0A2020202020204337312E54657874
+            203A3D204E43315B325D3B0D0A2020202020204338312E54657874203A3D204E
+            43315B335D3B0D0A2020202020204339312E54657874203A3D204E43315B345D
+            3B0D0A202020202020433130312E54657874203A3D204E43315B355D3B0D0A20
+            20202020200D0A2020202020202F2F5374756E64656E65696E747261672066C3
+            BC7220646965204A61687267C3A46E67652037202D2031302064657320312E20
+            5361636866616368730D0A2020202020204337322E54657874203A3D204E4332
+            5B305D3B0D0A2020202020204338322E54657874203A3D204E43325B315D3B0D
+            0A2020202020204339322E54657874203A3D204E43325B325D3B0D0A20202020
+            2020433130322E54657874203A3D204E43325B335D3B0D0A2020202020200D0A
+            2020202020202F2F5374756E64656E65696E747261672066C3BC722064696520
+            4A61687267C3A46E67652038202D2031302064657320322E2053616368666163
+            68732C2066616C6C7320766F7268616E64656E0D0A2020202020206966205346
+            5332313C3E272D2D27207468656E20626567696E0D0A2020202020204338332E
+            54657874203A3D204E43335B305D3B0D0A2020202020204339332E5465787420
+            3A3D204E43335B315D3B0D0A202020202020433130332E54657874203A3D204E
+            43335B325D3B0D0A202020202020656E643B0D0A2020202020200D0A20202020
+            20202F2F5374756E64656E65696E747261672066C3BC7220646965204A616872
+            67C3A46E67652039202D2031302064657320332E205361636866616368732C20
+            66616C6C7320766F7268616E64656E0D0A20202020202069662053465333313C
+            3E272D2D27207468656E20626567696E0D0A2020202020204339342E54657874
+            203A3D204E43345B305D3B0D0A202020202020433130342E54657874203A3D20
+            4E43345B315D3B0D0A202020202020656E643B0D0A2020202020200D0A202020
+            2020202F2F5374756E64656E65696E747261672066C3BC7220646965204A6168
+            7267C3A46E67652039202D2031302064657320342E205361636866616368732C
+            2066616C6C7320766F7268616E64656E0D0A2020202020206966205346533431
+            3C3E272D2D27207468656E20626567696E0D0A2020202020204339352E546578
+            74203A3D204E43355B305D3B0D0A202020202020433130352E54657874203A3D
+            204E43355B315D3B0D0A202020202020656E643B0D0A20200D0A20202020656E
+            643B0D0A20200D0A20202020506C61747A68616C74657245727365747A74203A
+            3D20747275653B0D0A2020656E643B0D0A656E643B0D0A0D436F6D706F6E656E
+            744E616D6506065265706F7274094576656E744E616D65060B4F6E5374617274
+            50616765074576656E7449440215084361726574506F7301022A020900000106
+            0F5472614576656E7448616E646C65720B50726F6772616D4E616D6506166462
+            4E616D65566F726E616D654F6E476574546578740B50726F6772616D54797065
+            070B747450726F63656475726506536F75726365068970726F63656475726520
+            64624E616D65566F726E616D654F6E476574546578742876617220546578743A
+            20537472696E67293B0D0A626567696E0D0A0D0A20206966206E6F7420676C6F
+            62616C5275666E616D65207468656E2054657874203A3D2053636875656C6572
+            5B274E616D65416C6C65566F726E616D656E275D3B0D0A0D0A656E643B0D0A0D
+            436F6D706F6E656E744E616D65060D64624E616D65566F726E616D6509457665
+            6E744E616D6506094F6E47657454657874074576656E74494402350843617265
+            74506F730102420204000000}
         end
         object ppDesignLayers3: TppDesignLayers
           object ppDesignLayer3: TppDesignLayer
@@ -8469,217 +7515,273 @@ object RepOrt: TppReport
       end
     end
   end
+  object ppGroup1: TppGroup
+    BreakName = 'ID'
+    DataPipeline = dmPipelines.Schueler
+    GroupFileSettings.NewFile = True
+    GroupFileSettings.EmailFile = True
+    OutlineSettings.CreateNode = True
+    NewPage = True
+    ReprintOnSubsequentPage = False
+    StartOnOddPage = False
+    UserName = 'Group1'
+    mmNewColumnThreshold = 0
+    mmNewPageThreshold = 0
+    DataPipelineName = 'Schueler'
+    NewFile = True
+    object ppGroupHeaderBand1: TppGroupHeaderBand
+      Border.mmPadding = 0
+      mmBottomOffset = 0
+      mmHeight = 0
+      mmPrintPosition = 0
+    end
+    object ppGroupFooterBand1: TppGroupFooterBand
+      Border.mmPadding = 0
+      HideWhenOneDetail = False
+      mmBottomOffset = 0
+      mmHeight = 0
+      mmPrintPosition = 0
+    end
+  end
   object raCodeModule2: TraCodeModule
     ProgramStream = {
       01060D54726156617250726F6772616D094368696C645479706502110B50726F
       6772616D4E616D6506095661726961626C65730B50726F6772616D5479706507
-      0B747450726F63656475726506536F757263650C7802000070726F6365647572
+      0B747450726F63656475726506536F757263650C5202000070726F6365647572
       65205661726961626C65733B0D0A7661720D0A20424247312C20424255312C20
-      4246312C535031203A20537472696E673B0D0A20424247322C20424255322C20
-      424632203A20537472696E673B0D0A2053617665546578742C20537072616368
-      653A20537472696E673B0D0A2053465331312C2053465332312C205346533331
-      2C2053465331322C2053465332322C205346533332203A20537472696E673B0D
-      0A20535A315F352C20535A315F362C20535A315F372C20535A315F382C20535A
-      315F392C20535A315F31302C20535A315F31312C20535A315F31322C20535A31
-      5F3133203A20537472696E673B0D0A20535A325F372C20535A325F382C20535A
-      325F392C20535A325F31302C20535A325F31312C20535A325F31322C20535A32
-      5F3133203A20537472696E673B0D0A20535A335F382C20535A335F392C20535A
-      335F31302C20535A335F31312C20535A335F31322C20535A335F3133203A2053
-      7472696E673B0D0A20535A345F392C20535A345F31302C20535A345F31312C20
-      535A345F31322C20535A345F3133203A20537472696E673B0D0A205374756E64
-      656E7A61686C656E312C205374756E64656E7A61686C656E322C205374756E64
-      656E7A61686C656E332C205374756E64656E7A61686C656E34203A2053747269
-      6E673B0D0A204E43312C204E43322C204E43332C204E4334203A205473747269
-      6E676C6973743B20200D0A20416266726167656E2C204D616E75656C6C2C2050
-      6C61747A68616C74657245727365747A74203A20426F6F6C65616E3B0D0A2067
-      6C6F62616C5275666E616D65203A20426F6F6C65616E3B0D0A202020200D0A0D
-      0A626567696E0D0A0D0A656E643B0D0A084361726574506F73010201020D0000
-      01060A54726150726F6772616D094368696C645479706502130B50726F677261
-      6D4E616D65060E476C6F62616C4F6E4372656174650B50726F6772616D547970
-      65070B747450726F63656475726506536F7572636514C316000070726F636564
-      75726520476C6F62616C4F6E4372656174653B0D0A7661720D0A20207A616568
-      6C65722C20616E7A61686C203A20696E74656765723B0D0A626567696E0D0A20
-      202F2F5661726961626C656E20696E697469616C6973696572656E0D0A202041
-      6266726167656E203A3D205265706F72742E506172616D65746572735B274162
-      66726167656E275D3B0D0A20204D616E75656C6C203A3D205265706F72742E50
-      6172616D65746572735B274D616E75656C6C275D3B0D0A2020506C61747A6861
-      6C74657245727365747A74203A3D2046616C73653B0D0A2020676C6F62616C52
-      75666E616D65203A3D205265706F72742E506172616D65746572735B27527566
-      6E616D65275D3B0D0A20200D0A20202F2F4B65696E6520416266726167652C20
-      6B65696E6520506172616D65746572C3BC626572676162652E2044617320446F
-      6B756D656E7420776972642061756620646572205365697465203220736F2067
-      65647275636B742C20776965206573206973742E0D0A20204966204E6F74204D
-      616E75656C6C207468656E20626567696E0D0A20200D0A202020204966204162
-      66726167656E207468656E20626567696E0D0A2020202020202F2F4D69742041
-      62667261676520200D0A202020202020537072616368653A3D53656C65637453
-      7472696E67282742697474652077C3A4686C656E205369652065696E65205370
-      72616368653A272C27456E676C697363682C4672616E7AC3B673697363682C53
-      70616E697363682C4974616C69656E697363682C47726965636869636827293B
-      0D0A2020202020205374756E64656E7A61686C656E313A3D537472696E67496E
-      70757428274269747465205374756E64656E2064657320537072616368656E66
-      6163687320696E2064656E204A61687267C3A46E67656E203520626973205132
-      2065696E676562656E2E272C5265706F72742E506172616D65746572735B2753
-      7072616368656E666163685F737464275D293B0D0A2020202020202020202020
-      0D0A20202020202053465331313A3D537472696E67496E707574282742697474
-      6520312E2062696C696E6775616C65732053616368666163682065696E676562
-      656E3A272C5265706F72742E506172616D65746572735B275361636866616368
-      315F64275D293B0D0A20202020202053465331323A3D537472696E67496E7075
-      742827426974746520312E20C39C6265727365747A756E672065696E67656265
-      6E3A272C5265706F72742E506172616D65746572735B27536163686661636831
-      5F6F76275D293B0D0A2020202020205374756E64656E7A61686C656E323A3D53
-      7472696E67496E70757428274269747465205374756E64656E2064657320312E
-      2042696C692D53616368666163687320696E2064656E204A61687267C3A46E67
-      656E2037206269732051322065696E676562656E2E272C5265706F72742E5061
-      72616D65746572735B275361636866616368315F737464275D293B0D0A202020
-      2020200D0A20202020202053465332313A3D537472696E67496E707574282742
-      6974746520322E2062696C696E6775616C65732053616368666163682065696E
-      676562656E3A272C5265706F72742E506172616D65746572735B275361636866
-      616368325F64275D293B0D0A202020202020496620282853465332313C3E272D
-      2D272920616E64202853465332313C3E27272929207468656E20626567696E0D
-      0A202020202020202053465332323A3D537472696E67496E7075742827426974
-      746520322E20C39C6265727365747A756E672065696E676562656E3A272C5265
-      706F72742E506172616D65746572735B275361636866616368325F6F76275D29
-      3B0D0A20202020202020205374756E64656E7A61686C656E333A3D537472696E
-      67496E70757428274269747465205374756E64656E20322E2042696C692D5361
-      6368666163687320696E2064656E204A61687267C3A46E67656E203820626973
-      2051322065696E676562656E2E272C5265706F72742E506172616D6574657273
-      5B275361636866616368325F737464275D293B0D0A202020202020656E642065
-      6C736520626567696E0D0A20202020202020202053465332313A3D272D2D273B
-      0D0A20202020202020202053465332323A3D272D2D273B0D0A20202020202065
-      6E643B0D0A2020202020200D0A20202020202049662053465332313C3E272D2D
-      27207468656E20626567696E0D0A202020202020202053465333313A3D537472
-      696E67496E7075742827426974746520332E2062696C696E6775616C65732053
-      616368666163682065696E676562656E3A272C5265706F72742E506172616D65
-      746572735B275361636866616368335F64275D293B0D0A202020202020202049
-      6620282853465333313C3E272D2D272920616E64202853465333313C3E272729
-      29207468656E20626567696E0D0A2020202020202020202053465333323A3D53
-      7472696E67496E7075742827426974746520332E20C39C6265727365747A756E
-      672065696E676562656E3A272C5265706F72742E506172616D65746572735B27
-      5361636866616368335F6F76275D293B0D0A202020202020202020205374756E
-      64656E7A61686C656E343A3D537472696E67496E707574282742697474652053
-      74756E64656E20332E2042696C2D53616368666163687320696E2064656E204A
-      61687267C3A46E67656E2039206269732051322065696E676562656E2E272C52
-      65706F72742E506172616D65746572735B275361636866616368335F73746427
-      5D293B0D0A2020202020202020656E6420656C736520626567696E0D0A202020
-      2020202020202053465333313A3D272D2D273B0D0A2020202020202020202053
-      465333323A3D272D2D273B0D0A2020202020202020656E643B0D0A2020202020
-      20656E6420656C736520626567696E0D0A202020202020202053465333313A3D
-      272D2D273B0D0A202020202020202053465333323A3D272D2D273B0D0A202020
-      202020656E643B0D0A20200D0A20202020656E6420656C736520626567696E0D
-      0A2020202020202F2F4D697420416266726167650D0A20202020202053707261
-      6368653A3D5265706F72742E506172616D65746572735B27537072616368656E
-      666163685F64275D3B0D0A20202020202053465331313A3D5265706F72742E50
-      6172616D65746572735B275361636866616368315F64275D3B0D0A2020202020
-      205374756E64656E7A61686C656E313A3D5265706F72742E506172616D657465
-      72735B27537072616368656E666163685F737464275D3B0D0A2020202020200D
-      0A20202020202053465331323A3D5265706F72742E506172616D65746572735B
-      275361636866616368315F6F76275D3B0D0A2020202020207374756E64656E7A
-      61686C656E323A3D5265706F72742E506172616D65746572735B275361636866
-      616368315F737464275D3B0D0A2020202020200D0A2020202020205346533231
-      3A3D5265706F72742E506172616D65746572735B275361636866616368325F64
-      275D3B0D0A202020202020496620282853465332313C3E272D2D272920616E64
-      202853465332313C3E27272929207468656E20626567696E0D0A202020202020
-      202053465332323A3D5265706F72742E506172616D65746572735B2753616368
-      66616368325F6F76275D3B0D0A20202020202020205374756E64656E7A61686C
-      656E333A3D5265706F72742E506172616D65746572735B275361636866616368
-      325F737464275D3B200D0A202020202020656E6420656C736520626567696E0D
-      0A202020202020202053465332313A3D272D2D273B0D0A202020202020202053
-      465332323A3D272D2D273B0D0A202020202020656E643B0D0A2020202020200D
-      0A20202020202049662053465332313C3E272D2D27207468656E20626567696E
-      0D0A202020202020202053465333313A3D5265706F72742E506172616D657465
-      72735B275361636866616368335F64275D3B0D0A202020202020202049662028
-      2853465333313C3E272D2D272920616E64202853465333313C3E272729292074
-      68656E20626567696E0D0A2020202020202020202053465333323A3D5265706F
-      72742E506172616D65746572735B275361636866616368335F6F76275D3B0D0A
-      202020202020202020205374756E64656E7A61686C656E343A3D5265706F7274
-      2E506172616D65746572735B275361636866616368335F737464275D3B0D0A20
+      4246312C20535031203A20537472696E673B0D0A20424247322C20424255322C
+      20424632203A20537472696E673B0D0A2053617665546578742C205370726163
+      68653A20537472696E673B0D0A2053465331312C2053465332312C2053465333
+      312C2053465334312C2053465331322C2053465332322C2053465333322C2053
+      46533432203A20537472696E673B0D0A20535A315F352C20535A315F362C2053
+      5A315F372C20535A315F382C20535A315F392C20535A315F3130203A20537472
+      696E673B0D0A20535A325F372C20535A325F382C20535A325F392C20535A325F
+      3130203A20537472696E673B0D0A20535A335F382C20535A335F392C20535A33
+      5F3130203A20537472696E673B0D0A20535A345F392C20535A345F3130203A20
+      537472696E673B0D0A20535A355F392C20535A355F3130203A20537472696E67
+      3B0D0A205374756E64656E7A61686C656E312C205374756E64656E7A61686C65
+      6E322C205374756E64656E7A61686C656E332C205374756E64656E7A61686C65
+      6E342C205374756E64656E7A61686C656E35203A20537472696E673B0D0A204E
+      43312C204E43322C204E43332C204E43342C204E4335203A2054737472696E67
+      6C6973743B20200D0A20416266726167656E2C204D616E75656C6C2C20506C61
+      747A68616C74657245727365747A74203A20426F6F6C65616E3B0D0A20676C6F
+      62616C5275666E616D653A20626F6F6C65616E3B2020200D0A0D0A626567696E
+      0D0A0D0A656E643B0D0A084361726574506F73010219020E000001060A547261
+      50726F6772616D094368696C645479706502130B50726F6772616D4E616D6506
+      0E476C6F62616C4F6E4372656174650B50726F6772616D54797065070B747450
+      726F63656475726506536F7572636514681A000070726F63656475726520476C
+      6F62616C4F6E4372656174653B0D0A7661720D0A20207A6165686C65722C2061
+      6E7A61686C203A20696E74656765723B0D0A626567696E0D0A20202F2F566172
+      6961626C656E20696E697469616C6973696572656E0D0A202041626672616765
+      6E203A3D205265706F72742E506172616D65746572735B27416266726167656E
+      275D3B0D0A20204D616E75656C6C203A3D205265706F72742E506172616D6574
+      6572735B274D616E75656C6C275D3B0D0A2020506C61747A68616C7465724572
+      7365747A74203A3D2046616C73653B0D0A2020676C6F62616C5275666E616D65
+      203A3D205265706F72742E506172616D65746572735B275275666E616D65275D
+      3B0D0A20200D0A20202F2F4B65696E6520416266726167652C206B65696E6520
+      506172616D65746572C3BC626572676162652E2044617320446F6B756D656E74
+      20776972642061756620646572205365697465203220736F206765647275636B
+      742C20776965206573206973742E0D0A20204966204E6F74204D616E75656C6C
+      207468656E20626567696E0D0A20200D0A20202020496620416266726167656E
+      207468656E20626567696E0D0A2020202020202F2F4D69742041626672616765
+      20200D0A202020202020537072616368653A3D53656C656374537472696E6728
+      2742697474652077C3A4686C656E205369652065696E6520537072616368653A
+      272C27456E676C697363682C4672616E7AC3B673697363682C5370616E697363
+      682C4974616C69656E697363682C47726965636869636827293B0D0A20202020
+      20205374756E64656E7A61686C656E313A3D537472696E67496E707574282742
+      69747465205374756E64656E2064657320537072616368656E66616368732069
+      6E2064656E204A61687267C3A46E67656E2035206269732031302065696E6765
+      62656E2E272C5265706F72742E506172616D65746572735B2753707261636865
+      6E666163685F737464275D293B0D0A20202020202020202020200D0A20202020
+      202053465331313A3D537472696E67496E7075742827426974746520312E2062
+      696C696E6775616C65732053616368666163682065696E676562656E3A272C52
+      65706F72742E506172616D65746572735B275361636866616368315F64275D29
+      3B0D0A20202020202053465331323A3D537472696E67496E7075742827426974
+      746520312E20C39C6265727365747A756E672065696E676562656E3A272C5265
+      706F72742E506172616D65746572735B275361636866616368315F6F76275D29
+      3B0D0A2020202020205374756E64656E7A61686C656E323A3D537472696E6749
+      6E70757428274269747465205374756E64656E2064657320312E2042696C692D
+      53616368666163687320696E2064656E204A61687267C3A46E67656E20372062
+      69732031302065696E676562656E2E272C5265706F72742E506172616D657465
+      72735B275361636866616368315F737464275D293B0D0A2020202020200D0A20
+      202020202053465332313A3D537472696E67496E707574282742697474652032
+      2E2062696C696E6775616C65732053616368666163682065696E676562656E3A
+      272C5265706F72742E506172616D65746572735B275361636866616368325F64
+      275D293B0D0A202020202020496620282853465332313C3E272D2D272920616E
+      64202853465332313C3E27272929207468656E20626567696E0D0A2020202020
+      20202053465332323A3D537472696E67496E7075742827426974746520322E20
+      C39C6265727365747A756E672065696E676562656E3A272C5265706F72742E50
+      6172616D65746572735B275361636866616368325F6F76275D293B0D0A202020
+      20202020205374756E64656E7A61686C656E333A3D537472696E67496E707574
+      28274269747465205374756E64656E20322E2042696C692D5361636866616368
+      7320696E2064656E204A61687267C3A46E67656E203820626973203130206569
+      6E676562656E2E272C5265706F72742E506172616D65746572735B2753616368
+      66616368325F737464275D293B0D0A202020202020656E6420656C7365206265
+      67696E0D0A20202020202020202053465332313A3D272D2D273B0D0A20202020
+      202020202053465332323A3D272D2D273B0D0A202020202020656E643B0D0A20
+      20202020200D0A20202020202049662053465332313C3E272D2D27207468656E
+      20626567696E0D0A202020202020202053465333313A3D537472696E67496E70
+      75742827426974746520332E2062696C696E6775616C65732053616368666163
+      682065696E676562656E3A272C5265706F72742E506172616D65746572735B27
+      5361636866616368335F64275D293B0D0A202020202020202049662028285346
+      5333313C3E272D2D272920616E64202853465333313C3E27272929207468656E
+      20626567696E0D0A2020202020202020202053465333323A3D537472696E6749
+      6E7075742827426974746520332E20C39C6265727365747A756E672065696E67
+      6562656E3A272C5265706F72742E506172616D65746572735B27536163686661
+      6368335F6F76275D293B0D0A202020202020202020205374756E64656E7A6168
+      6C656E343A3D537472696E67496E70757428274269747465205374756E64656E
+      20332E2042696C2D53616368666163687320696E2064656E204A61687267C3A4
+      6E67656E2039206269732031302065696E676562656E2E272C5265706F72742E
+      506172616D65746572735B275361636866616368335F737464275D293B0D0A20
       20202020202020656E6420656C736520626567696E0D0A202020202020202020
       2053465333313A3D272D2D273B0D0A2020202020202020202053465333323A3D
       272D2D273B0D0A2020202020202020656E643B0D0A202020202020656E642065
       6C736520626567696E0D0A202020202020202053465333313A3D272D2D273B0D
       0A202020202020202053465333323A3D272D2D273B0D0A202020202020656E64
-      3B200D0A2020202020200D0A20202020656E643B0D0A20200D0A202020204E43
-      313A3D2054537472696E674C6973742E4372656174653B0D0A20202020616E7A
-      61686C203A3D20416E7A61686C456C656D656E7465285374756E64656E7A6168
-      6C656E312C272C27293B0D0A20202020666F72207A6165686C6572203A3D2031
-      20746F20616E7A61686C20646F0D0A20202020626567696E0D0A20202020204E
-      43312E416464202845696E7A656C656C656D656E74285374756E64656E7A6168
-      6C656E312C272C272C7A6165686C657229202B2063687228313329202B206368
-      7228313029202B20275374756E64656E27202B2063687228313329202B206368
-      7228313029202B20276C6573736F6E7327293B0D0A20202020656E643B0D0A20
-      2020200D0A202020204E43323A3D2054537472696E674C6973742E4372656174
-      653B0D0A20202020616E7A61686C203A3D20416E7A61686C456C656D656E7465
-      285374756E64656E7A61686C656E322C272C27293B0D0A20202020666F72207A
-      6165686C6572203A3D203120746F20616E7A61686C20646F0D0A202020206265
-      67696E0D0A20202020204E43322E416464202845696E7A656C656C656D656E74
-      285374756E64656E7A61686C656E322C272C272C7A6165686C657229202B2063
-      687228313329202B2063687228313029202B20275374756E64656E27202B2063
-      687228313329202B2063687228313029202B20276C6573736F6E7327293B0D0A
-      20202020656E643B0D0A202020200D0A2020202069662053465332313C3E272D
-      2D27207468656E20626567696E0D0A2020202020204E43333A3D205453747269
-      6E674C6973742E4372656174653B0D0A202020202020616E7A61686C203A3D20
-      416E7A61686C456C656D656E7465285374756E64656E7A61686C656E332C272C
-      27293B0D0A202020202020666F72207A6165686C6572203A3D203120746F2061
-      6E7A61686C20646F0D0A202020202020626567696E0D0A202020202020204E43
-      332E416464202845696E7A656C656C656D656E74285374756E64656E7A61686C
-      656E332C272C272C7A6165686C657229202B2063687228313329202B20636872
+      3B0D0A2020202020200D0A20202020202049662053465333313C3E272D2D2720
+      7468656E20626567696E0D0A202020202020202053465334313A3D537472696E
+      67496E7075742827426974746520342E2062696C696E6775616C657320536163
+      68666163682065696E676562656E3A272C5265706F72742E506172616D657465
+      72735B275361636866616368345F64275D293B0D0A2020202020202020496620
+      282853465334313C3E272D2D272920616E64202853465334313C3E2727292920
+      7468656E20626567696E0D0A2020202020202020202053465334323A3D537472
+      696E67496E7075742827426974746520342E20C39C6265727365747A756E6720
+      65696E676562656E3A272C5265706F72742E506172616D65746572735B275361
+      636866616368345F6F76275D293B0D0A202020202020202020205374756E6465
+      6E7A61686C656E353A3D537472696E67496E7075742827426974746520537475
+      6E64656E20342E2042696C2D53616368666163687320696E2064656E204A6168
+      7267C3A46E67656E2039206269732031302065696E676562656E2E272C526570
+      6F72742E506172616D65746572735B275361636866616368345F737464275D29
+      3B0D0A2020202020202020656E6420656C736520626567696E0D0A2020202020
+      202020202053465334313A3D272D2D273B0D0A20202020202020202020534653
+      34323A3D272D2D273B0D0A2020202020202020656E643B0D0A20202020202065
+      6E6420656C736520626567696E0D0A202020202020202053465334313A3D272D
+      2D273B0D0A202020202020202053465334323A3D272D2D273B0D0A2020202020
+      20656E643B0D0A20200D0A20202020656E6420656C736520626567696E0D0A20
+      20202020202F2F4F686E6520416266726167650D0A2020202020205370726163
+      68653A3D5265706F72742E506172616D65746572735B27537072616368656E66
+      6163685F64275D3B0D0A20202020202053465331313A3D5265706F72742E5061
+      72616D65746572735B275361636866616368315F64275D3B0D0A202020202020
+      5374756E64656E7A61686C656E313A3D5265706F72742E506172616D65746572
+      735B27537072616368656E666163685F737464275D3B0D0A2020202020200D0A
+      20202020202053465331323A3D5265706F72742E506172616D65746572735B27
+      5361636866616368315F6F76275D3B0D0A2020202020207374756E64656E7A61
+      686C656E323A3D5265706F72742E506172616D65746572735B27536163686661
+      6368315F737464275D3B0D0A2020202020200D0A20202020202053465332313A
+      3D5265706F72742E506172616D65746572735B275361636866616368325F6427
+      5D3B0D0A202020202020496620282853465332313C3E272D2D272920616E6420
+      2853465332313C3E27272929207468656E20626567696E0D0A20202020202020
+      2053465332323A3D5265706F72742E506172616D65746572735B275361636866
+      616368325F6F76275D3B0D0A20202020202020205374756E64656E7A61686C65
+      6E333A3D5265706F72742E506172616D65746572735B27536163686661636832
+      5F737464275D3B200D0A202020202020656E6420656C736520626567696E0D0A
+      202020202020202053465332313A3D272D2D273B0D0A20202020202020205346
+      5332323A3D272D2D273B0D0A202020202020656E643B0D0A2020202020200D0A
+      20202020202049662053465332313C3E272D2D27207468656E20626567696E0D
+      0A202020202020202053465333313A3D5265706F72742E506172616D65746572
+      735B275361636866616368335F64275D3B0D0A20202020202020204966202828
+      53465333313C3E272D2D272920616E64202853465333313C3E27272929207468
+      656E20626567696E0D0A2020202020202020202053465333323A3D5265706F72
+      742E506172616D65746572735B275361636866616368335F6F76275D3B0D0A20
+      2020202020202020205374756E64656E7A61686C656E343A3D5265706F72742E
+      506172616D65746572735B275361636866616368335F737464275D3B0D0A2020
+      202020202020656E6420656C736520626567696E0D0A20202020202020202020
+      53465333313A3D272D2D273B0D0A2020202020202020202053465333323A3D27
+      2D2D273B0D0A2020202020202020656E643B0D0A202020202020656E6420656C
+      736520626567696E0D0A202020202020202053465333313A3D272D2D273B0D0A
+      202020202020202053465333323A3D272D2D273B0D0A202020202020656E643B
+      200D0A2020202020200D0A20202020656E643B0D0A20200D0A202020204E4331
+      3A3D2054537472696E674C6973742E4372656174653B0D0A20202020616E7A61
+      686C203A3D20416E7A61686C456C656D656E7465285374756E64656E7A61686C
+      656E312C272C27293B0D0A20202020666F72207A6165686C6572203A3D203120
+      746F20616E7A61686C20646F0D0A20202020626567696E0D0A20202020204E43
+      312E416464202845696E7A656C656C656D656E74285374756E64656E7A61686C
+      656E312C272C272C7A6165686C657229202B2063687228313329202B20636872
       28313029202B20275374756E64656E27202B2063687228313329202B20636872
-      28313029202B20276C6573736F6E7327293B0D0A202020202020656E643B0D0A
-      20202020656E643B0D0A202020200D0A2020202069662053465333313C3E272D
-      2D27207468656E20626567696E0D0A2020202020204E43343A3D205453747269
-      6E674C6973742E4372656174653B0D0A202020202020616E7A61686C203A3D20
-      416E7A61686C456C656D656E7465285374756E64656E7A61686C656E342C272C
-      27293B0D0A202020202020666F72207A6165686C6572203A3D203120746F2061
-      6E7A61686C20646F0D0A202020202020626567696E0D0A202020202020204E43
-      342E416464202845696E7A656C656C656D656E74285374756E64656E7A61686C
-      656E342C272C272C7A6165686C657229202B2063687228313329202B20636872
-      28313029202B20275374756E64656E27202B2063687228313329202B20636872
-      28313029202B20276C6573736F6E7327293B0D0A202020202020656E643B0D0A
-      20202020656E643B0D0A202020200D0A2020656E6420656C736520626567696E
-      0D0A20202020537072616368653A3D53656C656374537472696E672827426974
-      74652077C3A4686C656E205369652065696E6520537072616368653A272C2745
-      6E676C697363682C4672616E7AC3B673697363682C5370616E697363682C4974
-      616C69656E697363682C47726965636869636827293B0D0A2020656E643B0D0A
-      20200D0A20202F2F45696E7365747A656E2064657220506172616D6574657220
-      200D0A2020496620537072616368653D27456E676C6973636827207468656E20
-      626567696E0D0A2020424247313A3D27646575747363682D656E676C69736368
-      656E273B0D0A2020424247323A3D27416E676C6F2D4765726D616E273B0D0A20
-      20424255313A3D27646575747363682D656E676C69736368656E273B0D0A2020
-      424255323A3D274765726D616E2D456E676C697368273B0D0A20204246313A3D
-      27456E676C69736368273B0D0A20204246323A3D27456E676C697368273B0D0A
-      20205350313A3D27656E676C69736368656E2053707261636865273B0D0A2020
-      656E6420656C736520696620537072616368653D274672616E7AC3B673697363
-      6827207468656E20626567696E0D0A2020424247313A3D27646575747363682D
-      6672616E7AC3B67369736368656E273B0D0A2020424247323A3D274672616E63
-      6F2D4765726D616E273B0D0A2020424255313A3D27646575747363682D667261
-      6E7AC3B67369736368656E273B0D0A2020424255323A3D274765726D616E2D46
-      72656E6368273B0D0A20204246313A3D274672616E7AC3B67369736368273B0D
-      0A20204246323A3D274672656E6368273B0D0A20205350313A3D276672616E7A
-      C3B67369736368656E2053707261636865273B0D0A2020656E6420656C736520
-      696620537072616368653D275370616E6973636827207468656E20626567696E
-      0D0A2020424247313A3D27646575747363682D7370616E69736368656E273B0D
-      0A2020424247323A3D2748697370616E6F2D4765726D616E273B0D0A20204242
-      55313A3D27646575747363682D7370616E69736368656E273B0D0A2020424255
-      323A3D274765726D616E2D5370616E697368273B0D0A20204246313A3D275370
-      616E69736368273B0D0A20204246323A3D275370616E697368273B0D0A202053
-      50313A3D277370616E69736368656E2053707261636865273B0D0A2020656E64
-      20656C736520696620537072616368653D274974616C69656E69736368272074
-      68656E20626567696E0D0A2020424247313A3D27646575747363682D6974616C
-      69656E69736368656E273B0D0A2020424247323A3D274974616C6F2D4765726D
-      616E273B0D0A2020424255313A3D27646575747363682D6974616C69656E6973
-      6368656E273B0D0A2020424255323A3D274765726D616E2D4974616C69616E27
-      3B0D0A20204246313A3D274974616C69656E69736368273B0D0A20204246323A
-      3D274974616C69616E273B0D0A20205350313A3D276974616C69656E69736368
-      656E2053707261636865273B0D0A2020656E6420656C73652069662053707261
-      6368653D2747726965636869636827207468656E20626567696E0D0A20204242
-      47313A3D27646575747363682D6E657567726965636869736368656E273B0D0A
-      2020424247323A3D27477265636F2D4765726D616E273B0D0A2020424255313A
-      3D27646575747363682D6E657567726965636869736368656E273B0D0A202042
-      4255323A3D274765726D616E2D4D6F6465726E20477265656B273B0D0A202042
-      46313A3D2747726965636869736368273B0D0A20204246323A3D274D6F646572
-      6E20477265656B273B0D0A20205350313A3D2767726965636869736368656E20
-      53707261636865273B0D0A2020656E643B0D0A20200D0A656E643B0D0A084361
-      726574506F730102010209000000}
+      28313029202B20276C6573736F6E7327293B0D0A20202020656E643B0D0A2020
+      20200D0A202020204E43323A3D2054537472696E674C6973742E437265617465
+      3B0D0A20202020616E7A61686C203A3D20416E7A61686C456C656D656E746528
+      5374756E64656E7A61686C656E322C272C27293B0D0A20202020666F72207A61
+      65686C6572203A3D203120746F20616E7A61686C20646F0D0A20202020626567
+      696E0D0A20202020204E43322E416464202845696E7A656C656C656D656E7428
+      5374756E64656E7A61686C656E322C272C272C7A6165686C657229202B206368
+      7228313329202B2063687228313029202B20275374756E64656E27202B206368
+      7228313329202B2063687228313029202B20276C6573736F6E7327293B0D0A20
+      202020656E643B0D0A202020200D0A2020202069662053465332313C3E272D2D
+      27207468656E20626567696E0D0A2020202020204E43333A3D2054537472696E
+      674C6973742E4372656174653B0D0A202020202020616E7A61686C203A3D2041
+      6E7A61686C456C656D656E7465285374756E64656E7A61686C656E332C272C27
+      293B0D0A202020202020666F72207A6165686C6572203A3D203120746F20616E
+      7A61686C20646F0D0A202020202020626567696E0D0A202020202020204E4333
+      2E416464202845696E7A656C656C656D656E74285374756E64656E7A61686C65
+      6E332C272C272C7A6165686C657229202B2063687228313329202B2063687228
+      313029202B20275374756E64656E27202B2063687228313329202B2063687228
+      313029202B20276C6573736F6E7327293B0D0A202020202020656E643B0D0A20
+      202020656E643B0D0A202020200D0A2020202069662053465333313C3E272D2D
+      27207468656E20626567696E0D0A2020202020204E43343A3D2054537472696E
+      674C6973742E4372656174653B0D0A202020202020616E7A61686C203A3D2041
+      6E7A61686C456C656D656E7465285374756E64656E7A61686C656E342C272C27
+      293B0D0A202020202020666F72207A6165686C6572203A3D203120746F20616E
+      7A61686C20646F0D0A202020202020626567696E0D0A202020202020204E4334
+      2E416464202845696E7A656C656C656D656E74285374756E64656E7A61686C65
+      6E342C272C272C7A6165686C657229202B2063687228313329202B2063687228
+      313029202B20275374756E64656E27202B2063687228313329202B2063687228
+      313029202B20276C6573736F6E7327293B0D0A202020202020656E643B0D0A20
+      202020656E643B0D0A202020200D0A2020202069662053465334313C3E272D2D
+      27207468656E20626567696E0D0A2020202020204E43353A3D2054537472696E
+      674C6973742E4372656174653B0D0A202020202020616E7A61686C203A3D2041
+      6E7A61686C456C656D656E7465285374756E64656E7A61686C656E352C272C27
+      293B0D0A202020202020666F72207A6165686C6572203A3D203120746F20616E
+      7A61686C20646F0D0A202020202020626567696E0D0A202020202020204E4335
+      2E416464202845696E7A656C656C656D656E74285374756E64656E7A61686C65
+      6E352C272C272C7A6165686C657229202B2063687228313329202B2063687228
+      313029202B20275374756E64656E27202B2063687228313329202B2063687228
+      313029202B20276C6573736F6E7327293B0D0A202020202020656E643B0D0A20
+      202020656E643B0D0A202020200D0A2020656E6420656C736520626567696E0D
+      0A20202020537072616368653A3D53656C656374537472696E67282742697474
+      652077C3A4686C656E205369652065696E6520537072616368653A272C27456E
+      676C697363682C4672616E7AC3B673697363682C5370616E697363682C497461
+      6C69656E697363682C47726965636869636827293B0D0A2020656E643B0D0A20
+      200D0A20202F2F45696E7365747A656E2064657220506172616D657465722020
+      0D0A2020496620537072616368653D27456E676C6973636827207468656E2062
+      6567696E0D0A2020424247313A3D27646575747363682D656E676C6973636865
+      6E273B0D0A2020424247323A3D27416E676C6F2D4765726D616E273B0D0A2020
+      424255313A3D27646575747363682D656E676C69736368656E273B0D0A202042
+      4255323A3D274765726D616E2D456E676C697368273B0D0A20204246313A3D27
+      456E676C69736368273B0D0A20204246323A3D27456E676C697368273B0D0A20
+      205350313A3D27656E676C69736368656E2053707261636865273B0D0A202065
+      6E6420656C736520696620537072616368653D274672616E7AC3B67369736368
+      27207468656E20626567696E0D0A2020424247313A3D27646575747363682D66
+      72616E7AC3B67369736368656E273B0D0A2020424247323A3D274672616E636F
+      2D4765726D616E273B0D0A2020424255313A3D27646575747363682D6672616E
+      7AC3B67369736368656E273B0D0A2020424255323A3D274765726D616E2D4672
+      656E6368273B0D0A20204246313A3D274672616E7AC3B67369736368273B0D0A
+      20204246323A3D274672656E6368273B0D0A20205350313A3D276672616E7AC3
+      B67369736368656E2053707261636865273B0D0A2020656E6420656C73652069
+      6620537072616368653D275370616E6973636827207468656E20626567696E0D
+      0A2020424247313A3D27646575747363682D7370616E69736368656E273B0D0A
+      2020424247323A3D2748697370616E6F2D4765726D616E273B0D0A2020424255
+      313A3D27646575747363682D7370616E69736368656E273B0D0A202042425532
+      3A3D274765726D616E2D5370616E697368273B0D0A20204246313A3D27537061
+      6E69736368273B0D0A20204246323A3D275370616E697368273B0D0A20205350
+      313A3D277370616E69736368656E2053707261636865273B0D0A2020656E6420
+      656C736520696620537072616368653D274974616C69656E6973636827207468
+      656E20626567696E0D0A2020424247313A3D27646575747363682D6974616C69
+      656E69736368656E273B0D0A2020424247323A3D274974616C6F2D4765726D61
+      6E273B0D0A2020424255313A3D27646575747363682D6974616C69656E697363
+      68656E273B0D0A2020424255323A3D274765726D616E2D4974616C69616E273B
+      0D0A20204246313A3D274974616C69656E69736368273B0D0A20204246323A3D
+      274974616C69616E273B0D0A20205350313A3D276974616C69656E6973636865
+      6E2053707261636865273B0D0A2020656E6420656C7365206966205370726163
+      68653D2747726965636869636827207468656E20626567696E0D0A2020424247
+      313A3D27646575747363682D6E657567726965636869736368656E273B0D0A20
+      20424247323A3D27477265636F2D4765726D616E273B0D0A2020424255313A3D
+      27646575747363682D6E657567726965636869736368656E273B0D0A20204242
+      55323A3D274765726D616E2D4D6F6465726E20477265656B273B0D0A20204246
+      313A3D2747726965636869736368273B0D0A20204246323A3D274D6F6465726E
+      20477265656B273B0D0A20205350313A3D2767726965636869736368656E2053
+      707261636865273B0D0A2020656E643B0D0A20200D0A656E643B0D0A08436172
+      6574506F73010203020A000000}
   end
   object ppDesignLayers1: TppDesignLayers
     object ppDesignLayer1: TppDesignLayer
@@ -8705,21 +7807,21 @@ object RepOrt: TppReport
     object ppParameter1: TppParameter
       AutoSearchSettings.LogicalPrefix = []
       AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = '"J. Raffenberg"'
+      AutoSearchSettings.SearchExpression = '"J. Raffenberg, W. Ma'#223'mann"'
       DataType = dtString
       LookupSettings.DisplayType = dtNameOnly
       LookupSettings.SortOrder = soName
-      Value = 'J. Raffenberg'
+      Value = 'J. Raffenberg, W. Ma'#223'mann'
       UserName = 'Autoren'
     end
     object ppParameter2: TppParameter
       AutoSearchSettings.LogicalPrefix = []
       AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = '01.06.2025'
+      AutoSearchSettings.SearchExpression = '06.10.2025'
       DataType = dtString
       LookupSettings.DisplayType = dtNameOnly
       LookupSettings.SortOrder = soName
-      Value = '01.06.2025'
+      Value = '06.10.2025'
       UserName = 'Versionsdatum'
     end
     object ppParameter3: TppParameter
@@ -8755,11 +7857,11 @@ object RepOrt: TppReport
     object ppParameter6: TppParameter
       AutoSearchSettings.LogicalPrefix = []
       AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = '"4,4,4,4,4,4,3,5,5"'
+      AutoSearchSettings.SearchExpression = '"4,4,4,4,4,4"'
       DataType = dtString
       LookupSettings.DisplayType = dtNameOnly
       LookupSettings.SortOrder = soName
-      Value = '4,4,4,4,4,4,3,5,5'
+      Value = '4,4,4,4,4,4'
       UserName = 'Sprachenfach_std'
     end
     object ppParameter7: TppParameter
@@ -8785,11 +7887,11 @@ object RepOrt: TppReport
     object ppParameter9: TppParameter
       AutoSearchSettings.LogicalPrefix = []
       AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = '"3,3,3,3,3,3,3"'
+      AutoSearchSettings.SearchExpression = '"3,3,3,3"'
       DataType = dtString
       LookupSettings.DisplayType = dtNameOnly
       LookupSettings.SortOrder = soName
-      Value = '3,3,3,3,3,3,3'
+      Value = '3,3,3,3'
       UserName = 'Sachfach1_std'
     end
     object ppParameter10: TppParameter
@@ -8815,11 +7917,11 @@ object RepOrt: TppReport
     object ppParameter12: TppParameter
       AutoSearchSettings.LogicalPrefix = []
       AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = '"3,3,3,3,3,3"'
+      AutoSearchSettings.SearchExpression = '"3,3,3"'
       DataType = dtString
       LookupSettings.DisplayType = dtNameOnly
       LookupSettings.SortOrder = soName
-      Value = '3,3,3,3,3,3'
+      Value = '3,3,3'
       UserName = 'Sachfach2_std'
     end
     object ppParameter13: TppParameter
@@ -8845,14 +7947,44 @@ object RepOrt: TppReport
     object ppParameter15: TppParameter
       AutoSearchSettings.LogicalPrefix = []
       AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = '"3,3,3,3,3"'
+      AutoSearchSettings.SearchExpression = '"3,3"'
       DataType = dtString
       LookupSettings.DisplayType = dtNameOnly
       LookupSettings.SortOrder = soName
-      Value = '3,3,3,3,3'
+      Value = '3,3'
       UserName = 'Sachfach3_std'
     end
     object ppParameter16: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = '--'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = '--'
+      UserName = 'Sachfach4_d'
+    end
+    object ppParameter17: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = '--'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = '--'
+      UserName = 'Sachfach4_ov'
+    end
+    object ppParameter18: TppParameter
+      AutoSearchSettings.LogicalPrefix = []
+      AutoSearchSettings.Mandatory = True
+      AutoSearchSettings.SearchExpression = '"3,3"'
+      DataType = dtString
+      LookupSettings.DisplayType = dtNameOnly
+      LookupSettings.SortOrder = soName
+      Value = '3,3'
+      UserName = 'sachfach4_std'
+    end
+    object ppParameter19: TppParameter
       AutoSearchSettings.LogicalPrefix = []
       AutoSearchSettings.Mandatory = True
       AutoSearchSettings.SearchExpression = 'False'
