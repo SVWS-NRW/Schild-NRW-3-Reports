@@ -217,7 +217,7 @@ object RepOrt: TppReport
       DesignLayer = ppDesignLayer1
       UserName = 'dbNameVorname'
       Border.mmPadding = 0
-      DataField = 'NameRufname'
+      DataField = 'NameAlleVornamen'
       DataPipeline = dmPipelines.Schueler
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
@@ -632,17 +632,7 @@ object RepOrt: TppReport
       616368742720656C73652054657874203A3D20274E6163687765697320657262
       7261636874273B0D0A0D0A656E643B0D0A0D436F6D706F6E656E744E616D6506
       0864624D617365726E094576656E744E616D6506094F6E476574546578740745
-      76656E7449440235084361726574506F730102360204000001060F5472614576
-      656E7448616E646C65720B50726F6772616D4E616D65061664624E616D65566F
-      726E616D654F6E476574546578740B50726F6772616D54797065070B74745072
-      6F63656475726506536F75726365069970726F6365647572652064624E616D65
-      566F726E616D654F6E476574546578742876617220546578743A20537472696E
-      67293B0D0A626567696E0D0A0D0A20206966206E6F74205265706F72742E5061
-      72616D65746572735B275275666E616D65275D207468656E2054657874203A3D
-      2053636875656C65725B274E616D65416C6C65566F726E616D656E275D3B200D
-      0A0D0A656E643B0D0A0D436F6D706F6E656E744E616D65060D64624E616D6556
-      6F726E616D65094576656E744E616D6506094F6E47657454657874074576656E
-      7449440235084361726574506F730102510204000000}
+      76656E7449440235084361726574506F730102360204000000}
   end
   object ppDesignLayers1: TppDesignLayers
     object ppDesignLayer1: TppDesignLayer
@@ -678,22 +668,12 @@ object RepOrt: TppReport
     object ppParameter2: TppParameter
       AutoSearchSettings.LogicalPrefix = []
       AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = '01.06.2025'
-      DataType = dtString
+      AutoSearchSettings.SearchExpression = '45956'
+      DataType = dtDate
       LookupSettings.DisplayType = dtNameOnly
       LookupSettings.SortOrder = soName
-      Value = '01.06.2025'
+      Value = 45956d
       UserName = 'Versionsdatum'
-    end
-    object ppParameter3: TppParameter
-      AutoSearchSettings.LogicalPrefix = []
-      AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = 'True'
-      DataType = dtBoolean
-      LookupSettings.DisplayType = dtNameOnly
-      LookupSettings.SortOrder = soName
-      Value = True
-      UserName = 'Rufname'
     end
   end
 end

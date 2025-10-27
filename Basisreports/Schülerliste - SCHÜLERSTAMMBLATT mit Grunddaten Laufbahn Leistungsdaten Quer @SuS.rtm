@@ -19,10 +19,9 @@ object RepOrt: TppReport
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
   Template.FileName = 
-    'C:\Users\jraff\OneDrive - neg-velbert.de\Programme\SVWS-Arbeitsv' +
-    'erzeichnis\SchILD-Reports\Reportsammlung 3.0\Basisreports\Sch'#252'le' +
-    'rliste - SCH'#220'LERSTAMMBLATT mit Grunddaten Laufbahn Leistungsdate' +
-    'n Quer @SuS.rtm'
+    '\\neghost\Gemeinsame Dateien\SVWS-Arbeitsverzeichnis\SchILD-Repo' +
+    'rts\Reportsammlung 3.0\Basisreports\Sch'#252'lerliste - SCH'#220'LERSTAMMB' +
+    'LATT mit Grunddaten Laufbahn Leistungsdaten Quer @SuS.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -10320,11 +10319,11 @@ object RepOrt: TppReport
     object ppParameter2: TppParameter
       AutoSearchSettings.LogicalPrefix = []
       AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = '01.06.2025'
-      DataType = dtString
+      AutoSearchSettings.SearchExpression = '45957'
+      DataType = dtDate
       LookupSettings.DisplayType = dtNameOnly
       LookupSettings.SortOrder = soName
-      Value = '01.06.2025'
+      Value = 45957d
       UserName = 'Versionsdatum'
     end
   end

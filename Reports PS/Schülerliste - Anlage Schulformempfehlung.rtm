@@ -16,9 +16,9 @@ object RepOrt: TppReport
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
   Template.FileName = 
-    'C:\Users\jraff\OneDrive - neg-velbert.de\Programme\SVWS-Arbeitsv' +
-    'erzeichnis\SchILD-Reports\Reportsammlung 3.0\Reports PS\Sch'#252'lerl' +
-    'iste - Anlage Schulformempfehlung.rtm'
+    '\\neghost\Gemeinsame Dateien\SVWS-Arbeitsverzeichnis\SchILD-Repo' +
+    'rts\Reportsammlung 3.0\Reports PS\Sch'#252'lerliste - Anlage Schulfor' +
+    'mempfehlung.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -889,11 +889,11 @@ object RepOrt: TppReport
     object ppParameter2: TppParameter
       AutoSearchSettings.LogicalPrefix = []
       AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = '06.10.2025'
-      DataType = dtString
+      AutoSearchSettings.SearchExpression = '45957'
+      DataType = dtDate
       LookupSettings.DisplayType = dtNameOnly
       LookupSettings.SortOrder = soName
-      Value = '06.10.2025'
+      Value = 45957d
       UserName = 'Versionsdatum'
     end
   end

@@ -3,7 +3,7 @@ object RepOrt: TppReport
   DataPipeline = dmPipelines.Erzieher
   PassSetting = psTwoPass
   PrinterSetup.BinName = 'Default'
-  PrinterSetup.DocumentName = 'Serienbrief Nichtversetzung @Eltern.rtm'
+  PrinterSetup.DocumentName = 'Serienbrief Nichtversetzung @Erzieher.rtm'
   PrinterSetup.Duplex = dpNone
   PrinterSetup.PaperName = 'A4 210 x 297 mm'
   PrinterSetup.PrinterName = 'Default'
@@ -17,9 +17,9 @@ object RepOrt: TppReport
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
   Template.FileName = 
-    'C:\Users\ra\OneDrive - neg-velbert.de\Programme\SVWS-Arbeitsverz' +
-    'eichnis\SchILD-Reports\Reportsammlung 3.0\Serienbriefe\Serienbri' +
-    'ef Nichtversetzung @Eltern.rtm'
+    '\\neghost\Gemeinsame Dateien\SVWS-Arbeitsverzeichnis\SchILD-Repo' +
+    'rts\Reportsammlung 3.0\Serienbriefe\Serienbrief Nichtversetzung ' +
+    '@Erzieher.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -170,7 +170,6 @@ object RepOrt: TppReport
       DesignLayer = ppDesignLayer2
       UserName = 'Faltmarke1'
       Border.mmPadding = 0
-      Pen.Width = 2
       Weight = 0.750000000000000000
       mmHeight = 1058
       mmLeft = 0
@@ -183,7 +182,6 @@ object RepOrt: TppReport
       DesignLayer = ppDesignLayer2
       UserName = 'Faltmarke2'
       Border.mmPadding = 0
-      Pen.Width = 2
       Weight = 0.750000000000000000
       mmHeight = 1058
       mmLeft = 0
@@ -196,7 +194,6 @@ object RepOrt: TppReport
       DesignLayer = ppDesignLayer2
       UserName = 'Lochmarke'
       Border.mmPadding = 0
-      Pen.Width = 2
       Weight = 0.750000000000000000
       mmHeight = 1058
       mmLeft = 0
@@ -2675,11 +2672,11 @@ object RepOrt: TppReport
     object ppParameter6: TppParameter
       AutoSearchSettings.LogicalPrefix = []
       AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = '01.06.2025'
-      DataType = dtString
+      AutoSearchSettings.SearchExpression = '45957'
+      DataType = dtDate
       LookupSettings.DisplayType = dtNameOnly
       LookupSettings.SortOrder = soName
-      Value = '01.06.2025'
+      Value = 45957d
       UserName = 'Versionsdatum'
     end
   end

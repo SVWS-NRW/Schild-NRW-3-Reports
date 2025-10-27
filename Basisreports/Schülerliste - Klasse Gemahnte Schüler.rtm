@@ -16,9 +16,9 @@ object RepOrt: TppReport
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
   Template.FileName = 
-    'C:\Users\jraff\OneDrive - neg-velbert.de\Programme\SVWS-Arbeitsv' +
-    'erzeichnis\SchILD-Reports\Reportsammlung 3.0\Basisreports\Sch'#252'le' +
-    'rliste - Klasse Gemahnte Sch'#252'ler.rtm'
+    '\\neghost\Gemeinsame Dateien\SVWS-Arbeitsverzeichnis\SchILD-Repo' +
+    'rts\Reportsammlung 3.0\Basisreports\Sch'#252'lerliste - Klasse Gemahn' +
+    'te Sch'#252'ler.rtm'
   Template.Format = ftASCII
   Units = utPrinterPixels
   AllowPrintToArchive = True
@@ -711,7 +711,7 @@ object RepOrt: TppReport
         UserName = 'dbNameVorname'
         Border.mmPadding = 0
         CharWrap = False
-        DataField = 'NameRufname'
+        DataField = 'NameAlleVornamen'
         DataPipeline = dmPipelines.Schueler
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
@@ -1219,17 +1219,7 @@ object RepOrt: TppReport
       3B0D0A626567696E0D0A2020506970656C696E654F6566666E656E284C65726E
       61627363686E69747465293B0D0A656E643B0D0A0D436F6D706F6E656E744E61
       6D6506065265706F7274094576656E744E616D65060B4265666F72655072696E
-      74074576656E7449440201084361726574506F730102230203000001060F5472
-      614576656E7448616E646C65720B50726F6772616D4E616D6506144E616D6556
-      6F726E616D654F6E476574546578740B50726F6772616D54797065070B747450
-      726F63656475726506536F75726365069670726F636564757265204E616D6556
-      6F726E616D654F6E476574546578742876617220546578743A20537472696E67
-      293B0D0A626567696E0D0A0D0A20206966206E6F74205265706F72742E506172
-      616D65746572735B275275666E616D65275D207468656E2054657874203A3D20
-      53636875656C65725B274E616D65416C6C65566F726E616D656E275D3B0D0A0D
-      0A656E643B0D0A0D436F6D706F6E656E744E616D65060B4E616D65566F726E61
-      6D65094576656E744E616D6506094F6E47657454657874074576656E74494402
-      35084361726574506F730102510204000000}
+      74074576656E7449440201084361726574506F730102230203000000}
   end
   object ppDesignLayers2: TppDesignLayers
     object ppDesignLayer2: TppDesignLayer
@@ -1265,22 +1255,12 @@ object RepOrt: TppReport
     object ppParameter2: TppParameter
       AutoSearchSettings.LogicalPrefix = []
       AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = '01.06.2025'
-      DataType = dtString
+      AutoSearchSettings.SearchExpression = '45957'
+      DataType = dtDate
       LookupSettings.DisplayType = dtNameOnly
       LookupSettings.SortOrder = soName
-      Value = '01.06.2025'
+      Value = 45957d
       UserName = 'Versionsdatum'
-    end
-    object ppParameter3: TppParameter
-      AutoSearchSettings.LogicalPrefix = []
-      AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = 'True'
-      DataType = dtBoolean
-      LookupSettings.DisplayType = dtNameOnly
-      LookupSettings.SortOrder = soName
-      Value = True
-      UserName = 'Rufname'
     end
   end
 end
