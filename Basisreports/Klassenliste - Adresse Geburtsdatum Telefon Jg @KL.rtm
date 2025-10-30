@@ -16,9 +16,9 @@ object RepOrt: TppReport
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
   Template.FileName = 
-    'C:\Users\ra\OneDrive - neg-velbert.de\Programme\SVWS-Arbeitsverz' +
-    'eichnis\SchILD-Reports\Reportsammlung 3.0\Basisreports\Klassenli' +
-    'ste - Adresse Geburtsdatum Telefon Jg @KL.rtm'
+    'C:\Users\jraff\OneDrive - neg-velbert.de\Programme\SVWS-Arbeitsv' +
+    'erzeichnis\SchILD-Reports\Reportsammlung 3.0\Basisreports\Klasse' +
+    'nliste - Adresse Geburtsdatum Telefon Jg @KL.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -273,7 +273,7 @@ object RepOrt: TppReport
         UserName = 'dbVorname'
         Border.mmPadding = 0
         CharWrap = False
-        DataField = 'Rufname'
+        DataField = 'AlleVornamen'
         DataPipeline = dmPipelines.Schueler
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
@@ -922,16 +922,7 @@ object RepOrt: TppReport
       20274B6C617373656E6C656974756E673A2027202B204C65687265723B0D0A65
       6E643B0D0A0D436F6D706F6E656E744E616D65061064624B6C617373656E6C65
       6974756E67094576656E744E616D6506094F6E47657454657874074576656E74
-      49440235084361726574506F73010205020E000001060F5472614576656E7448
-      616E646C65720B50726F6772616D4E616D6506106462566F726E616D654F6E50
-      72696E740B50726F6772616D54797065070B747450726F63656475726506536F
-      75726365068270726F636564757265206462566F726E616D654F6E5072696E74
-      3B0D0A626567696E0D0A20206966206E6F74205265706F72742E506172616D65
-      746572735B275275666E616D65275D207468656E206462566F726E616D652E54
-      657874203A3D2053636875656C65725B27416C6C65566F726E616D656E275D3B
-      0D0A656E643B0D0A0D436F6D706F6E656E744E616D6506096462566F726E616D
-      65094576656E744E616D6506074F6E5072696E74074576656E74494402200843
-      61726574506F730102480203000000}
+      49440235084361726574506F73010205020E000000}
   end
   object ppDesignLayers1: TppDesignLayers
     object ppDesignLayer1: TppDesignLayer
@@ -967,22 +958,12 @@ object RepOrt: TppReport
     object ppParameter2: TppParameter
       AutoSearchSettings.LogicalPrefix = []
       AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = '01.06.2025'
+      AutoSearchSettings.SearchExpression = '26.10.2025'
       DataType = dtString
       LookupSettings.DisplayType = dtNameOnly
       LookupSettings.SortOrder = soName
-      Value = '01.06.2025'
+      Value = '26.10.2025'
       UserName = 'Versionsdatum'
-    end
-    object ppParameter3: TppParameter
-      AutoSearchSettings.LogicalPrefix = []
-      AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = 'True'
-      DataType = dtBoolean
-      LookupSettings.DisplayType = dtNameOnly
-      LookupSettings.SortOrder = soName
-      Value = True
-      UserName = 'Rufname'
     end
   end
 end

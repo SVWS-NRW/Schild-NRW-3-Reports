@@ -18,10 +18,9 @@ object RepOrt: TppReport
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
   Template.FileName = 
-    'C:\Users\jraff\OneDrive - neg-velbert.de\Programme\SVWS-Arbeitsv' +
-    'erzeichnis\SchILD-Reports\Reportsammlung 3.0\Basisreports\Sch'#252'le' +
-    'rliste - SCHULBESCHEINIGUNG mit vorraussichtlichem Schulbesuchse' +
-    'nde @SuS.rtm'
+    '\\neghost\Gemeinsame Dateien\SVWS-Arbeitsverzeichnis\SchILD-Repo' +
+    'rts\Reportsammlung 3.0\Basisreports\Sch'#252'lerliste - SCHULBESCHEIN' +
+    'IGUNG mit vorraussichtlichem Schulbesuchsende @SuS.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -180,8 +179,9 @@ object RepOrt: TppReport
     object ppDBText1: TppDBText
       DesignLayer = ppDesignLayer2
       UserName = 'dbVornameName'
+      AutoSize = True
       Border.mmPadding = 0
-      DataField = 'RufnameName'
+      DataField = 'AlleVornamenName'
       DataPipeline = dmPipelines.Schueler
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
@@ -190,10 +190,10 @@ object RepOrt: TppReport
       Font.Style = [fsBold, fsItalic]
       Transparent = True
       DataPipelineName = 'Schueler'
-      mmHeight = 4657
+      mmHeight = 4762
       mmLeft = 103717
-      mmTop = 30268
-      mmWidth = 30903
+      mmTop = 30163
+      mmWidth = 40217
       BandType = 4
       LayerName = Foreground1
     end
@@ -805,17 +805,7 @@ object RepOrt: TppReport
       6174756D275D202B20272E273B200D0A0D0A656E643B0D0A0D436F6D706F6E65
       6E744E616D650610646241627363686C757373646174756D094576656E744E61
       6D6506094F6E47657454657874074576656E7449440235084361726574506F73
-      0102030204000001060F5472614576656E7448616E646C65720B50726F677261
-      6D4E616D6506166462566F726E616D654E616D654F6E476574546578740B5072
-      6F6772616D54797065070B747450726F63656475726506536F75726365069870
-      726F636564757265206462566F726E616D654E616D654F6E4765745465787428
-      76617220546578743A20537472696E67293B0D0A626567696E0D0A0D0A202069
-      66206E6F74205265706F72742E506172616D65746572735B275275666E616D65
-      275D207468656E2054657874203A3D2053636875656C65725B27416C6C65566F
-      726E616D656E4E616D65275D3B0D0A0D0A656E643B0D0A0D436F6D706F6E656E
-      744E616D65060D6462566F726E616D654E616D65094576656E744E616D650609
-      4F6E47657454657874074576656E7449440235084361726574506F7301024E02
-      04000000}
+      0102030204000000}
   end
   object ppDesignLayers2: TppDesignLayers
     object ppDesignLayer2: TppDesignLayer
@@ -851,22 +841,12 @@ object RepOrt: TppReport
     object ppParameter2: TppParameter
       AutoSearchSettings.LogicalPrefix = []
       AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = '01.06.2025'
-      DataType = dtString
+      AutoSearchSettings.SearchExpression = '45957'
+      DataType = dtDate
       LookupSettings.DisplayType = dtNameOnly
       LookupSettings.SortOrder = soName
-      Value = '01.06.2025'
+      Value = 45957d
       UserName = 'Versionsdatum'
-    end
-    object ppParameter3: TppParameter
-      AutoSearchSettings.LogicalPrefix = []
-      AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = 'False'
-      DataType = dtBoolean
-      LookupSettings.DisplayType = dtNameOnly
-      LookupSettings.SortOrder = soName
-      Value = False
-      UserName = 'Rufname'
     end
   end
 end

@@ -18,10 +18,9 @@ object RepOrt: TppReport
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
   Template.FileName = 
-    'C:\Users\ra\OneDrive - neg-velbert.de\Programme\SVWS-Arbeitsverz' +
-    'eichnis\SchILD-Reports\Reportsammlung 3.0\Reports SII\Kurs'#252'bersi' +
-    'cht - Jahrgang Kursart Lehrkraft Sch'#252'lerzahl Schriftlichkeit Mit' +
-    'telwert.rtm'
+    '\\neghost\Gemeinsame Dateien\SVWS-Arbeitsverzeichnis\SchILD-Repo' +
+    'rts\Reportsammlung 3.0\Reports SII\Kurs'#252'bersicht - Jahrgang Kurs' +
+    'art Lehrkraft Sch'#252'lerzahl Schriftlichkeit Mittelwert.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -1183,7 +1182,7 @@ object RepOrt: TppReport
       20204C617566656E6465725A6165686C6572203A3D20303B0D0A656E643B0D0A
       0D436F6D706F6E656E744E616D6506065265706F7274094576656E744E616D65
       060B4265666F72655072696E74074576656E7449440201084361726574506F73
-      0102010201000001060F5472614576656E7448616E646C65720B50726F677261
+      0102030206000001060F5472614576656E7448616E646C65720B50726F677261
       6D4E616D65061C4442536368726966746C696368476573616D744F6E47657454
       6578740B50726F6772616D54797065070B747450726F63656475726506536F75
       726365066E70726F636564757265204442536368726966746C69636847657361
@@ -1236,11 +1235,11 @@ object RepOrt: TppReport
     object ppParameter2: TppParameter
       AutoSearchSettings.LogicalPrefix = []
       AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = '01.06.2025'
-      DataType = dtString
+      AutoSearchSettings.SearchExpression = '45957'
+      DataType = dtDate
       LookupSettings.DisplayType = dtNameOnly
       LookupSettings.SortOrder = soName
-      Value = '01.06.2025'
+      Value = 45957d
       UserName = 'Versionsdatum'
     end
   end

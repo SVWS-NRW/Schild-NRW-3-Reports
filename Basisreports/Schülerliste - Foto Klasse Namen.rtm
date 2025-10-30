@@ -15,8 +15,10 @@ object RepOrt: TppReport
   PrinterSetup.mmPaperWidth = 210000
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
-  Template.FileName =
-    'C:\Users\ra\OneDrive - neg-velbert.de\Programme\SVWS-Arbeitsverzeichnis\SchILD-Reports\Reportsammlung 3.0\Basisreports\Sch''#252''lerliste - Foto Klasse Namen.rtm'
+  Template.FileName = 
+    '\\neghost\Gemeinsame Dateien\SVWS-Arbeitsverzeichnis\SchILD-Repo' +
+    'rts\Reportsammlung 3.0\Basisreports\Sch'#252'lerliste - Foto Klasse N' +
+    'amen.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -597,19 +599,6 @@ object RepOrt: TppReport
       LayerName = Foreground1
     end
   end
-  object raCodeModule1: TraCodeModule
-    ProgramStream = {
-      01060F5472614576656E7448616E646C65720B50726F6772616D4E616D650616
-      44424E616D65566F726E616D654F6E476574546578740B50726F6772616D5479
-      7065070B747450726F63656475726506536F75726365069870726F6365647572
-      652044424E616D65566F726E616D654F6E476574546578742876617220546578
-      743A20537472696E67293B0D0A626567696E0D0A0D0A20204966206E6F742052
-      65706F72742E506172616D65746572735B275275666E616D65275D207468656E
-      2054657874203A3D2053636875656C65725B274E616D65416C6C65566F726E61
-      6D656E275D3B0D0A0D0A656E643B0D0A0D436F6D706F6E656E744E616D65060D
-      44424E616D65566F726E616D65094576656E744E616D6506094F6E4765745465
-      7874074576656E7449440235084361726574506F730102030204000000}
-  end
   object ppDesignLayers2: TppDesignLayers
     object ppDesignLayer2: TppDesignLayer
       UserName = 'Foreground1'
@@ -650,16 +639,6 @@ object RepOrt: TppReport
       LookupSettings.SortOrder = soName
       Value = '01.06.2025'
       UserName = 'Versionsdatum'
-    end
-    object ppParameter3: TppParameter
-      AutoSearchSettings.LogicalPrefix = []
-      AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = 'True'
-      DataType = dtBoolean
-      LookupSettings.DisplayType = dtNameOnly
-      LookupSettings.SortOrder = soName
-      Value = True
-      UserName = 'Rufname'
     end
   end
 end

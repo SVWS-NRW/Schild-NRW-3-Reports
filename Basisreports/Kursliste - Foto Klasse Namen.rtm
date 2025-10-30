@@ -454,20 +454,19 @@ object RepOrt: TppReport
             BandType = 4
             LayerName = Foreground1
           end
-          object ppLabel1: TppLabel
+          object ppDBText3: TppDBText
             DesignLayer = ppDesignLayer2
             UserName = 'DBNameVorname'
-            AutoSize = False
             Border.mmPadding = 0
-            Caption = 'NameVorname'
+            DataField = 'NameAlleVornamen'
+            DataPipeline = dmPipelines.ppKursSchueler_mit_Fotos
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clBlack
             Font.Name = 'Calibri'
             Font.Size = 11
             Font.Style = []
-            FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-            FormFieldSettings.FormFieldType = fftNone
             Transparent = True
+            DataPipelineName = 'ppKursSchueler_mit_Fotos'
             mmHeight = 5200
             mmLeft = 51000
             mmTop = 0
@@ -478,24 +477,14 @@ object RepOrt: TppReport
         end
         object raCodeModule2: TraCodeModule
           ProgramStream = {
-            01060F5472614576656E7448616E646C65720B50726F6772616D4E616D650611
-            4865616465724265666F72655072696E740B50726F6772616D54797065070B74
-            7450726F63656475726506536F75726365064670726F63656475726520486561
-            6465724265666F72655072696E743B0D0A626567696E0D0A2020486561646572
-            2E56697369626C65203A3D20547275653B0D0A656E643B0D0A0D436F6D706F6E
-            656E744E616D650606486561646572094576656E744E616D65060B4265666F72
-            655072696E74074576656E7449440218084361726574506F7301020302040000
-            01060F5472614576656E7448616E646C65720B50726F6772616D4E616D650616
-            44424E616D65566F726E616D654F6E476574546578740B50726F6772616D5479
-            7065070B747450726F63656475726506536F75726365069C70726F6365647572
-            652044424E616D65566F726E616D654F6E476574546578742876617220546578
-            743A20537472696E67293B0D0A626567696E0D0A0D0A202054657874203A3D20
-            4B75727353636875656C65725F6D69745F466F746F735B274E616D65275D202B
-            20272C2027202B204B75727353636875656C65725F6D69745F466F746F735B27
-            566F726E616D65275D3B0D0A0D0A656E643B0D0A0D436F6D706F6E656E744E61
-            6D65060D44424E616D65566F726E616D65094576656E744E616D6506094F6E47
-            657454657874074576656E7449440235084361726574506F7301025502040000
-            00}
+            01060F5472614576656E7448616E646C65720B50726F6772616D4E616D650613
+            556E746572626572696368744F6E5072696E740B50726F6772616D5479706507
+            0B747450726F63656475726506536F75726365064870726F6365647572652055
+            6E746572626572696368744F6E5072696E743B0D0A626567696E0D0A20204865
+            616465722E56697369626C65203A3D20547275653B0D0A656E643B0D0A0D436F
+            6D706F6E656E744E616D65060C556E74657262657269636874094576656E744E
+            616D6506074F6E5072696E74074576656E7449440220084361726574506F7301
+            021A0203000000}
         end
         object ppDesignLayers2: TppDesignLayers
           object ppDesignLayer2: TppDesignLayer
@@ -765,11 +754,11 @@ object RepOrt: TppReport
     object ppParameter2: TppParameter
       AutoSearchSettings.LogicalPrefix = []
       AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = '01.06.2025'
-      DataType = dtString
+      AutoSearchSettings.SearchExpression = '45957'
+      DataType = dtDate
       LookupSettings.DisplayType = dtNameOnly
       LookupSettings.SortOrder = soName
-      Value = '01.06.2025'
+      Value = 45957d
       UserName = 'Versionsdatum'
     end
   end
