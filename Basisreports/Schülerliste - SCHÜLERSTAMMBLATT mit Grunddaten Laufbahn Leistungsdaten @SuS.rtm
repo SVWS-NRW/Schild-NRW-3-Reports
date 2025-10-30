@@ -18,9 +18,10 @@ object RepOrt: TppReport
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
   Template.FileName = 
-    '\\neghost\Gemeinsame Dateien\SVWS-Arbeitsverzeichnis\SchILD-Repo' +
-    'rts\Reportsammlung 3.0\Basisreports\Sch'#252'lerliste - SCH'#220'LERSTAMMB' +
-    'LATT mit Grunddaten Laufbahn Leistungsdaten @SuS.rtm'
+    'C:\Users\jraff\OneDrive - neg-velbert.de\Programme\SVWS-Arbeitsv' +
+    'erzeichnis\SchILD-Reports\Reportsammlung 3.0\Basisreports\Sch'#252'le' +
+    'rliste - SCH'#220'LERSTAMMBLATT mit Grunddaten Laufbahn Leistungsdate' +
+    'n @SuS.rtm'
   Template.Format = ftASCII
   Units = utPrinterPixels
   AllowPrintToArchive = True
@@ -221,6 +222,7 @@ object RepOrt: TppReport
               Font.Style = [fsBold, fsItalic]
               FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
               FormFieldSettings.FormFieldType = fftNone
+              Transparent = True
               mmHeight = 5292
               mmLeft = 0
               mmTop = 2117
@@ -242,6 +244,7 @@ object RepOrt: TppReport
               Font.Style = [fsBold, fsItalic]
               FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
               FormFieldSettings.FormFieldType = fftNone
+              Transparent = True
               VerticalAlignment = avCenter
               mmHeight = 4656
               mmLeft = 0
@@ -264,6 +267,7 @@ object RepOrt: TppReport
               Font.Style = [fsBold, fsItalic]
               FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
               FormFieldSettings.FormFieldType = fftNone
+              Transparent = True
               VerticalAlignment = avCenter
               mmHeight = 4657
               mmLeft = 0
@@ -286,6 +290,7 @@ object RepOrt: TppReport
               Font.Style = [fsBold, fsItalic]
               FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
               FormFieldSettings.FormFieldType = fftNone
+              Transparent = True
               VerticalAlignment = avCenter
               mmHeight = 4657
               mmLeft = 0
@@ -308,6 +313,7 @@ object RepOrt: TppReport
               Font.Style = [fsBold, fsItalic]
               FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
               FormFieldSettings.FormFieldType = fftNone
+              Transparent = True
               VerticalAlignment = avCenter
               mmHeight = 4657
               mmLeft = 0
@@ -330,6 +336,7 @@ object RepOrt: TppReport
               Font.Style = [fsBold, fsItalic]
               FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
               FormFieldSettings.FormFieldType = fftNone
+              Transparent = True
               VerticalAlignment = avCenter
               mmHeight = 4657
               mmLeft = 0
@@ -352,6 +359,7 @@ object RepOrt: TppReport
               Font.Style = [fsBold, fsItalic]
               FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
               FormFieldSettings.FormFieldType = fftNone
+              Transparent = True
               VerticalAlignment = avCenter
               mmHeight = 4657
               mmLeft = 0
@@ -374,6 +382,7 @@ object RepOrt: TppReport
               Font.Style = [fsBold, fsItalic]
               FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
               FormFieldSettings.FormFieldType = fftNone
+              Transparent = True
               VerticalAlignment = avCenter
               mmHeight = 4657
               mmLeft = 0
@@ -396,6 +405,7 @@ object RepOrt: TppReport
               Font.Style = [fsBold, fsItalic]
               FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
               FormFieldSettings.FormFieldType = fftNone
+              Transparent = True
               VerticalAlignment = avCenter
               mmHeight = 4657
               mmLeft = 0
@@ -418,6 +428,7 @@ object RepOrt: TppReport
               Font.Style = [fsBold, fsItalic]
               FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
               FormFieldSettings.FormFieldType = fftNone
+              Transparent = True
               VerticalAlignment = avCenter
               mmHeight = 4657
               mmLeft = 0
@@ -440,6 +451,7 @@ object RepOrt: TppReport
               Font.Style = [fsBold, fsItalic]
               FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
               FormFieldSettings.FormFieldType = fftNone
+              Transparent = True
               VerticalAlignment = avCenter
               mmHeight = 4657
               mmLeft = 0
@@ -462,6 +474,7 @@ object RepOrt: TppReport
               Font.Style = [fsBold, fsItalic]
               FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
               FormFieldSettings.FormFieldType = fftNone
+              Transparent = True
               VerticalAlignment = avCenter
               mmHeight = 4657
               mmLeft = 0
@@ -484,6 +497,7 @@ object RepOrt: TppReport
               Font.Style = [fsBold, fsItalic]
               FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
               FormFieldSettings.FormFieldType = fftNone
+              Transparent = True
               VerticalAlignment = avCenter
               mmHeight = 4657
               mmLeft = 0
@@ -506,6 +520,7 @@ object RepOrt: TppReport
               Font.Style = [fsBold, fsItalic]
               FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
               FormFieldSettings.FormFieldType = fftNone
+              Transparent = True
               VerticalAlignment = avCenter
               mmHeight = 4657
               mmLeft = 0
@@ -528,6 +543,7 @@ object RepOrt: TppReport
               Font.Style = [fsBold, fsItalic]
               FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
               FormFieldSettings.FormFieldType = fftNone
+              Transparent = True
               VerticalAlignment = avCenter
               mmHeight = 4657
               mmLeft = 0
@@ -550,6 +566,7 @@ object RepOrt: TppReport
               Font.Style = [fsBold, fsItalic]
               FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
               FormFieldSettings.FormFieldType = fftNone
+              Transparent = True
               VerticalAlignment = avCenter
               mmHeight = 4657
               mmLeft = 0
@@ -572,6 +589,7 @@ object RepOrt: TppReport
               Font.Style = [fsBold, fsItalic]
               FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
               FormFieldSettings.FormFieldType = fftNone
+              Transparent = True
               VerticalAlignment = avCenter
               mmHeight = 4657
               mmLeft = 0
@@ -594,6 +612,7 @@ object RepOrt: TppReport
               Font.Style = [fsBold, fsItalic]
               FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
               FormFieldSettings.FormFieldType = fftNone
+              Transparent = True
               VerticalAlignment = avCenter
               mmHeight = 4657
               mmLeft = 0
@@ -616,6 +635,7 @@ object RepOrt: TppReport
               Font.Style = [fsBold, fsItalic]
               FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
               FormFieldSettings.FormFieldType = fftNone
+              Transparent = True
               VerticalAlignment = avCenter
               mmHeight = 4657
               mmLeft = 0
@@ -638,6 +658,7 @@ object RepOrt: TppReport
               Font.Style = [fsBold, fsItalic]
               FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
               FormFieldSettings.FormFieldType = fftNone
+              Transparent = True
               VerticalAlignment = avCenter
               mmHeight = 4657
               mmLeft = 0
@@ -660,6 +681,7 @@ object RepOrt: TppReport
               Font.Style = [fsBold, fsItalic]
               FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
               FormFieldSettings.FormFieldType = fftNone
+              Transparent = True
               VerticalAlignment = avCenter
               mmHeight = 4657
               mmLeft = 0
@@ -682,6 +704,7 @@ object RepOrt: TppReport
               Font.Style = [fsBold, fsItalic]
               FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
               FormFieldSettings.FormFieldType = fftNone
+              Transparent = True
               VerticalAlignment = avCenter
               mmHeight = 4657
               mmLeft = 0
@@ -703,6 +726,7 @@ object RepOrt: TppReport
               Font.Size = 10
               Font.Style = []
               ParentDataPipeline = False
+              Transparent = True
               VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 4657
@@ -724,6 +748,7 @@ object RepOrt: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
+              Transparent = True
               VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 4657
@@ -745,6 +770,7 @@ object RepOrt: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
+              Transparent = True
               VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 4657
@@ -766,6 +792,7 @@ object RepOrt: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
+              Transparent = True
               VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 4657
@@ -787,6 +814,7 @@ object RepOrt: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
+              Transparent = True
               VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 4657
@@ -808,6 +836,7 @@ object RepOrt: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
+              Transparent = True
               VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 4657
@@ -829,6 +858,7 @@ object RepOrt: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
+              Transparent = True
               VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 4657
@@ -850,6 +880,7 @@ object RepOrt: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
+              Transparent = True
               VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 4657
@@ -871,6 +902,7 @@ object RepOrt: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
+              Transparent = True
               VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 4657
@@ -893,6 +925,7 @@ object RepOrt: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
+              Transparent = True
               VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 4657
@@ -915,6 +948,7 @@ object RepOrt: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
+              Transparent = True
               VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 4657
@@ -936,6 +970,7 @@ object RepOrt: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
+              Transparent = True
               VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 4657
@@ -957,6 +992,7 @@ object RepOrt: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
+              Transparent = True
               VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 4657
@@ -978,6 +1014,7 @@ object RepOrt: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
+              Transparent = True
               VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 4657
@@ -999,6 +1036,7 @@ object RepOrt: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
+              Transparent = True
               VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 4657
@@ -1020,6 +1058,7 @@ object RepOrt: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
+              Transparent = True
               VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 4657
@@ -1041,6 +1080,7 @@ object RepOrt: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
+              Transparent = True
               VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 4657
@@ -1062,6 +1102,7 @@ object RepOrt: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
+              Transparent = True
               VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 4657
@@ -1083,6 +1124,7 @@ object RepOrt: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
+              Transparent = True
               VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 4657
@@ -1104,6 +1146,7 @@ object RepOrt: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
+              Transparent = True
               VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 4657
@@ -1125,6 +1168,7 @@ object RepOrt: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
+              Transparent = True
               VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 4657
@@ -1169,6 +1213,7 @@ object RepOrt: TppReport
               Font.Style = [fsBold, fsItalic]
               FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
               FormFieldSettings.FormFieldType = fftNone
+              Transparent = True
               mmHeight = 5292
               mmLeft = 0
               mmTop = 112184
@@ -1190,6 +1235,7 @@ object RepOrt: TppReport
               Font.Style = [fsBold, fsItalic]
               FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
               FormFieldSettings.FormFieldType = fftNone
+              Transparent = True
               VerticalAlignment = avCenter
               mmHeight = 4657
               mmLeft = 0
@@ -1212,6 +1258,7 @@ object RepOrt: TppReport
               Font.Style = [fsBold, fsItalic]
               FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
               FormFieldSettings.FormFieldType = fftNone
+              Transparent = True
               VerticalAlignment = avCenter
               mmHeight = 4657
               mmLeft = 0
@@ -1234,6 +1281,7 @@ object RepOrt: TppReport
               Font.Style = [fsBold, fsItalic]
               FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
               FormFieldSettings.FormFieldType = fftNone
+              Transparent = True
               VerticalAlignment = avCenter
               mmHeight = 4657
               mmLeft = 0
@@ -1256,6 +1304,7 @@ object RepOrt: TppReport
               Font.Style = [fsBold, fsItalic]
               FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
               FormFieldSettings.FormFieldType = fftNone
+              Transparent = True
               VerticalAlignment = avCenter
               mmHeight = 4657
               mmLeft = 0
@@ -1278,6 +1327,7 @@ object RepOrt: TppReport
               Font.Style = [fsBold, fsItalic]
               FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
               FormFieldSettings.FormFieldType = fftNone
+              Transparent = True
               VerticalAlignment = avCenter
               mmHeight = 4657
               mmLeft = 0
@@ -1300,6 +1350,7 @@ object RepOrt: TppReport
               Font.Style = [fsBold, fsItalic]
               FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
               FormFieldSettings.FormFieldType = fftNone
+              Transparent = True
               VerticalAlignment = avCenter
               mmHeight = 4445
               mmLeft = 0
@@ -1322,6 +1373,7 @@ object RepOrt: TppReport
               Font.Style = [fsBold, fsItalic]
               FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
               FormFieldSettings.FormFieldType = fftNone
+              Transparent = True
               VerticalAlignment = avCenter
               mmHeight = 4657
               mmLeft = 0
@@ -1342,6 +1394,7 @@ object RepOrt: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
+              Transparent = True
               VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 4657
@@ -1363,6 +1416,7 @@ object RepOrt: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
+              Transparent = True
               VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 4657
@@ -1384,6 +1438,7 @@ object RepOrt: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
+              Transparent = True
               VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 4657
@@ -1405,6 +1460,7 @@ object RepOrt: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
+              Transparent = True
               VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 4657
@@ -1426,6 +1482,7 @@ object RepOrt: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
+              Transparent = True
               VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 4657
@@ -1447,6 +1504,7 @@ object RepOrt: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
+              Transparent = True
               VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 4657
@@ -1468,6 +1526,7 @@ object RepOrt: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
+              Transparent = True
               VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 4657
@@ -1512,6 +1571,7 @@ object RepOrt: TppReport
               Font.Style = [fsBold, fsItalic]
               FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
               FormFieldSettings.FormFieldType = fftNone
+              Transparent = True
               mmHeight = 5292
               mmLeft = 0
               mmTop = 158750
@@ -1533,6 +1593,7 @@ object RepOrt: TppReport
               Font.Style = [fsBold, fsItalic]
               FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
               FormFieldSettings.FormFieldType = fftNone
+              Transparent = True
               VerticalAlignment = avCenter
               mmHeight = 4657
               mmLeft = 0
@@ -1555,6 +1616,7 @@ object RepOrt: TppReport
               Font.Style = [fsBold, fsItalic]
               FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
               FormFieldSettings.FormFieldType = fftNone
+              Transparent = True
               VerticalAlignment = avCenter
               mmHeight = 4657
               mmLeft = 0
@@ -1577,6 +1639,7 @@ object RepOrt: TppReport
               Font.Style = [fsBold, fsItalic]
               FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
               FormFieldSettings.FormFieldType = fftNone
+              Transparent = True
               VerticalAlignment = avCenter
               mmHeight = 4657
               mmLeft = 0
@@ -1599,6 +1662,7 @@ object RepOrt: TppReport
               Font.Style = [fsBold, fsItalic]
               FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
               FormFieldSettings.FormFieldType = fftNone
+              Transparent = True
               VerticalAlignment = avCenter
               mmHeight = 4657
               mmLeft = 0
@@ -1621,6 +1685,7 @@ object RepOrt: TppReport
               Font.Style = [fsBold, fsItalic]
               FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
               FormFieldSettings.FormFieldType = fftNone
+              Transparent = True
               VerticalAlignment = avCenter
               mmHeight = 4657
               mmLeft = 0
@@ -1643,6 +1708,7 @@ object RepOrt: TppReport
               Font.Style = [fsBold, fsItalic]
               FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
               FormFieldSettings.FormFieldType = fftNone
+              Transparent = True
               VerticalAlignment = avCenter
               mmHeight = 4657
               mmLeft = 0
@@ -1665,6 +1731,7 @@ object RepOrt: TppReport
               Font.Style = [fsBold, fsItalic]
               FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
               FormFieldSettings.FormFieldType = fftNone
+              Transparent = True
               VerticalAlignment = avCenter
               mmHeight = 4657
               mmLeft = 0
@@ -1687,6 +1754,7 @@ object RepOrt: TppReport
               Font.Style = [fsBold, fsItalic]
               FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
               FormFieldSettings.FormFieldType = fftNone
+              Transparent = True
               VerticalAlignment = avCenter
               mmHeight = 4657
               mmLeft = 0
@@ -1707,6 +1775,7 @@ object RepOrt: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
+              Transparent = True
               VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 4657
@@ -1728,6 +1797,7 @@ object RepOrt: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
+              Transparent = True
               VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 4657
@@ -1749,6 +1819,7 @@ object RepOrt: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
+              Transparent = True
               VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 4657
@@ -1770,6 +1841,7 @@ object RepOrt: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
+              Transparent = True
               VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 4657
@@ -1792,6 +1864,7 @@ object RepOrt: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
+              Transparent = True
               VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 4657
@@ -1813,6 +1886,7 @@ object RepOrt: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
+              Transparent = True
               VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 4657
@@ -1835,6 +1909,7 @@ object RepOrt: TppReport
               Font.Size = 10
               Font.Style = []
               ParentDataPipeline = False
+              Transparent = True
               VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 4657
@@ -1856,6 +1931,7 @@ object RepOrt: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
+              Transparent = True
               VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 4657
@@ -1900,6 +1976,7 @@ object RepOrt: TppReport
               Font.Style = [fsBold, fsItalic]
               FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
               FormFieldSettings.FormFieldType = fftNone
+              Transparent = True
               mmHeight = 5292
               mmLeft = 0
               mmTop = 209550
@@ -1921,6 +1998,7 @@ object RepOrt: TppReport
               Font.Style = [fsBold, fsItalic]
               FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
               FormFieldSettings.FormFieldType = fftNone
+              Transparent = True
               VerticalAlignment = avCenter
               mmHeight = 4657
               mmLeft = 0
@@ -1943,6 +2021,7 @@ object RepOrt: TppReport
               Font.Style = [fsBold, fsItalic]
               FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
               FormFieldSettings.FormFieldType = fftNone
+              Transparent = True
               VerticalAlignment = avCenter
               mmHeight = 4657
               mmLeft = 0
@@ -1965,6 +2044,7 @@ object RepOrt: TppReport
               Font.Style = [fsBold, fsItalic]
               FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
               FormFieldSettings.FormFieldType = fftNone
+              Transparent = True
               VerticalAlignment = avCenter
               mmHeight = 4657
               mmLeft = 0
@@ -1987,6 +2067,7 @@ object RepOrt: TppReport
               Font.Style = [fsBold, fsItalic]
               FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
               FormFieldSettings.FormFieldType = fftNone
+              Transparent = True
               VerticalAlignment = avCenter
               mmHeight = 4657
               mmLeft = 0
@@ -2009,6 +2090,7 @@ object RepOrt: TppReport
               Font.Style = [fsBold, fsItalic]
               FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
               FormFieldSettings.FormFieldType = fftNone
+              Transparent = True
               VerticalAlignment = avCenter
               mmHeight = 4657
               mmLeft = 0
@@ -2031,6 +2113,7 @@ object RepOrt: TppReport
               Font.Style = [fsBold, fsItalic]
               FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
               FormFieldSettings.FormFieldType = fftNone
+              Transparent = True
               VerticalAlignment = avCenter
               mmHeight = 4657
               mmLeft = 0
@@ -2053,6 +2136,7 @@ object RepOrt: TppReport
               Font.Style = [fsBold, fsItalic]
               FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
               FormFieldSettings.FormFieldType = fftNone
+              Transparent = True
               VerticalAlignment = avCenter
               mmHeight = 4657
               mmLeft = 0
@@ -2075,6 +2159,7 @@ object RepOrt: TppReport
               Font.Style = [fsBold, fsItalic]
               FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
               FormFieldSettings.FormFieldType = fftNone
+              Transparent = True
               VerticalAlignment = avCenter
               mmHeight = 4657
               mmLeft = 0
@@ -2097,6 +2182,7 @@ object RepOrt: TppReport
               Font.Style = [fsBold, fsItalic]
               FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
               FormFieldSettings.FormFieldType = fftNone
+              Transparent = True
               VerticalAlignment = avCenter
               mmHeight = 4657
               mmLeft = 0
@@ -2119,6 +2205,7 @@ object RepOrt: TppReport
               Font.Style = [fsBold, fsItalic]
               FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
               FormFieldSettings.FormFieldType = fftNone
+              Transparent = True
               VerticalAlignment = avCenter
               mmHeight = 4657
               mmLeft = 0
@@ -2141,6 +2228,7 @@ object RepOrt: TppReport
               Font.Style = [fsBold, fsItalic]
               FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
               FormFieldSettings.FormFieldType = fftNone
+              Transparent = True
               VerticalAlignment = avCenter
               mmHeight = 4657
               mmLeft = 0
@@ -2163,6 +2251,7 @@ object RepOrt: TppReport
               Font.Style = [fsBold, fsItalic]
               FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
               FormFieldSettings.FormFieldType = fftNone
+              Transparent = True
               VerticalAlignment = avCenter
               mmHeight = 4657
               mmLeft = 0
@@ -2183,6 +2272,7 @@ object RepOrt: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
+              Transparent = True
               VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 4657
@@ -2204,6 +2294,7 @@ object RepOrt: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
+              Transparent = True
               VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 4657
@@ -2225,6 +2316,7 @@ object RepOrt: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
+              Transparent = True
               VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 4657
@@ -2246,6 +2338,7 @@ object RepOrt: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
+              Transparent = True
               VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 4657
@@ -2267,6 +2360,7 @@ object RepOrt: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
+              Transparent = True
               VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 4657
@@ -2289,6 +2383,7 @@ object RepOrt: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
+              Transparent = True
               VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 4657
@@ -2310,6 +2405,7 @@ object RepOrt: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
+              Transparent = True
               VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 4657
@@ -2331,6 +2427,7 @@ object RepOrt: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
+              Transparent = True
               VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 4657
@@ -2353,6 +2450,7 @@ object RepOrt: TppReport
               Font.Style = []
               FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
               FormFieldSettings.FormFieldType = fftNone
+              Transparent = True
               VerticalAlignment = avCenter
               mmHeight = 4657
               mmLeft = 29000
@@ -2373,6 +2471,7 @@ object RepOrt: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
+              Transparent = True
               VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 4657
@@ -2395,6 +2494,7 @@ object RepOrt: TppReport
               Font.Size = 10
               Font.Style = []
               ParentDataPipeline = False
+              Transparent = True
               VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 4657
@@ -2467,6 +2567,7 @@ object RepOrt: TppReport
               Font.Style = [fsBold, fsItalic]
               FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
               FormFieldSettings.FormFieldType = fftNone
+              Transparent = True
               VerticalAlignment = avCenter
               mmHeight = 5292
               mmLeft = 0
@@ -2489,6 +2590,7 @@ object RepOrt: TppReport
               Font.Style = [fsBold, fsItalic]
               FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
               FormFieldSettings.FormFieldType = fftNone
+              Transparent = True
               VerticalAlignment = avCenter
               mmHeight = 4657
               mmLeft = 0
@@ -2511,6 +2613,7 @@ object RepOrt: TppReport
               Font.Style = [fsBold, fsItalic]
               FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
               FormFieldSettings.FormFieldType = fftNone
+              Transparent = True
               VerticalAlignment = avCenter
               mmHeight = 4657
               mmLeft = 0
@@ -2533,6 +2636,7 @@ object RepOrt: TppReport
               Font.Style = [fsBold, fsItalic]
               FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
               FormFieldSettings.FormFieldType = fftNone
+              Transparent = True
               VerticalAlignment = avCenter
               mmHeight = 4657
               mmLeft = 0
@@ -2555,6 +2659,7 @@ object RepOrt: TppReport
               Font.Style = [fsBold, fsItalic]
               FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
               FormFieldSettings.FormFieldType = fftNone
+              Transparent = True
               VerticalAlignment = avCenter
               mmHeight = 4657
               mmLeft = 0
@@ -2575,6 +2680,7 @@ object RepOrt: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
+              Transparent = True
               VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 4657
@@ -2596,6 +2702,7 @@ object RepOrt: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
+              Transparent = True
               VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 4657
@@ -2618,6 +2725,7 @@ object RepOrt: TppReport
               Font.Size = 10
               Font.Style = []
               ParentDataPipeline = False
+              Transparent = True
               VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 4657
@@ -2691,6 +2799,7 @@ object RepOrt: TppReport
               Font.Style = [fsBold, fsItalic]
               FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
               FormFieldSettings.FormFieldType = fftNone
+              Transparent = True
               mmHeight = 5292
               mmLeft = 0
               mmTop = 311151
@@ -2712,6 +2821,7 @@ object RepOrt: TppReport
               Font.Style = [fsBold, fsItalic]
               FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
               FormFieldSettings.FormFieldType = fftNone
+              Transparent = True
               VerticalAlignment = avCenter
               mmHeight = 4657
               mmLeft = 0
@@ -2734,6 +2844,7 @@ object RepOrt: TppReport
               Font.Style = [fsBold, fsItalic]
               FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
               FormFieldSettings.FormFieldType = fftNone
+              Transparent = True
               VerticalAlignment = avCenter
               mmHeight = 4657
               mmLeft = 0
@@ -2756,6 +2867,7 @@ object RepOrt: TppReport
               Font.Style = [fsBold, fsItalic]
               FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
               FormFieldSettings.FormFieldType = fftNone
+              Transparent = True
               VerticalAlignment = avCenter
               mmHeight = 4657
               mmLeft = 0
@@ -2778,6 +2890,7 @@ object RepOrt: TppReport
               Font.Style = [fsBold, fsItalic]
               FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
               FormFieldSettings.FormFieldType = fftNone
+              Transparent = True
               VerticalAlignment = avCenter
               mmHeight = 4657
               mmLeft = 0
@@ -2800,6 +2913,7 @@ object RepOrt: TppReport
               Font.Style = [fsBold, fsItalic]
               FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
               FormFieldSettings.FormFieldType = fftNone
+              Transparent = True
               VerticalAlignment = avCenter
               mmHeight = 4657
               mmLeft = 0
@@ -2822,6 +2936,7 @@ object RepOrt: TppReport
               Font.Style = [fsBold, fsItalic]
               FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
               FormFieldSettings.FormFieldType = fftNone
+              Transparent = True
               VerticalAlignment = avCenter
               mmHeight = 4657
               mmLeft = 0
@@ -2844,6 +2959,7 @@ object RepOrt: TppReport
               Font.Style = [fsBold, fsItalic]
               FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
               FormFieldSettings.FormFieldType = fftNone
+              Transparent = True
               VerticalAlignment = avCenter
               mmHeight = 4657
               mmLeft = 0
@@ -2866,6 +2982,7 @@ object RepOrt: TppReport
               Font.Style = [fsBold, fsItalic]
               FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
               FormFieldSettings.FormFieldType = fftNone
+              Transparent = True
               VerticalAlignment = avCenter
               mmHeight = 4657
               mmLeft = 0
@@ -2888,6 +3005,7 @@ object RepOrt: TppReport
               Font.Style = [fsBold, fsItalic]
               FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
               FormFieldSettings.FormFieldType = fftNone
+              Transparent = True
               VerticalAlignment = avCenter
               mmHeight = 4657
               mmLeft = 0
@@ -2908,6 +3026,7 @@ object RepOrt: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
+              Transparent = True
               VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 4657
@@ -2929,6 +3048,7 @@ object RepOrt: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
+              Transparent = True
               VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 4657
@@ -2950,6 +3070,7 @@ object RepOrt: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
+              Transparent = True
               VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 4657
@@ -2971,6 +3092,7 @@ object RepOrt: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
+              Transparent = True
               VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 4657
@@ -2993,6 +3115,7 @@ object RepOrt: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
+              Transparent = True
               VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 4657
@@ -3014,6 +3137,7 @@ object RepOrt: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
+              Transparent = True
               VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 4657
@@ -3035,6 +3159,7 @@ object RepOrt: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
+              Transparent = True
               VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 4657
@@ -3056,6 +3181,7 @@ object RepOrt: TppReport
               Font.Name = 'Calibri'
               Font.Size = 10
               Font.Style = []
+              Transparent = True
               VerticalAlignment = avCenter
               DataPipelineName = 'Schueler'
               mmHeight = 4657
@@ -3155,6 +3281,7 @@ object RepOrt: TppReport
                   Font.Style = [fsBold, fsItalic]
                   FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
                   FormFieldSettings.FormFieldType = fftNone
+                  Transparent = True
                   mmHeight = 5292
                   mmLeft = 0
                   mmTop = 2117
@@ -3423,6 +3550,7 @@ object RepOrt: TppReport
                     Font.Style = [fsBold]
                     FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
                     FormFieldSettings.FormFieldType = fftNone
+                    Transparent = True
                     VerticalAlignment = avCenter
                     mmHeight = 4657
                     mmLeft = 1058
@@ -3445,6 +3573,7 @@ object RepOrt: TppReport
                     Font.Style = [fsBold]
                     FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
                     FormFieldSettings.FormFieldType = fftNone
+                    Transparent = True
                     VerticalAlignment = avCenter
                     mmHeight = 4657
                     mmLeft = 7197
@@ -3468,6 +3597,7 @@ object RepOrt: TppReport
                     FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
                     FormFieldSettings.FormFieldType = fftNone
                     TextAlignment = taCentered
+                    Transparent = True
                     VerticalAlignment = avCenter
                     mmHeight = 4657
                     mmLeft = 31750
@@ -3491,6 +3621,7 @@ object RepOrt: TppReport
                     FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
                     FormFieldSettings.FormFieldType = fftNone
                     TextAlignment = taCentered
+                    Transparent = True
                     VerticalAlignment = avCenter
                     mmHeight = 4657
                     mmLeft = 51012
@@ -3514,6 +3645,7 @@ object RepOrt: TppReport
                     FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
                     FormFieldSettings.FormFieldType = fftNone
                     TextAlignment = taCentered
+                    Transparent = True
                     VerticalAlignment = avCenter
                     mmHeight = 4657
                     mmLeft = 57362
@@ -3537,6 +3669,7 @@ object RepOrt: TppReport
                     FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
                     FormFieldSettings.FormFieldType = fftNone
                     TextAlignment = taCentered
+                    Transparent = True
                     VerticalAlignment = avCenter
                     mmHeight = 4657
                     mmLeft = 76623
@@ -3707,6 +3840,7 @@ object RepOrt: TppReport
                   Font.Style = [fsBold, fsItalic]
                   FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
                   FormFieldSettings.FormFieldType = fftNone
+                  Transparent = True
                   VerticalAlignment = avCenter
                   mmHeight = 4657
                   mmLeft = 0
@@ -3729,6 +3863,7 @@ object RepOrt: TppReport
                   Font.Style = [fsBold, fsItalic]
                   FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
                   FormFieldSettings.FormFieldType = fftNone
+                  Transparent = True
                   VerticalAlignment = avCenter
                   mmHeight = 4657
                   mmLeft = 0
@@ -3751,6 +3886,7 @@ object RepOrt: TppReport
                   Font.Style = [fsBold, fsItalic]
                   FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
                   FormFieldSettings.FormFieldType = fftNone
+                  Transparent = True
                   VerticalAlignment = avCenter
                   mmHeight = 4657
                   mmLeft = 0
@@ -3773,6 +3909,7 @@ object RepOrt: TppReport
                   Font.Style = [fsBold, fsItalic]
                   FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
                   FormFieldSettings.FormFieldType = fftNone
+                  Transparent = True
                   VerticalAlignment = avCenter
                   mmHeight = 4657
                   mmLeft = 0
@@ -3795,6 +3932,7 @@ object RepOrt: TppReport
                   Font.Style = [fsBold, fsItalic]
                   FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
                   FormFieldSettings.FormFieldType = fftNone
+                  Transparent = True
                   VerticalAlignment = avCenter
                   mmHeight = 4657
                   mmLeft = 0
@@ -3817,6 +3955,7 @@ object RepOrt: TppReport
                   Font.Style = [fsBold, fsItalic]
                   FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
                   FormFieldSettings.FormFieldType = fftNone
+                  Transparent = True
                   VerticalAlignment = avCenter
                   mmHeight = 4657
                   mmLeft = 0
@@ -3839,6 +3978,7 @@ object RepOrt: TppReport
                   Font.Style = [fsBold, fsItalic]
                   FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
                   FormFieldSettings.FormFieldType = fftNone
+                  Transparent = True
                   VerticalAlignment = avCenter
                   mmHeight = 4657
                   mmLeft = 0
@@ -3861,6 +4001,7 @@ object RepOrt: TppReport
                   Font.Style = [fsBold, fsItalic]
                   FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
                   FormFieldSettings.FormFieldType = fftNone
+                  Transparent = True
                   VerticalAlignment = avCenter
                   mmHeight = 4657
                   mmLeft = 0
@@ -3882,6 +4023,7 @@ object RepOrt: TppReport
                   Font.Size = 10
                   Font.Style = []
                   ParentDataPipeline = False
+                  Transparent = True
                   VerticalAlignment = avCenter
                   DataPipelineName = 'Erzieher'
                   mmHeight = 4657
@@ -3903,6 +4045,7 @@ object RepOrt: TppReport
                   Font.Name = 'Calibri'
                   Font.Size = 10
                   Font.Style = []
+                  Transparent = True
                   VerticalAlignment = avCenter
                   DataPipelineName = 'Erzieher'
                   mmHeight = 4657
@@ -3925,6 +4068,7 @@ object RepOrt: TppReport
                   Font.Style = []
                   FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
                   FormFieldSettings.FormFieldType = fftNone
+                  Transparent = True
                   VerticalAlignment = avCenter
                   mmHeight = 4657
                   mmLeft = 28998
@@ -3946,6 +4090,7 @@ object RepOrt: TppReport
                   Font.Name = 'Calibri'
                   Font.Size = 10
                   Font.Style = []
+                  Transparent = True
                   VerticalAlignment = avCenter
                   DataPipelineName = 'Erzieher'
                   mmHeight = 4657
@@ -3968,6 +4113,7 @@ object RepOrt: TppReport
                   Font.Style = []
                   FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
                   FormFieldSettings.FormFieldType = fftNone
+                  Transparent = True
                   VerticalAlignment = avCenter
                   mmHeight = 4657
                   mmLeft = 28998
@@ -3989,6 +4135,7 @@ object RepOrt: TppReport
                   Font.Name = 'Calibri'
                   Font.Size = 10
                   Font.Style = []
+                  Transparent = True
                   VerticalAlignment = avCenter
                   DataPipelineName = 'Erzieher'
                   mmHeight = 4657
@@ -4010,6 +4157,7 @@ object RepOrt: TppReport
                   Font.Name = 'Calibri'
                   Font.Size = 10
                   Font.Style = []
+                  Transparent = True
                   VerticalAlignment = avCenter
                   DataPipelineName = 'Erzieher'
                   mmHeight = 4657
@@ -4031,6 +4179,7 @@ object RepOrt: TppReport
                   Font.Name = 'Calibri'
                   Font.Size = 10
                   Font.Style = []
+                  Transparent = True
                   VerticalAlignment = avCenter
                   DataPipelineName = 'Erzieher'
                   mmHeight = 4657
@@ -4075,6 +4224,7 @@ object RepOrt: TppReport
                     Font.Style = [fsBold, fsItalic]
                     FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
                     FormFieldSettings.FormFieldType = fftNone
+                    Transparent = True
                     mmHeight = 5292
                     mmLeft = 0
                     mmTop = 2117
@@ -4259,7 +4409,7 @@ object RepOrt: TppReport
                 mmPrintPosition = 0
                 object ppLabel103: TppLabel
                   DesignLayer = ppDesignLayer3
-                  UserName = 'UeberschriftErziehertelefon1'
+                  UserName = 'UeberschriftErziehertelefon'
                   AutoSize = False
                   Border.BorderPositions = [bpBottom]
                   Border.Visible = True
@@ -4273,6 +4423,7 @@ object RepOrt: TppReport
                   Font.Style = [fsBold, fsItalic]
                   FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
                   FormFieldSettings.FormFieldType = fftNone
+                  Transparent = True
                   mmHeight = 5292
                   mmLeft = 0
                   mmTop = 2117
@@ -4299,6 +4450,7 @@ object RepOrt: TppReport
                   Font.Size = 10
                   Font.Style = []
                   ParentDataPipeline = False
+                  Transparent = True
                   VerticalAlignment = avCenter
                   DataPipelineName = 'plSchuelerTelefone'
                   mmHeight = 4657
@@ -4321,6 +4473,7 @@ object RepOrt: TppReport
                   Font.Size = 10
                   Font.Style = [fsBold, fsItalic]
                   ParentDataPipeline = False
+                  Transparent = True
                   VerticalAlignment = avCenter
                   DataPipelineName = 'plSchuelerTelefone'
                   mmHeight = 4657
@@ -4411,6 +4564,7 @@ object RepOrt: TppReport
                   Font.Style = [fsBold, fsItalic]
                   FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
                   FormFieldSettings.FormFieldType = fftNone
+                  Transparent = True
                   mmHeight = 5292
                   mmLeft = 0
                   mmTop = 2117
@@ -4631,6 +4785,7 @@ object RepOrt: TppReport
                   Font.Style = [fsBold, fsItalic]
                   FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
                   FormFieldSettings.FormFieldType = fftNone
+                  Transparent = True
                   mmHeight = 5292
                   mmLeft = 0
                   mmTop = 2117
@@ -4783,7 +4938,7 @@ object RepOrt: TppReport
                   end
                   object ppLine21: TppLine
                     DesignLayer = ppDesignLayer10
-                    UserName = 'Line21'
+                    UserName = 'TrennlinieK1'
                     Border.mmPadding = 0
                     Position = lpLeft
                     Weight = 0.750000000000000000
@@ -4895,6 +5050,7 @@ object RepOrt: TppReport
                   Font.Style = [fsBold, fsItalic]
                   FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
                   FormFieldSettings.FormFieldType = fftNone
+                  Transparent = True
                   mmHeight = 5292
                   mmLeft = 0
                   mmTop = 2117
@@ -10289,11 +10445,11 @@ object RepOrt: TppReport
     object ppParameter2: TppParameter
       AutoSearchSettings.LogicalPrefix = []
       AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = '45957'
+      AutoSearchSettings.SearchExpression = '45960'
       DataType = dtDate
       LookupSettings.DisplayType = dtNameOnly
       LookupSettings.SortOrder = soName
-      Value = 45957d
+      Value = 45960d
       UserName = 'Versionsdatum'
     end
   end
