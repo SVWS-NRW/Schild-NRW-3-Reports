@@ -20,7 +20,7 @@ jobs:
     
     # WICHTIG: Dieser Job läuft nur, wenn die Commit-Nachricht
     # (Groß/Kleinschreibung egal) das Wort 'release' enthält.
-    if: contains(toLower(github.event.head_commit.message), 'release')
+    if: contains(github.event.head_commit.message, 'release')
 
     steps:
       # 1. Code auschecken
@@ -45,8 +45,8 @@ jobs:
         run: |
           FILE="version.txt"
           if [[ ! -f "$FILE" ]]; then
-            echo "version file missing, initializing to 1.11.0"
-            echo "1.11.0" > "$FILE"
+            echo "version file missing, initializing to 1.0.0"
+            echo "1.0.0" > "$FILE"
           fi
           ver=$(tr -d '\r' < "$FILE")
           if [[ ! "$ver" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
