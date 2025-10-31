@@ -35,5 +35,5 @@ jobs:
         with:
           artifacts: "./.zip/*"                # Alle ZIP-Dateien im .zip-Ordner anhängen
           allowUpdates: true                   # Existierende Releases dürfen aktualisiert werden
-          tag: v0.8.${{ github.run_number }}   # Tag für das Release
+          tag: v1.0.${{ github.run_number }}   # Tag für das Release
           token: ${{ secrets.GITHUB_TOKEN }}   # Authentifizierungstoken
