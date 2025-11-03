@@ -1,0 +1,15 @@
+.git/*
+.github/*
+.gradle/*
+.settings/*
+.zip/*
+Oberstufenpaket/*
+.gitignore
+.project
+.zipignore
+LICENSE
+README.md
+build.gradle
+gradlew
+gradlew.bat
+version.txt
