@@ -1,152 +1,59 @@
 # Name des Workflows, wird in der GitHub UI angezeigt
-name: Create Release
+name: Create Release by pushing new Tag
 
 on:
-  # Dieser Workflow wird ausgelöst bei einem Push...
+  # Workflow läuft beim Push eines Tags wie v1.2.3
   push:
-    # ...ausschließlich auf den 'master'-Branch
-    branches:
-      - master
+    tags:
+      - 'v*'   # z.B. v1.2.3
 
-# Notwendige Berechtigungen für den Job
+# Notwendige Berechtigungen für den Job für Release/Assets
 permissions:
-  # 'write' wird benötigt, um Commits (version.txt) zu pushen
-  # und um GitHub Releases zu erstellen/aktualisieren.
   contents: write
 
 jobs:
   create-zip:
     runs-on: ubuntu-latest
-    
-    # WICHTIG: Dieser Job läuft nur, wenn die Commit-Nachricht
-    # (Groß/Kleinschreibung egal) das Wort 'release' enthält.
-    if: contains(github.event.head_commit.message, 'release')
 
     steps:
-      # 1. Code auschecken
-      # fetch-depth: 0 holt die gesamte Git-Historie (wichtig für den merge)
-      # persist-credentials: true ist nötig, damit 'git push' funktioniert
+      # 1) Code auschecken
       - name: Checkout
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          persist-credentials: true
 
-      # 2. Git-Identität für den Bot festlegen (für Commits)
-      - name: Git identity for CI
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-
-      # 3. Aktuelle Version aus 'version.txt' lesen oder initialisieren
-      - name: Read current version (or initialize)
-        id: readver
+      # 2) Version aus dem Tag extrahieren und validieren
+      - name: Extract version from tag
+        id: ver
         shell: bash
         run: |
-          FILE="version.txt"
-          if [[ ! -f "$FILE" ]]; then
-            echo "version file missing, initializing to 1.0.0"
-            echo "1.0.0" > "$FILE"
+          RAW="${GITHUB_REF_NAME}"          # z.B. "v1.2.3"
+          if [[ ! "$RAW" =~ ^v[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+            echo "Tag muss das Format vMAJOR.MINOR.PATCH haben (z.B. v1.2.3). Bekommen: $RAW"
+            exit 1
           fi
-          ver=$(tr -d '\r' < "$FILE")
-          if [[ ! "$ver" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
-            echo "Invalid version format in $FILE: '$ver' (expected MAJOR.MINOR.PATCH)"; exit 1
-          fi
-          echo "current=$ver" >> "$GITHUB_OUTPUT"
+          VER="${RAW#v}"                    # führendes 'v' entfernen -> "1.2.3"
+          echo "version=$VER" >> "$GITHUB_OUTPUT"
+          echo "VERSION=$VER" >> "$GITHUB_ENV"
+          echo "Release version: $VER"
 
-      # 4. Bump-Typ (major/minor/patch) aus Commit-Nachricht ableiten
-      - name: Decide bump type from commit message
-        id: bumptype
-        shell: bash
-        run: |
-          msg="${{ github.event.head_commit.message }}"
-          msg_lc="$(printf '%s' "$msg" | tr '[:upper:]' '[:lower:]')"
-          bump="patch"
-          # Priorität: major > minor > patch
-          if [[ "$msg_lc" == *"release-major"* ]]; then
-            bump="major"
-          elif [[ "$msg_lc" == *"release-minor"* ]]; then
-            bump="minor"
-          fi
-          echo "type=$bump" >> "$GITHUB_OUTPUT"
-          echo "Bump type decided: $bump"
-
-      # 5. Version basierend auf dem Typ erhöhen (SemVer)
-      - name: Bump version
-        id: bump
-        shell: bash
-        run: |
-          IFS='.' read -r MAJOR MINOR PATCH <<< "${{ steps.readver.outputs.current }}"
-          case "${{ steps.bumptype.outputs.type }}" in
-            major)
-              MAJOR=$((MAJOR + 1)); MINOR=0; PATCH=0 ;;
-            minor)
-              MINOR=$((MINOR + 1)); PATCH=0 ;;
-            patch|*)
-              PATCH=$((PATCH + 1)) ;;
-          esac
-          NEW="$MAJOR.$MINOR.$PATCH"
-          echo "$NEW" > version.txt
-          echo "version=$NEW" >> "$GITHUB_OUTPUT"
-          echo "VERSION=$NEW" >> "$GITHUB_ENV" # Für spätere Schritte (z.B. Commit-Nachricht)
-          echo "New version: $NEW"
-
-      # 6. Geänderte 'version.txt' zurück auf 'master' pushen
-      - name: Commit version bump to master (only if changed)
-        shell: bash
-        run: |
-          # Prüfen, ob sich die Datei wirklich geändert hat
-          if ! git diff --quiet -- version.txt; then
-            git add version.txt
-            git commit -m "chore: bump version to ${VERSION}"
-            # git pull --rebase stellt sicher, dass wir auf dem neuesten Stand sind,
-            # bevor wir pushen (vermeidet Race Conditions)
-            git pull --rebase
-            git push
-          else
-            echo "version.txt unchanged; nothing to commit."
-          fi
-
-      # 7. NEU: Den neuen Versions-Commit von 'master' zurück in 'dev' mergen
-      - name: Sync version bump back to dev
-        shell: bash
-        run: |
-          echo "Syncing changes back to dev branch..."
-          git fetch
-          git checkout dev
-          
-          # 'git pull' stellt sicher, dass 'dev' aktuell ist, bevor gemerged wird
-          git pull
-          
-          # --no-ff erzwingt einen Merge-Commit für eine saubere Historie
-          # Wenn 'master' keinen neuen Commit hat (weil Version unverändert war),
-          # passiert hier nichts (Status "Already up to date").
-          git merge master --no-ff -m "chore: sync release v${VERSION} from master"
-          
-          git push
-
-      # 8. ZIP-Ordner erstellen
+      # 3) .zip-Ordner vorbereiten
       - name: Create .zip folder
         run: mkdir -p .zip
 
-      # 9. ZIP-Archiv erstellen, nutzt .zipignore
+      # 5) ZIP-Archiv bauen, ohne Ordner und Dateien aus .zipignore
       - name: Build ZIP (uses .zipignore)
         shell: bash
         run: |
-          # ZIP-Dateinamen zusammensetzen
           ZIP_NAME="Basisreports-SchILD-NRW-3-v${VERSION}-$(date +'%d.%m.%Y').zip"
-          # -x@.zipignore liest alle auszuschließenden Muster aus der Datei .zipignore
           zip -r ".zip/${ZIP_NAME}" . -x@.zipignore
 
-      # 10. GitHub Release erstellen oder aktualisieren
+      # 6) GitHub Release erstellen oder aktualisieren
       - name: Create/Update GitHub Release
         uses: ncipollo/release-action@v1
         with:
-          # Alle Dateien im .zip-Ordner als Artefakte hochladen
-          artifacts: ".zip/*"
-          allowUpdates: true
-          # Tag und Name basieren auf der neuen Version
-          tag: "v${{ steps.bump.outputs.version }}"
-          name: "Release v${{ steps.bump.outputs.version }}"
-          # Token wird automatisch von GitHub bereitgestellt
+          artifacts: ".zip/*"                         # alle ZIPs im .zip-Ordner anhängen
+          allowUpdates: true                          # Release bei gleichem Tag aktualisieren
+          tag: "${{ github.ref_name }}"               # = vX.Y.Z
+          name: "Release v${{ steps.ver.outputs.version }}"
           token: ${{ secrets.GITHUB_TOKEN }}
