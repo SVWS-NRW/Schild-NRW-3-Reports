@@ -6,7 +6,7 @@ object RepOrt: TppReport
     'Sch'#252'lerliste - Sch'#252'lerinnen- und Sch'#252'lerdaten'#252'bermittlungsgesetz' +
     ' NRW @SuS.rtm'
   PrinterSetup.Duplex = dpNone
-  PrinterSetup.PaperName = 'A4 210 x 297 mm'
+  PrinterSetup.PaperName = 'A4'
   PrinterSetup.PrinterName = 'Default'
   PrinterSetup.SaveDeviceSettings = False
   PrinterSetup.mmMarginBottom = 10000
@@ -18,9 +18,10 @@ object RepOrt: TppReport
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
   Template.FileName = 
-    '\\neghost\Gemeinsame Dateien\SVWS-Arbeitsverzeichnis\SchILD-Repo' +
-    'rts\Reportsammlung 3.0\Basisreports\Sch'#252'lerliste - Sch'#252'lerinnen-' +
-    ' und Sch'#252'lerdaten'#252'bermittlungsgesetz NRW @SuS.rtm'
+    'C:\Users\ra\OneDrive - neg-velbert.de\Programme\SVWS-Arbeitsverz' +
+    'eichnis\SchILD-Reports\Schild-NRW-3-Reports\Reports Allgemein\Sc' +
+    'h'#252'lerliste - Sch'#252'lerinnen- und Sch'#252'lerdaten'#252'bermittlungsgesetz N' +
+    'RW @SuS.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -3336,16 +3337,17 @@ object RepOrt: TppReport
             Anchors = [atLeft, atRight]
             Border.mmPadding = 0
             CharWrap = False
-            DataField = 'Fachklasse'
-            DataPipeline = dmPipelines.Schueler
+            DataField = 'ASDSchulgliederungLang'
+            DataPipeline = dmPipelines.plLernabschnitte
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clBlack
             Font.Name = 'Calibri'
             Font.Size = 12
             Font.Style = []
+            ParentDataPipeline = False
             RemoveEmptyLines = False
             Transparent = True
-            DataPipelineName = 'Schueler'
+            DataPipelineName = 'plLernabschnitte'
             mmHeight = 19017
             mmLeft = 67000
             mmTop = 211929
@@ -3360,12 +3362,12 @@ object RepOrt: TppReport
           end
         end
       end
-      object ppTableColumn1: TppTableColumn
-        UserName = 'TableColumn1'
+      object ppTableColumn3: TppTableColumn
+        UserName = 'TableColumn3'
         mmWidth = 60000
       end
-      object ppTableColumn2: TppTableColumn
-        UserName = 'TableColumn2'
+      object ppTableColumn4: TppTableColumn
+        UserName = 'TableColumn4'
         mmWidth = 100000
       end
     end
