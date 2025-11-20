@@ -45,7 +45,7 @@ jobs:
       # 4) ZIP-Archiv bauen, basierend auf Allowlist (.zipallow)
       - name: Build ZIP from .zipallow
         shell: bash
-        run: |
+          run: |
 		  #Bei Fehlern abbrechen
           set -euo pipefail
 
