@@ -4,7 +4,7 @@ object RepOrt: TppReport
   PrinterSetup.BinName = 'Default'
   PrinterSetup.DocumentName = 
     'Klassenliste - Leistungs'#252'bersicht Jg 05 bis EF Beamerprojektion ' +
-    '@KL4.rtm'
+    '@KL.rtm'
   PrinterSetup.Duplex = dpNone
   PrinterSetup.Orientation = poLandscape
   PrinterSetup.PaperName = 'Custom'
@@ -22,7 +22,7 @@ object RepOrt: TppReport
     'C:\Users\ra\OneDrive - neg-velbert.de\Programme\SVWS-Arbeitsverz' +
     'eichnis\SchILD-Reports\Schild-NRW-3-Reports\Reports Leistungs'#252'be' +
     'rsichten\Klassenliste - Leistungs'#252'bersicht Jg 05 bis EF Beamerpr' +
-    'ojektion @KL4.rtm'
+    'ojektion @KL.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -2365,21 +2365,21 @@ object RepOrt: TppReport
     object ppParameter2: TppParameter
       AutoSearchSettings.LogicalPrefix = []
       AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = '45988'
+      AutoSearchSettings.SearchExpression = '45990'
       DataType = dtDate
       LookupSettings.DisplayType = dtNameOnly
       LookupSettings.SortOrder = soName
-      Value = 45988d
+      Value = 45990d
       UserName = 'Versionsdatum'
     end
     object ppParameter3: TppParameter
       AutoSearchSettings.LogicalPrefix = []
       AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = '"GKM,GKS,VTF,E,G,PUT"'
+      AutoSearchSettings.SearchExpression = '"GKM,GKS,VTF,E,G"'
       DataType = dtString
       LookupSettings.DisplayType = dtNameOnly
       LookupSettings.SortOrder = soName
-      Value = 'GKM,GKS,VTF,E,G,PUT'
+      Value = 'GKM,GKS,VTF,E,G'
       UserName = 'DieseKursartenUnterNoteAnzeigen'
     end
     object ppParameter4: TppParameter
