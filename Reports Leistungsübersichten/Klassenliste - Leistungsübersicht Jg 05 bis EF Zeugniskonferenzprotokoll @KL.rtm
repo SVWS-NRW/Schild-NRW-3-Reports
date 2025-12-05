@@ -4,7 +4,7 @@ object RepOrt: TppReport
   PrinterSetup.BinName = 'Default'
   PrinterSetup.DocumentName = 
     'Klassenliste - Leistungs'#252'bersicht Jg 05 bis EF Zeugniskonferenzp' +
-    'rotokoll @KL - Kopie.rtm'
+    'rotokoll @KL.rtm'
   PrinterSetup.Duplex = dpNone
   PrinterSetup.Orientation = poLandscape
   PrinterSetup.PaperName = 'A4 210 x 297 mm'
@@ -22,7 +22,7 @@ object RepOrt: TppReport
     'C:\Users\ra\OneDrive - neg-velbert.de\Programme\SVWS-Arbeitsverz' +
     'eichnis\SchILD-Reports\Schild-NRW-3-Reports\Reports Leistungs'#252'be' +
     'rsichten\Klassenliste - Leistungs'#252'bersicht Jg 05 bis EF Zeugnisk' +
-    'onferenzprotokoll @KL - Kopie.rtm'
+    'onferenzprotokoll @KL.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -1826,7 +1826,7 @@ object RepOrt: TppReport
         UserName = 'dbListenbezeichnung'
         Border.Weight = 1.000000000000000000
         Border.mmPadding = 0
-        Caption = 'Quartalskonferenzprotokoll'
+        Caption = 'Zeugniskonferenzprotokoll'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Calibri'
@@ -1837,7 +1837,7 @@ object RepOrt: TppReport
         mmHeight = 5027
         mmLeft = 0
         mmTop = 0
-        mmWidth = 50271
+        mmWidth = 48683
         BandType = 3
         GroupNo = 0
         LayerName = Foreground
@@ -2629,11 +2629,11 @@ object RepOrt: TppReport
     object ppParameter2: TppParameter
       AutoSearchSettings.LogicalPrefix = []
       AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = '45991'
+      AutoSearchSettings.SearchExpression = '45996'
       DataType = dtDate
       LookupSettings.DisplayType = dtNameOnly
       LookupSettings.SortOrder = soName
-      Value = 45991d
+      Value = 45996d
       UserName = 'Versionsdatum'
     end
     object ppParameter3: TppParameter
