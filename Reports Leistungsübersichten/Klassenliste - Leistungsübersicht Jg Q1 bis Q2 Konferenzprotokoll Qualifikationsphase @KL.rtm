@@ -6,7 +6,7 @@ object RepOrt: TppReport
     'Klassenliste - Leistungs'#252'bersicht Jg Q1 bis Q2 Konferenzprotokol' +
     'l Qualifikationsphase @KL.rtm'
   PrinterSetup.Duplex = dpNone
-  PrinterSetup.PaperName = 'A4'
+  PrinterSetup.PaperName = 'A4 210 x 297 mm'
   PrinterSetup.PrinterName = 'Default'
   PrinterSetup.SaveDeviceSettings = False
   PrinterSetup.mmMarginBottom = 10000
@@ -397,7 +397,7 @@ object RepOrt: TppReport
         PrinterSetup.mmMarginTop = 0
         PrinterSetup.mmPaperHeight = 210000
         PrinterSetup.mmPaperWidth = 104000
-        PrinterSetup.PaperSize = 184
+        PrinterSetup.PaperSize = 256
         Template.Format = ftASCII
         Units = utMillimeters
         Version = '22.06'
@@ -553,7 +553,7 @@ object RepOrt: TppReport
         PrinterSetup.mmMarginTop = 0
         PrinterSetup.mmPaperHeight = 210000
         PrinterSetup.mmPaperWidth = 128000
-        PrinterSetup.PaperSize = 184
+        PrinterSetup.PaperSize = 256
         Template.Format = ftASCII
         Units = utMillimeters
         Version = '22.06'
@@ -616,7 +616,7 @@ object RepOrt: TppReport
               PrinterSetup.mmMarginTop = 0
               PrinterSetup.mmPaperHeight = 210000
               PrinterSetup.mmPaperWidth = 104000
-              PrinterSetup.PaperSize = 184
+              PrinterSetup.PaperSize = 256
               Template.Format = ftASCII
               Units = utMillimeters
               Version = '22.06'
@@ -1352,6 +1352,7 @@ object RepOrt: TppReport
     object ppLabel7: TppLabel
       DesignLayer = ppDesignLayer1
       UserName = 'Bemerkungen'
+      AutoSize = False
       Border.mmPadding = 0
       Caption = 'Bemerkungen:'
       Font.Charset = DEFAULT_CHARSET
@@ -1419,6 +1420,7 @@ object RepOrt: TppReport
     object ppLabel15: TppLabel
       DesignLayer = ppDesignLayer1
       UserName = 'ZaehlerTrenner'
+      AutoSize = False
       Border.mmPadding = 0
       Caption = '/'
       Font.Charset = DEFAULT_CHARSET
@@ -1430,6 +1432,7 @@ object RepOrt: TppReport
       FormFieldSettings.FormFieldType = fftNone
       TextAlignment = taRightJustified
       Transparent = True
+      VerticalAlignment = avCenter
       mmHeight = 3440
       mmLeft = 169944
       mmTop = 0
@@ -1508,8 +1511,9 @@ object RepOrt: TppReport
     object ppLabel32: TppLabel
       DesignLayer = ppDesignLayer1
       UserName = 'dbSummeKurse'
+      AutoSize = False
       Border.mmPadding = 0
-      Caption = 'Summe belegter Kurse'
+      Caption = 'Kurse'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
       Font.Name = 'Calibri'
@@ -1528,8 +1532,9 @@ object RepOrt: TppReport
     object ppLabel34: TppLabel
       DesignLayer = ppDesignLayer1
       UserName = 'dbSummeKurseLK'
+      AutoSize = False
       Border.mmPadding = 0
-      Caption = 'Punktsumme LK'
+      Caption = 'Kurse LK'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
       Font.Name = 'Calibri'
@@ -1538,9 +1543,9 @@ object RepOrt: TppReport
       FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
       FormFieldSettings.FormFieldType = fftNone
       Transparent = True
-      mmHeight = 3440
+      mmHeight = 3439
       mmLeft = 170000
-      mmTop = 4679
+      mmTop = 4763
       mmWidth = 10000
       BandType = 4
       LayerName = Foreground
@@ -1548,8 +1553,9 @@ object RepOrt: TppReport
     object ppLabel36: TppLabel
       DesignLayer = ppDesignLayer1
       UserName = 'dbSummeKurseGK'
+      AutoSize = False
       Border.mmPadding = 0
-      Caption = 'Summe Defizite LK'
+      Caption = 'Kurse GK'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
       Font.Name = 'Calibri'
@@ -1558,9 +1564,9 @@ object RepOrt: TppReport
       FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
       FormFieldSettings.FormFieldType = fftNone
       Transparent = True
-      mmHeight = 3440
+      mmHeight = 3439
       mmLeft = 180000
-      mmTop = 4679
+      mmTop = 4763
       mmWidth = 10000
       BandType = 4
       LayerName = Foreground
@@ -1589,8 +1595,9 @@ object RepOrt: TppReport
     object ppLabel38: TppLabel
       DesignLayer = ppDesignLayer1
       UserName = 'dbSummePunkte'
+      AutoSize = False
       Border.mmPadding = 0
-      Caption = 'Punktsumme GK'
+      Caption = 'Punkte'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
       Font.Name = 'Calibri'
@@ -1611,7 +1618,7 @@ object RepOrt: TppReport
       UserName = 'dbSummePunkteLK'
       AutoSize = False
       Border.mmPadding = 0
-      Caption = 'Punktsumme LK:'
+      Caption = 'Punkte LK'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
       Font.Name = 'Calibri'
@@ -1630,8 +1637,9 @@ object RepOrt: TppReport
     object ppLabel33: TppLabel
       DesignLayer = ppDesignLayer1
       UserName = 'dbSummePunkteGK'
+      AutoSize = False
       Border.mmPadding = 0
-      Caption = 'Punktsumme GK'
+      Caption = 'Punkte GK'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
       Font.Name = 'Calibri'
@@ -1640,9 +1648,9 @@ object RepOrt: TppReport
       FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
       FormFieldSettings.FormFieldType = fftNone
       Transparent = True
-      mmHeight = 3440
+      mmHeight = 3439
       mmLeft = 180000
-      mmTop = 8383
+      mmTop = 8467
       mmWidth = 10000
       BandType = 4
       LayerName = Foreground
@@ -1652,7 +1660,7 @@ object RepOrt: TppReport
       UserName = 'SummeDefizite'
       AutoSize = False
       Border.mmPadding = 0
-      Caption = 'Summe Defizite'
+      Caption = 'Summe Defizite:'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
       Font.Name = 'Calibri'
@@ -1671,8 +1679,9 @@ object RepOrt: TppReport
     object ppLabel35: TppLabel
       DesignLayer = ppDesignLayer1
       UserName = 'dbSummeDefizite'
+      AutoSize = False
       Border.mmPadding = 0
-      Caption = 'Summe Defizite'
+      Caption = 'Defizite'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
       Font.Name = 'Calibri'
@@ -1693,7 +1702,7 @@ object RepOrt: TppReport
       UserName = 'dbSummeDefiziteLK'
       AutoSize = False
       Border.mmPadding = 0
-      Caption = 'Summe Defizite LK:'
+      Caption = 'Defizite LK'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
       Font.Name = 'Calibri'
@@ -1714,7 +1723,7 @@ object RepOrt: TppReport
       UserName = 'SummeDefiziteGK'
       AutoSize = False
       Border.mmPadding = 0
-      Caption = 'Summe Defizite LK:'
+      Caption = 'Defizite GK'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
       Font.Name = 'Calibri'
@@ -1754,6 +1763,7 @@ object RepOrt: TppReport
     object ppLabel37: TppLabel
       DesignLayer = ppDesignLayer1
       UserName = 'dbStundenProAbschnitt'
+      AutoSize = False
       Border.mmPadding = 0
       Caption = 'Stunden pro Abschnitt'
       Font.Charset = DEFAULT_CHARSET
@@ -1797,7 +1807,7 @@ object RepOrt: TppReport
       UserName = 'dbFHR'
       AutoSize = False
       Border.mmPadding = 0
-      Caption = 'Fachhochschulreife'
+      Caption = 'FHR'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
       Font.Name = 'Calibri'
@@ -1817,7 +1827,7 @@ object RepOrt: TppReport
       DesignLayer = ppDesignLayer1
       UserName = 'dbWiederholteAbschnitte'
       Border.mmPadding = 0
-      Caption = 'dbWiederholteAbschnitte'
+      Caption = 'Wiederholte Abschnitte'
       CharWrap = False
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clRed
@@ -2864,22 +2874,12 @@ object RepOrt: TppReport
     object ppParameter2: TppParameter
       AutoSearchSettings.LogicalPrefix = []
       AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = '45999'
+      AutoSearchSettings.SearchExpression = '46022'
       DataType = dtDate
       LookupSettings.DisplayType = dtNameOnly
       LookupSettings.SortOrder = soName
-      Value = 45999d
+      Value = 46022d
       UserName = 'Versionsdatum'
-    end
-    object ppParameter3: TppParameter
-      AutoSearchSettings.LogicalPrefix = []
-      AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = '"GKM,GKS,VTF,LK1,LK2,PJK,AB3,AB4"'
-      DataType = dtString
-      LookupSettings.DisplayType = dtNameOnly
-      LookupSettings.SortOrder = soName
-      Value = 'GKM,GKS,VTF,LK1,LK2,PJK,AB3,AB4'
-      UserName = 'DieseKursartenUnterNoteAnzeigen'
     end
     object ppParameter4: TppParameter
       AutoSearchSettings.LogicalPrefix = []
