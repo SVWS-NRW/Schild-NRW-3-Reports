@@ -1345,7 +1345,7 @@ object RepOrt: TppReport
       UserName = 'FehlstundenUnentschuldigt'
       AutoSize = False
       Border.mmPadding = 0
-      Caption = 'unetschuldigt'
+      Caption = 'unentschuldigt'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
       Font.Name = 'Calibri'
