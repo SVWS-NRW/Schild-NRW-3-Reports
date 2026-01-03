@@ -3,9 +3,10 @@ object RepOrt: TppReport
   DataPipeline = dmPipelines.Schueler
   PrinterSetup.BinName = 'Default'
   PrinterSetup.DocumentName = 
-    'Klassenliste - Leistungs'#252'bersicht Jg Q1 bis Q2 Konferenzprotokol' +
-    'l Qualifikationsphase Beamerprojektion @KL.rtm'
+    'Klassenliste - Leistungs'#252'bersicht Jg Q1 bis Q2 Beamerprojektion ' +
+    '@KL.rtm'
   PrinterSetup.Duplex = dpNone
+  PrinterSetup.Orientation = poLandscape
   PrinterSetup.PaperName = 'Custom'
   PrinterSetup.PrinterName = 'Default'
   PrinterSetup.SaveDeviceSettings = False
@@ -15,13 +16,13 @@ object RepOrt: TppReport
   PrinterSetup.mmMarginTop = 5000
   PrinterSetup.mmPaperHeight = 168000
   PrinterSetup.mmPaperWidth = 300000
-  PrinterSetup.PaperSize = 256
+  PrinterSetup.PaperSize = 184
   SaveAsTemplate = True
   Template.FileName = 
     'C:\Users\ra\OneDrive - neg-velbert.de\Programme\SVWS-Arbeitsverz' +
     'eichnis\SchILD-Reports\Schild-NRW-3-Reports\Reports Leistungs'#252'be' +
-    'rsichten\Klassenliste - Leistungs'#252'bersicht Jg Q1 bis Q2 Konferen' +
-    'zprotokoll Qualifikationsphase Beamerprojektion @KL.rtm'
+    'rsichten\Klassenliste - Leistungs'#252'bersicht Jg Q1 bis Q2 Beamerpr' +
+    'ojektion @KL.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -322,7 +323,7 @@ object RepOrt: TppReport
         PrinterSetup.mmMarginTop = 0
         PrinterSetup.mmPaperHeight = 210000
         PrinterSetup.mmPaperWidth = 234000
-        PrinterSetup.PaperSize = 256
+        PrinterSetup.PaperSize = 184
         Template.Format = ftASCII
         Units = utMillimeters
         Version = '22.06'
@@ -478,7 +479,7 @@ object RepOrt: TppReport
         PrinterSetup.mmMarginTop = 0
         PrinterSetup.mmPaperHeight = 210000
         PrinterSetup.mmPaperWidth = 288000
-        PrinterSetup.PaperSize = 256
+        PrinterSetup.PaperSize = 184
         Template.Format = ftASCII
         Units = utMillimeters
         Version = '22.06'
@@ -541,7 +542,7 @@ object RepOrt: TppReport
               PrinterSetup.mmMarginTop = 0
               PrinterSetup.mmPaperHeight = 210000
               PrinterSetup.mmPaperWidth = 234000
-              PrinterSetup.PaperSize = 256
+              PrinterSetup.PaperSize = 184
               Template.Format = ftASCII
               Units = utMillimeters
               Version = '22.06'
