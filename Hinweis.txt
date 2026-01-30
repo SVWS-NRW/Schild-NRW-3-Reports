@@ -1,2 +1,2 @@
-Informationen zur Basisreportsammlung, den Serienbriefen, der Reportverwaltung und dem Reportdesigner finden Sie hier:
+Informationen zur Basisreportsammlung, den Serienbriefen, der Reportverwaltung und dem Reportdesigner finden Sie im Wiki:
 https://schulverwaltungsinfos.nrw.de/svws/wiki/index.php?title=Reportdesigner_-_Schnelleinstieg
