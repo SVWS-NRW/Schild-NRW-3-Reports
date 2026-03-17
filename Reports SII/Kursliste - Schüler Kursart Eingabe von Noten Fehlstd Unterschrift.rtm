@@ -18,8 +18,7 @@ object RepOrt: TppReport
   Template.FileName = 
     'C:\Users\ra\OneDrive - neg-velbert.de\Programme\SVWS-Arbeitsverz' +
     'eichnis\SchILD-Reports\Schild-NRW-3-Reports\Reports SII\Kurslist' +
-    'e - Sch'#252'ler Kursart Noten schriftlich m'#252'ndlich gesamt Fehlstd Un' +
-    'terschrift.rtm'
+    'e - Sch'#252'ler Kursart Eingabe von Noten Fehlstd Unterschrift.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -198,54 +197,6 @@ object RepOrt: TppReport
           mmBottomOffset = 0
           mmHeight = 20000
           mmPrintPosition = 0
-          object ppLabel19: TppLabel
-            DesignLayer = ppDesignLayer2
-            UserName = 'Label19'
-            AutoSize = False
-            Border.mmPadding = 0
-            Caption = 'G'
-            Color = 15395562
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clBlack
-            Font.Name = 'Calibri'
-            Font.Size = 8
-            Font.Style = []
-            FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-            FormFieldSettings.FormFieldType = fftNone
-            TextAlignment = taCentered
-            Transparent = True
-            VerticalAlignment = avCenter
-            mmHeight = 4000
-            mmLeft = 108000
-            mmTop = 16000
-            mmWidth = 8000
-            BandType = 0
-            LayerName = Foreground1
-          end
-          object ppLabel18: TppLabel
-            DesignLayer = ppDesignLayer2
-            UserName = 'Label18'
-            AutoSize = False
-            Border.mmPadding = 0
-            Caption = 'G'
-            Color = 15395562
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clBlack
-            Font.Name = 'Calibri'
-            Font.Size = 8
-            Font.Style = []
-            FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-            FormFieldSettings.FormFieldType = fftNone
-            TextAlignment = taCentered
-            Transparent = True
-            VerticalAlignment = avCenter
-            mmHeight = 4000
-            mmLeft = 84000
-            mmTop = 16000
-            mmWidth = 8000
-            BandType = 0
-            LayerName = Foreground1
-          end
           object ppLine6: TppLine
             DesignLayer = ppDesignLayer2
             UserName = 'TrennlinieK1'
@@ -278,9 +229,25 @@ object RepOrt: TppReport
             BandType = 0
             LayerName = Foreground1
           end
-          object ppLine16: TppLine
+          object ppLine2: TppLine
             DesignLayer = ppDesignLayer2
             UserName = 'TrennlinieK3'
+            Border.mmPadding = 0
+            Pen.Color = 4605510
+            ParentHeight = True
+            Position = lpLeft
+            StretchWithParent = True
+            Weight = 1.000000000000000000
+            mmHeight = 20000
+            mmLeft = 68000
+            mmTop = 0
+            mmWidth = 1000
+            BandType = 0
+            LayerName = Foreground1
+          end
+          object ppLine16: TppLine
+            DesignLayer = ppDesignLayer2
+            UserName = 'TrennlinieK4'
             Border.mmPadding = 0
             Pen.Color = 4605510
             Position = lpLeft
@@ -295,7 +262,7 @@ object RepOrt: TppReport
           end
           object ppLine15: TppLine
             DesignLayer = ppDesignLayer2
-            UserName = 'TrennlinieK4'
+            UserName = 'TrennlinieK5'
             Border.mmPadding = 0
             Pen.Color = 4605510
             Position = lpLeft
@@ -310,7 +277,7 @@ object RepOrt: TppReport
           end
           object ppLine14: TppLine
             DesignLayer = ppDesignLayer2
-            UserName = 'TrennlinieK5'
+            UserName = 'TrennlinieK6'
             Border.mmPadding = 0
             Pen.Color = 4605510
             Position = lpLeft
@@ -325,7 +292,7 @@ object RepOrt: TppReport
           end
           object ppLine13: TppLine
             DesignLayer = ppDesignLayer2
-            UserName = 'TrennlinieK6'
+            UserName = 'TrennlinieK7'
             Border.mmPadding = 0
             Pen.Color = 4605510
             Position = lpLeft
@@ -340,7 +307,7 @@ object RepOrt: TppReport
           end
           object ppLine12: TppLine
             DesignLayer = ppDesignLayer2
-            UserName = 'TrennlinieK7'
+            UserName = 'TrennlinieK8'
             Border.mmPadding = 0
             Pen.Color = 4605510
             Position = lpLeft
@@ -350,6 +317,175 @@ object RepOrt: TppReport
             mmLeft = 108000
             mmTop = 16000
             mmWidth = 1000
+            BandType = 0
+            LayerName = Foreground1
+          end
+          object ppLine4: TppLine
+            DesignLayer = ppDesignLayer2
+            UserName = 'TrennlinieK9'
+            Border.mmPadding = 0
+            Pen.Color = 4605510
+            Position = lpLeft
+            StretchWithParent = True
+            Weight = 1.000000000000000000
+            mmHeight = 12000
+            mmLeft = 116000
+            mmTop = 8000
+            mmWidth = 1000
+            BandType = 0
+            LayerName = Foreground1
+          end
+          object ppLine7: TppLine
+            DesignLayer = ppDesignLayer2
+            UserName = 'TrennlinieK10'
+            Border.mmPadding = 0
+            Pen.Color = 4605510
+            Position = lpLeft
+            StretchWithParent = True
+            Weight = 0.750000000000000000
+            mmHeight = 12000
+            mmLeft = 124000
+            mmTop = 8000
+            mmWidth = 1000
+            BandType = 0
+            LayerName = Foreground1
+          end
+          object ppLine8: TppLine
+            DesignLayer = ppDesignLayer2
+            UserName = 'TrennlinieK11'
+            Border.mmPadding = 0
+            Pen.Color = 4605510
+            Pen.Width = 2
+            Position = lpLeft
+            StretchWithParent = True
+            Weight = 1.250000000000000000
+            mmHeight = 16000
+            mmLeft = 132000
+            mmTop = 4000
+            mmWidth = 1000
+            BandType = 0
+            LayerName = Foreground1
+          end
+          object ppLine9: TppLine
+            DesignLayer = ppDesignLayer2
+            UserName = 'TrennlinieK12'
+            Border.mmPadding = 0
+            Pen.Color = 4605510
+            Position = lpLeft
+            StretchWithParent = True
+            Weight = 0.750000000000000000
+            mmHeight = 8000
+            mmLeft = 140000
+            mmTop = 12000
+            mmWidth = 1000
+            BandType = 0
+            LayerName = Foreground1
+          end
+          object ppLine10: TppLine
+            DesignLayer = ppDesignLayer2
+            UserName = 'TrennlinieK13'
+            Border.mmPadding = 0
+            Pen.Color = 4605510
+            Position = lpLeft
+            StretchWithParent = True
+            Weight = 1.000000000000000000
+            mmHeight = 12000
+            mmLeft = 148000
+            mmTop = 8000
+            mmWidth = 1000
+            BandType = 0
+            LayerName = Foreground1
+          end
+          object ppLine18: TppLine
+            DesignLayer = ppDesignLayer2
+            UserName = 'TrennlinieK14'
+            Border.mmPadding = 0
+            Pen.Color = 4605510
+            Position = lpLeft
+            StretchWithParent = True
+            Weight = 0.750000000000000000
+            mmHeight = 8000
+            mmLeft = 156000
+            mmTop = 12000
+            mmWidth = 1000
+            BandType = 0
+            LayerName = Foreground1
+          end
+          object ppLine11: TppLine
+            DesignLayer = ppDesignLayer2
+            UserName = 'TrennlinieK15'
+            Border.mmPadding = 0
+            Pen.Color = 4605510
+            Position = lpLeft
+            StretchWithParent = True
+            Weight = 1.000000000000000000
+            mmHeight = 12000
+            mmLeft = 164000
+            mmTop = 8202
+            mmWidth = 1000
+            BandType = 0
+            LayerName = Foreground1
+          end
+          object ppLine24: TppLine
+            DesignLayer = ppDesignLayer2
+            UserName = 'TrennlinieK16'
+            Border.mmPadding = 0
+            Pen.Color = 4605510
+            Position = lpLeft
+            StretchWithParent = True
+            Weight = 0.750000000000000000
+            mmHeight = 8000
+            mmLeft = 172000
+            mmTop = 12000
+            mmWidth = 1000
+            BandType = 0
+            LayerName = Foreground1
+          end
+          object ppLine25: TppLine
+            DesignLayer = ppDesignLayer2
+            UserName = 'TrennlinieKH1'
+            Border.mmPadding = 0
+            Weight = 0.750000000000000000
+            mmHeight = 1000
+            mmLeft = 68000
+            mmTop = 4000
+            mmWidth = 112000
+            BandType = 0
+            LayerName = Foreground1
+          end
+          object ppLine26: TppLine
+            DesignLayer = ppDesignLayer2
+            UserName = 'TrennlinieKH2'
+            Border.mmPadding = 0
+            Weight = 0.750000000000000000
+            mmHeight = 1000
+            mmLeft = 68000
+            mmTop = 8000
+            mmWidth = 112000
+            BandType = 0
+            LayerName = Foreground1
+          end
+          object ppLine27: TppLine
+            DesignLayer = ppDesignLayer2
+            UserName = 'TrennlinieKH3'
+            Border.mmPadding = 0
+            Weight = 0.750000000000000000
+            mmHeight = 1000
+            mmLeft = 68000
+            mmTop = 16000
+            mmWidth = 48000
+            BandType = 0
+            LayerName = Foreground1
+          end
+          object ppLine28: TppLine
+            DesignLayer = ppDesignLayer2
+            UserName = 'TrennlinieKH4'
+            Border.mmPadding = 0
+            Weight = 0.750000000000000000
+            mmHeight = 1000
+            mmLeft = 132000
+            mmTop = 12000
+            mmWidth = 48000
             BandType = 0
             LayerName = Foreground1
           end
@@ -400,6 +536,31 @@ object RepOrt: TppReport
             BandType = 0
             LayerName = Foreground1
           end
+          object ppLabel35: TppLabel
+            DesignLayer = ppDesignLayer2
+            UserName = 'Kursart'
+            Angle = 90
+            AutoSize = False
+            Border.mmPadding = 0
+            Caption = 'Kursart'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 10
+            Font.Style = []
+            FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+            FormFieldSettings.FormFieldType = fftNone
+            Transparent = True
+            VerticalAlignment = avCenter
+            mmHeight = 19000
+            mmLeft = 62000
+            mmTop = 0
+            mmWidth = 4000
+            BandType = 0
+            LayerName = Foreground1
+            RotatedOriginLeft = 0
+            RotatedOriginTop = 19000
+          end
           object ppLabel10: TppLabel
             DesignLayer = ppDesignLayer2
             UserName = 'Halbjahr'
@@ -446,78 +607,9 @@ object RepOrt: TppReport
             BandType = 0
             LayerName = Foreground1
           end
-          object ppLabel12: TppLabel
-            DesignLayer = ppDesignLayer2
-            UserName = 'Fehlstunden'
-            AutoSize = False
-            Border.mmPadding = 0
-            Caption = 'Fehlstunden'
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clBlack
-            Font.Name = 'Calibri'
-            Font.Size = 8
-            Font.Style = []
-            FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-            FormFieldSettings.FormFieldType = fftNone
-            TextAlignment = taCentered
-            Transparent = True
-            VerticalAlignment = avCenter
-            mmHeight = 4000
-            mmLeft = 132000
-            mmTop = 3969
-            mmWidth = 48000
-            BandType = 0
-            LayerName = Foreground1
-          end
-          object ppLabel4: TppLabel
-            DesignLayer = ppDesignLayer2
-            UserName = 'Leistungen1'
-            AutoSize = False
-            Border.mmPadding = 0
-            Caption = 'SoMi'
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clBlack
-            Font.Name = 'Calibri'
-            Font.Size = 8
-            Font.Style = []
-            FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-            FormFieldSettings.FormFieldType = fftNone
-            TextAlignment = taCentered
-            Transparent = True
-            VerticalAlignment = avCenter
-            mmHeight = 8000
-            mmLeft = 92000
-            mmTop = 7938
-            mmWidth = 24000
-            BandType = 0
-            LayerName = Foreground1
-          end
-          object ppLabel5: TppLabel
-            DesignLayer = ppDesignLayer2
-            UserName = 'Fehlstunden1'
-            AutoSize = False
-            Border.mmPadding = 0
-            Caption = '2. Abschnitt'
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clBlack
-            Font.Name = 'Calibri'
-            Font.Size = 8
-            Font.Style = []
-            FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-            FormFieldSettings.FormFieldType = fftNone
-            TextAlignment = taCentered
-            Transparent = True
-            VerticalAlignment = avCenter
-            mmHeight = 4000
-            mmLeft = 132000
-            mmTop = 7938
-            mmWidth = 16000
-            BandType = 0
-            LayerName = Foreground1
-          end
           object ppLabel7: TppLabel
             DesignLayer = ppDesignLayer2
-            UserName = 'Leistungen2'
+            UserName = 'Klausuren'
             AutoSize = False
             Border.mmPadding = 0
             Caption = 'Klausuren'
@@ -538,32 +630,9 @@ object RepOrt: TppReport
             BandType = 0
             LayerName = Foreground1
           end
-          object ppLabel8: TppLabel
-            DesignLayer = ppDesignLayer2
-            UserName = 'Fehlstunden2'
-            AutoSize = False
-            Border.mmPadding = 0
-            Caption = '1. Abschnitt'
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clBlack
-            Font.Name = 'Calibri'
-            Font.Size = 8
-            Font.Style = []
-            FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-            FormFieldSettings.FormFieldType = fftNone
-            TextAlignment = taCentered
-            Transparent = True
-            VerticalAlignment = avCenter
-            mmHeight = 4000
-            mmLeft = 148000
-            mmTop = 7938
-            mmWidth = 16000
-            BandType = 0
-            LayerName = Foreground1
-          end
           object ppLabel9: TppLabel
             DesignLayer = ppDesignLayer2
-            UserName = 'Label9'
+            UserName = 'KlausurenE1'
             AutoSize = False
             Border.mmPadding = 0
             Caption = 'E'
@@ -584,32 +653,9 @@ object RepOrt: TppReport
             BandType = 0
             LayerName = Foreground1
           end
-          object ppLabel13: TppLabel
-            DesignLayer = ppDesignLayer2
-            UserName = 'Label13'
-            AutoSize = False
-            Border.mmPadding = 0
-            Caption = 'E'
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clBlack
-            Font.Name = 'Calibri'
-            Font.Size = 8
-            Font.Style = []
-            FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-            FormFieldSettings.FormFieldType = fftNone
-            TextAlignment = taCentered
-            Transparent = True
-            VerticalAlignment = avCenter
-            mmHeight = 4000
-            mmLeft = 92000
-            mmTop = 15875
-            mmWidth = 7938
-            BandType = 0
-            LayerName = Foreground1
-          end
           object ppLabel14: TppLabel
             DesignLayer = ppDesignLayer2
-            UserName = 'Label14'
+            UserName = 'KlausurenE2'
             AutoSize = False
             Border.mmPadding = 0
             Caption = 'E'
@@ -630,9 +676,79 @@ object RepOrt: TppReport
             BandType = 0
             LayerName = Foreground1
           end
+          object ppLabel18: TppLabel
+            DesignLayer = ppDesignLayer2
+            UserName = 'KlausurenG'
+            AutoSize = False
+            Border.mmPadding = 0
+            Caption = 'G'
+            Color = 15395562
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 8
+            Font.Style = []
+            FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+            FormFieldSettings.FormFieldType = fftNone
+            TextAlignment = taCentered
+            Transparent = True
+            VerticalAlignment = avCenter
+            mmHeight = 4000
+            mmLeft = 84000
+            mmTop = 16000
+            mmWidth = 8000
+            BandType = 0
+            LayerName = Foreground1
+          end
+          object ppLabel4: TppLabel
+            DesignLayer = ppDesignLayer2
+            UserName = 'Somi'
+            AutoSize = False
+            Border.mmPadding = 0
+            Caption = 'SoMi'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 8
+            Font.Style = []
+            FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+            FormFieldSettings.FormFieldType = fftNone
+            TextAlignment = taCentered
+            Transparent = True
+            VerticalAlignment = avCenter
+            mmHeight = 8000
+            mmLeft = 92000
+            mmTop = 7938
+            mmWidth = 24000
+            BandType = 0
+            LayerName = Foreground1
+          end
+          object ppLabel13: TppLabel
+            DesignLayer = ppDesignLayer2
+            UserName = 'SomiE1'
+            AutoSize = False
+            Border.mmPadding = 0
+            Caption = 'E'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 8
+            Font.Style = []
+            FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+            FormFieldSettings.FormFieldType = fftNone
+            TextAlignment = taCentered
+            Transparent = True
+            VerticalAlignment = avCenter
+            mmHeight = 4000
+            mmLeft = 92000
+            mmTop = 15875
+            mmWidth = 7938
+            BandType = 0
+            LayerName = Foreground1
+          end
           object ppLabel17: TppLabel
             DesignLayer = ppDesignLayer2
-            UserName = 'Label17'
+            UserName = 'SomiE2'
             AutoSize = False
             Border.mmPadding = 0
             Caption = 'E'
@@ -653,12 +769,13 @@ object RepOrt: TppReport
             BandType = 0
             LayerName = Foreground1
           end
-          object ppLabel20: TppLabel
+          object ppLabel19: TppLabel
             DesignLayer = ppDesignLayer2
-            UserName = 'Label20'
+            UserName = 'SomiG'
             AutoSize = False
             Border.mmPadding = 0
-            Caption = 'Fehl-'
+            Caption = 'G'
+            Color = 15395562
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clBlack
             Font.Name = 'Calibri'
@@ -668,174 +785,17 @@ object RepOrt: TppReport
             FormFieldSettings.FormFieldType = fftNone
             TextAlignment = taCentered
             Transparent = True
-            VerticalAlignment = avBottom
+            VerticalAlignment = avCenter
             mmHeight = 4000
-            mmLeft = 132000
-            mmTop = 11906
-            mmWidth = 8000
-            BandType = 0
-            LayerName = Foreground1
-          end
-          object ppLabel21: TppLabel
-            DesignLayer = ppDesignLayer2
-            UserName = 'Label201'
-            AutoSize = False
-            Border.mmPadding = 0
-            Caption = 'Fehl-'
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clBlack
-            Font.Name = 'Calibri'
-            Font.Size = 8
-            Font.Style = []
-            FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-            FormFieldSettings.FormFieldType = fftNone
-            TextAlignment = taCentered
-            Transparent = True
-            VerticalAlignment = avBottom
-            mmHeight = 4000
-            mmLeft = 148000
-            mmTop = 11906
-            mmWidth = 8000
-            BandType = 0
-            LayerName = Foreground1
-          end
-          object ppLabel22: TppLabel
-            DesignLayer = ppDesignLayer2
-            UserName = 'Label202'
-            AutoSize = False
-            Border.mmPadding = 0
-            Caption = 'std.'
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clBlack
-            Font.Name = 'Calibri'
-            Font.Size = 8
-            Font.Style = []
-            FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-            FormFieldSettings.FormFieldType = fftNone
-            TextAlignment = taCentered
-            Transparent = True
-            mmHeight = 4000
-            mmLeft = 132000
-            mmTop = 15875
-            mmWidth = 8000
-            BandType = 0
-            LayerName = Foreground1
-          end
-          object ppLabel23: TppLabel
-            DesignLayer = ppDesignLayer2
-            UserName = 'Label23'
-            AutoSize = False
-            Border.mmPadding = 0
-            Caption = 'std.'
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clBlack
-            Font.Name = 'Calibri'
-            Font.Size = 8
-            Font.Style = []
-            FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-            FormFieldSettings.FormFieldType = fftNone
-            TextAlignment = taCentered
-            Transparent = True
-            mmHeight = 4000
-            mmLeft = 148000
-            mmTop = 15875
-            mmWidth = 8000
-            BandType = 0
-            LayerName = Foreground1
-          end
-          object ppLabel24: TppLabel
-            DesignLayer = ppDesignLayer2
-            UserName = 'Label203'
-            AutoSize = False
-            Border.mmPadding = 0
-            Caption = 'davon'
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clBlack
-            Font.Name = 'Calibri'
-            Font.Size = 8
-            Font.Style = []
-            FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-            FormFieldSettings.FormFieldType = fftNone
-            TextAlignment = taCentered
-            Transparent = True
-            VerticalAlignment = avBottom
-            mmHeight = 4000
-            mmLeft = 140000
-            mmTop = 11906
-            mmWidth = 8000
-            BandType = 0
-            LayerName = Foreground1
-          end
-          object ppLabel25: TppLabel
-            DesignLayer = ppDesignLayer2
-            UserName = 'Label25'
-            AutoSize = False
-            Border.mmPadding = 0
-            Caption = 'n.e.'
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clBlack
-            Font.Name = 'Calibri'
-            Font.Size = 8
-            Font.Style = []
-            FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-            FormFieldSettings.FormFieldType = fftNone
-            TextAlignment = taCentered
-            Transparent = True
-            mmHeight = 4000
-            mmLeft = 140000
-            mmTop = 15875
-            mmWidth = 8000
-            BandType = 0
-            LayerName = Foreground1
-          end
-          object ppLabel26: TppLabel
-            DesignLayer = ppDesignLayer2
-            UserName = 'Label26'
-            AutoSize = False
-            Border.mmPadding = 0
-            Caption = 'n.e.'
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clBlack
-            Font.Name = 'Calibri'
-            Font.Size = 8
-            Font.Style = []
-            FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-            FormFieldSettings.FormFieldType = fftNone
-            TextAlignment = taCentered
-            Transparent = True
-            mmHeight = 4000
-            mmLeft = 156000
-            mmTop = 15875
-            mmWidth = 8000
-            BandType = 0
-            LayerName = Foreground1
-          end
-          object ppLabel27: TppLabel
-            DesignLayer = ppDesignLayer2
-            UserName = 'Label27'
-            AutoSize = False
-            Border.mmPadding = 0
-            Caption = 'davon'
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clBlack
-            Font.Name = 'Calibri'
-            Font.Size = 8
-            Font.Style = []
-            FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-            FormFieldSettings.FormFieldType = fftNone
-            TextAlignment = taCentered
-            Transparent = True
-            VerticalAlignment = avBottom
-            mmHeight = 4000
-            mmLeft = 156000
-            mmTop = 11906
+            mmLeft = 108000
+            mmTop = 16000
             mmWidth = 8000
             BandType = 0
             LayerName = Foreground1
           end
           object ppLabel28: TppLabel
             DesignLayer = ppDesignLayer2
-            UserName = 'Label28'
+            UserName = 'Zensur'
             Angle = 90
             AutoSize = False
             Border.mmPadding = 0
@@ -860,7 +820,7 @@ object RepOrt: TppReport
           end
           object ppLabel29: TppLabel
             DesignLayer = ppDesignLayer2
-            UserName = 'Label29'
+            UserName = 'Punkte'
             Angle = 90
             AutoSize = False
             Border.mmPadding = 0
@@ -883,9 +843,258 @@ object RepOrt: TppReport
             RotatedOriginLeft = 0
             RotatedOriginTop = 10006
           end
+          object ppLabel12: TppLabel
+            DesignLayer = ppDesignLayer2
+            UserName = 'Fehlstunden'
+            AutoSize = False
+            Border.mmPadding = 0
+            Caption = 'Fehlstunden'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 8
+            Font.Style = []
+            FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+            FormFieldSettings.FormFieldType = fftNone
+            TextAlignment = taCentered
+            Transparent = True
+            VerticalAlignment = avCenter
+            mmHeight = 4000
+            mmLeft = 132000
+            mmTop = 3969
+            mmWidth = 48000
+            BandType = 0
+            LayerName = Foreground1
+          end
+          object ppLabel5: TppLabel
+            DesignLayer = ppDesignLayer2
+            UserName = 'Abschnitt1'
+            AutoSize = False
+            Border.mmPadding = 0
+            Caption = '1. Abschnitt'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 8
+            Font.Style = []
+            FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+            FormFieldSettings.FormFieldType = fftNone
+            TextAlignment = taCentered
+            Transparent = True
+            VerticalAlignment = avCenter
+            mmHeight = 4000
+            mmLeft = 132000
+            mmTop = 7938
+            mmWidth = 16000
+            BandType = 0
+            LayerName = Foreground1
+          end
+          object ppLabel20: TppLabel
+            DesignLayer = ppDesignLayer2
+            UserName = 'Fehl1'
+            AutoSize = False
+            Border.mmPadding = 0
+            Caption = 'Fehl-'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 8
+            Font.Style = []
+            FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+            FormFieldSettings.FormFieldType = fftNone
+            TextAlignment = taCentered
+            Transparent = True
+            VerticalAlignment = avBottom
+            mmHeight = 4000
+            mmLeft = 132000
+            mmTop = 11906
+            mmWidth = 8000
+            BandType = 0
+            LayerName = Foreground1
+          end
+          object ppLabel22: TppLabel
+            DesignLayer = ppDesignLayer2
+            UserName = 'std1'
+            AutoSize = False
+            Border.mmPadding = 0
+            Caption = 'std.'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 8
+            Font.Style = []
+            FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+            FormFieldSettings.FormFieldType = fftNone
+            TextAlignment = taCentered
+            Transparent = True
+            mmHeight = 4000
+            mmLeft = 132000
+            mmTop = 15875
+            mmWidth = 8000
+            BandType = 0
+            LayerName = Foreground1
+          end
+          object ppLabel24: TppLabel
+            DesignLayer = ppDesignLayer2
+            UserName = 'davon1'
+            AutoSize = False
+            Border.mmPadding = 0
+            Caption = 'davon'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 8
+            Font.Style = []
+            FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+            FormFieldSettings.FormFieldType = fftNone
+            TextAlignment = taCentered
+            Transparent = True
+            VerticalAlignment = avBottom
+            mmHeight = 4000
+            mmLeft = 140000
+            mmTop = 11906
+            mmWidth = 8000
+            BandType = 0
+            LayerName = Foreground1
+          end
+          object ppLabel25: TppLabel
+            DesignLayer = ppDesignLayer2
+            UserName = 'ne1'
+            AutoSize = False
+            Border.mmPadding = 0
+            Caption = 'n.e.'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 8
+            Font.Style = []
+            FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+            FormFieldSettings.FormFieldType = fftNone
+            TextAlignment = taCentered
+            Transparent = True
+            mmHeight = 4000
+            mmLeft = 140000
+            mmTop = 15875
+            mmWidth = 8000
+            BandType = 0
+            LayerName = Foreground1
+          end
+          object ppLabel8: TppLabel
+            DesignLayer = ppDesignLayer2
+            UserName = 'Abschnitt2'
+            AutoSize = False
+            Border.mmPadding = 0
+            Caption = '2. Abschnitt'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 8
+            Font.Style = []
+            FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+            FormFieldSettings.FormFieldType = fftNone
+            TextAlignment = taCentered
+            Transparent = True
+            VerticalAlignment = avCenter
+            mmHeight = 4000
+            mmLeft = 148000
+            mmTop = 7938
+            mmWidth = 16000
+            BandType = 0
+            LayerName = Foreground1
+          end
+          object ppLabel21: TppLabel
+            DesignLayer = ppDesignLayer2
+            UserName = 'Fehl2'
+            AutoSize = False
+            Border.mmPadding = 0
+            Caption = 'Fehl-'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 8
+            Font.Style = []
+            FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+            FormFieldSettings.FormFieldType = fftNone
+            TextAlignment = taCentered
+            Transparent = True
+            VerticalAlignment = avBottom
+            mmHeight = 4000
+            mmLeft = 148000
+            mmTop = 11906
+            mmWidth = 8000
+            BandType = 0
+            LayerName = Foreground1
+          end
+          object ppLabel23: TppLabel
+            DesignLayer = ppDesignLayer2
+            UserName = 'std2'
+            AutoSize = False
+            Border.mmPadding = 0
+            Caption = 'std.'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 8
+            Font.Style = []
+            FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+            FormFieldSettings.FormFieldType = fftNone
+            TextAlignment = taCentered
+            Transparent = True
+            mmHeight = 4000
+            mmLeft = 148000
+            mmTop = 15875
+            mmWidth = 8000
+            BandType = 0
+            LayerName = Foreground1
+          end
+          object ppLabel27: TppLabel
+            DesignLayer = ppDesignLayer2
+            UserName = 'davon2'
+            AutoSize = False
+            Border.mmPadding = 0
+            Caption = 'davon'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 8
+            Font.Style = []
+            FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+            FormFieldSettings.FormFieldType = fftNone
+            TextAlignment = taCentered
+            Transparent = True
+            VerticalAlignment = avBottom
+            mmHeight = 4000
+            mmLeft = 156000
+            mmTop = 11906
+            mmWidth = 8000
+            BandType = 0
+            LayerName = Foreground1
+          end
+          object ppLabel26: TppLabel
+            DesignLayer = ppDesignLayer2
+            UserName = 'ne2'
+            AutoSize = False
+            Border.mmPadding = 0
+            Caption = 'n.e.'
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Name = 'Calibri'
+            Font.Size = 8
+            Font.Style = []
+            FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+            FormFieldSettings.FormFieldType = fftNone
+            TextAlignment = taCentered
+            Transparent = True
+            mmHeight = 4000
+            mmLeft = 156000
+            mmTop = 15875
+            mmWidth = 8000
+            BandType = 0
+            LayerName = Foreground1
+          end
           object ppLabel30: TppLabel
             DesignLayer = ppDesignLayer2
-            UserName = 'Label30'
+            UserName = 'Gesamt'
             AutoSize = False
             Border.mmPadding = 0
             Caption = 'Gesamt'
@@ -908,7 +1117,7 @@ object RepOrt: TppReport
           end
           object ppLabel31: TppLabel
             DesignLayer = ppDesignLayer2
-            UserName = 'Label31'
+            UserName = 'FehlG'
             AutoSize = False
             Border.mmPadding = 0
             Caption = 'Fehl-'
@@ -931,7 +1140,7 @@ object RepOrt: TppReport
           end
           object ppLabel32: TppLabel
             DesignLayer = ppDesignLayer2
-            UserName = 'Label32'
+            UserName = 'stdG'
             AutoSize = False
             Border.mmPadding = 0
             Caption = 'std.'
@@ -951,31 +1160,9 @@ object RepOrt: TppReport
             BandType = 0
             LayerName = Foreground1
           end
-          object ppLabel33: TppLabel
-            DesignLayer = ppDesignLayer2
-            UserName = 'Label33'
-            AutoSize = False
-            Border.mmPadding = 0
-            Caption = 'n.e.'
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clBlack
-            Font.Name = 'Calibri'
-            Font.Size = 8
-            Font.Style = []
-            FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-            FormFieldSettings.FormFieldType = fftNone
-            TextAlignment = taCentered
-            Transparent = True
-            mmHeight = 4000
-            mmLeft = 172000
-            mmTop = 15875
-            mmWidth = 8000
-            BandType = 0
-            LayerName = Foreground1
-          end
           object ppLabel34: TppLabel
             DesignLayer = ppDesignLayer2
-            UserName = 'Label34'
+            UserName = 'davonG'
             AutoSize = False
             Border.mmPadding = 0
             Caption = 'davon'
@@ -996,213 +1183,25 @@ object RepOrt: TppReport
             BandType = 0
             LayerName = Foreground1
           end
-          object ppLine2: TppLine
+          object ppLabel33: TppLabel
             DesignLayer = ppDesignLayer2
-            UserName = 'Line2'
-            Border.mmPadding = 0
-            Pen.Color = 4605510
-            ParentHeight = True
-            Position = lpLeft
-            StretchWithParent = True
-            Weight = 1.000000000000000000
-            mmHeight = 20000
-            mmLeft = 68000
-            mmTop = 0
-            mmWidth = 1000
-            BandType = 0
-            LayerName = Foreground1
-          end
-          object ppLine4: TppLine
-            DesignLayer = ppDesignLayer2
-            UserName = 'Line4'
-            Border.mmPadding = 0
-            Pen.Color = 4605510
-            Position = lpLeft
-            StretchWithParent = True
-            Weight = 1.000000000000000000
-            mmHeight = 12000
-            mmLeft = 116000
-            mmTop = 8000
-            mmWidth = 1000
-            BandType = 0
-            LayerName = Foreground1
-          end
-          object ppLine7: TppLine
-            DesignLayer = ppDesignLayer2
-            UserName = 'Line7'
-            Border.mmPadding = 0
-            Pen.Color = 4605510
-            Position = lpLeft
-            StretchWithParent = True
-            Weight = 0.750000000000000000
-            mmHeight = 12000
-            mmLeft = 124000
-            mmTop = 8000
-            mmWidth = 1000
-            BandType = 0
-            LayerName = Foreground1
-          end
-          object ppLine8: TppLine
-            DesignLayer = ppDesignLayer2
-            UserName = 'Line8'
-            Border.mmPadding = 0
-            Pen.Color = 4605510
-            Pen.Width = 2
-            Position = lpLeft
-            StretchWithParent = True
-            Weight = 1.250000000000000000
-            mmHeight = 16000
-            mmLeft = 132000
-            mmTop = 4000
-            mmWidth = 1000
-            BandType = 0
-            LayerName = Foreground1
-          end
-          object ppLine9: TppLine
-            DesignLayer = ppDesignLayer2
-            UserName = 'Line9'
-            Border.mmPadding = 0
-            Pen.Color = 4605510
-            Position = lpLeft
-            StretchWithParent = True
-            Weight = 0.750000000000000000
-            mmHeight = 8000
-            mmLeft = 140000
-            mmTop = 12000
-            mmWidth = 1000
-            BandType = 0
-            LayerName = Foreground1
-          end
-          object ppLine10: TppLine
-            DesignLayer = ppDesignLayer2
-            UserName = 'Line10'
-            Border.mmPadding = 0
-            Pen.Color = 4605510
-            Position = lpLeft
-            StretchWithParent = True
-            Weight = 1.000000000000000000
-            mmHeight = 12000
-            mmLeft = 148000
-            mmTop = 8000
-            mmWidth = 1000
-            BandType = 0
-            LayerName = Foreground1
-          end
-          object ppLine11: TppLine
-            DesignLayer = ppDesignLayer2
-            UserName = 'Line101'
-            Border.mmPadding = 0
-            Pen.Color = 4605510
-            Position = lpLeft
-            StretchWithParent = True
-            Weight = 1.000000000000000000
-            mmHeight = 12000
-            mmLeft = 164000
-            mmTop = 8202
-            mmWidth = 1000
-            BandType = 0
-            LayerName = Foreground1
-          end
-          object ppLine18: TppLine
-            DesignLayer = ppDesignLayer2
-            UserName = 'Line18'
-            Border.mmPadding = 0
-            Pen.Color = 4605510
-            Position = lpLeft
-            StretchWithParent = True
-            Weight = 0.750000000000000000
-            mmHeight = 8000
-            mmLeft = 156000
-            mmTop = 12000
-            mmWidth = 1000
-            BandType = 0
-            LayerName = Foreground1
-          end
-          object ppLine24: TppLine
-            DesignLayer = ppDesignLayer2
-            UserName = 'Line24'
-            Border.mmPadding = 0
-            Pen.Color = 4605510
-            Position = lpLeft
-            StretchWithParent = True
-            Weight = 0.750000000000000000
-            mmHeight = 8000
-            mmLeft = 172000
-            mmTop = 12000
-            mmWidth = 1000
-            BandType = 0
-            LayerName = Foreground1
-          end
-          object ppLabel35: TppLabel
-            DesignLayer = ppDesignLayer2
-            UserName = 'Label35'
-            Angle = 90
+            UserName = 'neG'
             AutoSize = False
             Border.mmPadding = 0
-            Caption = 'Kursart'
+            Caption = 'n.e.'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clBlack
             Font.Name = 'Calibri'
-            Font.Size = 10
+            Font.Size = 8
             Font.Style = []
             FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
             FormFieldSettings.FormFieldType = fftNone
+            TextAlignment = taCentered
             Transparent = True
-            VerticalAlignment = avCenter
-            mmHeight = 19000
-            mmLeft = 62000
-            mmTop = 0
-            mmWidth = 4000
-            BandType = 0
-            LayerName = Foreground1
-            RotatedOriginLeft = 0
-            RotatedOriginTop = 19000
-          end
-          object ppLine25: TppLine
-            DesignLayer = ppDesignLayer2
-            UserName = 'Line1'
-            Border.mmPadding = 0
-            Weight = 0.750000000000000000
-            mmHeight = 1000
-            mmLeft = 68000
-            mmTop = 4000
-            mmWidth = 112000
-            BandType = 0
-            LayerName = Foreground1
-          end
-          object ppLine26: TppLine
-            DesignLayer = ppDesignLayer2
-            UserName = 'Line26'
-            Border.mmPadding = 0
-            Weight = 0.750000000000000000
-            mmHeight = 1000
-            mmLeft = 68000
-            mmTop = 8000
-            mmWidth = 112000
-            BandType = 0
-            LayerName = Foreground1
-          end
-          object ppLine27: TppLine
-            DesignLayer = ppDesignLayer2
-            UserName = 'Line27'
-            Border.mmPadding = 0
-            Weight = 0.750000000000000000
-            mmHeight = 1000
-            mmLeft = 68000
-            mmTop = 16000
-            mmWidth = 48000
-            BandType = 0
-            LayerName = Foreground1
-          end
-          object ppLine28: TppLine
-            DesignLayer = ppDesignLayer2
-            UserName = 'Line28'
-            Border.mmPadding = 0
-            Weight = 0.750000000000000000
-            mmHeight = 1000
-            mmLeft = 132000
-            mmTop = 12000
-            mmWidth = 48000
+            mmHeight = 4000
+            mmLeft = 172000
+            mmTop = 15875
+            mmWidth = 8000
             BandType = 0
             LayerName = Foreground1
           end
@@ -1240,100 +1239,6 @@ object RepOrt: TppReport
             mmOverFlowOffset = 0
             mmStopPosition = 0
             mmMinHeight = 0
-            object ppLabel16: TppLabel
-              DesignLayer = ppDesignLayer2
-              UserName = 'dbUeFehlstd'
-              AutoSize = False
-              Border.mmPadding = 0
-              Caption = 'ue Fehlstd'
-              Color = clSilver
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clBlack
-              Font.Name = 'Calibri'
-              Font.Size = 10
-              Font.Style = []
-              FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-              FormFieldSettings.FormFieldType = fftNone
-              TextAlignment = taCentered
-              Transparent = True
-              VerticalAlignment = avCenter
-              mmHeight = 6000
-              mmLeft = 172000
-              mmTop = 0
-              mmWidth = 8000
-              BandType = 4
-              LayerName = Foreground1
-            end
-            object ppLabel15: TppLabel
-              DesignLayer = ppDesignLayer2
-              UserName = 'dbFehlstd'
-              AutoSize = False
-              Border.mmPadding = 0
-              Caption = 'Fehlstd'
-              Color = clSilver
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clBlack
-              Font.Name = 'Calibri'
-              Font.Size = 10
-              Font.Style = []
-              FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-              FormFieldSettings.FormFieldType = fftNone
-              TextAlignment = taCentered
-              Transparent = True
-              VerticalAlignment = avCenter
-              mmHeight = 6000
-              mmLeft = 164000
-              mmTop = 0
-              mmWidth = 8000
-              BandType = 4
-              LayerName = Foreground1
-            end
-            object ppDBText5: TppDBText
-              DesignLayer = ppDesignLayer2
-              UserName = 'dbPunkte'
-              Border.mmPadding = 0
-              Color = clSilver
-              DataField = 'NotenPunkte'
-              DataPipeline = dmPipelines.plKursSchueler
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clBlack
-              Font.Name = 'Calibri'
-              Font.Size = 10
-              Font.Style = []
-              TextAlignment = taCentered
-              Transparent = True
-              VerticalAlignment = avCenter
-              DataPipelineName = 'plKursSchueler'
-              mmHeight = 6000
-              mmLeft = 124000
-              mmTop = 0
-              mmWidth = 8000
-              BandType = 4
-              LayerName = Foreground1
-            end
-            object ppDBText3: TppDBText
-              DesignLayer = ppDesignLayer2
-              UserName = 'dbNote'
-              Border.mmPadding = 0
-              Color = clSilver
-              DataField = 'NotenKrz'
-              DataPipeline = dmPipelines.plKursSchueler
-              Font.Charset = DEFAULT_CHARSET
-              Font.Color = clBlack
-              Font.Name = 'Calibri'
-              Font.Size = 10
-              Font.Style = []
-              TextAlignment = taCentered
-              Transparent = True
-              VerticalAlignment = avCenter
-              DataPipelineName = 'plKursSchueler'
-              mmHeight = 6000
-              mmLeft = 116000
-              mmTop = 0
-              mmWidth = 8000
-              BandType = 4
-              LayerName = Foreground1
-            end
             object ppLine3: TppLine
               DesignLayer = ppDesignLayer2
               UserName = 'TrennlinieD1'
@@ -1430,9 +1335,138 @@ object RepOrt: TppReport
               BandType = 4
               LayerName = Foreground1
             end
-            object ppLine19: TppLine
+            object ppLine36: TppLine
               DesignLayer = ppDesignLayer2
               UserName = 'TrennlinieD7'
+              Border.mmPadding = 0
+              Pen.Color = 4605510
+              ParentHeight = True
+              Position = lpLeft
+              StretchWithParent = True
+              Weight = 0.750000000000000000
+              mmHeight = 6000
+              mmLeft = 100000
+              mmTop = 0
+              mmWidth = 1000
+              BandType = 4
+              LayerName = Foreground1
+            end
+            object ppLine37: TppLine
+              DesignLayer = ppDesignLayer2
+              UserName = 'TrennlinieD8'
+              Border.mmPadding = 0
+              Pen.Color = 4605510
+              ParentHeight = True
+              Position = lpLeft
+              StretchWithParent = True
+              Weight = 0.750000000000000000
+              mmHeight = 6000
+              mmLeft = 108000
+              mmTop = 0
+              mmWidth = 1000
+              BandType = 4
+              LayerName = Foreground1
+            end
+            object ppLine29: TppLine
+              DesignLayer = ppDesignLayer2
+              UserName = 'TrennlinieD9'
+              Border.mmPadding = 0
+              Pen.Color = 4605510
+              ParentHeight = True
+              Position = lpLeft
+              StretchWithParent = True
+              Weight = 1.000000000000000000
+              mmHeight = 6000
+              mmLeft = 116000
+              mmTop = 0
+              mmWidth = 1000
+              BandType = 4
+              LayerName = Foreground1
+            end
+            object ppLine30: TppLine
+              DesignLayer = ppDesignLayer2
+              UserName = 'TrennlinieD10'
+              Border.mmPadding = 0
+              Pen.Color = 4605510
+              ParentHeight = True
+              Position = lpLeft
+              StretchWithParent = True
+              Weight = 0.750000000000000000
+              mmHeight = 6000
+              mmLeft = 124000
+              mmTop = 0
+              mmWidth = 1000
+              BandType = 4
+              LayerName = Foreground1
+            end
+            object ppLine31: TppLine
+              DesignLayer = ppDesignLayer2
+              UserName = 'TrennlinieD11'
+              Border.mmPadding = 0
+              Pen.Color = 4605510
+              Pen.Width = 2
+              ParentHeight = True
+              Position = lpLeft
+              StretchWithParent = True
+              Weight = 1.250000000000000000
+              mmHeight = 6000
+              mmLeft = 132000
+              mmTop = 0
+              mmWidth = 1000
+              BandType = 4
+              LayerName = Foreground1
+            end
+            object ppLine32: TppLine
+              DesignLayer = ppDesignLayer2
+              UserName = 'TrennlinieD12'
+              Border.mmPadding = 0
+              Pen.Color = 4605510
+              ParentHeight = True
+              Position = lpLeft
+              StretchWithParent = True
+              Weight = 0.750000000000000000
+              mmHeight = 6000
+              mmLeft = 140000
+              mmTop = 0
+              mmWidth = 1000
+              BandType = 4
+              LayerName = Foreground1
+            end
+            object ppLine33: TppLine
+              DesignLayer = ppDesignLayer2
+              UserName = 'TrennlinieD13'
+              Border.mmPadding = 0
+              Pen.Color = 4605510
+              ParentHeight = True
+              Position = lpLeft
+              StretchWithParent = True
+              Weight = 1.000000000000000000
+              mmHeight = 6000
+              mmLeft = 148000
+              mmTop = 0
+              mmWidth = 1000
+              BandType = 4
+              LayerName = Foreground1
+            end
+            object ppLine34: TppLine
+              DesignLayer = ppDesignLayer2
+              UserName = 'TrennlinieD14'
+              Border.mmPadding = 0
+              Pen.Color = 4605510
+              ParentHeight = True
+              Position = lpLeft
+              StretchWithParent = True
+              Weight = 0.750000000000000000
+              mmHeight = 6000
+              mmLeft = 156000
+              mmTop = 0
+              mmWidth = 1000
+              BandType = 4
+              LayerName = Foreground1
+            end
+            object ppLine19: TppLine
+              DesignLayer = ppDesignLayer2
+              UserName = 'TrennlinieD15'
               Border.mmPadding = 0
               Pen.Color = 4605510
               ParentHeight = True
@@ -1443,6 +1477,22 @@ object RepOrt: TppReport
               mmLeft = 164000
               mmTop = 0
               mmWidth = 1058
+              BandType = 4
+              LayerName = Foreground1
+            end
+            object ppLine35: TppLine
+              DesignLayer = ppDesignLayer2
+              UserName = 'TrennlinieD16'
+              Border.mmPadding = 0
+              Pen.Color = 4605510
+              ParentHeight = True
+              Position = lpLeft
+              StretchWithParent = True
+              Weight = 0.750000000000000000
+              mmHeight = 6000
+              mmLeft = 172000
+              mmTop = 0
+              mmWidth = 1000
               BandType = 4
               LayerName = Foreground1
             end
@@ -1519,148 +1569,97 @@ object RepOrt: TppReport
               BandType = 4
               LayerName = Foreground1
             end
-            object ppLine29: TppLine
+            object ppDBText3: TppDBText
               DesignLayer = ppDesignLayer2
-              UserName = 'Line29'
+              UserName = 'dbNote'
               Border.mmPadding = 0
-              Pen.Color = 4605510
-              ParentHeight = True
-              Position = lpLeft
-              StretchWithParent = True
-              Weight = 1.000000000000000000
+              Color = clSilver
+              DataField = 'NotenKrz'
+              DataPipeline = dmPipelines.plKursSchueler
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = clBlack
+              Font.Name = 'Calibri'
+              Font.Size = 10
+              Font.Style = []
+              TextAlignment = taCentered
+              Transparent = True
+              VerticalAlignment = avCenter
+              DataPipelineName = 'plKursSchueler'
               mmHeight = 6000
               mmLeft = 116000
               mmTop = 0
-              mmWidth = 1000
+              mmWidth = 8000
               BandType = 4
               LayerName = Foreground1
             end
-            object ppLine30: TppLine
+            object ppDBText5: TppDBText
               DesignLayer = ppDesignLayer2
-              UserName = 'Line30'
+              UserName = 'dbPunkte'
               Border.mmPadding = 0
-              Pen.Color = 4605510
-              ParentHeight = True
-              Position = lpLeft
-              StretchWithParent = True
-              Weight = 0.750000000000000000
+              Color = clSilver
+              DataField = 'NotenPunkte'
+              DataPipeline = dmPipelines.plKursSchueler
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = clBlack
+              Font.Name = 'Calibri'
+              Font.Size = 10
+              Font.Style = []
+              TextAlignment = taCentered
+              Transparent = True
+              VerticalAlignment = avCenter
+              DataPipelineName = 'plKursSchueler'
               mmHeight = 6000
               mmLeft = 124000
               mmTop = 0
-              mmWidth = 1000
+              mmWidth = 8000
               BandType = 4
               LayerName = Foreground1
             end
-            object ppLine31: TppLine
+            object ppLabel15: TppLabel
               DesignLayer = ppDesignLayer2
-              UserName = 'Line31'
+              UserName = 'dbFehlstd'
+              AutoSize = False
               Border.mmPadding = 0
-              Pen.Color = 4605510
-              Pen.Width = 2
-              ParentHeight = True
-              Position = lpLeft
-              StretchWithParent = True
-              Weight = 1.250000000000000000
+              Caption = 'Fehlstd'
+              Color = clSilver
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = clBlack
+              Font.Name = 'Calibri'
+              Font.Size = 10
+              Font.Style = []
+              FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+              FormFieldSettings.FormFieldType = fftNone
+              TextAlignment = taCentered
+              Transparent = True
+              VerticalAlignment = avCenter
               mmHeight = 6000
-              mmLeft = 132000
+              mmLeft = 164000
               mmTop = 0
-              mmWidth = 1000
+              mmWidth = 8000
               BandType = 4
               LayerName = Foreground1
             end
-            object ppLine32: TppLine
+            object ppLabel16: TppLabel
               DesignLayer = ppDesignLayer2
-              UserName = 'Line32'
+              UserName = 'dbUeFehlstd'
+              AutoSize = False
               Border.mmPadding = 0
-              Pen.Color = 4605510
-              ParentHeight = True
-              Position = lpLeft
-              StretchWithParent = True
-              Weight = 0.750000000000000000
-              mmHeight = 6000
-              mmLeft = 140000
-              mmTop = 0
-              mmWidth = 1000
-              BandType = 4
-              LayerName = Foreground1
-            end
-            object ppLine33: TppLine
-              DesignLayer = ppDesignLayer2
-              UserName = 'Line33'
-              Border.mmPadding = 0
-              Pen.Color = 4605510
-              ParentHeight = True
-              Position = lpLeft
-              StretchWithParent = True
-              Weight = 1.000000000000000000
-              mmHeight = 6000
-              mmLeft = 148000
-              mmTop = 0
-              mmWidth = 1000
-              BandType = 4
-              LayerName = Foreground1
-            end
-            object ppLine34: TppLine
-              DesignLayer = ppDesignLayer2
-              UserName = 'Line34'
-              Border.mmPadding = 0
-              Pen.Color = 4605510
-              ParentHeight = True
-              Position = lpLeft
-              StretchWithParent = True
-              Weight = 0.750000000000000000
-              mmHeight = 6000
-              mmLeft = 156000
-              mmTop = 0
-              mmWidth = 1000
-              BandType = 4
-              LayerName = Foreground1
-            end
-            object ppLine35: TppLine
-              DesignLayer = ppDesignLayer2
-              UserName = 'Line35'
-              Border.mmPadding = 0
-              Pen.Color = 4605510
-              ParentHeight = True
-              Position = lpLeft
-              StretchWithParent = True
-              Weight = 0.750000000000000000
+              Caption = 'ue Fehlstd'
+              Color = clSilver
+              Font.Charset = DEFAULT_CHARSET
+              Font.Color = clBlack
+              Font.Name = 'Calibri'
+              Font.Size = 10
+              Font.Style = []
+              FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+              FormFieldSettings.FormFieldType = fftNone
+              TextAlignment = taCentered
+              Transparent = True
+              VerticalAlignment = avCenter
               mmHeight = 6000
               mmLeft = 172000
               mmTop = 0
-              mmWidth = 1000
-              BandType = 4
-              LayerName = Foreground1
-            end
-            object ppLine36: TppLine
-              DesignLayer = ppDesignLayer2
-              UserName = 'Line36'
-              Border.mmPadding = 0
-              Pen.Color = 4605510
-              ParentHeight = True
-              Position = lpLeft
-              StretchWithParent = True
-              Weight = 0.750000000000000000
-              mmHeight = 6000
-              mmLeft = 100000
-              mmTop = 0
-              mmWidth = 1000
-              BandType = 4
-              LayerName = Foreground1
-            end
-            object ppLine37: TppLine
-              DesignLayer = ppDesignLayer2
-              UserName = 'Line37'
-              Border.mmPadding = 0
-              Pen.Color = 4605510
-              ParentHeight = True
-              Position = lpLeft
-              StretchWithParent = True
-              Weight = 0.750000000000000000
-              mmHeight = 6000
-              mmLeft = 108000
-              mmTop = 0
-              mmWidth = 1000
+              mmWidth = 8000
               BandType = 4
               LayerName = Foreground1
             end
@@ -1788,7 +1787,7 @@ object RepOrt: TppReport
       TextAlignment = taCentered
       Transparent = True
       mmHeight = 3705
-      mmLeft = 58209
+      mmLeft = 58588
       mmTop = 1058
       mmWidth = 53446
       BandType = 8
@@ -2037,11 +2036,11 @@ object RepOrt: TppReport
     object ppParameter2: TppParameter
       AutoSearchSettings.LogicalPrefix = []
       AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = '46089'
+      AutoSearchSettings.SearchExpression = '46098'
       DataType = dtDate
       LookupSettings.DisplayType = dtNameOnly
       LookupSettings.SortOrder = soName
-      Value = 46089d
+      Value = 46098d
       UserName = 'Versionsdatum'
     end
     object ppParameter3: TppParameter
