@@ -16,7 +16,7 @@ object RepOrt: TppReport
   PrinterSetup.mmMarginTop = 5000
   PrinterSetup.mmPaperHeight = 168000
   PrinterSetup.mmPaperWidth = 300000
-  PrinterSetup.PaperSize = 184
+  PrinterSetup.PaperSize = 256
   SaveAsTemplate = True
   Template.FileName = 
     'C:\Users\ra\OneDrive - neg-velbert.de\Programme\SVWS-Arbeitsverz' +
@@ -35,10 +35,13 @@ object RepOrt: TppReport
   EmailSettings.ConnectionSettings.WebMail.GmailSettings.OAuth2.AuthStorage = [oasAccessToken, oasRefreshToken]
   EmailSettings.ConnectionSettings.WebMail.GmailSettings.OAuth2.RedirectURI = 'http://localhost'
   EmailSettings.ConnectionSettings.WebMail.GmailSettings.OAuth2.RedirectPort = 0
+  EmailSettings.ConnectionSettings.WebMail.GmailSettings.OAuth2.RefreshTokenLifeSpan = 365
   EmailSettings.ConnectionSettings.WebMail.Outlook365Settings.OAuth2.AuthStorage = [oasAccessToken, oasRefreshToken]
   EmailSettings.ConnectionSettings.WebMail.Outlook365Settings.OAuth2.RedirectURI = 'http://localhost'
   EmailSettings.ConnectionSettings.WebMail.Outlook365Settings.OAuth2.RedirectPort = 0
+  EmailSettings.ConnectionSettings.WebMail.Outlook365Settings.OAuth2.RefreshTokenLifeSpan = 365
   EmailSettings.ConnectionSettings.EnableMultiPlugin = False
+  EmailSettings.ConnectionSettings.ConnectionStatusInfo = [csiStatusBar]
   EmailSettings.DeleteFile = False
   EmailSettings.Enabled = True
   EmailSettings.PreviewInEmailClient = False
@@ -95,6 +98,8 @@ object RepOrt: TppReport
   PDFSettings.FontEncoding = feUnicode
   PDFSettings.ImageCompressionLevel = 1
   PDFSettings.PDFAFormat = pafNone
+  PDFSettings.Layers = False
+  PDFSettings.Outline = False
   PreviewFormSettings.PageBorder.mmPadding = 0
   PreviewFormSettings.SinglePageOnly = True
   PreviewFormSettings.ZoomSetting = zs100Percent
@@ -117,18 +122,24 @@ object RepOrt: TppReport
   CloudDriveSettings.DropBoxSettings.OAuth2.AuthStorage = [oasAccessToken, oasRefreshToken]
   CloudDriveSettings.DropBoxSettings.OAuth2.RedirectURI = 'http://localhost'
   CloudDriveSettings.DropBoxSettings.OAuth2.RedirectPort = 0
+  CloudDriveSettings.DropBoxSettings.OAuth2.RefreshTokenLifeSpan = 365
   CloudDriveSettings.DropBoxSettings.DirectorySupport = True
+  CloudDriveSettings.DropBoxSettings.SharedResources = True
   CloudDriveSettings.GoogleDriveSettings.OAuth2.AuthStorage = [oasAccessToken, oasRefreshToken]
   CloudDriveSettings.GoogleDriveSettings.OAuth2.RedirectURI = 'http://localhost'
   CloudDriveSettings.GoogleDriveSettings.OAuth2.RedirectPort = 0
+  CloudDriveSettings.GoogleDriveSettings.OAuth2.RefreshTokenLifeSpan = 365
   CloudDriveSettings.GoogleDriveSettings.DirectorySupport = False
+  CloudDriveSettings.GoogleDriveSettings.SharedResources = False
   CloudDriveSettings.OneDriveSettings.OAuth2.AuthStorage = [oasAccessToken, oasRefreshToken]
   CloudDriveSettings.OneDriveSettings.OAuth2.RedirectURI = 'http://localhost'
   CloudDriveSettings.OneDriveSettings.OAuth2.RedirectPort = 0
+  CloudDriveSettings.OneDriveSettings.OAuth2.RefreshTokenLifeSpan = 365
   CloudDriveSettings.OneDriveSettings.DirectorySupport = True
+  CloudDriveSettings.OneDriveSettings.SharedResources = True
   Left = 128
   Top = 8
-  Version = '22.06'
+  Version = '23.02'
   mmColumnWidth = 290000
   DataPipelineName = 'Schueler'
   object ppDetailBand1: TppDetailBand
@@ -173,10 +184,10 @@ object RepOrt: TppReport
         PrinterSetup.mmMarginTop = 0
         PrinterSetup.mmPaperHeight = 168000
         PrinterSetup.mmPaperWidth = 300000
-        PrinterSetup.PaperSize = 184
+        PrinterSetup.PaperSize = 256
         Template.Format = ftASCII
         Units = utMillimeters
-        Version = '22.06'
+        Version = '23.02'
         mmColumnWidth = 0
         DataPipelineName = 'plSchuelerlaufbahn'
         object ppDetailBand5: TppDetailBand
@@ -271,10 +282,10 @@ object RepOrt: TppReport
         PrinterSetup.mmMarginTop = 0
         PrinterSetup.mmPaperHeight = 168000
         PrinterSetup.mmPaperWidth = 98000
-        PrinterSetup.PaperSize = 184
+        PrinterSetup.PaperSize = 256
         Template.Format = ftASCII
         Units = utMillimeters
-        Version = '22.06'
+        Version = '23.02'
         mmColumnWidth = 0
         DataPipelineName = 'plLernabschnitte'
         object ppDetailBand2: TppDetailBand
@@ -319,10 +330,10 @@ object RepOrt: TppReport
               PrinterSetup.mmMarginTop = 0
               PrinterSetup.mmPaperHeight = 168000
               PrinterSetup.mmPaperWidth = 98000
-              PrinterSetup.PaperSize = 184
+              PrinterSetup.PaperSize = 256
               Template.Format = ftASCII
               Units = utMillimeters
-              Version = '22.06'
+              Version = '23.02'
               mmColumnWidth = 297000
               DataPipelineName = 'SchuelerLeistungen'
               object ppHeaderBand1: TppHeaderBand
@@ -887,7 +898,7 @@ object RepOrt: TppReport
               PrinterSetup.DocumentName = 'Klassenliste - Leistungs'#252'bersicht eng.rtm'
               PrinterSetup.Duplex = dpNone
               PrinterSetup.Orientation = poLandscape
-              PrinterSetup.PaperName = 'A4'
+              PrinterSetup.PaperName = 'A4 210 x 297 mm'
               PrinterSetup.PrinterName = 'Default'
               PrinterSetup.SaveDeviceSettings = False
               PrinterSetup.mmMarginBottom = 0
@@ -899,7 +910,7 @@ object RepOrt: TppReport
               PrinterSetup.PaperSize = 9
               Template.Format = ftASCII
               Units = utMillimeters
-              Version = '22.06'
+              Version = '23.02'
               mmColumnWidth = 0
               DataPipelineName = 'plZuweisungen'
               object ppDetailBand4: TppDetailBand
@@ -1421,6 +1432,7 @@ object RepOrt: TppReport
       AlignHorizontal = ahCenter
       AlignVertical = avCenter
       MaintainAspectRatio = True
+      RotationAngle = 0
       Stretch = True
       Border.Weight = 1.000000000000000000
       Border.mmPadding = 0
@@ -1760,7 +1772,7 @@ object RepOrt: TppReport
     object ppShape8: TppShape
       DesignLayer = ppDesignLayer1
       UserName = 'ShapeEpochenunterricht'
-      Brush.Color = 14474460
+      Brush.Color = clGainsboro
       mmHeight = 2910
       mmLeft = 84402
       mmTop = 397
@@ -2928,38 +2940,34 @@ object RepOrt: TppReport
       4F6E5072696E74074576656E7449440220084361726574506F73010206020200
       0001060F5472614576656E7448616E646C65720B50726F6772616D4E616D6506
       1C6462466F657264657273636877657270756E6B74654F6E5072696E740B5072
-      6F6772616D54797065070B747450726F63656475726506536F75726365146E03
+      6F6772616D54797065070B747450726F63656475726506536F7572636514EF02
       000070726F636564757265206462466F657264657273636877657270756E6B74
-      654F6E5072696E743B0D0A626567696E0D0A20200D0A202020202F2F46C3B672
-      64657273636877657270756E6B7465206C656572656E0D0A20206462466F6572
-      64657273636877657270756E6B74652E4C696E65732E436C6561723B0D0A2020
-      0D0A20202F2F46C3B67264657273636877657270756E6B74652C2066616C6C73
-      20766F7268616E64656E0D0A202069662028285265706F72742E446174615069
-      70656C696E655B27466F657264657273636877655250756E6B74415344275D20
-      3C3E2027272920616E6420285265706F72742E44617461506970656C696E655B
-      27466F657264657273636877655250756E6B7432415344275D203C3E20272729
-      29207468656E20626567696E0D0A202020206462466F65726465727363687765
+      654F6E5072696E743B0D0A626567696E0D0A0D0A20202F2F46C3B67264657273
+      636877657270756E6B7465206C656572656E0D0A20206462466F657264657273
+      636877657270756E6B74652E4C696E65732E436C6561723B0D0A20200D0A2020
+      2F2F46C3B67264657273636877657270756E6B74652C2066616C6C7320766F72
+      68616E64656E0D0A202069662028284C65726E61627363686E697474655B2746
+      6F657264657273636877657270756E6B74415344275D203C3E2027272920616E
+      6420284C65726E61627363686E697474655B27466F6572646572736368776572
+      70756E6B7432415344275D203C3E2027272929207468656E20626567696E0D0A
+      202020206462466F657264657273636877657270756E6B74652E4C696E65732E
+      416464282746C3B67264657273636877657270756E6B74653A2720293B0D0A20
+      2020206462466F657264657273636877657270756E6B74652E4C696E65732E41
+      6464284C65726E61627363686E697474655B27466F6572646572736368776572
+      70756E6B7441534454657874275D293B0D0A202020206462466F657264657273
+      636877657270756E6B74652E4C696E65732E416464284C65726E61627363686E
+      697474655B27466F657264657273636877657270756E6B743241534454657874
+      275D293B0D0A2020656E6420656C7365206966204C65726E61627363686E6974
+      74655B27466F657264657273636877657270756E6B74415344275D203C3E2027
+      27207468656E20626567696E0D0A202020206462466F65726465727363687765
       7270756E6B74652E4C696E65732E416464282746C3B672646572736368776572
-      70756E6B746520696D20536368756C6A6168722027202B20456967656E655363
-      68756C655B27536368756C6A616872556E6441627363686E6974745465787427
-      5D202B20273A2720293B0D0A202020206462466F657264657273636877657270
-      756E6B74652E4C696E65732E4164642853636875656C65725B27466F65726465
-      7273636877657270756E6B7441534454657874275D293B0D0A20202020646246
-      6F657264657273636877657270756E6B74652E4C696E65732E41646428536368
-      75656C65725B27466F657264657273636877657270756E6B7432415344546578
-      74275D293B0D0A2020656E6420656C7365206966205265706F72742E44617461
-      506970656C696E655B27466F657264657273636877655250756E6B7441534427
-      5D203C3E202727207468656E20626567696E0D0A202020206462466F65726465
-      7273636877657270756E6B74652E4C696E65732E416464282746C3B672646572
-      73636877657270756E6B7420696D20536368756C6A6168722027202B20456967
-      656E65536368756C655B27536368756C6A616872556E6441627363686E697474
-      54657874275D202B20273A2720293B0D0A202020206462466F65726465727363
-      6877657270756E6B74652E4C696E65732E4164642853636875656C65725B2746
-      6F657264657273636877657270756E6B7441534454657874275D293B0D0A2020
-      656E643B0D0A20200D0A656E643B0D0A0D436F6D706F6E656E744E616D650615
-      6462466F657264657273636877657270756E6B7465094576656E744E616D6506
-      074F6E5072696E74074576656E7449440220084361726574506F730102030210
-      000000}
+      70756E6B743A2720293B0D0A202020206462466F657264657273636877657270
+      756E6B74652E4C696E65732E416464284C65726E61627363686E697474655B27
+      466F657264657273636877657270756E6B7441534454657874275D293B0D0A20
+      20656E643B0D0A20200D0A656E643B0D0A0D436F6D706F6E656E744E616D6506
+      156462466F657264657273636877657270756E6B7465094576656E744E616D65
+      06074F6E5072696E74074576656E7449440220084361726574506F7301020502
+      11000000}
   end
   object ppDesignLayers1: TppDesignLayers
     object ppDesignLayer1: TppDesignLayer
@@ -2995,11 +3003,11 @@ object RepOrt: TppReport
     object ppParameter2: TppParameter
       AutoSearchSettings.LogicalPrefix = []
       AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = '46028'
+      AutoSearchSettings.SearchExpression = '46155'
       DataType = dtDate
       LookupSettings.DisplayType = dtNameOnly
       LookupSettings.SortOrder = soName
-      Value = 46028d
+      Value = 46155d
       UserName = 'Versionsdatum'
     end
     object ppParameter3: TppParameter
