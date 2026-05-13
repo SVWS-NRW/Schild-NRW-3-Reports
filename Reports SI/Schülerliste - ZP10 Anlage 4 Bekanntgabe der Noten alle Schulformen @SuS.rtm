@@ -18,9 +18,10 @@ object RepOrt: TppReport
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
   Template.FileName = 
-    '\\neghost\Gemeinsame Dateien\SVWS-Arbeitsverzeichnis\SchILD-Repo' +
-    'rts\Reportsammlung 3.0\Reports SI\Sch'#252'lerliste - ZP10 Anlage 4 B' +
-    'ekanntgabe der Noten alle Schulformen @SuS.rtm'
+    'C:\Users\ra\OneDrive - neg-velbert.de\Programme\SVWS-Arbeitsverz' +
+    'eichnis\SchILD-Reports\Schild-NRW-3-Reports\Reports SI\Sch'#252'lerli' +
+    'ste - ZP10 Anlage 4 Bekanntgabe der Noten alle Schulformen @SuS.' +
+    'rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -33,10 +34,13 @@ object RepOrt: TppReport
   EmailSettings.ConnectionSettings.WebMail.GmailSettings.OAuth2.AuthStorage = [oasAccessToken, oasRefreshToken]
   EmailSettings.ConnectionSettings.WebMail.GmailSettings.OAuth2.RedirectURI = 'http://localhost'
   EmailSettings.ConnectionSettings.WebMail.GmailSettings.OAuth2.RedirectPort = 0
+  EmailSettings.ConnectionSettings.WebMail.GmailSettings.OAuth2.RefreshTokenLifeSpan = 365
   EmailSettings.ConnectionSettings.WebMail.Outlook365Settings.OAuth2.AuthStorage = [oasAccessToken, oasRefreshToken]
   EmailSettings.ConnectionSettings.WebMail.Outlook365Settings.OAuth2.RedirectURI = 'http://localhost'
   EmailSettings.ConnectionSettings.WebMail.Outlook365Settings.OAuth2.RedirectPort = 0
+  EmailSettings.ConnectionSettings.WebMail.Outlook365Settings.OAuth2.RefreshTokenLifeSpan = 365
   EmailSettings.ConnectionSettings.EnableMultiPlugin = False
+  EmailSettings.ConnectionSettings.ConnectionStatusInfo = [csiStatusBar]
   EmailSettings.DeleteFile = False
   EmailSettings.Enabled = True
   EmailSettings.PreviewInEmailClient = False
@@ -93,6 +97,8 @@ object RepOrt: TppReport
   PDFSettings.FontEncoding = feUnicode
   PDFSettings.ImageCompressionLevel = 1
   PDFSettings.PDFAFormat = pafNone
+  PDFSettings.Layers = False
+  PDFSettings.Outline = False
   PreviewFormSettings.PageBorder.mmPadding = 0
   PreviewFormSettings.SinglePageOnly = True
   PreviewFormSettings.ZoomSetting = zs100Percent
@@ -115,18 +121,24 @@ object RepOrt: TppReport
   CloudDriveSettings.DropBoxSettings.OAuth2.AuthStorage = [oasAccessToken, oasRefreshToken]
   CloudDriveSettings.DropBoxSettings.OAuth2.RedirectURI = 'http://localhost'
   CloudDriveSettings.DropBoxSettings.OAuth2.RedirectPort = 0
+  CloudDriveSettings.DropBoxSettings.OAuth2.RefreshTokenLifeSpan = 365
   CloudDriveSettings.DropBoxSettings.DirectorySupport = True
+  CloudDriveSettings.DropBoxSettings.SharedResources = True
   CloudDriveSettings.GoogleDriveSettings.OAuth2.AuthStorage = [oasAccessToken, oasRefreshToken]
   CloudDriveSettings.GoogleDriveSettings.OAuth2.RedirectURI = 'http://localhost'
   CloudDriveSettings.GoogleDriveSettings.OAuth2.RedirectPort = 0
+  CloudDriveSettings.GoogleDriveSettings.OAuth2.RefreshTokenLifeSpan = 365
   CloudDriveSettings.GoogleDriveSettings.DirectorySupport = False
+  CloudDriveSettings.GoogleDriveSettings.SharedResources = False
   CloudDriveSettings.OneDriveSettings.OAuth2.AuthStorage = [oasAccessToken, oasRefreshToken]
   CloudDriveSettings.OneDriveSettings.OAuth2.RedirectURI = 'http://localhost'
   CloudDriveSettings.OneDriveSettings.OAuth2.RedirectPort = 0
+  CloudDriveSettings.OneDriveSettings.OAuth2.RefreshTokenLifeSpan = 365
   CloudDriveSettings.OneDriveSettings.DirectorySupport = True
+  CloudDriveSettings.OneDriveSettings.SharedResources = True
   Left = 128
   Top = 8
-  Version = '22.06'
+  Version = '23.02'
   mmColumnWidth = 165000
   DataPipelineName = 'Schueler'
   object ppDetailBand1: TppDetailBand
@@ -271,7 +283,6 @@ object RepOrt: TppReport
       object ppTableRow1: TppTableRow
         DesignLayer = ppDesignLayer1
         UserName = 'TableRow1'
-        Stretch = True
         mmHeight = 8000
         mmLeft = 0
         mmTop = 0
@@ -611,20 +622,20 @@ object RepOrt: TppReport
           mmPadding = 1000
         end
       end
-      object ppTableColumn1: TppTableColumn
-        UserName = 'TableColumn1'
+      object ppTableColumn2: TppTableColumn
+        UserName = 'TableColumn2'
         mmWidth = 42500
       end
-      object ppTableColumn5: TppTableColumn
-        UserName = 'TableColumn5'
+      object ppTableColumn3: TppTableColumn
+        UserName = 'TableColumn3'
         mmWidth = 42500
       end
-      object ppTableColumn7: TppTableColumn
-        UserName = 'TableColumn7'
+      object ppTableColumn4: TppTableColumn
+        UserName = 'TableColumn4'
         mmWidth = 42500
       end
-      object ppTableColumn8: TppTableColumn
-        UserName = 'TableColumn8'
+      object ppTableColumn6: TppTableColumn
+        UserName = 'TableColumn6'
         mmWidth = 42500
       end
     end
@@ -671,7 +682,7 @@ object RepOrt: TppReport
         PrinterSetup.PaperSize = 9
         Template.Format = ftASCII
         Units = utMillimeters
-        Version = '22.06'
+        Version = '23.02'
         mmColumnWidth = 42500
         DataPipelineName = 'ppSchuelerZP10'
         object ppColumnHeaderBand1: TppColumnHeaderBand
@@ -977,7 +988,6 @@ object RepOrt: TppReport
       object myCheckBox1: TmyCheckBox
         DesignLayer = ppDesignLayer1
         UserName = 'checkboxFreiwillig'
-        FormField = False
         BooleanFalse = 'False'
         BooleanTrue = 'True'
         CheckBoxColor = clBlack
@@ -1044,7 +1054,6 @@ object RepOrt: TppReport
         object myCheckBox2: TmyCheckBox
           DesignLayer = ppDesignLayer1
           UserName = 'checkboxPflicht'
-          FormField = False
           BooleanFalse = 'False'
           BooleanTrue = 'True'
           CheckBoxColor = clBlack
@@ -1335,7 +1344,6 @@ object RepOrt: TppReport
           UserName = 'checkboxKeineTeilnahme'
           CheckboxState = cbUnchecked
           Checked = False
-          FormField = False
           BooleanFalse = 'False'
           BooleanTrue = 'True'
           CheckBoxColor = clBlack
@@ -1404,7 +1412,6 @@ object RepOrt: TppReport
           UserName = 'checkboxTeilnahme'
           CheckboxState = cbUnchecked
           Checked = False
-          FormField = False
           BooleanFalse = 'False'
           BooleanTrue = 'True'
           CheckBoxColor = clBlack
@@ -2038,11 +2045,11 @@ object RepOrt: TppReport
     object ppParameter2: TppParameter
       AutoSearchSettings.LogicalPrefix = []
       AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = '45957'
+      AutoSearchSettings.SearchExpression = '46155'
       DataType = dtDate
       LookupSettings.DisplayType = dtNameOnly
       LookupSettings.SortOrder = soName
-      Value = 45957d
+      Value = 46155d
       UserName = 'Versionsdatum'
     end
   end
