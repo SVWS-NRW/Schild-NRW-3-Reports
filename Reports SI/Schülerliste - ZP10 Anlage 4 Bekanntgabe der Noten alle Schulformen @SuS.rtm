@@ -1103,7 +1103,7 @@ object RepOrt: TppReport
         DesignLayer = ppDesignLayer1
         UserName = 'DBOrtDatum'
         Border.mmPadding = 0
-        Caption = 'Ort, Datum'
+        Caption = 'Ort, Datumsauswahl'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Name = 'Calibri'
@@ -1114,8 +1114,8 @@ object RepOrt: TppReport
         Transparent = True
         mmHeight = 5027
         mmLeft = 0
-        mmTop = 40000
-        mmWidth = 19050
+        mmTop = 39952
+        mmWidth = 35190
         BandType = 5
         GroupNo = 0
         LayerName = Foreground
@@ -2045,11 +2045,11 @@ object RepOrt: TppReport
     object ppParameter2: TppParameter
       AutoSearchSettings.LogicalPrefix = []
       AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = '46155'
+      AutoSearchSettings.SearchExpression = '46211'
       DataType = dtDate
       LookupSettings.DisplayType = dtNameOnly
       LookupSettings.SortOrder = soName
-      Value = 46155d
+      Value = 46211d
       UserName = 'Versionsdatum'
     end
   end
