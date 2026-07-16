@@ -49,7 +49,7 @@ task copyReportsAllgemein(type: Copy) {
 
 task copyReportsLeistungsuebersichten(type: Copy) {
     into "$buildDir/output/Reports Leistungsübersichten"
-    from "Reports Allgemein"
+    from "Reports Leistungsübersichten"
 }
 
 task copyReportsPS(type: Copy) {
