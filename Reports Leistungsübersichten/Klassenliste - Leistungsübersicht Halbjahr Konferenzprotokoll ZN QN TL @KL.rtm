@@ -7,7 +7,7 @@ object RepOrt: TppReport
     'l ZN QN @KL.rtm'
   PrinterSetup.Duplex = dpNone
   PrinterSetup.Orientation = poLandscape
-  PrinterSetup.PaperName = 'A4'
+  PrinterSetup.PaperName = 'A4 210 x 297 mm'
   PrinterSetup.PrinterName = 'Default'
   PrinterSetup.SaveDeviceSettings = False
   PrinterSetup.mmMarginBottom = 10000
@@ -179,7 +179,7 @@ object RepOrt: TppReport
         PrinterSetup.DocumentName = 'Klassenliste - Leistungs'#252'bersicht eng.rtm'
         PrinterSetup.Duplex = dpNone
         PrinterSetup.Orientation = poLandscape
-        PrinterSetup.PaperName = 'A4'
+        PrinterSetup.PaperName = 'A4 210 x 297 mm'
         PrinterSetup.PrinterName = 'Default'
         PrinterSetup.SaveDeviceSettings = False
         PrinterSetup.mmMarginBottom = 0
@@ -256,7 +256,7 @@ object RepOrt: TppReport
         PrinterSetup.DocumentName = 'Klassenliste - Leistungs'#252'bersicht eng.rtm'
         PrinterSetup.Duplex = dpNone
         PrinterSetup.Orientation = poLandscape
-        PrinterSetup.PaperName = 'A4'
+        PrinterSetup.PaperName = 'A4 210 x 297 mm'
         PrinterSetup.PrinterName = 'Default'
         PrinterSetup.SaveDeviceSettings = False
         PrinterSetup.mmMarginBottom = 0
@@ -363,7 +363,7 @@ object RepOrt: TppReport
         PrinterSetup.DocumentName = 'Klassenliste - Leistungs'#252'bersicht.rtm'
         PrinterSetup.Duplex = dpNone
         PrinterSetup.Orientation = poLandscape
-        PrinterSetup.PaperName = 'A4'
+        PrinterSetup.PaperName = 'A4 210 x 297 mm'
         PrinterSetup.PrinterName = 'Default'
         PrinterSetup.SaveDeviceSettings = False
         PrinterSetup.mmMarginBottom = 0
@@ -546,7 +546,7 @@ object RepOrt: TppReport
               PrinterSetup.DocumentName = 'Klassenliste - Leistungs'#252'bersicht.rtm'
               PrinterSetup.Duplex = dpNone
               PrinterSetup.Orientation = poLandscape
-              PrinterSetup.PaperName = 'A4'
+              PrinterSetup.PaperName = 'A4 210 x 297 mm'
               PrinterSetup.PrinterName = 'Default'
               PrinterSetup.SaveDeviceSettings = False
               PrinterSetup.mmMarginBottom = 0
@@ -673,7 +673,7 @@ object RepOrt: TppReport
                       'l ZN QN @KL.rtm'
                     PrinterSetup.Duplex = dpNone
                     PrinterSetup.Orientation = poLandscape
-                    PrinterSetup.PaperName = 'A4'
+                    PrinterSetup.PaperName = 'A4 210 x 297 mm'
                     PrinterSetup.PrinterName = 'Default'
                     PrinterSetup.SaveDeviceSettings = False
                     PrinterSetup.mmMarginBottom = 0
@@ -1451,7 +1451,7 @@ object RepOrt: TppReport
               PrinterSetup.DocumentName = 'Klassenliste - Leistungs'#252'bersicht eng.rtm'
               PrinterSetup.Duplex = dpNone
               PrinterSetup.Orientation = poLandscape
-              PrinterSetup.PaperName = 'A4'
+              PrinterSetup.PaperName = 'A4 210 x 297 mm'
               PrinterSetup.PrinterName = 'Default'
               PrinterSetup.SaveDeviceSettings = False
               PrinterSetup.mmMarginBottom = 0

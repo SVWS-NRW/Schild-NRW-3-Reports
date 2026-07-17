@@ -16,7 +16,7 @@ object RepOrt: TppReport
   PrinterSetup.mmMarginTop = 5000
   PrinterSetup.mmPaperHeight = 168000
   PrinterSetup.mmPaperWidth = 300000
-  PrinterSetup.PaperSize = 207
+  PrinterSetup.PaperSize = 256
   SaveAsTemplate = True
   Template.FileName = 
     'C:\Users\ra\OneDrive - neg-velbert.de\Programme\SVWS-Arbeitsverz' +
@@ -184,7 +184,7 @@ object RepOrt: TppReport
         PrinterSetup.mmMarginTop = 0
         PrinterSetup.mmPaperHeight = 168000
         PrinterSetup.mmPaperWidth = 300000
-        PrinterSetup.PaperSize = 207
+        PrinterSetup.PaperSize = 256
         Template.Format = ftASCII
         Units = utMillimeters
         Version = '23.02'
@@ -252,7 +252,7 @@ object RepOrt: TppReport
         PrinterSetup.DocumentName = 'Klassenliste - Leistungs'#252'bersicht eng.rtm'
         PrinterSetup.Duplex = dpNone
         PrinterSetup.Orientation = poLandscape
-        PrinterSetup.PaperName = 'A4'
+        PrinterSetup.PaperName = 'A4 210 x 297 mm'
         PrinterSetup.PrinterName = 'Default'
         PrinterSetup.SaveDeviceSettings = False
         PrinterSetup.mmMarginBottom = 0
@@ -368,7 +368,7 @@ object RepOrt: TppReport
         PrinterSetup.mmMarginTop = 0
         PrinterSetup.mmPaperHeight = 168000
         PrinterSetup.mmPaperWidth = 98000
-        PrinterSetup.PaperSize = 207
+        PrinterSetup.PaperSize = 256
         Template.Format = ftASCII
         Units = utMillimeters
         Version = '23.02'
@@ -416,7 +416,7 @@ object RepOrt: TppReport
               PrinterSetup.mmMarginTop = 0
               PrinterSetup.mmPaperHeight = 168000
               PrinterSetup.mmPaperWidth = 98000
-              PrinterSetup.PaperSize = 207
+              PrinterSetup.PaperSize = 256
               Template.Format = ftASCII
               Units = utMillimeters
               Version = '23.02'
@@ -940,7 +940,7 @@ object RepOrt: TppReport
               PrinterSetup.DocumentName = 'Klassenliste - Leistungs'#252'bersicht eng.rtm'
               PrinterSetup.Duplex = dpNone
               PrinterSetup.Orientation = poLandscape
-              PrinterSetup.PaperName = 'A4'
+              PrinterSetup.PaperName = 'A4 210 x 297 mm'
               PrinterSetup.PrinterName = 'Default'
               PrinterSetup.SaveDeviceSettings = False
               PrinterSetup.mmMarginBottom = 0
