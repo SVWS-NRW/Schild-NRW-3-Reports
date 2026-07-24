@@ -4,7 +4,7 @@ object RepOrt: TppReport
   PrinterSetup.BinName = 'Default'
   PrinterSetup.DocumentName = 'Sch'#252'lerliste - Klasse Vermerke.rtm'
   PrinterSetup.Duplex = dpNone
-  PrinterSetup.PaperName = 'A4 210 x 297 mm'
+  PrinterSetup.PaperName = 'A4'
   PrinterSetup.PrinterName = 'Default'
   PrinterSetup.SaveDeviceSettings = False
   PrinterSetup.mmMarginBottom = 15000
@@ -16,9 +16,9 @@ object RepOrt: TppReport
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
   Template.FileName = 
-    '\\neghost\Gemeinsame Dateien\SVWS-Arbeitsverzeichnis\SchILD-Repo' +
-    'rts\Reportsammlung 3.0\Basisreports\Sch'#252'lerliste - Klasse Vermer' +
-    'ke.rtm'
+    'C:\Users\ra\OneDrive - neg-velbert.de\Programme\SVWS-Arbeitsverz' +
+    'eichnis\SchILD-Reports\Schild-NRW-3-Reports\Reports Allgemein\Sc' +
+    'h'#252'lerliste - Klasse Vermerke.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -31,10 +31,13 @@ object RepOrt: TppReport
   EmailSettings.ConnectionSettings.WebMail.GmailSettings.OAuth2.AuthStorage = [oasAccessToken, oasRefreshToken]
   EmailSettings.ConnectionSettings.WebMail.GmailSettings.OAuth2.RedirectURI = 'http://localhost'
   EmailSettings.ConnectionSettings.WebMail.GmailSettings.OAuth2.RedirectPort = 0
+  EmailSettings.ConnectionSettings.WebMail.GmailSettings.OAuth2.RefreshTokenLifeSpan = 365
   EmailSettings.ConnectionSettings.WebMail.Outlook365Settings.OAuth2.AuthStorage = [oasAccessToken, oasRefreshToken]
   EmailSettings.ConnectionSettings.WebMail.Outlook365Settings.OAuth2.RedirectURI = 'http://localhost'
   EmailSettings.ConnectionSettings.WebMail.Outlook365Settings.OAuth2.RedirectPort = 0
+  EmailSettings.ConnectionSettings.WebMail.Outlook365Settings.OAuth2.RefreshTokenLifeSpan = 365
   EmailSettings.ConnectionSettings.EnableMultiPlugin = False
+  EmailSettings.ConnectionSettings.ConnectionStatusInfo = [csiStatusBar]
   EmailSettings.DeleteFile = False
   EmailSettings.Enabled = True
   EmailSettings.PreviewInEmailClient = False
@@ -91,6 +94,8 @@ object RepOrt: TppReport
   PDFSettings.FontEncoding = feUnicode
   PDFSettings.ImageCompressionLevel = 1
   PDFSettings.PDFAFormat = pafNone
+  PDFSettings.Layers = False
+  PDFSettings.Outline = False
   PreviewFormSettings.PageBorder.mmPadding = 0
   PreviewFormSettings.SinglePageOnly = True
   PreviewFormSettings.ZoomSetting = zs100Percent
@@ -113,18 +118,24 @@ object RepOrt: TppReport
   CloudDriveSettings.DropBoxSettings.OAuth2.AuthStorage = [oasAccessToken, oasRefreshToken]
   CloudDriveSettings.DropBoxSettings.OAuth2.RedirectURI = 'http://localhost'
   CloudDriveSettings.DropBoxSettings.OAuth2.RedirectPort = 0
+  CloudDriveSettings.DropBoxSettings.OAuth2.RefreshTokenLifeSpan = 365
   CloudDriveSettings.DropBoxSettings.DirectorySupport = True
+  CloudDriveSettings.DropBoxSettings.SharedResources = True
   CloudDriveSettings.GoogleDriveSettings.OAuth2.AuthStorage = [oasAccessToken, oasRefreshToken]
   CloudDriveSettings.GoogleDriveSettings.OAuth2.RedirectURI = 'http://localhost'
   CloudDriveSettings.GoogleDriveSettings.OAuth2.RedirectPort = 0
+  CloudDriveSettings.GoogleDriveSettings.OAuth2.RefreshTokenLifeSpan = 365
   CloudDriveSettings.GoogleDriveSettings.DirectorySupport = False
+  CloudDriveSettings.GoogleDriveSettings.SharedResources = False
   CloudDriveSettings.OneDriveSettings.OAuth2.AuthStorage = [oasAccessToken, oasRefreshToken]
   CloudDriveSettings.OneDriveSettings.OAuth2.RedirectURI = 'http://localhost'
   CloudDriveSettings.OneDriveSettings.OAuth2.RedirectPort = 0
+  CloudDriveSettings.OneDriveSettings.OAuth2.RefreshTokenLifeSpan = 365
   CloudDriveSettings.OneDriveSettings.DirectorySupport = True
+  CloudDriveSettings.OneDriveSettings.SharedResources = True
   Left = 128
   Top = 8
-  Version = '22.06'
+  Version = '23.02'
   mmColumnWidth = 165000
   DataPipelineName = 'Schueler'
   object ppTitleBand1: TppTitleBand
@@ -366,7 +377,7 @@ object RepOrt: TppReport
     Border.mmPadding = 0
     PrintHeight = phDynamic
     mmBottomOffset = 0
-    mmHeight = 5292
+    mmHeight = 5200
     mmPrintPosition = 0
     object ppRegion1: TppRegion
       DesignLayer = ppDesignLayer1
@@ -461,6 +472,54 @@ object RepOrt: TppReport
         BandType = 4
         LayerName = Foreground
       end
+      object ppDBText3: TppDBText
+        DesignLayer = ppDesignLayer1
+        UserName = 'dbKlasse'
+        Border.mmPadding = 0
+        DataField = 'Klasse'
+        DataPipeline = dmPipelines.Schueler
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'Calibri'
+        Font.Size = 11
+        Font.Style = []
+        TextAlignment = taCentered
+        Transparent = True
+        DataPipelineName = 'Schueler'
+        mmHeight = 5200
+        mmLeft = 11000
+        mmTop = 0
+        mmWidth = 13000
+        BandType = 4
+        LayerName = Foreground
+      end
+      object ppDBRichText1: TppDBRichText
+        DesignLayer = ppDesignLayer1
+        UserName = 'dbNameAlleVornamen'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clBlack
+        Font.Name = 'Calibri'
+        Font.Size = 11
+        Font.Style = []
+        Border.mmPadding = 0
+        ExportRTFAsBitmap = False
+        DataField = 'NameAlleVornamen'
+        DataPipeline = dmPipelines.Schueler
+        RemoveEmptyLines = False
+        Stretch = True
+        Transparent = True
+        DataPipelineName = 'Schueler'
+        mmHeight = 5200
+        mmLeft = 26000
+        mmTop = 0
+        mmWidth = 58000
+        BandType = 4
+        LayerName = Foreground
+        mmBottomOffset = 0
+        mmOverFlowOffset = 0
+        mmStopPosition = 0
+        mmMinHeight = 0
+      end
       object ppSubReport1: TppSubReport
         DesignLayer = ppDesignLayer1
         UserName = 'Unterbericht'
@@ -486,7 +545,7 @@ object RepOrt: TppReport
           PrinterSetup.BinName = 'Default'
           PrinterSetup.DocumentName = 'Sch'#252'lerliste - Klasse Vermerke.rtm'
           PrinterSetup.Duplex = dpNone
-          PrinterSetup.PaperName = 'A4 210 x 297 mm'
+          PrinterSetup.PaperName = 'A4'
           PrinterSetup.PrinterName = 'Default'
           PrinterSetup.SaveDeviceSettings = False
           PrinterSetup.mmMarginBottom = 15000
@@ -498,7 +557,7 @@ object RepOrt: TppReport
           PrinterSetup.PaperSize = 9
           Template.Format = ftASCII
           Units = utMillimeters
-          Version = '22.06'
+          Version = '23.02'
           mmColumnWidth = 0
           DataPipelineName = 'plVermerke'
           object ppDetailBand2: TppDetailBand
@@ -590,61 +649,6 @@ object RepOrt: TppReport
           end
         end
       end
-      object ppDBMemo3: TppDBMemo
-        DesignLayer = ppDesignLayer1
-        UserName = 'dbKlasse'
-        Border.mmPadding = 0
-        CharWrap = False
-        DataField = 'Klasse'
-        DataPipeline = dmPipelines.Schueler
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Name = 'Calibri'
-        Font.Size = 11
-        Font.Style = []
-        RemoveEmptyLines = False
-        Stretch = True
-        Transparent = True
-        DataPipelineName = 'Schueler'
-        mmHeight = 5200
-        mmLeft = 11000
-        mmTop = 0
-        mmWidth = 13000
-        BandType = 4
-        LayerName = Foreground
-        mmBottomOffset = 0
-        mmOverFlowOffset = 0
-        mmStopPosition = 0
-        mmMinHeight = 0
-        mmLeading = 0
-      end
-      object ppDBMemo1: TppDBMemo
-        DesignLayer = ppDesignLayer1
-        UserName = 'dbNameVorname'
-        Border.mmPadding = 0
-        CharWrap = False
-        DataField = 'NameAlleVornamen'
-        DataPipeline = dmPipelines.Schueler
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Name = 'Calibri'
-        Font.Size = 11
-        Font.Style = []
-        RemoveEmptyLines = False
-        Transparent = True
-        DataPipelineName = 'Schueler'
-        mmHeight = 5200
-        mmLeft = 26000
-        mmTop = 0
-        mmWidth = 58000
-        BandType = 4
-        LayerName = Foreground
-        mmBottomOffset = 0
-        mmOverFlowOffset = 0
-        mmStopPosition = 0
-        mmMinHeight = 0
-        mmLeading = 0
-      end
     end
   end
   object ppFooterBand1: TppFooterBand
@@ -722,6 +726,33 @@ object RepOrt: TppReport
       LayerName = Foreground
     end
   end
+  object raCodeModule1: TraCodeModule
+    ProgramStream = {
+      01060A54726150726F6772616D094368696C645479706502150E497346756E63
+      74696F6E54797065090B50726F6772616D4E616D6506105275666E616D654D61
+      726B696572656E0B50726F6772616D54797065070A747446756E6374696F6E06
+      536F757263650C2901000066756E6374696F6E205275666E616D654D61726B69
+      6572656E286E616D653A737472696E67293A737472696E673B0D0A7661720D0A
+      20207275666E616D653A737472696E673B0D0A626567696E0D0A202020207275
+      666E616D65203A3D205265706F72742E44617461506970656C696E655B275275
+      666E616D65275D3B0D0A202020206966205265706F72742E4461746150697065
+      6C696E655B27416C6C65566F726E616D656E275D203C3E207275666E616D6520
+      7468656E0D0A202020202020526573756C74203A3D205265706C616365546578
+      74286E616D652C207275666E616D652C20277B5C622027202B207275666E616D
+      65202B20275C62307D27290D0A20202020656C73650D0A202020202020526573
+      756C74203A3D206E616D653B0D0A656E643B0D0A084361726574506F73010205
+      020A000001060F5472614576656E7448616E646C65720B50726F6772616D4E61
+      6D65061F64624E616D65416C6C65566F726E616D656E4F6E4765745269636854
+      6578740B50726F6772616D54797065070B747450726F63656475726506536F75
+      72636506A070726F6365647572652064624E616D65416C6C65566F726E616D65
+      6E4F6E47657452696368546578742876617220546578743A20537472696E6729
+      3B0D0A626567696E0D0A0D0A202064624E616D65416C6C65566F726E616D656E
+      2E5269636854657874203A3D205275666E616D654D61726B696572656E286462
+      4E616D65416C6C65566F726E616D656E2E5269636854657874293B0D0A0D0A65
+      6E643B0D0A0D436F6D706F6E656E744E616D65061264624E616D65416C6C6556
+      6F726E616D656E094576656E744E616D65060D4F6E4765745269636854657874
+      074576656E7449440235084361726574506F730102150204000000}
+  end
   object ppDesignLayers1: TppDesignLayers
     object ppDesignLayer1: TppDesignLayer
       UserName = 'Foreground'
@@ -756,11 +787,11 @@ object RepOrt: TppReport
     object ppParameter2: TppParameter
       AutoSearchSettings.LogicalPrefix = []
       AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = '45957'
+      AutoSearchSettings.SearchExpression = '46220'
       DataType = dtDate
       LookupSettings.DisplayType = dtNameOnly
       LookupSettings.SortOrder = soName
-      Value = 45957d
+      Value = 46220d
       UserName = 'Versionsdatum'
     end
   end
