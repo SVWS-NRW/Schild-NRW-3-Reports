@@ -17,10 +17,8 @@ object RepOrt: TppReport
   PrinterSetup.mmPaperWidth = 210000
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
-  Template.FileName = 
-    'C:\Users\jraff\OneDrive - neg-velbert.de\Programme\SVWS-Arbeitsv' +
-    'erzeichnis\SchILD-Reports\Reportsammlung 3.0\Basisreports\Kurs'#252'b' +
-    'ersicht - Jahrgang Kursart Lehrkraft Sch'#252'lerzahl Klassen.rtm'
+  Template.FileName =
+    'C:\Users\ra\OneDrive - neg-velbert.de\Programme\SVWS-Arbeitsverzeichnis\SchILD-Reports\Schild-NRW-3-Reports\Reports Allgemein\Kurs''#252''bersicht - Jahrgang Kursart Lehrkraft Sch''#252''lerzahl Klassen.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
