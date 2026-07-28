@@ -7,7 +7,7 @@ object RepOrt: TppReport
     'l ZN QN @KL.rtm'
   PrinterSetup.Duplex = dpNone
   PrinterSetup.Orientation = poLandscape
-  PrinterSetup.PaperName = 'A4 210 x 297 mm'
+  PrinterSetup.PaperName = 'A4'
   PrinterSetup.PrinterName = 'Default'
   PrinterSetup.SaveDeviceSettings = False
   PrinterSetup.mmMarginBottom = 10000
@@ -179,7 +179,7 @@ object RepOrt: TppReport
         PrinterSetup.DocumentName = 'Klassenliste - Leistungs'#252'bersicht eng.rtm'
         PrinterSetup.Duplex = dpNone
         PrinterSetup.Orientation = poLandscape
-        PrinterSetup.PaperName = 'A4 210 x 297 mm'
+        PrinterSetup.PaperName = 'A4'
         PrinterSetup.PrinterName = 'Default'
         PrinterSetup.SaveDeviceSettings = False
         PrinterSetup.mmMarginBottom = 0
@@ -256,7 +256,7 @@ object RepOrt: TppReport
         PrinterSetup.DocumentName = 'Klassenliste - Leistungs'#252'bersicht eng.rtm'
         PrinterSetup.Duplex = dpNone
         PrinterSetup.Orientation = poLandscape
-        PrinterSetup.PaperName = 'A4 210 x 297 mm'
+        PrinterSetup.PaperName = 'A4'
         PrinterSetup.PrinterName = 'Default'
         PrinterSetup.SaveDeviceSettings = False
         PrinterSetup.mmMarginBottom = 0
@@ -363,7 +363,7 @@ object RepOrt: TppReport
         PrinterSetup.DocumentName = 'Klassenliste - Leistungs'#252'bersicht.rtm'
         PrinterSetup.Duplex = dpNone
         PrinterSetup.Orientation = poLandscape
-        PrinterSetup.PaperName = 'A4 210 x 297 mm'
+        PrinterSetup.PaperName = 'A4'
         PrinterSetup.PrinterName = 'Default'
         PrinterSetup.SaveDeviceSettings = False
         PrinterSetup.mmMarginBottom = 0
@@ -546,7 +546,7 @@ object RepOrt: TppReport
               PrinterSetup.DocumentName = 'Klassenliste - Leistungs'#252'bersicht.rtm'
               PrinterSetup.Duplex = dpNone
               PrinterSetup.Orientation = poLandscape
-              PrinterSetup.PaperName = 'A4 210 x 297 mm'
+              PrinterSetup.PaperName = 'A4'
               PrinterSetup.PrinterName = 'Default'
               PrinterSetup.SaveDeviceSettings = False
               PrinterSetup.mmMarginBottom = 0
@@ -1052,7 +1052,7 @@ object RepOrt: TppReport
               PrinterSetup.DocumentName = 'Klassenliste - Leistungs'#252'bersicht eng.rtm'
               PrinterSetup.Duplex = dpNone
               PrinterSetup.Orientation = poLandscape
-              PrinterSetup.PaperName = 'A4 210 x 297 mm'
+              PrinterSetup.PaperName = 'A4'
               PrinterSetup.PrinterName = 'Default'
               PrinterSetup.SaveDeviceSettings = False
               PrinterSetup.mmMarginBottom = 0
@@ -3321,17 +3321,17 @@ object RepOrt: TppReport
       6E7449440220084361726574506F7301021D0208000001060F5472614576656E
       7448616E646C65720B50726F6772616D4E616D65060D64625A5031304F6E5072
       696E740B50726F6772616D54797065070B747450726F63656475726506536F75
-      7263650C0701000070726F6365647572652064625A5031304F6E5072696E743B
-      0D0A626567696E0D0A20200D0A20202F2F4D656D6F66656C64206C656572656E
-      0D0A202064625A5031302E4C696E65732E436C6561723B0D0A0D0A20202F2F45
-      726765626E6973736520646572205A50313020617573676562656E0D0A202069
-      662074736C5A5031302E436F756E74203E2030207468656E20626567696E0D0A
-      2020202064625A5031302E4C696E65732E41646428275765636873656C206465
-      72204C65697374756E67736562656E653A27293B0D0A2020202064625A503130
-      2E4C696E65732E416464537472696E67732874736C5A503130293B0D0A202065
-      6E643B0D0A20200D0A656E643B0D0A0D436F6D706F6E656E744E616D65060664
-      625A503130094576656E744E616D6506074F6E5072696E74074576656E744944
-      0220084361726574506F73010203020C000000}
+      72636506FC70726F6365647572652064625A5031304F6E5072696E743B0D0A62
+      6567696E0D0A20200D0A20202F2F4D656D6F66656C64206C656572656E0D0A20
+      2064625A5031302E4C696E65732E436C6561723B0D0A0D0A20202F2F45726765
+      626E6973736520646572205A50313020617573676562656E0D0A202069662074
+      736C5A5031302E436F756E74203E2030207468656E20626567696E0D0A202020
+      2064625A5031302E4C696E65732E416464282745726765626E69737365205A50
+      31303A27293B0D0A2020202064625A5031302E4C696E65732E41646453747269
+      6E67732874736C5A503130293B0D0A2020656E643B0D0A20200D0A656E643B0D
+      0A0D436F6D706F6E656E744E616D65060664625A503130094576656E744E616D
+      6506074F6E5072696E74074576656E7449440220084361726574506F73010203
+      020C000000}
   end
   object ppDesignLayers1: TppDesignLayers
     object ppDesignLayer1: TppDesignLayer
@@ -3367,11 +3367,11 @@ object RepOrt: TppReport
     object ppParameter2: TppParameter
       AutoSearchSettings.LogicalPrefix = []
       AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = '46220'
+      AutoSearchSettings.SearchExpression = '46231'
       DataType = dtDate
       LookupSettings.DisplayType = dtNameOnly
       LookupSettings.SortOrder = soName
-      Value = 46220d
+      Value = 46231d
       UserName = 'Versionsdatum'
     end
     object ppParameter3: TppParameter
