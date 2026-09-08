@@ -20,9 +20,10 @@ object RepOrt: TppReport
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
   Template.FileName = 
-    '\\neghost\Gemeinsame Dateien\SVWS-Arbeitsverzeichnis\SchILD-Repo' +
-    'rts\Reportsammlung 3.0\Basisreports\Sch'#252'lerliste - KAoA-Anlage 1' +
-    '1 - Teilnehmerliste Potenzialanalyse eint'#228'gig.rtm'
+    'C:\Users\ra\OneDrive - neg-velbert.de\Programme\SVWS-Arbeitsverz' +
+    'eichnis\SchILD-Reports\Schild-NRW-3-Reports\Reports Allgemein\Sc' +
+    'h'#252'lerliste - KAoA-Anlage 11 - Teilnehmerliste Potenzialanalyse e' +
+    'int'#228'gig.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
@@ -35,10 +36,13 @@ object RepOrt: TppReport
   EmailSettings.ConnectionSettings.WebMail.GmailSettings.OAuth2.AuthStorage = [oasAccessToken, oasRefreshToken]
   EmailSettings.ConnectionSettings.WebMail.GmailSettings.OAuth2.RedirectURI = 'http://localhost'
   EmailSettings.ConnectionSettings.WebMail.GmailSettings.OAuth2.RedirectPort = 0
+  EmailSettings.ConnectionSettings.WebMail.GmailSettings.OAuth2.RefreshTokenLifeSpan = 365
   EmailSettings.ConnectionSettings.WebMail.Outlook365Settings.OAuth2.AuthStorage = [oasAccessToken, oasRefreshToken]
   EmailSettings.ConnectionSettings.WebMail.Outlook365Settings.OAuth2.RedirectURI = 'http://localhost'
   EmailSettings.ConnectionSettings.WebMail.Outlook365Settings.OAuth2.RedirectPort = 0
+  EmailSettings.ConnectionSettings.WebMail.Outlook365Settings.OAuth2.RefreshTokenLifeSpan = 365
   EmailSettings.ConnectionSettings.EnableMultiPlugin = False
+  EmailSettings.ConnectionSettings.ConnectionStatusInfo = [csiStatusBar]
   EmailSettings.DeleteFile = False
   EmailSettings.Enabled = True
   EmailSettings.PreviewInEmailClient = False
@@ -95,6 +99,8 @@ object RepOrt: TppReport
   PDFSettings.FontEncoding = feUnicode
   PDFSettings.ImageCompressionLevel = 25
   PDFSettings.PDFAFormat = pafNone
+  PDFSettings.Layers = False
+  PDFSettings.Outline = False
   PreviewFormSettings.PageBorder.mmPadding = 0
   PreviewFormSettings.SinglePageOnly = True
   PreviewFormSettings.ZoomSetting = zs100Percent
@@ -117,18 +123,24 @@ object RepOrt: TppReport
   CloudDriveSettings.DropBoxSettings.OAuth2.AuthStorage = [oasAccessToken, oasRefreshToken]
   CloudDriveSettings.DropBoxSettings.OAuth2.RedirectURI = 'http://localhost'
   CloudDriveSettings.DropBoxSettings.OAuth2.RedirectPort = 0
+  CloudDriveSettings.DropBoxSettings.OAuth2.RefreshTokenLifeSpan = 365
   CloudDriveSettings.DropBoxSettings.DirectorySupport = True
+  CloudDriveSettings.DropBoxSettings.SharedResources = True
   CloudDriveSettings.GoogleDriveSettings.OAuth2.AuthStorage = [oasAccessToken, oasRefreshToken]
   CloudDriveSettings.GoogleDriveSettings.OAuth2.RedirectURI = 'http://localhost'
   CloudDriveSettings.GoogleDriveSettings.OAuth2.RedirectPort = 0
+  CloudDriveSettings.GoogleDriveSettings.OAuth2.RefreshTokenLifeSpan = 365
   CloudDriveSettings.GoogleDriveSettings.DirectorySupport = False
+  CloudDriveSettings.GoogleDriveSettings.SharedResources = False
   CloudDriveSettings.OneDriveSettings.OAuth2.AuthStorage = [oasAccessToken, oasRefreshToken]
   CloudDriveSettings.OneDriveSettings.OAuth2.RedirectURI = 'http://localhost'
   CloudDriveSettings.OneDriveSettings.OAuth2.RedirectPort = 0
+  CloudDriveSettings.OneDriveSettings.OAuth2.RefreshTokenLifeSpan = 365
   CloudDriveSettings.OneDriveSettings.DirectorySupport = True
+  CloudDriveSettings.OneDriveSettings.SharedResources = True
   Left = 128
   Top = 8
-  Version = '22.06'
+  Version = '23.02'
   mmColumnWidth = 267000
   DataPipelineName = 'Schueler'
   object ppHeaderBand1: TppHeaderBand
@@ -148,12 +160,11 @@ object RepOrt: TppReport
       Font.Style = []
       FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
       FormFieldSettings.FormFieldType = fftNone
-      TextAlignment = taRightJustified
       Transparent = True
       mmHeight = 3969
-      mmLeft = 265
+      mmLeft = 1003
       mmTop = 1852
-      mmWidth = 39423
+      mmWidth = 38768
       BandType = 0
       LayerName = Foreground
     end
@@ -530,44 +541,44 @@ object RepOrt: TppReport
           end
         end
       end
-      object ppTableColumn4: TppTableColumn
-        UserName = 'TableColumn4'
+      object ppTableColumn1: TppTableColumn
+        UserName = 'TableColumn1'
         mmWidth = 20638
       end
-      object ppTableColumn5: TppTableColumn
-        UserName = 'TableColumn5'
+      object ppTableColumn2: TppTableColumn
+        UserName = 'TableColumn2'
         mmWidth = 15346
       end
-      object ppTableColumn21: TppTableColumn
-        UserName = 'TableColumn21'
+      object ppTableColumn3: TppTableColumn
+        UserName = 'TableColumn3'
         mmWidth = 23548
       end
-      object ppTableColumn22: TppTableColumn
-        UserName = 'TableColumn22'
+      object ppTableColumn6: TppTableColumn
+        UserName = 'TableColumn6'
         mmWidth = 20638
       end
-      object ppTableColumn23: TppTableColumn
-        UserName = 'TableColumn23'
+      object ppTableColumn7: TppTableColumn
+        UserName = 'TableColumn7'
         mmWidth = 23019
       end
-      object ppTableColumn24: TppTableColumn
-        UserName = 'TableColumn24'
+      object ppTableColumn8: TppTableColumn
+        UserName = 'TableColumn8'
         mmWidth = 70115
       end
-      object ppTableColumn25: TppTableColumn
-        UserName = 'TableColumn25'
+      object ppTableColumn9: TppTableColumn
+        UserName = 'TableColumn9'
         mmWidth = 33602
       end
-      object ppTableColumn26: TppTableColumn
-        UserName = 'TableColumn101'
+      object ppTableColumn10: TppTableColumn
+        UserName = 'TableColumn10'
         mmWidth = 19844
       end
-      object ppTableColumn27: TppTableColumn
-        UserName = 'TableColumn27'
+      object ppTableColumn11: TppTableColumn
+        UserName = 'TableColumn11'
         mmWidth = 22754
       end
-      object ppTableColumn28: TppTableColumn
-        UserName = 'TableColumn28'
+      object ppTableColumn12: TppTableColumn
+        UserName = 'TableColumn12'
         mmWidth = 15610
       end
     end
@@ -627,7 +638,7 @@ object RepOrt: TppReport
             Anchors = [atLeft, atRight]
             AutoSize = False
             Border.mmPadding = 0
-            Caption = 'Teilnahmebeleg zum BO-Instrument:'
+            Caption = 'Teilnehmerbeleg zum BO-Instrument:'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clBlack
             Font.Name = 'Calibri'
@@ -673,7 +684,7 @@ object RepOrt: TppReport
             Anchors = [atLeft, atRight]
             AutoSize = False
             Border.mmPadding = 0
-            Caption = 'Potenzialanalyse'
+            Caption = '"Potenziale entdecken"'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clBlack
             Font.Name = 'Calibri'
@@ -717,6 +728,7 @@ object RepOrt: TppReport
             AlignHorizontal = ahCenter
             AlignVertical = avCenter
             MaintainAspectRatio = True
+            RotationAngle = 0
             Stretch = True
             Anchors = [atLeft, atRight]
             Border.mmPadding = 0
@@ -1430,9 +1442,8 @@ object RepOrt: TppReport
             AutoSize = False
             Border.mmPadding = 0
             Caption = 
-              'Gef'#246'rdert mit Mitteln des Landes Nordrhein-Westfalen, der Region' +
-              'aldirektion Nordrhein-Westfalen der Bundesagentur f'#252'r Arbeit und' +
-              ' des Bundesministeriums f'#252'r Bildung und Forschung'
+              'Mit finanzieller Unterst'#252'tzung des Landes Nordrhein-Westfalen, d' +
+              'er Europ'#228'ischen Union und der Bundesagentur f'#252'r Arbeit.'
             Font.Charset = DEFAULT_CHARSET
             Font.Color = clBlack
             Font.Name = 'Calibri'
@@ -1452,20 +1463,20 @@ object RepOrt: TppReport
           end
         end
       end
-      object ppTableColumn29: TppTableColumn
-        UserName = 'TableColumn29'
+      object ppTableColumn13: TppTableColumn
+        UserName = 'TableColumn13'
         mmWidth = 44450
       end
-      object ppTableColumn30: TppTableColumn
-        UserName = 'TableColumn30'
+      object ppTableColumn14: TppTableColumn
+        UserName = 'TableColumn301'
         mmWidth = 40217
       end
-      object ppTableColumn31: TppTableColumn
-        UserName = 'TableColumn31'
+      object ppTableColumn15: TppTableColumn
+        UserName = 'TableColumn15'
         mmWidth = 31750
       end
-      object ppTableColumn32: TppTableColumn
-        UserName = 'TableColumn32'
+      object ppTableColumn16: TppTableColumn
+        UserName = 'TableColumn16'
         mmWidth = 148696
       end
     end
@@ -1697,26 +1708,47 @@ object RepOrt: TppReport
           end
         end
       end
-      object ppTableColumn33: TppTableColumn
-        UserName = 'TableColumn33'
+      object ppTableColumn17: TppTableColumn
+        UserName = 'TableColumn17'
         mmWidth = 7955
       end
-      object ppTableColumn34: TppTableColumn
-        UserName = 'TableColumn34'
+      object ppTableColumn18: TppTableColumn
+        UserName = 'TableColumn18'
         mmWidth = 135010
       end
-      object ppTableColumn35: TppTableColumn
-        UserName = 'TableColumn35'
+      object ppTableColumn19: TppTableColumn
+        UserName = 'TableColumn19'
         mmWidth = 25010
       end
-      object ppTableColumn36: TppTableColumn
-        UserName = 'TableColumn201'
+      object ppTableColumn20: TppTableColumn
+        UserName = 'TableColumn20'
         mmWidth = 7161
       end
-      object ppTableColumn37: TppTableColumn
-        UserName = 'TableColumn37'
+      object ppTableColumn39: TppTableColumn
+        UserName = 'TableColumn39'
         mmWidth = 89976
       end
+    end
+    object ppLabel15: TppLabel
+      DesignLayer = ppDesignLayer1
+      UserName = 'Label15'
+      Border.mmPadding = 0
+      Caption = 'V30'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Name = 'Calibri'
+      Font.Size = 10
+      Font.Style = []
+      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
+      FormFieldSettings.FormFieldType = fftNone
+      TextAlignment = taRightJustified
+      Transparent = True
+      mmHeight = 3969
+      mmLeft = 258234
+      mmTop = 1852
+      mmWidth = 5556
+      BandType = 0
+      LayerName = Foreground
     end
   end
   object ppDetailBand1: TppDetailBand
@@ -1920,24 +1952,24 @@ object RepOrt: TppReport
           mmPadding = 1058
         end
       end
-      object ppTableColumn38: TppTableColumn
-        UserName = 'TableColumn401'
+      object ppTableColumn40: TppTableColumn
+        UserName = 'TableColumn40'
         mmWidth = 7955
       end
-      object ppTableColumn41: TppTableColumn
-        UserName = 'TableColumn41'
+      object ppTableColumn45: TppTableColumn
+        UserName = 'TableColumn45'
         mmWidth = 135010
       end
-      object ppTableColumn42: TppTableColumn
-        UserName = 'TableColumn42'
+      object ppTableColumn46: TppTableColumn
+        UserName = 'TableColumn46'
         mmWidth = 25010
       end
-      object ppTableColumn43: TppTableColumn
-        UserName = 'TableColumn43'
+      object ppTableColumn47: TppTableColumn
+        UserName = 'TableColumn47'
         mmWidth = 7161
       end
-      object ppTableColumn44: TppTableColumn
-        UserName = 'TableColumn44'
+      object ppTableColumn48: TppTableColumn
+        UserName = 'TableColumn48'
         mmWidth = 89976
       end
     end
@@ -1951,7 +1983,7 @@ object RepOrt: TppReport
       DesignLayer = ppDesignLayer1
       UserName = 'Beobachter'
       Border.mmPadding = 0
-      Caption = 'Beobachter/innen:'
+      Caption = 'P'#228'dagogische Begleitperson/en:'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clBlack
       Font.Name = 'Calibri'
@@ -1963,7 +1995,7 @@ object RepOrt: TppReport
       mmHeight = 3969
       mmLeft = 0
       mmTop = 0
-      mmWidth = 26723
+      mmWidth = 46302
       BandType = 8
       LayerName = Foreground
     end
@@ -2303,366 +2335,17 @@ object RepOrt: TppReport
           mmPadding = 1058
         end
       end
-      object ppTableColumn55: TppTableColumn
-        UserName = 'TableColumn55'
+      object ppTableColumn49: TppTableColumn
+        UserName = 'TableColumn49'
         mmWidth = 8064
       end
-      object ppTableColumn56: TppTableColumn
-        UserName = 'TableColumn501'
+      object ppTableColumn50: TppTableColumn
+        UserName = 'TableColumn50'
         mmWidth = 59393
       end
-      object ppTableColumn57: TppTableColumn
-        UserName = 'TableColumn57'
+      object ppTableColumn51: TppTableColumn
+        UserName = 'TableColumn51'
         mmWidth = 57541
-      end
-    end
-    object ppTableGrid6: TppTableGrid
-      DesignLayer = ppDesignLayer1
-      UserName = 'TableGrid6'
-      DefaultColWidth = 12.699999809265140000
-      DefaultRowHeight = 12.699999809265140000
-      mmHeight = 20108
-      mmLeft = 140000
-      mmTop = 4763
-      mmWidth = 124884
-      BandType = 8
-      LayerName = Foreground
-      mmBottomOffset = 0
-      mmOverFlowOffset = 0
-      mmStopPosition = 0
-      mmMinHeight = 0
-      mmDefaultRowHeight = 12700
-      mmDefaultColWidth = 12700
-      object ppTableRow8: TppTableRow
-        DesignLayer = ppDesignLayer1
-        UserName = 'TableRow8'
-        mmHeight = 5850
-        mmLeft = 0
-        mmTop = 0
-        mmWidth = 48948
-        BandType = 4
-        LayerName = Foreground
-        mmBottomOffset = 0
-        mmOverFlowOffset = 0
-        mmStopPosition = 0
-        mmMinHeight = 0
-        object ppTableCell34: TppTableCell
-          DesignLayer = ppDesignLayer1
-          UserName = 'TableCell34'
-          Border.BorderPositions = [bpRight, bpBottom]
-          Border.Weight = 1.000000000000000000
-          Border.mmPadding = 1058
-          Brush.Style = bsClear
-          Padding = 1.057999968528748000
-          Transparent = True
-          mmHeight = 23548
-          mmLeft = 0
-          mmTop = 0
-          mmWidth = 48948
-          BandType = 4
-          LayerName = Foreground
-          mmBottomOffset = 0
-          mmOverFlowOffset = 0
-          mmStopPosition = 0
-          mmMinHeight = 5850
-          mmPadding = 1058
-        end
-        object ppTableCell35: TppTableCell
-          DesignLayer = ppDesignLayer1
-          UserName = 'TableCell35'
-          Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
-          Border.Weight = 1.000000000000000000
-          Border.mmPadding = 1058
-          Brush.Style = bsClear
-          Padding = 1.057999968528748000
-          Transparent = True
-          mmHeight = 23548
-          mmLeft = 0
-          mmTop = 0
-          mmWidth = 48948
-          BandType = 4
-          LayerName = Foreground
-          mmBottomOffset = 0
-          mmOverFlowOffset = 0
-          mmStopPosition = 0
-          mmMinHeight = 5850
-          mmPadding = 1058
-          object ppLabel15: TppLabel
-            DesignLayer = ppDesignLayer1
-            UserName = 'Beobachter34'
-            Anchors = [atLeft, atRight]
-            AutoSize = False
-            Border.mmPadding = 0
-            Caption = 'Name, Vorname'
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clBlack
-            Font.Name = 'Calibri'
-            Font.Size = 10
-            Font.Style = []
-            FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-            FormFieldSettings.FormFieldType = fftNone
-            Transparent = True
-            mmHeight = 3969
-            mmLeft = 149084
-            mmTop = 5821
-            mmWidth = 57239
-            BandType = 8
-            LayerName = Foreground
-          end
-        end
-        object ppTableCell36: TppTableCell
-          DesignLayer = ppDesignLayer1
-          UserName = 'TableCell36'
-          Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
-          Border.Weight = 1.000000000000000000
-          Border.mmPadding = 1058
-          Brush.Style = bsClear
-          Padding = 1.057999968528748000
-          Transparent = True
-          mmHeight = 23548
-          mmLeft = 0
-          mmTop = 0
-          mmWidth = 48948
-          BandType = 4
-          LayerName = Foreground
-          mmBottomOffset = 0
-          mmOverFlowOffset = 0
-          mmStopPosition = 0
-          mmMinHeight = 5850
-          mmPadding = 1058
-          object ppLabel16: TppLabel
-            DesignLayer = ppDesignLayer1
-            UserName = 'Unterschrift34'
-            Anchors = [atLeft, atRight]
-            AutoSize = False
-            Border.mmPadding = 0
-            Caption = 'Unterschrift'
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clBlack
-            Font.Name = 'Calibri'
-            Font.Size = 10
-            Font.Style = []
-            FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-            FormFieldSettings.FormFieldType = fftNone
-            Transparent = True
-            mmHeight = 3969
-            mmLeft = 208439
-            mmTop = 5821
-            mmWidth = 55387
-            BandType = 8
-            LayerName = Foreground
-          end
-        end
-      end
-      object ppTableRow9: TppTableRow
-        DesignLayer = ppDesignLayer1
-        UserName = 'TableRow9'
-        mmHeight = 7129
-        mmLeft = 0
-        mmTop = 0
-        mmWidth = 48948
-        BandType = 4
-        LayerName = Foreground
-        mmBottomOffset = 0
-        mmOverFlowOffset = 0
-        mmStopPosition = 0
-        mmMinHeight = 0
-        object ppTableCell37: TppTableCell
-          DesignLayer = ppDesignLayer1
-          UserName = 'TableCell37'
-          Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
-          Border.Weight = 1.000000000000000000
-          Border.mmPadding = 1058
-          Brush.Style = bsClear
-          Padding = 1.057999968528748000
-          Transparent = True
-          mmHeight = 23548
-          mmLeft = 0
-          mmTop = 0
-          mmWidth = 48948
-          BandType = 4
-          LayerName = Foreground
-          mmBottomOffset = 0
-          mmOverFlowOffset = 0
-          mmStopPosition = 0
-          mmMinHeight = 7129
-          mmPadding = 1058
-          object ppLabel17: TppLabel
-            DesignLayer = ppDesignLayer1
-            UserName = 'Nr3'
-            Anchors = [atLeft, atRight]
-            AutoSize = False
-            Border.mmPadding = 0
-            Caption = '3.'
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clBlack
-            Font.Name = 'Calibri'
-            Font.Size = 10
-            Font.Style = []
-            FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-            FormFieldSettings.FormFieldType = fftNone
-            Transparent = True
-            mmHeight = 3969
-            mmLeft = 141058
-            mmTop = 12200
-            mmWidth = 5910
-            BandType = 8
-            LayerName = Foreground
-          end
-        end
-        object ppTableCell38: TppTableCell
-          DesignLayer = ppDesignLayer1
-          UserName = 'TableCell38'
-          Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
-          Border.Weight = 1.000000000000000000
-          Border.mmPadding = 1058
-          Brush.Style = bsClear
-          Padding = 1.057999968528748000
-          Transparent = True
-          mmHeight = 23548
-          mmLeft = 0
-          mmTop = 0
-          mmWidth = 48948
-          BandType = 4
-          LayerName = Foreground
-          mmBottomOffset = 0
-          mmOverFlowOffset = 0
-          mmStopPosition = 0
-          mmMinHeight = 7129
-          mmPadding = 1058
-        end
-        object ppTableCell39: TppTableCell
-          DesignLayer = ppDesignLayer1
-          UserName = 'TableCell301'
-          Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
-          Border.Weight = 1.000000000000000000
-          Border.mmPadding = 1058
-          Brush.Style = bsClear
-          Padding = 1.057999968528748000
-          Transparent = True
-          mmHeight = 23548
-          mmLeft = 0
-          mmTop = 0
-          mmWidth = 48948
-          BandType = 4
-          LayerName = Foreground
-          mmBottomOffset = 0
-          mmOverFlowOffset = 0
-          mmStopPosition = 0
-          mmMinHeight = 7129
-          mmPadding = 1058
-        end
-      end
-      object ppTableRow10: TppTableRow
-        DesignLayer = ppDesignLayer1
-        UserName = 'TableRow10'
-        mmHeight = 7129
-        mmLeft = 0
-        mmTop = 0
-        mmWidth = 48948
-        BandType = 4
-        LayerName = Foreground
-        mmBottomOffset = 0
-        mmOverFlowOffset = 0
-        mmStopPosition = 0
-        mmMinHeight = 0
-        object ppTableCell40: TppTableCell
-          DesignLayer = ppDesignLayer1
-          UserName = 'TableCell40'
-          Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
-          Border.Weight = 1.000000000000000000
-          Border.mmPadding = 1058
-          Brush.Style = bsClear
-          Padding = 1.057999968528748000
-          Transparent = True
-          mmHeight = 23548
-          mmLeft = 0
-          mmTop = 0
-          mmWidth = 48948
-          BandType = 4
-          LayerName = Foreground
-          mmBottomOffset = 0
-          mmOverFlowOffset = 0
-          mmStopPosition = 0
-          mmMinHeight = 7129
-          mmPadding = 1058
-          object ppLabel18: TppLabel
-            DesignLayer = ppDesignLayer1
-            UserName = 'Nr4'
-            Anchors = [atLeft, atRight]
-            AutoSize = False
-            Border.mmPadding = 0
-            Caption = '4.'
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clBlack
-            Font.Name = 'Calibri'
-            Font.Size = 10
-            Font.Style = []
-            FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-            FormFieldSettings.FormFieldType = fftNone
-            Transparent = True
-            mmHeight = 3969
-            mmLeft = 141058
-            mmTop = 19637
-            mmWidth = 5910
-            BandType = 8
-            LayerName = Foreground
-          end
-        end
-        object ppTableCell41: TppTableCell
-          DesignLayer = ppDesignLayer1
-          UserName = 'TableCell41'
-          Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
-          Border.Weight = 1.000000000000000000
-          Border.mmPadding = 1058
-          Brush.Style = bsClear
-          Padding = 1.057999968528748000
-          Transparent = True
-          mmHeight = 23548
-          mmLeft = 0
-          mmTop = 0
-          mmWidth = 48948
-          BandType = 4
-          LayerName = Foreground
-          mmBottomOffset = 0
-          mmOverFlowOffset = 0
-          mmStopPosition = 0
-          mmMinHeight = 7129
-          mmPadding = 1058
-        end
-        object ppTableCell42: TppTableCell
-          DesignLayer = ppDesignLayer1
-          UserName = 'TableCell42'
-          Border.BorderPositions = [bpLeft, bpTop, bpRight, bpBottom]
-          Border.Weight = 1.000000000000000000
-          Border.mmPadding = 1058
-          Brush.Style = bsClear
-          Padding = 1.057999968528748000
-          Transparent = True
-          mmHeight = 23548
-          mmLeft = 0
-          mmTop = 0
-          mmWidth = 48948
-          BandType = 4
-          LayerName = Foreground
-          mmBottomOffset = 0
-          mmOverFlowOffset = 0
-          mmStopPosition = 0
-          mmMinHeight = 7129
-          mmPadding = 1058
-        end
-      end
-      object ppTableColumn58: TppTableColumn
-        UserName = 'TableColumn58'
-        mmWidth = 8026
-      end
-      object ppTableColumn59: TppTableColumn
-        UserName = 'TableColumn59'
-        mmWidth = 59355
-      end
-      object ppTableColumn60: TppTableColumn
-        UserName = 'TableColumn60'
-        mmWidth = 57503
       end
     end
   end
@@ -2817,11 +2500,11 @@ object RepOrt: TppReport
     object ppParameter2: TppParameter
       AutoSearchSettings.LogicalPrefix = []
       AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = '45957'
+      AutoSearchSettings.SearchExpression = '46273'
       DataType = dtDate
       LookupSettings.DisplayType = dtNameOnly
       LookupSettings.SortOrder = soName
-      Value = 45957d
+      Value = 46273d
       UserName = 'Versionsdatum'
     end
   end
