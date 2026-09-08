@@ -4700,42 +4700,21 @@ object RepOrt: TppReport
       BandType = 8
       LayerName = Foreground
     end
-    object ppLabel29: TppLabel
-      DesignLayer = ppDesignLayer1
-      UserName = 'MarkerEpochenunterricht'
-      Border.mmPadding = 0
-      Caption = #61563
-      Font.Charset = SYMBOL_CHARSET
-      Font.Color = clBlack
-      Font.Name = 'Wingdings 3'
-      Font.Size = 8
-      Font.Style = [fsBold]
-      FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
-      FormFieldSettings.FormFieldType = fftNone
-      TextAlignment = taCentered
-      Transparent = True
-      mmHeight = 3175
-      mmLeft = 91068
-      mmTop = 939
-      mmWidth = 2910
-      BandType = 8
-      LayerName = Foreground
-    end
     object ppLabel30: TppLabel
       DesignLayer = ppDesignLayer1
       UserName = 'Epochenunterricht'
       Border.mmPadding = 0
       Caption = 'Epochenunterricht'
       Font.Charset = DEFAULT_CHARSET
-      Font.Color = clBlack
+      Font.Color = 3355443
       Font.Name = 'Calibri'
       Font.Size = 7
-      Font.Style = []
+      Font.Style = [fsItalic]
       FormFieldSettings.FormSubmitInfo.SubmitMethod = fstPost
       FormFieldSettings.FormFieldType = fftNone
       Transparent = True
       mmHeight = 2910
-      mmLeft = 94596
+      mmLeft = 91281
       mmTop = 1323
       mmWidth = 18257
       BandType = 8

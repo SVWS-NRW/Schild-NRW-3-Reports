@@ -16,14 +16,15 @@ object RepOrt: TppReport
   PrinterSetup.PaperSize = 9
   SaveAsTemplate = True
   Template.FileName = 
-    '\\neghost\Gemeinsame Dateien\SVWS-Arbeitsverzeichnis\SchILD-Repo' +
-    'rts\Reportsammlung 3.0\Basisreports\Unfallanzeige Unfallkasse NR' +
-    'W Westfalen-Lippe.rtm'
+    'C:\Users\ra\OneDrive - neg-velbert.de\Programme\SVWS-Arbeitsverz' +
+    'eichnis\SchILD-Reports\Schild-NRW-3-Reports\Reports Allgemein\Un' +
+    'fallanzeige Unfallkasse NRW Westfalen-Lippe.rtm'
   Template.Format = ftASCII
   Units = utMillimeters
   AllowPrintToArchive = True
   AllowPrintToFile = True
   ArchiveFileName = '($MyDocuments)\ReportArchive.raf'
+  CachePages = True
   DeviceType = 'Screen'
   DefaultFileDeviceType = 'PDF'
   EmailSettings.ReportFormat = 'PDF'
@@ -31,10 +32,13 @@ object RepOrt: TppReport
   EmailSettings.ConnectionSettings.WebMail.GmailSettings.OAuth2.AuthStorage = [oasAccessToken, oasRefreshToken]
   EmailSettings.ConnectionSettings.WebMail.GmailSettings.OAuth2.RedirectURI = 'http://localhost'
   EmailSettings.ConnectionSettings.WebMail.GmailSettings.OAuth2.RedirectPort = 0
+  EmailSettings.ConnectionSettings.WebMail.GmailSettings.OAuth2.RefreshTokenLifeSpan = 365
   EmailSettings.ConnectionSettings.WebMail.Outlook365Settings.OAuth2.AuthStorage = [oasAccessToken, oasRefreshToken]
   EmailSettings.ConnectionSettings.WebMail.Outlook365Settings.OAuth2.RedirectURI = 'http://localhost'
   EmailSettings.ConnectionSettings.WebMail.Outlook365Settings.OAuth2.RedirectPort = 0
+  EmailSettings.ConnectionSettings.WebMail.Outlook365Settings.OAuth2.RefreshTokenLifeSpan = 365
   EmailSettings.ConnectionSettings.EnableMultiPlugin = False
+  EmailSettings.ConnectionSettings.ConnectionStatusInfo = [csiStatusBar]
   EmailSettings.DeleteFile = False
   EmailSettings.Enabled = True
   EmailSettings.PreviewInEmailClient = False
@@ -91,6 +95,8 @@ object RepOrt: TppReport
   PDFSettings.FontEncoding = feUnicode
   PDFSettings.ImageCompressionLevel = 1
   PDFSettings.PDFAFormat = pafNone
+  PDFSettings.Layers = False
+  PDFSettings.Outline = False
   PreviewFormSettings.PageBorder.mmPadding = 0
   PreviewFormSettings.SinglePageOnly = True
   PreviewFormSettings.ZoomSetting = zs100Percent
@@ -113,18 +119,24 @@ object RepOrt: TppReport
   CloudDriveSettings.DropBoxSettings.OAuth2.AuthStorage = [oasAccessToken, oasRefreshToken]
   CloudDriveSettings.DropBoxSettings.OAuth2.RedirectURI = 'http://localhost'
   CloudDriveSettings.DropBoxSettings.OAuth2.RedirectPort = 0
+  CloudDriveSettings.DropBoxSettings.OAuth2.RefreshTokenLifeSpan = 365
   CloudDriveSettings.DropBoxSettings.DirectorySupport = True
+  CloudDriveSettings.DropBoxSettings.SharedResources = True
   CloudDriveSettings.GoogleDriveSettings.OAuth2.AuthStorage = [oasAccessToken, oasRefreshToken]
   CloudDriveSettings.GoogleDriveSettings.OAuth2.RedirectURI = 'http://localhost'
   CloudDriveSettings.GoogleDriveSettings.OAuth2.RedirectPort = 0
+  CloudDriveSettings.GoogleDriveSettings.OAuth2.RefreshTokenLifeSpan = 365
   CloudDriveSettings.GoogleDriveSettings.DirectorySupport = False
+  CloudDriveSettings.GoogleDriveSettings.SharedResources = False
   CloudDriveSettings.OneDriveSettings.OAuth2.AuthStorage = [oasAccessToken, oasRefreshToken]
   CloudDriveSettings.OneDriveSettings.OAuth2.RedirectURI = 'http://localhost'
   CloudDriveSettings.OneDriveSettings.OAuth2.RedirectPort = 0
+  CloudDriveSettings.OneDriveSettings.OAuth2.RefreshTokenLifeSpan = 365
   CloudDriveSettings.OneDriveSettings.DirectorySupport = True
+  CloudDriveSettings.OneDriveSettings.SharedResources = True
   Left = 128
   Top = 8
-  Version = '22.06'
+  Version = '23.02'
   mmColumnWidth = 175000
   DataPipelineName = 'Schueler'
   object ppDetailBand1: TppDetailBand
@@ -2085,11 +2097,11 @@ object RepOrt: TppReport
     object ppParameter2: TppParameter
       AutoSearchSettings.LogicalPrefix = []
       AutoSearchSettings.Mandatory = True
-      AutoSearchSettings.SearchExpression = '45957'
+      AutoSearchSettings.SearchExpression = '46272'
       DataType = dtDate
       LookupSettings.DisplayType = dtNameOnly
       LookupSettings.SortOrder = soName
-      Value = 45957d
+      Value = 46272d
       UserName = 'Versionsdatum'
     end
   end
